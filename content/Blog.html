@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Blog &amp; Articles &mdash; Kleza</title>
+<meta name="description" content="Expert articles on AI, SEO, healthcare marketing, and digital strategy from the Kleza team. Insights written by practitioners who implement them for real clients." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Instrument+Serif:ital,wght@0,400;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&display=swap" />
+<link rel="stylesheet" href="assets/shared.css" />
+<link rel="stylesheet" href="assets/inner.css" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Person","name":"Sulakshana","jobTitle":"Sr. Content Writer","worksFor":{"@type":"Organization","name":"Kleza"},"knowsAbout":["SEO","Content Strategy","E-E-A-T"]},
+{"@type":"Person","name":"Praveen","jobTitle":"Digital Marketing Specialist","worksFor":{"@type":"Organization","name":"Kleza"},"knowsAbout":["PPC","Google Ads","Performance Marketing"]},
+{"@type":"Person","name":"Vasudha","jobTitle":"Project Manager","worksFor":{"@type":"Organization","name":"Kleza"},"knowsAbout":["Digital Marketing Strategy","Social Media"]},
+{"@type":"Person","name":"Rajesh","jobTitle":"Sr. UI/UX Designer","worksFor":{"@type":"Organization","name":"Kleza"},"knowsAbout":["Web Design","UX","Conversion Design"]}
+]}
+</script>
+<style id="blog-page">
+/* ===================== BLOG PAGE ===================== */
+.bl-cats{--cat-ai:#1a2d5a;--cat-health:#2d6a4a;--cat-mktg:#7c4a1a;--cat-ops:#4a1a7c;--cat-web:#1a5a5a}
+
+/* Section 01 — editorial hero / magazine cover */
+.bl-hero{position:relative;width:100%;min-height:clamp(420px,54vh,560px);display:flex;align-items:flex-end;overflow:hidden;background:#0a1316}
+.bl-hero image-slot{position:absolute;inset:0;width:100%;height:100%;display:block}
+.bl-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,19,22,.15) 0%,rgba(10,19,22,.35) 45%,rgba(10,19,22,.88) 100%);z-index:1;pointer-events:none}
+.bl-hero-inner{position:relative;z-index:2;width:100%;max-width:var(--maxw);margin:0 auto;padding:clamp(36px,5vw,72px) var(--pad-x)}
+.bl-hero-cat{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;padding:7px 14px;border-radius:999px;color:#fff;background:rgba(255,255,255,.16);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.22);margin-bottom:20px}
+.bl-hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(30px,3.9vw,56px);line-height:1.06;letter-spacing:-.02em;color:#fff;margin:0;max-width:24ch;text-wrap:balance}
+.bl-hero-meta{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:30px;color:#cdd9d7;font-size:13.5px}
+.bl-hero-meta .who{display:flex;align-items:center;gap:10px}
+.bl-hero-meta .av{width:34px;height:34px;border-radius:50%;background:linear-gradient(160deg,var(--accent-3),var(--accent-2));display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#fff}
+.bl-hero-meta .who b{color:#fff;font-weight:600}
+.bl-hero-meta .sepdot{width:4px;height:4px;border-radius:50%;background:rgba(255,255,255,.4)}
+.bl-hero-meta .rt{display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:11.5px;letter-spacing:.04em}
+.bl-hero-meta .rt svg{width:14px;height:14px}
+.bl-hero-cta{margin-top:28px}
+.bl-hero-cta .btn{padding:14px 26px}
+
+/* sub-bar under hero: breadcrumb + page title */
+.bl-subbar{background:var(--bg);border-bottom:1px solid var(--line)}
+.bl-subbar .container{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:16px;padding-bottom:16px;flex-wrap:wrap}
+.bl-subbar .pt{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted-2)}
+
+/* Section 02 — sticky filter + search */
+.bl-filterbar{position:sticky;top:86px;z-index:60;background:rgba(245,249,249,.86);backdrop-filter:saturate(180%) blur(14px);-webkit-backdrop-filter:saturate(180%) blur(14px);border-bottom:1px solid var(--line)}
+.bl-filterbar .container{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:12px;padding-bottom:12px}
+.bl-tabs{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none}
+.bl-tabs::-webkit-scrollbar{display:none}
+.bl-tab{position:relative;white-space:nowrap;padding:10px 14px;border:0;background:none;font-family:var(--sans);font-size:14px;font-weight:600;color:var(--muted);cursor:pointer;border-radius:8px;transition:color .2s,background .2s}
+.bl-tab:hover{color:var(--ink);background:rgba(13,155,139,.06)}
+.bl-tab::after{content:"";position:absolute;left:14px;right:14px;bottom:2px;height:2px;border-radius:2px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .3s cubic-bezier(.22,1,.36,1)}
+.bl-tab[aria-selected="true"]{color:var(--ink)}
+.bl-tab[aria-selected="true"]::after{transform:scaleX(1)}
+.bl-search{display:flex;align-items:center;flex-shrink:0}
+.bl-search form{display:flex;align-items:center;gap:0;border:1px solid var(--line);border-radius:999px;background:#fff;overflow:hidden;transition:border-color .25s,box-shadow .25s}
+.bl-search.open form,.bl-search form:focus-within{border-color:var(--accent);box-shadow:0 0 0 4px rgba(13,155,139,.1)}
+.bl-search button.tog{width:42px;height:42px;display:flex;align-items:center;justify-content:center;color:var(--ink);flex-shrink:0}
+.bl-search button.tog svg{width:18px;height:18px}
+.bl-search input{width:0;padding:0;border:0;outline:0;font-family:var(--sans);font-size:14px;color:var(--ink);background:transparent;transition:width .3s ease,padding .3s ease;min-width:0}
+.bl-search.open input{width:clamp(150px,22vw,240px);padding:0 14px 0 2px}
+
+/* Section 03 — article grid */
+.bl-grid-sec{padding:clamp(36px,4.5vw,56px) 0 clamp(40px,5vw,64px)}
+.bl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;grid-auto-flow:row dense}
+.bl-card{position:relative;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:border-color .3s,transform .3s,box-shadow .3s}
+.bl-card:hover{border-color:rgba(13,155,139,.4);transform:translateY(-4px);box-shadow:0 30px 52px -32px rgba(10,19,22,.2)}
+.bl-card a.cardlink{position:absolute;inset:0;z-index:3}
+.bl-thumb{position:relative;aspect-ratio:16/10;overflow:hidden;background:linear-gradient(160deg,#e9f4ef,#d2e6dd)}
+.bl-thumb image-slot{position:absolute;inset:0;width:100%;height:100%;display:block;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.bl-card:hover .bl-thumb image-slot{transform:scale(1.05)}
+.bl-card .body{padding:20px 22px 24px;display:flex;flex-direction:column;flex:1}
+.bl-tag{align-self:flex-start;font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;padding:5px 10px;border-radius:999px;margin-bottom:14px;transition:filter .25s}
+.bl-card:hover .bl-tag{filter:saturate(1.4) brightness(1.04)}
+.bl-tag[data-cat="ai"]{color:var(--cat-ai);background:rgba(26,45,90,.1)}
+.bl-tag[data-cat="health"]{color:var(--cat-health);background:rgba(45,106,74,.1)}
+.bl-tag[data-cat="mktg"]{color:var(--cat-mktg);background:rgba(124,74,26,.1)}
+.bl-tag[data-cat="ops"]{color:var(--cat-ops);background:rgba(74,26,124,.1)}
+.bl-tag[data-cat="web"]{color:var(--cat-web);background:rgba(26,90,90,.1)}
+.bl-card h3{font-family:var(--serif);font-weight:400;font-size:clamp(20px,1.7vw,24px);line-height:1.18;letter-spacing:-.01em;color:var(--ink);margin:0 0 12px;flex:1;text-wrap:balance}
+.bl-card .excerpt{display:none;color:var(--muted);font-size:14.5px;line-height:1.6;margin:0 0 16px}
+.bl-meta{display:flex;align-items:center;gap:10px;padding-top:16px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted)}
+.bl-meta .av{width:26px;height:26px;border-radius:50%;background:linear-gradient(160deg,var(--accent-3),var(--accent-2));display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff;flex-shrink:0}
+.bl-meta .nm{color:var(--ink);font-weight:600}
+.bl-meta .sepdot{width:3px;height:3px;border-radius:50%;background:var(--muted-2)}
+.bl-meta .rt{margin-left:auto;font-family:var(--mono);font-size:10.5px;letter-spacing:.04em;color:var(--muted-2);white-space:nowrap}
+/* featured wide card (every 6th) */
+.bl-card.feat{grid-column:span 2}
+.bl-card.feat .bl-thumb{aspect-ratio:21/9}
+.bl-card.feat h3{font-size:clamp(24px,2.4vw,34px)}
+.bl-card.feat .excerpt{display:block}
+.bl-empty{grid-column:1/-1;text-align:center;padding:60px 20px;color:var(--muted);font-size:15px}
+.bl-empty .ico{width:54px;height:54px;border-radius:14px;background:rgba(13,155,139,.08);color:var(--accent);display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
+
+/* pagination */
+.bl-page{display:flex;justify-content:center;align-items:center;gap:8px;margin-top:clamp(36px,4vw,52px)}
+.bl-page button{min-width:42px;height:42px;padding:0 12px;border:1px solid var(--line);background:#fff;border-radius:12px;font-family:var(--sans);font-weight:600;font-size:14px;color:var(--ink);cursor:pointer;transition:all .2s;display:inline-flex;align-items:center;justify-content:center;gap:6px}
+.bl-page button:hover:not([disabled]){border-color:var(--accent);color:var(--accent)}
+.bl-page button[aria-current="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.bl-page button[disabled]{opacity:.4;cursor:not-allowed}
+.bl-page button svg{width:14px;height:14px}
+
+/* Section 04 — featured topics */
+.bl-topics{padding:clamp(48px,6vw,80px) 0;background:#fff;border-top:1px solid var(--line)}
+.bl-topics h2{font-family:var(--serif);font-weight:400;font-size:clamp(30px,3.6vw,48px);letter-spacing:-.02em;margin:0 0 8px;color:var(--ink)}
+.bl-topics h2 .ital{font-style:italic;color:var(--accent)}
+.bl-topics .sub{color:var(--muted);font-size:15px;margin:0 0 30px;max-width:54ch}
+.bl-tagcloud{display:flex;flex-wrap:wrap;gap:12px}
+.bl-topic{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:999px;padding:10px 18px;font-weight:600;cursor:pointer;transition:border-color .2s,background .2s,color .2s,transform .2s;line-height:1}
+.bl-topic:hover{border-color:var(--accent);color:var(--accent);background:rgba(13,155,139,.06);transform:translateY(-2px)}
+.bl-topic .ct{font-family:var(--mono);font-weight:500;font-size:.72em;color:var(--muted-2);margin-left:7px}
+
+/* Section 05 — newsletter crosslink (low weight, warm) */
+.bl-news{background:linear-gradient(120deg,#f3faf7 0%,#eef6f3 100%);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.bl-news .container{display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap;padding-top:clamp(28px,3.4vw,44px);padding-bottom:clamp(28px,3.4vw,44px)}
+.bl-news .lt h3{font-family:var(--serif);font-weight:400;font-size:clamp(22px,2.2vw,30px);letter-spacing:-.01em;color:var(--ink);margin:0 0 6px}
+.bl-news .lt h3 .ital{font-style:italic;color:var(--accent)}
+.bl-news .lt p{color:var(--muted);font-size:14.5px;margin:0;max-width:46ch;line-height:1.55}
+.bl-news form{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.bl-news input{background:#fff;border:1px solid var(--line);border-radius:999px;padding:12px 18px;font-family:var(--sans);font-size:14px;color:var(--ink);transition:border-color .2s,box-shadow .2s}
+.bl-news input:focus{outline:0;border-color:var(--accent);box-shadow:0 0 0 4px rgba(13,155,139,.1)}
+.bl-news input.fn{width:140px}
+.bl-news input.em{width:210px}
+.bl-news button{background:var(--accent);color:#fff;border-radius:999px;padding:12px 22px;font-weight:600;font-size:14px;cursor:pointer;transition:background .2s,transform .2s}
+.bl-news button:hover{background:var(--accent-2);transform:translateY(-1px)}
+.bl-news .done{color:var(--accent-2);font-weight:600;font-size:14.5px;display:none}
+.bl-news.sent form{display:none}
+.bl-news.sent .done{display:block}
+
+/* Section 06 — authors */
+.bl-authors{padding:clamp(48px,6vw,80px) 0}
+.bl-authors .head{max-width:680px;margin:0 0 clamp(28px,3vw,40px)}
+.bl-authors .eyebrow{display:inline-block;margin-bottom:14px}
+.bl-authors h2{font-family:var(--serif);font-weight:400;font-size:clamp(30px,3.6vw,48px);letter-spacing:-.02em;margin:0 0 14px;color:var(--ink)}
+.bl-authors h2 .ital{font-style:italic;color:var(--accent)}
+.bl-authors .head p{color:var(--muted);font-size:clamp(15px,1.1vw,17px);line-height:1.6;margin:0}
+.bl-auth-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.bl-author{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px 24px;text-align:center;cursor:pointer;transition:border-color .3s,transform .3s,box-shadow .3s}
+.bl-author:hover{border-color:rgba(13,155,139,.4);transform:translateY(-4px);box-shadow:0 26px 48px -30px rgba(10,19,22,.18)}
+.bl-author .pic{width:84px;height:84px;border-radius:50%;overflow:hidden;margin:0 auto 18px;border:1px solid var(--line);background:linear-gradient(160deg,var(--accent-3),var(--accent-2))}
+.bl-author .nm{font-family:var(--sans);font-weight:700;font-size:16.5px;color:var(--ink);margin:0 0 3px}
+.bl-author .role{font-size:13px;color:var(--muted);margin:0 0 14px}
+.bl-author .spec{display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);background:rgba(13,155,139,.08);border-radius:999px;padding:6px 12px}
+
+@media (max-width:1080px){
+  .bl-auth-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:768px){
+  .bl-grid{grid-template-columns:1fr}
+  .bl-card.feat{grid-column:span 1}
+  .bl-card.feat .bl-thumb{aspect-ratio:16/10}
+  .bl-auth-grid{grid-template-columns:1fr}
+  .bl-filterbar .container{flex-direction:column;align-items:stretch;gap:10px}
+  .bl-news .container{flex-direction:column;align-items:flex-start}
+}
+</style>
+</head>
+<body>
+<header class="site-header" id="header" data-screen-label="Header">
+  <div class="nav-shell">
+    <nav class="nav" aria-label="Primary" style="border-color: rgb(73, 201, 224)">
+      <a href="Kleza.html" class="logo" aria-label="Kleza"><img src="assets/kleza-logo.png" alt="Kleza" /></a>
+
+      <div class="nav-links">
+
+        <!-- ABOUT -->
+        <div class="nav-item" data-mega data-comment-anchor="ce64995084-div">
+          <a class="nav-link" href="about.html">About
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <div class="mega mega-md mega-grid mega-grid-2" role="menu">
+            <div class="mega-bridge" aria-hidden="true"></div>
+            <div class="mega-col">
+              <div class="mega-title">Company</div>
+              <ul class="mega-list">
+                <li><a class="mega-link" href="about.html#story"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10A15.3 15.3 0 0 1 8 12 15.3 15.3 0 0 1 12 2z"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Company Overview</span><span class="mega-link-sub">Who we are &amp; what we believe</span></span></a></li>
+                <li><a class="mega-link" href="about.html#vision"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/><circle cx="12" cy="12" r="3"/></svg></span><span class="mega-link-text"><span class="mega-link-name">AI Transformation Vision</span><span class="mega-link-sub">Our long-term roadmap</span></span></a></li>
+                <li><a class="mega-link" href="about.html#healthcare"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s8-4 8-12V5l-8-3-8 3v5c0 8 8 12 8 12z"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Healthcare Innovation</span><span class="mega-link-sub">75% healthcare focus</span></span></a></li>
+                <li><a class="mega-link" href="about.html#partnerships"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="18" r="2.5"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="6" y1="8" x2="6" y2="16"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Partnerships</span><span class="mega-link-sub">Build with us</span></span></a></li>
+                <li><a class="mega-link" href="about.html#careers"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Careers</span><span class="mega-link-sub">Join the team</span></span></a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <div class="mega-feature">
+                <span class="feat-label">Our Philosophy</span>
+                <h4>Human expertise, refined by intelligent systems.</h4>
+                <p>We design AI that augments care teams &mdash; never replaces them.</p>
+                <a class="feat-cta" href="about.html">Learn the vision
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI PRODUCTS -->
+        <div class="nav-item" data-mega>
+          <a class="nav-link" href="ai-products.html">AI Products
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <div class="mega mega-lg mega-grid mega-grid-4" role="menu">
+            <div class="mega-bridge" aria-hidden="true"></div>
+            <div class="mega-col">
+              <div class="mega-title">AI-Powered Solutions <span class="pill">IVNA.ai</span></div>
+              <p class="mega-desc">Platforms built to simplify communication, workflows, operations, and care.</p>
+              <ul class="mega-list">
+                <li><a class="mega-link" href="ai-products.html#voica"><span class="mega-link-ico">Vo</span><span class="mega-link-text"><span class="mega-link-name">Voica AI</span><span class="mega-link-sub">Voice Intelligence</span></span></a></li>
+                <li><a class="mega-link" href="ai-products.html#pulse"><span class="mega-link-ico">Pu</span><span class="mega-link-text"><span class="mega-link-name">Pulse Board</span><span class="mega-link-sub">Real-time Ops Dashboard</span></span></a></li>
+                <li><a class="mega-link" href="ai-products.html#assessment"><span class="mega-link-ico">As</span><span class="mega-link-text"><span class="mega-link-name">Assessment App</span><span class="mega-link-sub">Smart digital assessments</span></span></a></li>
+                <li><a class="mega-link" href="ai-products.html#onboarding"><span class="mega-link-ico">On</span><span class="mega-link-text"><span class="mega-link-name">Onboarding App</span><span class="mega-link-sub">End-to-end onboarding</span></span></a></li>
+                <li><a class="mega-link" href="ai-products.html#docui"><span class="mega-link-ico">Do</span><span class="mega-link-text"><span class="mega-link-name">DocUI</span><span class="mega-link-sub">Document intelligence</span></span></a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <div class="mega-title">AI Intelligence Systems</div>
+              <p class="mega-desc">Reasoning, orchestration, and intelligence refinement.</p>
+              <ul class="mega-list">
+                <li><a class="mega-link" href="ai-products.html#llms"><span class="mega-link-ico">3L</span><span class="mega-link-text"><span class="mega-link-name">3 LLMs</span><span class="mega-link-sub">Multi-model reasoning</span></span></a></li>
+              </ul>
+              <div class="mega-title" style="margin-top:22px">Marketplace</div>
+              <p class="mega-desc">Integrations, tools, templates, and AI-powered business solutions.</p>
+              <ul class="mega-list">
+                <li><a class="mega-link" href="ai-products.html#marketplace"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.4"/><rect x="14" y="3" width="7" height="7" rx="1.4"/><rect x="3" y="14" width="7" height="7" rx="1.4"/><rect x="14" y="14" width="7" height="7" rx="1.4"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Browse Marketplace</span><span class="mega-link-sub">All integrations &amp; tools</span></span></a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <div class="mega-title">Agentic Solutions <span class="pill">Comes360</span></div>
+              <p class="mega-desc">Workforce Companions &mdash; AI for internal teams, ops &amp; coordination.</p>
+              <ul class="mega-list">
+                <li><a class="mega-link" href="ai-products.html#hr"><span class="mega-link-ico">HR</span><span class="mega-link-text"><span class="mega-link-name">HR Companion</span><span class="mega-link-sub">Hiring &amp; people ops</span></span></a></li>
+                <li><a class="mega-link" href="ai-products.html#admin"><span class="mega-link-ico">Ad</span><span class="mega-link-text"><span class="mega-link-name">Admin Companion</span><span class="mega-link-sub">Operational admin</span></span></a></li>
+                <li><a class="mega-link" href="ai-products.html#scheduler"><span class="mega-link-ico">Sc</span><span class="mega-link-text"><span class="mega-link-name">Scheduler Companion</span><span class="mega-link-sub">Shift &amp; visit scheduling</span></span></a></li>
+              </ul>
+              <div class="mega-subtitle">Care &amp; Client Companions</div>
+              <ul class="mega-list">
+                <li><a class="mega-link" href="ai-products.html#caregiver"><span class="mega-link-ico">Cg</span><span class="mega-link-text"><span class="mega-link-name">Caregiver Companion</span><span class="mega-link-sub">Direct-care support</span></span></a></li>
+                <li><a class="mega-link" href="ai-products.html#client"><span class="mega-link-ico">Cl</span><span class="mega-link-text"><span class="mega-link-name">Client Companion</span><span class="mega-link-sub">Client engagement</span></span></a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <div class="mega-feature">
+                <span class="feat-label">Powered by</span>
+                <h4>IVNA.ai &mdash; enterprise AI for modern healthcare.</h4>
+                <p>Turnkey intelligence platforms designed for immediate deployment.</p>
+                <a class="feat-cta" href="ai-products.html">Visit IVNA.ai
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI SERVICES -->
+        <div class="nav-item" data-mega>
+          <a class="nav-link" href="ai-services.html">AI Services
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <div class="mega mega-md mega-grid mega-grid-2" role="menu">
+            <div class="mega-bridge" aria-hidden="true"></div>
+            <div class="mega-col">
+              <div class="mega-title">AI Enablement Services</div>
+              <p class="mega-desc">AI solutions that enhance communication, automate workflows, and help businesses scale smarter operations.</p>
+              <ul class="mega-list">
+                <li><a class="mega-link" href="ai-services.html#training"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-7M14 17H4M9 7l-5 5 5 5M15 12l5 5"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Business-Specific AI Training</span><span class="mega-link-sub">Fine-tuned on your data</span></span></a></li>
+                <li><a class="mega-link" href="ai-services.html#assistant"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></span><span class="mega-link-text"><span class="mega-link-name">AI Support Assistant</span><span class="mega-link-sub">24/7 conversational AI</span></span></a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <div class="mega-feature">
+                <span class="feat-label">Custom AI</span>
+                <h4>Models refined on your operational reality.</h4>
+                <p>From data curation to deployment &mdash; we handle every step.</p>
+                <a class="feat-cta" href="contact.html">Talk to our team
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ENTERPRISE -->
+        <div class="nav-item" data-mega>
+          <a class="nav-link" href="enterprise-services.html">Enterprise Services</a>
+          <div class="mega mega-lg mega-grid mega-grid-4" role="menu">
+            <div class="mega-bridge" aria-hidden="true"></div>
+            <div class="mega-col">
+              <div class="mega-title">Digital Experience</div>
+              <p class="mega-desc">Modern digital solutions for growth, engagement &amp; online presence.</p>
+              <ul class="mega-list">
+                <li><a class="mega-link" href="Website Development.html"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10A15.3 15.3 0 0 1 8 12 15.3 15.3 0 0 1 12 2z"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Website Development</span><span class="mega-link-sub">Brand-grade sites</span></span></a></li>
+                <li><a class="mega-link" href="Digital Marketing.html"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><polyline points="14 7 21 7 21 14"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Digital Marketing</span><span class="mega-link-sub">Growth campaigns</span></span></a></li>
+              </ul>
+              <div class="mega-subtitle">Operational Support</div>
+              <ul class="mega-list">
+                <li><a class="mega-link" href="Operational Outsourcing.html"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Operational Outsourcing</span><span class="mega-link-sub">Scalable back-office</span></span></a></li>
+                <li><a class="mega-link" href="enterprise-services.html#it"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Remote IT Services</span><span class="mega-link-sub">24/7 infrastructure care</span></span></a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <div class="mega-title">Automation &amp; Intelligence</div>
+              <p class="mega-desc">Content &amp; Marketing automation tools.</p>
+              <ul class="mega-list">
+                <li><a class="mega-link" href="Automation Tools.html"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Blog Automation</span><span class="mega-link-sub">Publishing on autopilot</span></span></a></li>
+                <li><a class="mega-link" href="Automation Tools.html"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Social Media Scheduling</span><span class="mega-link-sub">Multi-channel timing</span></span></a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <div class="mega-title">Search &amp; Visibility</div>
+              <p class="mega-desc">Smart visibility for search, indexing &amp; performance.</p>
+              <ul class="mega-list">
+                <li><a class="mega-link" href="Search Visibility.html"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span><span class="mega-link-text"><span class="mega-link-name">SERP Agent</span><span class="mega-link-sub">Search rank monitoring</span></span></a></li>
+                <li><a class="mega-link" href="Search Visibility.html"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10"/><path d="M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Auto Indexing</span><span class="mega-link-sub">Instant search updates</span></span></a></li>
+              </ul>
+              <div class="mega-subtitle">Monitoring &amp; Verification</div>
+              <ul class="mega-list">
+                <li><a class="mega-link" href="Monitoring Verification.html"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Domain Expiry Verification</span><span class="mega-link-sub">Never miss a renewal</span></span></a></li>
+                <li><a class="mega-link" href="Monitoring Verification.html"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><polyline points="7 14 11 10 14 13 21 6"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Website Performance</span><span class="mega-link-sub">Uptime &amp; speed checks</span></span></a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <div class="mega-feature">
+                <span class="feat-label">All-in-One Stack</span>
+                <h4>One accountable team. Every digital surface.</h4>
+                <p>Web, marketing, automation, and IT &mdash; under one roof.</p>
+                <a class="feat-cta" href="enterprise-services.html">Explore Enterprise
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RESOURCES -->
+        <div class="nav-item" data-mega>
+          <a class="nav-link" href="resources.html">Resources
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <div class="mega mega-sm" role="menu">
+            <div class="mega-bridge" aria-hidden="true"></div>
+            <div class="mega-title">Insights &amp; updates</div>
+            <p class="mega-desc">Knowledge to support your AI and digital journey.</p>
+            <ul class="mega-list">
+              <li><a class="mega-link" href="resources.html#newsletter"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Newsletters</span><span class="mega-link-sub">Monthly intelligence digest</span></span></a></li>
+              <li><a class="mega-link" href="resources.html#articles"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Blogs</span><span class="mega-link-sub">Long-form essays &amp; case studies</span></span></a></li>
+            </ul>
+            <a class="mega-article" href="#">
+              <span class="mega-article-label">Featured Story</span>
+              <h5 class="mega-article-title">How Meridian Health cut documentation time by 67%.</h5>
+            </a>
+          </div>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="nav-item" data-mega>
+          <a class="nav-link" href="contact.html">Contact
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <div class="mega mega-sm mega-contact" role="menu">
+            <div class="mega-bridge" aria-hidden="true"></div>
+            <div class="mega-title">Get in touch</div>
+            <p class="mega-desc">Pick the path that fits where you are today.</p>
+            <ul class="mega-list">
+              <li><a class="mega-link" href="contact.html#schedule"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Schedule a Consultation</span><span class="mega-link-sub">Pick a 30-min slot</span></span></a></li>
+              <li><a class="mega-link" href="contact.html#experts"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 11l-3-3M20 8h-7"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Talk to Experts</span><span class="mega-link-sub">Direct line to a solutions architect</span></span></a></li>
+              <li><a class="mega-link" href="contact.html#form"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Contact Form</span><span class="mega-link-sub">Send us a message</span></span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <a href="contact.html" class="nav-cta">
+        Contact Us
+        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+
+      <button class="nav-burger" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== SECTION 01 — EDITORIAL HERO (magazine cover) ===== -->
+<section class="bl-hero" data-screen-label="Editorial Hero">
+  <image-slot id="bl-hero-img" shape="rect" placeholder="Featured article cover image"></image-slot>
+  <div class="bl-hero-inner">
+    <span class="bl-hero-cat">Digital Marketing</span>
+    <h1>Landing Page Optimization Strategies to Skyrocket Conversions in 2026</h1>
+    <div class="bl-hero-meta">
+      <span class="who"><span class="av">PR</span><b>Praveen</b></span>
+      <span class="sepdot"></span>
+      <span>June 4, 2026</span>
+      <span class="sepdot"></span>
+      <span class="rt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/></svg> 8 min read</span>
+    </div>
+    <div class="bl-hero-cta"><a class="btn btn-accent" href="#">Read article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+  </div>
+</section>
+
+<!-- sub-bar: breadcrumb + page title -->
+<div class="bl-subbar">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="Kleza.html">Home</a><span class="sep">&raquo;</span><a href="resources.html">Resources</a><span class="sep">&raquo;</span><span class="current">Blog</span></nav>
+    <span class="pt">Resources / Blog</span>
+  </div>
+</div>
+
+<!-- ===== SECTION 02 — STICKY FILTER + SEARCH ===== -->
+<div class="bl-filterbar" data-screen-label="Filter Bar">
+  <div class="container">
+    <div class="bl-tabs" role="tablist" id="blTabs">
+      <button class="bl-tab" role="tab" data-cat="all" aria-selected="true">All</button>
+      <button class="bl-tab" role="tab" data-cat="ai" aria-selected="false">AI &amp; Technology</button>
+      <button class="bl-tab" role="tab" data-cat="health" aria-selected="false">Healthcare</button>
+      <button class="bl-tab" role="tab" data-cat="mktg" aria-selected="false">Digital Marketing</button>
+      <button class="bl-tab" role="tab" data-cat="ops" aria-selected="false">Operations</button>
+      <button class="bl-tab" role="tab" data-cat="web" aria-selected="false">Web &amp; Dev</button>
+    </div>
+    <div class="bl-search" id="blSearch">
+      <form onsubmit="return false">
+        <button type="button" class="tog" aria-label="Search articles"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+        <input type="text" id="blQ" placeholder="Search articles..." aria-label="Search articles">
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- ===== SECTION 03 — ARTICLE GRID ===== -->
+<section class="bl-grid-sec bl-cats" data-screen-label="Article Grid">
+  <div class="container">
+    <div id="blActive" style="margin-bottom:22px;display:none"></div>
+    <div class="bl-grid" id="blGrid"></div>
+    <div class="bl-page" id="blPage">
+      <button type="button" disabled aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>
+      <button type="button" aria-current="true">1</button>
+      <button type="button">2</button>
+      <button type="button">3</button>
+      <button type="button" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTION 04 — FEATURED TOPICS ===== -->
+<section class="bl-topics" data-screen-label="Featured Topics">
+  <div class="container">
+    <h2>Browse by <span class="ital">topic.</span></h2>
+    <p class="sub">Jump straight to the subjects we write about most &mdash; each tag filters the articles above.</p>
+    <div class="bl-tagcloud" id="blTopics"></div>
+  </div>
+</section>
+
+<!-- ===== SECTION 05 — NEWSLETTER CROSSLINK ===== -->
+<section class="bl-news" id="blNews" data-screen-label="Newsletter Crosslink">
+  <div class="container">
+    <div class="lt">
+      <h3>Prefer <span class="ital">monthly highlights?</span></h3>
+      <p>The Kleza newsletter distils the most important insights &mdash; once a month, no noise.</p>
+    </div>
+    <form onsubmit="event.preventDefault();document.getElementById('blNews').classList.add('sent')">
+      <input class="fn" type="text" placeholder="First name" aria-label="First name">
+      <input class="em" type="email" placeholder="Email address" aria-label="Email address">
+      <button type="submit">Subscribe</button>
+    </form>
+    <span class="done">Thanks &mdash; you&rsquo;re on the list. Look out for next month&rsquo;s digest.</span>
+  </div>
+</section>
+
+<!-- ===== SECTION 06 — ABOUT THE AUTHORS ===== -->
+<section class="bl-authors" data-screen-label="About the Authors">
+  <div class="container">
+    <div class="head">
+      <span class="eyebrow">CONTRIBUTORS</span>
+      <h2>Written by <span class="ital">practitioners.</span></h2>
+      <p>Every article on the Kleza blog is written or reviewed by a specialist who implements these strategies for real clients.</p>
+    </div>
+    <div class="bl-auth-grid" id="blAuthors"></div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer band-light" data-screen-label="Footer" style="padding: 56px 0px 32px">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="logo" aria-label="Kleza"><img src="/assets/kleza-logo.png" alt="Kleza" /></a>
+        <p class="tagline" style="margin-top:22px">Clinical precision meets soft, intelligent light.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/kleza-solutions-pvt-ltd/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0zM.25 8.25h4.5V24h-4.5V8.25zM8.25 8.25h4.31v2.15h.06c.6-1.14 2.07-2.34 4.26-2.34 4.56 0 5.4 3 5.4 6.9V24h-4.5v-6.75c0-1.61-.03-3.68-2.24-3.68-2.24 0-2.58 1.75-2.58 3.56V24h-4.5V8.25z"/></svg></a>
+          <a href="https://twitter.com/klezasolutions" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.656l-5.214-6.817-5.966 6.817H1.683l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644z"/></svg></a>
+          <a href="https://www.facebook.com/Klezasolution" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07c0 6.02 4.39 11.01 10.12 11.93v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.95.93-1.95 1.89v2.25h3.32l-.53 3.49h-2.79V24C19.61 23.08 24 18.09 24 12.07z"/></svg></a>
+          <a href="https://www.instagram.com/klezasolutions/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-offices">
+        <h5>Offices</h5>
+        <address class="footer-office">
+          <span class="office-tag">USA &middot; Headquarters</span>
+          <span>9331 W 87th St, Overland Park, KS 66212, United States</span>
+          <a href="tel:+19138002728">+1 913-800-2728</a>
+        </address>
+        <address class="footer-office">
+          <span class="office-tag">India &middot; Delivery Center</span>
+          <span>5B, Unit-2, 5th Floor, Bizness Square, Opp. Hitex Junction, Hitec City, Madhapur, Telangana 500081</span>
+          <a href="tel:+917396146227">+91 7396146227</a>
+        </address>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="/about">About</a></li>
+          <li><a href="/ai-products">AI Products</a></li>
+          <li><a href="/ai-services">AI Services</a></li>
+          <li><a href="/enterprise-services">Enterprise</a></li>
+          <li><a href="/resources">Resources</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Get in touch</h5>
+        <ul>
+          <li><a href="mailto:info@kleza.io">info@kleza.io</a></li>
+          <li><a href="/contact">Contact form</a></li>
+          <li><a href="tel:+19138002728">+1 913-800-2728</a></li>
+          <li><a href="tel:+917396146227">+91 7396146227</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; 2026 Kleza Solutions Pvt Ltd <span style="opacity:.5;margin:0 .5em">&middot;</span> All rights reserved</div>
+      <div class="right">Healthcare-grade AI <span style="opacity:.5;margin:0 .5em">&middot;</span> ISO Aligned</div>
+    </div>
+  </div>
+</footer>
+<script src="assets/image-slot.js"></script>
+<script src="assets/nav.js"></script>
+<script>
+(function(){
+  var CATLBL={ai:'AI & Technology',health:'Healthcare',mktg:'Digital Marketing',ops:'Operations',web:'Web & Dev'};
+  var ARTICLES=[
+    {t:'Why E-E-A-T in Healthcare SEO Matters for Clinics, Hospitals, and Healthcare Websites',cat:'health',au:'Sulakshana',ai:'SU',date:'May 28, 2026',rt:'9 min',tags:['E-E-A-T','Healthcare Marketing','SEO & Search'],ex:'How clinics and hospitals can demonstrate experience, expertise, authority and trust to rank in an AI-mediated search landscape.'},
+    {t:'Content Marketing in 2026: A Smarter Way for Businesses to Win in the AI Search Era',cat:'ai',au:'Sulakshana',ai:'SU',date:'May 21, 2026',rt:'7 min',tags:['Content Marketing','LLM & AI Search'],ex:'Why durable, expert-led content still wins when answers are increasingly synthesised by large language models.'},
+    {t:'What Is Instagram SEO and Why Every Business Needs It in 2026',cat:'mktg',au:'Vasudha',ai:'VA',date:'May 14, 2026',rt:'6 min',tags:['Social Media','SEO & Search'],ex:''},
+    {t:'Maximizing ROI with Google Ads',cat:'mktg',au:'Praveen',ai:'PR',date:'May 7, 2026',rt:'6 min',tags:['Google Ads','Digital Strategy'],ex:''},
+    {t:'From Visitors to Customers: How AI Driven Websites Are Transforming Businesses in Dubai',cat:'ai',au:'Rajesh',ai:'RA',date:'Apr 30, 2026',rt:'7 min',tags:['AI & Automation','Local SEO'],ex:'A look at how intelligent, adaptive website experiences turn passive traffic into qualified pipeline.'},
+    {t:'How AI Search Is Changing SEO Into Search Everywhere Optimization',cat:'ai',au:'Sulakshana',ai:'SU',date:'Apr 23, 2026',rt:'8 min',tags:['LLM & AI Search','SEO & Search'],ex:''},
+    {t:'Why SEO Still Matters in 2026: AI Powered SEO for Organic Growth in Canada',cat:'mktg',au:'Praveen',ai:'PR',date:'Apr 16, 2026',rt:'7 min',tags:['SEO & Search','Local SEO'],ex:''},
+    {t:'How to Build Brand Authority Using PR, Podcasts, SEO and AI Visibility',cat:'mktg',au:'Vasudha',ai:'VA',date:'Apr 9, 2026',rt:'9 min',tags:['Brand Authority','AI & Automation'],ex:''}
+  ];
+  var AUTHORS=[
+    {nm:'Sulakshana',ai:'SU',role:'Sr. Content Writer',spec:'SEO & Content Strategy'},
+    {nm:'Praveen',ai:'PR',role:'Digital Marketing Specialist',spec:'PPC & Performance'},
+    {nm:'Vasudha',ai:'VA',role:'Project Manager',spec:'Digital Marketing Strategy'},
+    {nm:'Rajesh',ai:'RA',role:'Sr. UI/UX Designer',spec:'Web & UX'}
+  ];
+  var TOPICS=['SEO & Search','AI & Automation','Healthcare Marketing','Google Ads','Content Marketing','E-E-A-T','Landing Page Optimisation','Social Media','Brand Authority','Local SEO','LLM & AI Search','Digital Strategy'];
+
+  var state={cat:'all',tag:null,au:null,q:''};
+  var grid=document.getElementById('blGrid');
+  var active=document.getElementById('blActive');
+
+  function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;');}
+  function cardHTML(a,i,feat){
+    var slug='bl-thumb-'+a.t.toLowerCase().replace(/[^a-z0-9]+/g,'-').slice(0,40);
+    return '<article class="bl-card'+(feat?' feat':'')+'">'+
+      '<a class="cardlink" href="#" aria-label="Read: '+esc(a.t)+'"></a>'+
+      '<div class="bl-thumb"><image-slot id="'+slug+'" shape="rect" placeholder="'+CATLBL[a.cat]+' image"></image-slot></div>'+
+      '<div class="body">'+
+        '<span class="bl-tag" data-cat="'+a.cat+'">'+CATLBL[a.cat]+'</span>'+
+        '<h3>'+esc(a.t)+'</h3>'+
+        (feat&&a.ex?'<p class="excerpt">'+esc(a.ex)+'</p>':'')+
+        '<div class="bl-meta"><span class="av">'+a.ai+'</span><span class="nm">'+a.au+'</span><span class="sepdot"></span><span>'+a.date+'</span><span class="rt">'+a.rt+' read</span></div>'+
+      '</div></article>';
+  }
+  function applyFilter(){
+    var q=state.q.trim().toLowerCase();
+    var list=ARTICLES.filter(function(a){
+      if(state.cat!=='all'&&a.cat!==state.cat)return false;
+      if(state.tag&&a.tags.indexOf(state.tag)<0)return false;
+      if(state.au&&a.au!==state.au)return false;
+      if(q){ var hay=(a.t+' '+a.tags.join(' ')+' '+a.au).toLowerCase(); if(hay.indexOf(q)<0)return false; }
+      return true;
+    });
+    if(!list.length){
+      grid.innerHTML='<div class="bl-empty"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>No articles here yet &mdash; try another category or topic.</div>';
+    } else {
+      grid.innerHTML=list.map(function(a,i){return cardHTML(a,i,(i+1)%6===0);}).join('');
+    }
+    // active filter banner
+    var lbl=null;
+    if(state.tag)lbl='Topic: '+state.tag;
+    else if(state.au)lbl='Author: '+state.au;
+    if(lbl){
+      active.style.display='block';
+      active.innerHTML='<button type="button" id="blClear" style="display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);background:rgba(13,155,139,.08);border:1px solid rgba(13,155,139,.2);border-radius:999px;padding:8px 14px;cursor:pointer">'+esc(lbl)+' <span style="font-size:14px;line-height:1">&times;</span></button>';
+      document.getElementById('blClear').onclick=function(){state.tag=null;state.au=null;applyFilter();};
+    } else { active.style.display='none'; active.innerHTML=''; }
+  }
+
+  // Tabs
+  document.getElementById('blTabs').addEventListener('click',function(e){
+    var b=e.target.closest('.bl-tab'); if(!b)return;
+    this.querySelectorAll('.bl-tab').forEach(function(x){x.setAttribute('aria-selected','false');});
+    b.setAttribute('aria-selected','true');
+    state.cat=b.dataset.cat; state.tag=null; state.au=null; applyFilter();
+  });
+  // Search
+  var sw=document.getElementById('blSearch');
+  sw.querySelector('.tog').addEventListener('click',function(){
+    sw.classList.toggle('open');
+    if(sw.classList.contains('open'))document.getElementById('blQ').focus();
+  });
+  document.getElementById('blQ').addEventListener('input',function(){state.q=this.value;applyFilter();});
+
+  // Topics
+  var tc=document.getElementById('blTopics');
+  tc.innerHTML=TOPICS.map(function(t){
+    var n=ARTICLES.filter(function(a){return a.tags.indexOf(t)>=0;}).length;
+    var fs=(14+Math.min(n,4)*1.6).toFixed(1);
+    return '<button type="button" class="bl-topic" data-tag="'+t.replace(/"/g,'')+'" style="font-size:'+fs+'px">'+t+(n?'<span class="ct">'+n+'</span>':'')+'</button>';
+  }).join('');
+  tc.addEventListener('click',function(e){
+    var b=e.target.closest('.bl-topic'); if(!b)return;
+    state.tag=b.dataset.tag; state.au=null; state.cat='all';
+    document.querySelectorAll('.bl-tab').forEach(function(x){x.setAttribute('aria-selected',x.dataset.cat==='all'?'true':'false');});
+    applyFilter();
+    window.scrollTo({top:document.querySelector('.bl-grid-sec').offsetTop-120,behavior:'smooth'});
+  });
+
+  // Authors
+  var ag=document.getElementById('blAuthors');
+  ag.innerHTML=AUTHORS.map(function(a,i){
+    return '<div class="bl-author" data-au="'+a.nm+'"><div class="pic"><image-slot id="bl-author-'+i+'" shape="circle" placeholder="Photo"></image-slot></div><p class="nm">'+a.nm+'</p><p class="role">'+a.role+'</p><span class="spec">'+a.spec+'</span></div>';
+  }).join('');
+  ag.addEventListener('click',function(e){
+    var b=e.target.closest('.bl-author'); if(!b)return;
+    state.au=b.dataset.au; state.tag=null; state.cat='all';
+    document.querySelectorAll('.bl-tab').forEach(function(x){x.setAttribute('aria-selected',x.dataset.cat==='all'?'true':'false');});
+    applyFilter();
+    window.scrollTo({top:document.querySelector('.bl-grid-sec').offsetTop-120,behavior:'smooth'});
+  });
+
+  // Pagination (visual)
+  document.getElementById('blPage').addEventListener('click',function(e){
+    var b=e.target.closest('button'); if(!b||b.disabled||!b.textContent.trim())return;
+    if(!/^[0-9]+$/.test(b.textContent.trim()))return;
+    this.querySelectorAll('button').forEach(function(x){x.removeAttribute('aria-current');});
+    b.setAttribute('aria-current','true');
+  });
+
+  applyFilter();
+})();
+</script>
+</body>
+</html>

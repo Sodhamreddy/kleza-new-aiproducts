@@ -1,0 +1,833 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Operational Outsourcing — Enterprise Services — Kleza</title>
+<meta name="description" content="Scale your operations without scaling your headcount. Kleza provides dedicated, domain-trained outsourcing teams for healthcare and enterprise organisations — US accounting, HR recruitment, scheduling coordination, and administrative operations." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Instrument+Serif:ital,wght@0,400;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/shared.css" />
+<link rel="stylesheet" href="assets/inner.css" />
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What types of roles can Kleza outsource for my organisation?","acceptedAnswer":{"@type":"Answer","text":"Kleza covers four operational categories: US accounting and finance, HR and talent acquisition, scheduling and care coordination, and administrative and back-office support. All roles are staffed with trained, dedicated team members — not shared resources."}},
+{"@type":"Question","name":"How is confidential data handled by the outsourced team?","acceptedAnswer":{"@type":"Answer","text":"All Kleza outsourcing engagements include signed confidentiality and data processing agreements. Team members handling client, patient, or financial data operate under HIPAA-compliant protocols for healthcare clients, and under agreed data handling standards for all clients."}},
+{"@type":"Question","name":"How quickly can an outsourced team become operational?","acceptedAnswer":{"@type":"Answer","text":"Most engagements reach full operational readiness within 15-21 days of contract signing — covering scoping, team selection, and domain training. The exact timeline depends on role complexity and the depth of your system and process onboarding requirements."}},
+{"@type":"Question","name":"Is the outsourced team dedicated to my organisation?","acceptedAnswer":{"@type":"Answer","text":"Yes. Kleza does not operate a shared resource pool. Your team members work exclusively for your organisation during agreed hours — learning your systems, your culture, and your operational standards."}},
+{"@type":"Question","name":"Can I scale the outsourced team up or down over time?","acceptedAnswer":{"@type":"Answer","text":"Yes. Kleza's outsourcing engagements are designed to flex with your operational needs. Team size can be scaled up with 2 weeks notice and scaled down with 30 days notice, without long-term headcount commitments."}}
+]}
+</script>
+
+<style id="wd-page">
+/* ---------- HERO (reuses .es-hero dark hero pattern) ---------- */
+.es-hero{background:var(--dark);color:#e8f0f0;border-radius:28px;margin:24px auto 0;max-width:var(--maxw);padding:clamp(40px,5vw,64px) clamp(28px,4vw,56px);display:grid;grid-template-columns:1.15fr 1fr;gap:48px;align-items:center;position:relative;overflow:hidden}
+.es-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(900px 500px at 80% 20%,rgba(20,185,164,.18),transparent 60%),radial-gradient(700px 400px at 10% 90%,rgba(54,192,237,.12),transparent 60%);pointer-events:none}
+.es-hero-inner{position:relative;z-index:1}
+.es-hero .eyebrow{color:#9fb3b8}
+.es-hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(38px,5vw,68px);line-height:1.08;letter-spacing:-.01em;color:#fff;margin:18px 0 26px;text-wrap:balance}
+.es-hero h1 .ital{font-style:italic;color:var(--accent-3)}
+.es-hero p.lede{color:#aebcc0;max-width:560px;font-size:clamp(15px,1.1vw,18px);line-height:1.6;margin:0}
+.es-hero-ctas{margin-top:30px;display:flex;gap:12px;flex-wrap:wrap}
+.es-btn-sky{background:#1eaadc;color:#fff}
+.es-btn-sky:hover{background:#19a0ce;transform:translateY(-1px)}
+.es-btn-ghost-light{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.28)}
+.es-btn-ghost-light:hover{background:rgba(255,255,255,.08);border-color:#fff}
+.es-hero-visual{position:relative;z-index:1;display:flex;flex-direction:column;gap:16px}
+.es-stat-card{background:rgba(255,255,255,.06);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:24px;color:#e8f0f0;animation:es-float 6s ease-in-out infinite}
+.es-stat-card:nth-child(2){animation-delay:-2s}
+.es-stat-card .label{font-family:var(--mono);font-size:10.5px;text-transform:uppercase;color:#8ea6ab;letter-spacing:.1em}
+.es-stat-card .row{display:flex;align-items:baseline;justify-content:space-between;margin-top:10px}
+.es-stat-card .num{font-family:var(--serif);font-size:46px;color:#fff;line-height:1}
+.es-stat-card .delta{font-family:var(--mono);font-size:11px;color:var(--accent-3)}
+.es-stat-card .bar{margin-top:14px;height:6px;border-radius:6px;background:rgba(255,255,255,.08);overflow:hidden}
+.es-stat-card .bar i{display:block;height:100%;width:94%;background:linear-gradient(90deg,var(--accent-3),#1eaadc);border-radius:6px;animation:es-grow 3s ease infinite alternate}
+.es-stat-card .feed{margin-top:14px;display:flex;flex-direction:column;gap:8px}
+.es-stat-card .feed div{font-size:12px;color:#cfdcdf;display:flex;gap:8px;align-items:center}
+.es-stat-card .feed span.dot{width:6px;height:6px;border-radius:50%;background:var(--accent-3);box-shadow:0 0 0 4px rgba(20,185,164,.18);flex-shrink:0}
+.es-stat-card .feed span.tail{margin-left:auto;font-family:var(--mono);font-size:10px;color:#7d8a87}
+@keyframes es-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes es-grow{0%{width:84%}100%{width:96%}}
+
+/* ---------- shared section scaffolding (mirrors enterprise page) ---------- */
+.es-sec{padding:clamp(64px,7vw,96px) 0}
+.es-head{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:48px}
+.es-head .left{max-width:680px}
+.es-head .eyebrow{margin-bottom:14px;display:inline-flex}
+.es-h2{font-family:var(--serif);font-weight:400;font-size:clamp(32px,4vw,52px);line-height:1.08;letter-spacing:-.01em;margin:0;color:var(--ink);text-wrap:balance}
+.es-h2 .ital{font-style:italic;color:var(--accent)}
+.es-lede{font-size:17px;color:var(--muted);line-height:1.6;max-width:560px}
+
+/* ---------- PROBLEM BRIDGE (reuses .intro-2col, stat inline in prose) ---------- */
+.wd-bridge h2{font-size:clamp(34px,4.6vw,58px)}
+.wd-bridge .body p{font-size:clamp(16px,1.2vw,19px);line-height:1.7;color:var(--muted)}
+.wd-bridge .body p .stat{font-family:var(--serif);font-style:normal;color:var(--ink);font-weight:400;font-size:1.12em}
+.wd-bridge .body p .stat b{color:var(--accent);font-weight:400}
+
+/* ---------- SERVICES BREAKDOWN (3x2, no tags, consistent height) ---------- */
+.wd-serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.wd-serv-card{position:relative;background:#fff;border:1px solid var(--line);border-radius:18px;padding:30px;min-height:236px;overflow:hidden;transition:border-color .25s,transform .25s,box-shadow .25s;display:flex;flex-direction:column}
+.wd-serv-card:hover{border-color:var(--accent);transform:translateY(-3px);box-shadow:0 18px 40px -22px rgba(13,155,139,.25)}
+.wd-serv-card .es-icon-tile{width:46px;height:46px;border-radius:12px;background:rgba(13,155,139,.1);display:flex;align-items:center;justify-content:center;color:var(--accent);transition:transform .35s}
+.wd-serv-card:hover .es-icon-tile{transform:rotate(-8deg) scale(1.06)}
+.wd-serv-card h3{font-family:var(--serif);font-weight:400;font-size:26px;margin:20px 0 10px;letter-spacing:-.005em;color:var(--ink);line-height:1.1}
+.wd-serv-card p{font-size:14.5px;color:var(--muted);margin:0;line-height:1.55}
+
+/* ---------- BUILD STANDARDS (badges + tech pill marquee) ---------- */
+.wd-std-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:clamp(40px,5vw,56px)}
+.wd-badge{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px;transition:border-color .25s,box-shadow .25s,transform .25s}
+.wd-badge:hover{border-color:var(--accent);box-shadow:0 14px 34px -22px rgba(13,155,139,.3);transform:translateY(-3px)}
+.wd-badge .es-icon-tile{width:46px;height:46px;border-radius:12px;background:rgba(13,155,139,.1);display:flex;align-items:center;justify-content:center;color:var(--accent);margin-bottom:18px;transition:transform .35s}
+.wd-badge:hover .es-icon-tile{transform:rotate(-8deg) scale(1.06)}
+.wd-badge h4{font-family:var(--sans);font-size:15.5px;font-weight:700;margin:0 0 6px;color:var(--ink);letter-spacing:-.01em}
+.wd-badge p{font-size:13px;color:var(--muted);margin:0;line-height:1.5}
+.wd-tech-label{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted-2);text-align:center;margin-bottom:18px}
+.wd-marquee{position:relative;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 7%,#000 93%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 7%,#000 93%,transparent 100%)}
+.wd-marquee-track{display:flex;align-items:center;gap:16px;width:max-content;animation:wd-scroll 30s linear infinite}
+.wd-marquee:hover .wd-marquee-track{animation-play-state:paused}
+.wd-pill{flex-shrink:0;font-family:var(--mono);font-size:13px;letter-spacing:.02em;color:var(--ink);background:#fff;border:1px solid var(--line);padding:12px 22px;border-radius:999px;transition:border-color .25s,color .25s,background .25s}
+.wd-pill:hover{border-color:var(--accent);color:var(--accent)}
+.wd-pill .tk{color:var(--accent);margin-right:8px}
+@keyframes wd-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ---------- PROCESS (6-step horizontal strip) ---------- */
+.wd-steps{display:grid;grid-template-columns:repeat(6,1fr);margin-top:8px}
+.wd-step{padding:26px 22px;border:1px solid var(--line);border-right:none;background:#fff;position:relative}
+.wd-step:first-child{border-radius:18px 0 0 18px}
+.wd-step:last-child{border-right:1px solid var(--line);border-radius:0 18px 18px 0}
+.wd-step .circle{width:38px;height:38px;border-radius:50%;background:var(--ink);color:#fff;font-family:var(--mono);font-size:13px;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.wd-step h4{font-family:var(--serif);font-weight:400;font-size:19px;margin:0;letter-spacing:-.005em;color:var(--ink);line-height:1.15}
+.wd-step::after{content:"\2192";position:absolute;right:-12px;top:38px;background:var(--bg);color:var(--accent);font-size:17px;width:24px;height:24px;display:flex;align-items:center;justify-content:center;border-radius:50%;z-index:2}
+.wd-step:last-child::after{display:none}
+
+/* ---------- CASE STUDY (full-width card + metric cards) ---------- */
+.wd-case{background:var(--dark);color:#e8f0f0;border-radius:24px;padding:clamp(36px,4.5vw,56px);position:relative;overflow:hidden}
+.wd-case::before{content:"";position:absolute;inset:0;background:radial-gradient(800px 400px at 88% 12%,rgba(20,185,164,.16),transparent 60%);pointer-events:none}
+.wd-case-inner{position:relative;z-index:1;max-width:840px}
+.wd-case .eyebrow{color:var(--accent-3)}
+.wd-case h3{font-family:var(--serif);font-weight:400;font-size:clamp(28px,3.2vw,42px);line-height:1.1;letter-spacing:-.01em;color:#fff;margin:14px 0 18px;text-wrap:balance}
+.wd-case p{color:#aebcc0;font-size:clamp(15px,1.1vw,17px);line-height:1.65;margin:0;max-width:760px}
+.wd-case p b{color:#fff;font-weight:600}
+.wd-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+.es-case{background:#fff;border:1px solid var(--line);border-radius:18px;padding:32px;transition:all .25s}
+.es-case:hover{border-color:var(--accent);transform:translateY(-3px);box-shadow:0 18px 40px -22px rgba(13,155,139,.22)}
+.es-case .stat{font-family:var(--serif);font-size:clamp(48px,5vw,64px);line-height:1;color:var(--accent);letter-spacing:-.02em}
+.es-case .lab{margin-top:12px;font-size:14.5px;color:var(--ink);font-weight:500}
+
+/* ---------- FAQ (reuses enterprise accordion) ---------- */
+.es-faq{max-width:920px;margin:0 auto}
+.es-faq-item{border-bottom:1px solid var(--line)}
+.es-faq-q{width:100%;background:none;border:none;text-align:left;padding:22px 0;display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-family:var(--serif);font-weight:400;font-size:22px;color:var(--ink);letter-spacing:-.005em;gap:18px}
+.es-faq-q .plus{width:32px;height:32px;border-radius:50%;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:18px;transition:all .3s;flex-shrink:0}
+.es-faq-item.open .es-faq-q .plus{transform:rotate(45deg);background:var(--accent);color:#fff;border-color:var(--accent)}
+.es-faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.es-faq-a p{margin:0;padding:0 0 22px;color:var(--muted);font-size:15px;max-width:820px;line-height:1.6}
+.es-faq-item.open .es-faq-a{max-height:340px}
+
+/* ---------- CLOSING / BUNDLE CTA (reuses .es-bundle) ---------- */
+.es-bundle{background:linear-gradient(135deg,rgba(13,155,139,.08),rgba(54,192,237,.06));border:1px solid rgba(13,155,139,.18);border-radius:24px;padding:clamp(40px,5vw,64px);text-align:center;max-width:var(--maxw);margin:0 auto}
+.es-bundle .es-h2{margin:14px auto 0;max-width:780px}
+.es-bundle p{color:var(--muted);max-width:640px;margin:18px auto 28px;font-size:16px;line-height:1.6}
+.es-bundle .ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* ---------- TRUST FOOTER STRIP (reuses enterprise component) ---------- */
+.es-trust-foot{background:#fff;border-top:1px solid var(--line)}
+.es-trust-foot .grid{max-width:var(--maxw);margin:0 auto;padding:36px var(--pad-x);display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.es-tf-cell{display:flex;align-items:center;gap:14px}
+.es-tf-cell .ic{width:42px;height:42px;border-radius:10px;background:rgba(13,155,139,.1);display:flex;align-items:center;justify-content:center;color:var(--accent);flex-shrink:0}
+.es-tf-cell .t strong{display:block;font-size:14px;color:var(--ink)}
+.es-tf-cell .t span{font-size:12px;color:var(--muted)}
+
+/* ---------- HERO uptime status indicator (matches Monitoring hero) ---------- */
+.rit-pulse{margin-top:14px;width:100%;height:52px;display:block}
+.rit-pulse path{fill:none;stroke:url(#ritLine);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.rit-status{display:flex;align-items:center;gap:9px;margin-top:12px;font-size:12.5px;color:#cfdcdf}
+.rit-status .live{width:9px;height:9px;border-radius:50%;background:var(--accent-3);box-shadow:0 0 0 4px rgba(20,185,164,.18);flex-shrink:0;animation:rit-blink 2.4s ease-in-out infinite}
+@keyframes rit-blink{0%,100%{opacity:1}50%{opacity:.45}}
+.es-stat-card .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:4px}
+.es-stat-card .mini .k{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#8ea6ab}
+.es-stat-card .mini .v{font-family:var(--serif);font-size:30px;color:#fff;line-height:1.05;margin-top:6px}
+
+/* ---------- SLA STRIP (reuses homepage proof bar) ---------- */
+.es-proof{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}
+.es-proof .grid{max-width:var(--maxw);margin:0 auto;padding:0 var(--pad-x);display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.es-proof .cell{text-align:center;border-right:1px solid var(--line);padding:8px 0}
+.es-proof .cell:last-child{border-right:none}
+.es-proof .num{font-family:var(--serif);font-size:clamp(40px,5vw,64px);color:var(--accent);line-height:1}
+.es-proof .lab{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-top:12px;line-height:1.5}
+
+/* ---------- HEALTHCARE CALLOUT (two-column dark band, no CTA) ---------- */
+.rit-hc .badge{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-3);background:rgba(20,185,164,.12);border:1px solid rgba(20,185,164,.28);padding:7px 14px;border-radius:999px}
+.rit-hc-grid{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,5vw,68px);align-items:start}
+.rit-hc-grid h3{font-family:var(--serif);font-weight:400;font-size:clamp(28px,3.2vw,42px);line-height:1.1;letter-spacing:-.01em;color:#fff;margin:16px 0 0;text-wrap:balance}
+.rit-hc-list{list-style:none;margin:0;padding:0}
+.rit-hc-item{padding:18px 0;border-top:1px solid rgba(255,255,255,.12);display:flex;gap:15px;align-items:flex-start}
+.rit-hc-item:first-child{padding-top:0;border-top:none}
+.rit-hc-item .ic{width:38px;height:38px;border-radius:11px;background:rgba(20,185,164,.14);border:1px solid rgba(20,185,164,.26);color:var(--accent-3);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.rit-hc-item strong{display:block;font-size:15px;font-weight:600;color:#fff;margin-bottom:5px}
+.rit-hc-item span{font-size:13.5px;color:#aebcc0;line-height:1.55}
+
+/* ---------- ESCALATION FLOW (3-step horizontal, matches assistant flow) ---------- */
+.rit-flow{display:grid;grid-template-columns:repeat(3,1fr);margin-top:8px}
+.rit-flow .step{padding:30px 28px;border:1px solid var(--line);border-right:none;background:#fff;position:relative}
+.rit-flow .step:first-child{border-radius:18px 0 0 18px}
+.rit-flow .step:last-child{border-right:1px solid var(--line);border-radius:0 18px 18px 0}
+.rit-flow .circle{width:38px;height:38px;border-radius:50%;background:var(--ink);color:#fff;font-family:var(--mono);font-size:13px;display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.rit-flow h4{font-family:var(--serif);font-weight:400;font-size:23px;margin:0 0 9px;letter-spacing:-.005em;color:var(--ink);line-height:1.12}
+.rit-flow p{font-size:14px;color:var(--muted);margin:0;line-height:1.55}
+.rit-flow .step::after{content:"\2192";position:absolute;right:-12px;top:38px;background:var(--bg);color:var(--accent);font-size:17px;width:24px;height:24px;display:flex;align-items:center;justify-content:center;border-radius:50%;z-index:2}
+.rit-flow .step:last-child::after{display:none}
+.rit-flow-note{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:26px;font-size:14.5px;color:var(--muted)}
+.rit-flow-note .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(13,155,139,.14);flex-shrink:0}
+
+/* ---------- MONITORING CROSSLINK (two columns) ---------- */
+.rit-cross{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,5vw,64px);align-items:center}
+.rit-cross .body p{font-size:clamp(15px,1.1vw,17px);line-height:1.7;color:var(--muted);margin:0}
+.rit-link-card{display:flex;flex-direction:column;background:linear-gradient(160deg,#f5fbf9 0%,#ffffff 100%);border:1px solid rgba(13,155,139,.18);border-radius:24px;padding:clamp(28px,3vw,38px);transition:border-color .3s,transform .3s,box-shadow .3s}
+.rit-link-card:hover{border-color:rgba(13,155,139,.45);transform:translateY(-4px);box-shadow:0 30px 50px -28px rgba(10,19,22,.16)}
+.rit-link-card .es-icon-tile{width:52px;height:52px;border-radius:14px;background:linear-gradient(160deg,rgba(13,155,139,.14),rgba(13,155,139,.04));border:1px solid rgba(13,155,139,.18);color:var(--accent);display:flex;align-items:center;justify-content:center;margin-bottom:20px;transition:transform .35s}
+.rit-link-card:hover .es-icon-tile{transform:rotate(-6deg) scale(1.06)}
+.rit-link-card .lab{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+.rit-link-card h3{font-family:var(--serif);font-weight:400;font-size:clamp(22px,2vw,28px);letter-spacing:-.015em;color:var(--ink);margin:0 0 10px;line-height:1.12}
+.rit-link-card p{font-size:14px;color:var(--muted);line-height:1.55;margin:0 0 20px}
+.rit-link-card .go{margin-top:auto;display:inline-flex;align-items:center;gap:8px;color:var(--accent);font-weight:600;font-size:14.5px;transition:gap .2s}
+.rit-link-card:hover .go{gap:14px}
+
+/* ---------- HERO solo (left-aligned, no right visual) ---------- */
+.es-hero.solo{grid-template-columns:1fr;align-items:start}
+.es-hero.solo .es-hero-inner{max-width:880px}
+.es-hero.solo h1{font-size:clamp(40px,5.4vw,72px);margin:18px 0 22px}
+.es-hero.solo p.lede{max-width:720px}
+
+/* ---------- PROBLEM BRIDGE consequence list ---------- */
+.oo-bridge-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:clamp(36px,5vw,72px);align-items:start}
+.oo-bridge-grid .body p{font-size:clamp(16px,1.2vw,19px);line-height:1.7;color:var(--muted);margin:0 0 18px}
+.oo-bridge-grid .body p:last-child{margin-bottom:0}
+.oo-bridge-grid .body p .stat{font-family:var(--serif);font-style:normal;color:var(--ink);font-weight:400;font-size:1.1em}
+.oo-bridge-grid .body p .stat b{color:var(--accent);font-weight:400}
+.oo-cons{list-style:none;margin:0;padding:0}
+.oo-cons li{padding:18px 0;border-top:1px solid var(--line);display:flex;gap:14px;align-items:flex-start}
+.oo-cons li:first-child{border-top:none;padding-top:0}
+.oo-cons .ic{width:36px;height:36px;border-radius:10px;background:rgba(13,155,139,.1);color:var(--accent);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.oo-cons strong{display:block;font-size:14.5px;font-weight:600;color:var(--ink);margin-bottom:4px}
+.oo-cons span{font-size:13.5px;color:var(--muted);line-height:1.5}
+
+/* ---------- ROLE CATEGORY CARDS (2x2, left-border accent on hover) ---------- */
+.oo-role-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.oo-role-card{position:relative;background:#fff;border:1px solid var(--line);border-radius:18px;padding:34px 34px 30px;overflow:hidden;transition:border-color .25s,transform .25s,box-shadow .25s}
+.oo-role-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--accent);transform:scaleY(0);transform-origin:top;transition:transform .35s ease}
+.oo-role-card:hover{border-color:var(--accent);transform:translateY(-3px);box-shadow:0 18px 40px -22px rgba(13,155,139,.22)}
+.oo-role-card:hover::before{transform:scaleY(1)}
+.oo-role-card .es-icon-tile{width:48px;height:48px;border-radius:12px;background:rgba(13,155,139,.1);display:flex;align-items:center;justify-content:center;color:var(--accent);transition:transform .35s}
+.oo-role-card:hover .es-icon-tile{transform:rotate(-8deg) scale(1.06)}
+.oo-role-card h4{font-family:var(--serif);font-weight:400;font-size:26px;letter-spacing:-.01em;color:var(--ink);margin:20px 0 10px;line-height:1.12}
+.oo-role-card p{font-size:14.5px;color:var(--muted);margin:0 0 18px;line-height:1.55}
+.oo-role-card .roles{border-top:1px solid var(--line);padding-top:16px}
+.oo-role-card .roles .rl-lab{font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted-2);display:block;margin-bottom:10px}
+.oo-role-card .roles .rl{font-size:13.5px;color:var(--ink);line-height:1.85}
+.oo-role-card .roles .rl .sp{color:var(--line);margin:0 9px}
+
+/* ---------- OPERATING MODEL (3-col, large numerals, tinted bg) ---------- */
+.oo-model{background:linear-gradient(180deg,rgba(13,155,139,.05),rgba(54,192,237,.04));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.oo-model-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(28px,3.4vw,56px)}
+.oo-model-col{position:relative}
+.oo-model-col .num{font-family:var(--serif);font-weight:400;font-size:clamp(64px,7vw,104px);line-height:.9;color:var(--accent);letter-spacing:-.02em;display:block}
+.oo-model-col h3{font-family:var(--sans);font-weight:700;font-size:20px;letter-spacing:-.01em;color:var(--ink);margin:18px 0 12px;line-height:1.2}
+.oo-model-col p{font-size:14.5px;color:var(--muted);line-height:1.62;margin:0}
+.oo-model-col .hr{height:1px;background:var(--line);margin:16px 0 0}
+
+/* ---------- ONBOARDING 4-step strip ---------- */
+.oo-steps{display:grid;grid-template-columns:repeat(4,1fr);margin-top:8px}
+.oo-step{padding:28px 24px 30px;border:1px solid var(--line);border-right:none;background:#fff;position:relative}
+.oo-step:first-child{border-radius:18px 0 0 18px}
+.oo-step:last-child{border-right:1px solid var(--line);border-radius:0 18px 18px 0}
+.oo-step .circle{width:38px;height:38px;border-radius:50%;background:var(--ink);color:#fff;font-family:var(--mono);font-size:13px;display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.oo-step h4{font-family:var(--serif);font-weight:400;font-size:22px;margin:0 0 10px;letter-spacing:-.005em;color:var(--ink);line-height:1.12}
+.oo-step p{font-size:13.5px;color:var(--muted);margin:0;line-height:1.55}
+.oo-step::after{content:"\2192";position:absolute;right:-12px;top:38px;background:var(--bg);color:var(--accent);font-size:17px;width:24px;height:24px;display:flex;align-items:center;justify-content:center;border-radius:50%;z-index:2}
+.oo-step:last-child::after{display:none}
+
+/* ---------- CASE STUDY (asymmetric: metric left, narrative right) ---------- */
+.oo-case{background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden;display:grid;grid-template-columns:.85fr 1.15fr}
+.oo-case-metric{background:var(--dark);color:#e8f0f0;padding:clamp(36px,4vw,52px);display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
+.oo-case-metric::before{content:"";position:absolute;inset:0;background:radial-gradient(600px 360px at 80% 18%,rgba(20,185,164,.18),transparent 60%);pointer-events:none}
+.oo-case-metric .inner{position:relative;z-index:1}
+.oo-case-metric .stat{font-family:var(--serif);font-weight:400;font-size:clamp(72px,9vw,120px);line-height:.92;color:var(--accent-3);letter-spacing:-.02em}
+.oo-case-metric .stat-lab{font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:#aebcc0;margin-top:14px;line-height:1.5;max-width:280px}
+.oo-case-metric .client{margin-top:28px;padding-top:22px;border-top:1px solid rgba(255,255,255,.14)}
+.oo-case-metric .client .k{font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#7d8a87}
+.oo-case-metric .client .v{font-size:16px;color:#fff;margin-top:6px;font-weight:500}
+.oo-case-body{padding:clamp(36px,4vw,52px)}
+.oo-case-body .eyebrow{display:inline-flex;margin-bottom:18px}
+.oo-case-row{padding:20px 0;border-top:1px solid var(--line)}
+.oo-case-row:first-of-type{border-top:none;padding-top:0}
+.oo-case-row .lab{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+.oo-case-row p{font-size:15px;color:var(--muted);line-height:1.6;margin:0}
+.oo-case-row p b{color:var(--ink);font-weight:600}
+.oo-case-note{margin-top:18px;font-family:var(--mono);font-size:11px;color:var(--muted-2);letter-spacing:.02em}
+
+/* ---------- Responsive: stack all multi-column grids below 768px ---------- */
+@media (max-width:920px){
+.es-hero{grid-template-columns:1fr;border-radius:20px}
+.es-head{flex-direction:column;align-items:flex-start}
+}
+@media (max-width:768px){
+.intro-2col{grid-template-columns:1fr}
+.wd-serv-grid{grid-template-columns:1fr}
+.wd-std-grid{grid-template-columns:1fr 1fr}
+.wd-steps{grid-template-columns:1fr}
+.wd-step{border-right:1px solid var(--line);border-radius:14px;margin-bottom:12px}
+.wd-step:first-child,.wd-step:last-child{border-radius:14px}
+.wd-step::after{display:none}
+.wd-metrics{grid-template-columns:1fr}
+.es-trust-foot .grid{grid-template-columns:1fr 1fr}
+.es-proof .grid{grid-template-columns:1fr 1fr;gap:0}
+.es-proof .cell{border-right:none;border-bottom:1px solid var(--line);padding:24px 0}
+.es-proof .cell:nth-child(2){border-right:none}
+.es-proof .cell:last-child{border-bottom:none}
+.rit-hc-grid{grid-template-columns:1fr;gap:28px}
+.rit-flow{grid-template-columns:1fr}
+.rit-flow .step{border-right:1px solid var(--line);border-radius:14px;margin-bottom:12px}
+.rit-flow .step:first-child,.rit-flow .step:last-child{border-radius:14px}
+.rit-flow .step::after{display:none}
+.rit-cross{grid-template-columns:1fr;gap:28px}
+.oo-bridge-grid{grid-template-columns:1fr;gap:28px}
+.oo-role-grid{grid-template-columns:1fr}
+.oo-model-grid{grid-template-columns:1fr;gap:36px}
+.oo-steps{grid-template-columns:1fr}
+.oo-step{border-right:1px solid var(--line);border-radius:14px;margin-bottom:12px}
+.oo-step:first-child,.oo-step:last-child{border-radius:14px}
+.oo-step::after{display:none}
+.oo-case{grid-template-columns:1fr}
+}
+@media (max-width:520px){
+.wd-std-grid,.es-trust-foot .grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="header" data-screen-label="Header">
+  <div class="nav-shell">
+    <nav class="nav" aria-label="Primary" style="border-color: rgb(73, 201, 224)">
+      <a href="Kleza.html" class="logo" aria-label="Kleza"><img src="assets/kleza-logo.png" alt="Kleza" /></a>
+
+      <div class="nav-links">
+
+        <!-- ABOUT -->
+        <div class="nav-item" data-mega>
+          <a class="nav-link" href="about.html">About
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <div class="mega mega-md mega-grid mega-grid-2" role="menu">
+            <div class="mega-bridge" aria-hidden="true"></div>
+            <div class="mega-col">
+              <div class="mega-title">Company</div>
+              <ul class="mega-list">
+                <li><a class="mega-link" href="about.html#story"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10A15.3 15.3 0 0 1 8 12 15.3 15.3 0 0 1 12 2z"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Company Overview</span><span class="mega-link-sub">Who we are &amp; what we believe</span></span></a></li>
+                <li><a class="mega-link" href="about.html#vision"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/><circle cx="12" cy="12" r="3"/></svg></span><span class="mega-link-text"><span class="mega-link-name">AI Transformation Vision</span><span class="mega-link-sub">Our long-term roadmap</span></span></a></li>
+                <li><a class="mega-link" href="about.html#healthcare"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s8-4 8-12V5l-8-3-8 3v5c0 8 8 12 8 12z"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Healthcare Innovation</span><span class="mega-link-sub">75% healthcare focus</span></span></a></li>
+                <li><a class="mega-link" href="about.html#partnerships"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="18" r="2.5"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="6" y1="8" x2="6" y2="16"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Partnerships</span><span class="mega-link-sub">Build with us</span></span></a></li>
+                <li><a class="mega-link" href="about.html#careers"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Careers</span><span class="mega-link-sub">Join the team</span></span></a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <div class="mega-feature">
+                <span class="feat-label">Our Philosophy</span>
+                <h4>Human expertise, refined by intelligent systems.</h4>
+                <p>We design AI that augments care teams &mdash; never replaces them.</p>
+                <a class="feat-cta" href="about.html">Learn the vision
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI PRODUCTS -->
+        <div class="nav-item" data-mega>
+          <a class="nav-link" href="ai-products.html">AI Products
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <div class="mega mega-lg mega-grid mega-grid-4" role="menu">
+            <div class="mega-bridge" aria-hidden="true"></div>
+            <div class="mega-col">
+              <div class="mega-title">AI-Powered Solutions <span class="pill">IVNA.ai</span></div>
+              <p class="mega-desc">Platforms built to simplify communication, workflows, operations, and care.</p>
+              <ul class="mega-list">
+                <li><a class="mega-link" href="ai-products.html#voica"><span class="mega-link-ico">Vo</span><span class="mega-link-text"><span class="mega-link-name">Voica AI</span><span class="mega-link-sub">Voice Intelligence</span></span></a></li>
+                <li><a class="mega-link" href="ai-products.html#pulse"><span class="mega-link-ico">Pu</span><span class="mega-link-text"><span class="mega-link-name">Pulse Board</span><span class="mega-link-sub">Real-time Ops Dashboard</span></span></a></li>
+                <li><a class="mega-link" href="ai-products.html#assessment"><span class="mega-link-ico">As</span><span class="mega-link-text"><span class="mega-link-name">Assessment App</span><span class="mega-link-sub">Smart digital assessments</span></span></a></li>
+                <li><a class="mega-link" href="ai-products.html#onboarding"><span class="mega-link-ico">On</span><span class="mega-link-text"><span class="mega-link-name">Onboarding App</span><span class="mega-link-sub">End-to-end onboarding</span></span></a></li>
+                <li><a class="mega-link" href="ai-products.html#docui"><span class="mega-link-ico">Do</span><span class="mega-link-text"><span class="mega-link-name">DocUI</span><span class="mega-link-sub">Document intelligence</span></span></a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <div class="mega-title">AI Intelligence Systems</div>
+              <p class="mega-desc">Reasoning, orchestration, and intelligence refinement.</p>
+              <ul class="mega-list">
+                <li><a class="mega-link" href="ai-products.html#llms"><span class="mega-link-ico">3L</span><span class="mega-link-text"><span class="mega-link-name">3 LLMs</span><span class="mega-link-sub">Multi-model reasoning</span></span></a></li>
+              </ul>
+              <div class="mega-title" style="margin-top:22px">Marketplace</div>
+              <p class="mega-desc">Integrations, tools, templates, and AI-powered business solutions.</p>
+              <ul class="mega-list">
+                <li><a class="mega-link" href="ai-products.html#marketplace"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.4"/><rect x="14" y="3" width="7" height="7" rx="1.4"/><rect x="3" y="14" width="7" height="7" rx="1.4"/><rect x="14" y="14" width="7" height="7" rx="1.4"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Browse Marketplace</span><span class="mega-link-sub">All integrations &amp; tools</span></span></a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <div class="mega-title">Agentic Solutions <span class="pill">Comes360</span></div>
+              <p class="mega-desc">Workforce Companions &mdash; AI for internal teams, ops &amp; coordination.</p>
+              <ul class="mega-list">
+                <li><a class="mega-link" href="ai-products.html#hr"><span class="mega-link-ico">HR</span><span class="mega-link-text"><span class="mega-link-name">HR Companion</span><span class="mega-link-sub">Hiring &amp; people ops</span></span></a></li>
+                <li><a class="mega-link" href="ai-products.html#admin"><span class="mega-link-ico">Ad</span><span class="mega-link-text"><span class="mega-link-name">Admin Companion</span><span class="mega-link-sub">Operational admin</span></span></a></li>
+                <li><a class="mega-link" href="ai-products.html#scheduler"><span class="mega-link-ico">Sc</span><span class="mega-link-text"><span class="mega-link-name">Scheduler Companion</span><span class="mega-link-sub">Shift &amp; visit scheduling</span></span></a></li>
+              </ul>
+              <div class="mega-subtitle">Care &amp; Client Companions</div>
+              <ul class="mega-list">
+                <li><a class="mega-link" href="ai-products.html#caregiver"><span class="mega-link-ico">Cg</span><span class="mega-link-text"><span class="mega-link-name">Caregiver Companion</span><span class="mega-link-sub">Direct-care support</span></span></a></li>
+                <li><a class="mega-link" href="ai-products.html#client"><span class="mega-link-ico">Cl</span><span class="mega-link-text"><span class="mega-link-name">Client Companion</span><span class="mega-link-sub">Client engagement</span></span></a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <div class="mega-feature">
+                <span class="feat-label">Powered by</span>
+                <h4>IVNA.ai &mdash; enterprise AI for modern healthcare.</h4>
+                <p>Turnkey intelligence platforms designed for immediate deployment.</p>
+                <a class="feat-cta" href="ai-products.html">Visit IVNA.ai
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI SERVICES -->
+        <div class="nav-item" data-mega>
+          <a class="nav-link" href="ai-services.html">AI Services
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <div class="mega mega-md mega-grid mega-grid-2" role="menu">
+            <div class="mega-bridge" aria-hidden="true"></div>
+            <div class="mega-col">
+              <div class="mega-title">AI Enablement Services</div>
+              <p class="mega-desc">AI solutions that enhance communication, automate workflows, and help businesses scale smarter operations.</p>
+              <ul class="mega-list">
+                <li><a class="mega-link" href="ai-services.html#training"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-7M14 17H4M9 7l-5 5 5 5M15 12l5 5"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Business-Specific AI Training</span><span class="mega-link-sub">Fine-tuned on your data</span></span></a></li>
+                <li><a class="mega-link" href="ai-services.html#assistant"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></span><span class="mega-link-text"><span class="mega-link-name">AI Support Assistant</span><span class="mega-link-sub">24/7 conversational AI</span></span></a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <div class="mega-feature">
+                <span class="feat-label">Custom AI</span>
+                <h4>Models refined on your operational reality.</h4>
+                <p>From data curation to deployment &mdash; we handle every step.</p>
+                <a class="feat-cta" href="contact.html">Talk to our team
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ENTERPRISE -->
+        <div class="nav-item" data-mega>
+          <a class="nav-link" href="enterprise-services.html">Enterprise Services</a>
+          <div class="mega mega-lg mega-grid mega-grid-4" role="menu">
+            <div class="mega-bridge" aria-hidden="true"></div>
+            <div class="mega-col">
+              <div class="mega-title">Digital Experience</div>
+              <p class="mega-desc">Modern digital solutions for growth, engagement &amp; online presence.</p>
+              <ul class="mega-list">
+                <li><a class="mega-link" href="Website Development.html"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10A15.3 15.3 0 0 1 8 12 15.3 15.3 0 0 1 12 2z"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Website Development</span><span class="mega-link-sub">Brand-grade sites</span></span></a></li>
+                <li><a class="mega-link" href="Digital Marketing.html"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><polyline points="14 7 21 7 21 14"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Digital Marketing</span><span class="mega-link-sub">Growth campaigns</span></span></a></li>
+              </ul>
+              <div class="mega-subtitle">Operational Support</div>
+              <ul class="mega-list">
+                <li><a class="mega-link" href="Operational Outsourcing.html"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Operational Outsourcing</span><span class="mega-link-sub">Scalable back-office</span></span></a></li>
+                <li><a class="mega-link" href="enterprise-services.html#it"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Remote IT Services</span><span class="mega-link-sub">24/7 infrastructure care</span></span></a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <div class="mega-title">Automation &amp; Intelligence</div>
+              <p class="mega-desc">Content &amp; Marketing automation tools.</p>
+              <ul class="mega-list">
+                <li><a class="mega-link" href="Automation Tools.html"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Blog Automation</span><span class="mega-link-sub">Publishing on autopilot</span></span></a></li>
+                <li><a class="mega-link" href="Automation Tools.html"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Social Media Scheduling</span><span class="mega-link-sub">Multi-channel timing</span></span></a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <div class="mega-title">Search &amp; Visibility</div>
+              <p class="mega-desc">Smart visibility for search, indexing &amp; performance.</p>
+              <ul class="mega-list">
+                <li><a class="mega-link" href="Search Visibility.html"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span><span class="mega-link-text"><span class="mega-link-name">SERP Agent</span><span class="mega-link-sub">Search rank monitoring</span></span></a></li>
+                <li><a class="mega-link" href="Search Visibility.html"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10"/><path d="M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Auto Indexing</span><span class="mega-link-sub">Instant search updates</span></span></a></li>
+              </ul>
+              <div class="mega-subtitle">Monitoring &amp; Verification</div>
+              <ul class="mega-list">
+                <li><a class="mega-link" href="Monitoring Verification.html"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Domain Expiry Verification</span><span class="mega-link-sub">Never miss a renewal</span></span></a></li>
+                <li><a class="mega-link" href="Monitoring Verification.html"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><polyline points="7 14 11 10 14 13 21 6"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Website Performance</span><span class="mega-link-sub">Uptime &amp; speed checks</span></span></a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <div class="mega-feature">
+                <span class="feat-label">All-in-One Stack</span>
+                <h4>One accountable team. Every digital surface.</h4>
+                <p>Web, marketing, automation, and IT &mdash; under one roof.</p>
+                <a class="feat-cta" href="enterprise-services.html">Explore Enterprise
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RESOURCES -->
+        <div class="nav-item" data-mega>
+          <a class="nav-link" href="resources.html">Resources
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <div class="mega mega-sm" role="menu">
+            <div class="mega-bridge" aria-hidden="true"></div>
+            <div class="mega-title">Insights &amp; updates</div>
+            <p class="mega-desc">Knowledge to support your AI and digital journey.</p>
+            <ul class="mega-list">
+              <li><a class="mega-link" href="resources.html#newsletter"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Newsletters</span><span class="mega-link-sub">Monthly intelligence digest</span></span></a></li>
+              <li><a class="mega-link" href="resources.html#articles"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Blogs</span><span class="mega-link-sub">Long-form essays &amp; case studies</span></span></a></li>
+            </ul>
+            <a class="mega-article" href="resources.html">
+              <span class="mega-article-label">Featured Story</span>
+              <h5 class="mega-article-title">How Meridian Health cut documentation time by 67%.</h5>
+            </a>
+          </div>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="nav-item" data-mega>
+          <a class="nav-link" href="contact.html">Contact
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <div class="mega mega-sm mega-contact" role="menu">
+            <div class="mega-bridge" aria-hidden="true"></div>
+            <div class="mega-title">Get in touch</div>
+            <p class="mega-desc">Pick the path that fits where you are today.</p>
+            <ul class="mega-list">
+              <li><a class="mega-link" href="contact.html#schedule"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Schedule a Consultation</span><span class="mega-link-sub">Pick a 30-min slot</span></span></a></li>
+              <li><a class="mega-link" href="contact.html#experts"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 11l-3-3M20 8h-7"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Talk to Experts</span><span class="mega-link-sub">Direct line to a solutions architect</span></span></a></li>
+              <li><a class="mega-link" href="contact.html#form"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Contact Form</span><span class="mega-link-sub">Send us a message</span></span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <a href="contact.html" class="nav-cta">
+        Contact Us
+        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+
+      <button class="nav-burger" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb-bar"><div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="Kleza.html">Home</a><span class="sep">&raquo;</span><a href="enterprise-services.html">Enterprise Services</a><span class="sep">&raquo;</span><span class="current">Operational Outsourcing</span></nav></div></div>
+
+<!-- SECTION 01 — HERO -->
+<section data-screen-label="Hero" style="padding-top:8px">
+  <div class="es-hero solo">
+    <div class="es-hero-inner">
+      <span class="eyebrow">Enterprise Services <span class="dot">·</span> Operational Outsourcing</span>
+      <h1>Scale your operations <span class="ital">without scaling your headcount.</span></h1>
+      <p class="lede">Kleza provides dedicated, domain-trained outsourcing teams for healthcare and enterprise organisations &mdash; covering US accounting, HR recruitment, scheduling coordination, and administrative operations. Your team. Our delivery.</p>
+      <div class="es-hero-ctas">
+        <a class="btn es-btn-sky" href="contact.html">Talk to Our Outsourcing Team <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a class="btn es-btn-ghost-light" href="#oo-covers">See What We Cover <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 02 — PROBLEM BRIDGE -->
+<section class="es-sec band-white wd-bridge" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)" data-screen-label="Problem Bridge">
+  <div class="container">
+    <div class="es-head" style="margin-bottom:44px">
+      <div class="left" style="max-width:920px">
+        <span class="eyebrow">The In-House Cost</span>
+        <h2 class="es-h2" style="margin-top:14px;font-size:clamp(30px,3.6vw,46px)">Growing operational demand with a fixed internal headcount is a compounding problem <span class="ital">&mdash; and hiring to solve it is expensive.</span></h2>
+      </div>
+    </div>
+    <div class="oo-bridge-grid">
+      <div class="body">
+        <p><span class="stat">Home care agencies spend an average of <b>30%</b> of operational capacity on scheduling and administrative functions alone</span> &mdash; and for most healthcare organisations the operational burden is disproportionate to team size.</p>
+        <p>Kleza&rsquo;s outsourcing model solves this without growing your internal headcount &mdash; with teams trained specifically for your industry, operating as an extension of your own organisation.</p>
+      </div>
+      <ul class="oo-cons">
+        <li><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span><div><strong>Scheduling under strain</strong><span>Coordinators managing more shifts than is sustainable, with coverage gaps appearing as volume grows.</span></div></li>
+        <li><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><div><strong>HR stretched thin</strong><span>Recruitment, onboarding, and compliance running simultaneously on a fixed internal team.</span></div></li>
+        <li><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span><div><strong>Accounting coverage gap</strong><span>US-time-zone financial coverage required &mdash; without a US-cost-base staffing model.</span></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 03 — WHAT WE OUTSOURCE / ROLE CATEGORIES -->
+<section class="es-sec" id="oo-covers" data-screen-label="Role Categories">
+  <div class="container">
+    <div class="es-head">
+      <div class="left">
+        <span class="eyebrow">What We Outsource</span>
+        <h2 class="es-h2">The operational functions <span class="ital">Kleza covers.</span></h2>
+      </div>
+      <p class="es-lede">Four operational categories, each staffed with trained, dedicated team members &mdash; not slots in a shared pool.</p>
+    </div>
+    <div class="oo-role-grid">
+      <div class="oo-role-card">
+        <div class="es-icon-tile"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <h4>US Accounting &amp; Finance</h4>
+        <p>Dedicated accounting specialists trained in US financial processes &mdash; supporting accounts payable, receivable, payroll, and financial reporting for US-based healthcare and enterprise organisations.</p>
+        <div class="roles">
+          <span class="rl-lab">Roles</span>
+          <div class="rl">US Accountant<span class="sp">&middot;</span>Accounts Payable Specialist<span class="sp">&middot;</span>Payroll Coordinator<span class="sp">&middot;</span>Financial Reporting Analyst<span class="sp">&middot;</span>Bookkeeping Support</div>
+        </div>
+      </div>
+      <div class="oo-role-card">
+        <div class="es-icon-tile"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h4>HR &amp; Talent Acquisition</h4>
+        <p>HR specialists handling end-to-end recruitment, caregiver onboarding, compliance documentation, and staff retention support &mdash; trained specifically for US healthcare staffing requirements.</p>
+        <div class="roles">
+          <span class="rl-lab">Roles</span>
+          <div class="rl">HR Recruiter<span class="sp">&middot;</span>Talent Acquisition Specialist<span class="sp">&middot;</span>Onboarding Coordinator<span class="sp">&middot;</span>Compliance Documentation Specialist<span class="sp">&middot;</span>HR Administrative Support</div>
+        </div>
+      </div>
+      <div class="oo-role-card">
+        <div class="es-icon-tile"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+        <h4>Scheduling &amp; Care Coordination</h4>
+        <p>Scheduling coordinators managing shift assignments, caregiver availability, last-minute coverage, and client-caregiver matching &mdash; operating across US time zones with deep home care scheduling expertise.</p>
+        <div class="roles">
+          <span class="rl-lab">Roles</span>
+          <div class="rl">Schedule Coordinator<span class="sp">&middot;</span>Care Coordination Support<span class="sp">&middot;</span>Last-Minute Coverage Specialist<span class="sp">&middot;</span>Client Scheduling Liaison</div>
+        </div>
+      </div>
+      <div class="oo-role-card">
+        <div class="es-icon-tile"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="14" x2="15" y2="14"/><line x1="9" y1="18" x2="13" y2="18"/></svg></div>
+        <h4>Administrative &amp; Back-Office Support</h4>
+        <p>Administrative assistants handling documentation, client communications, data entry, and operational support tasks &mdash; freeing your US-based team to focus on higher-value work.</p>
+        <div class="roles">
+          <span class="rl-lab">Roles</span>
+          <div class="rl">Administrative Assistant<span class="sp">&middot;</span>Data Entry Specialist<span class="sp">&middot;</span>Client Communication Support<span class="sp">&middot;</span>Document Management</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 04 — THE KLEZA OUTSOURCING MODEL -->
+<section class="es-sec oo-model" data-screen-label="Outsourcing Model">
+  <div class="container">
+    <div class="es-head">
+      <div class="left">
+        <span class="eyebrow">The Model</span>
+        <h2 class="es-h2">How our outsourcing <span class="ital">model works.</span></h2>
+      </div>
+      <p class="es-lede">Not a shared resource pool. Dedicated people, trained for your operational reality, working under signed compliance agreements.</p>
+    </div>
+    <div class="oo-model-grid">
+      <div class="oo-model-col">
+        <span class="num">01</span>
+        <div class="hr"></div>
+        <h3>Dedicated Teams, Not Shared Resources</h3>
+        <p>Your outsourced team members work exclusively for your organisation during agreed hours. They learn your systems, your culture, and your way of working. You are not buying slots in a shared pool &mdash; you are gaining dedicated people.</p>
+      </div>
+      <div class="oo-model-col">
+        <span class="num">02</span>
+        <div class="hr"></div>
+        <h3>Domain Training Before Day One</h3>
+        <p>Every team member Kleza places is trained on your industry&rsquo;s operational context before they start. For healthcare clients, that means US home care scheduling norms, HIPAA awareness, caregiver communication standards, and your specific software systems.</p>
+      </div>
+      <div class="oo-model-col">
+        <span class="num">03</span>
+        <div class="hr"></div>
+        <h3>Compliance Assurance Built In</h3>
+        <p>Kleza maintains signed confidentiality and data handling agreements for all outsourcing engagements. For healthcare clients, all team members handling client or patient-adjacent data operate under HIPAA-compliant protocols.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 05 — HEALTHCARE SPECIALISATION -->
+<section class="es-sec rit-hc" data-screen-label="Healthcare Specialisation">
+  <div class="container">
+    <div class="wd-case">
+      <div class="rit-hc-grid">
+        <div>
+          <span class="badge"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s8-4 8-12V5l-8-3-8 3v5c0 8 8 12 8 12z"/></svg> Healthcare Specialisation &middot; HIPAA</span>
+          <h3>Built for the operational reality of home care and healthcare services.</h3>
+        </div>
+        <ul class="rit-hc-list">
+          <li class="rit-hc-item"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span><div><strong>Home care scheduling</strong><span>Managing caregiver availability, shift assignments, and last-minute coverage across complex client rosters.</span></div></li>
+          <li class="rit-hc-item"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg></span><div><strong>Healthcare HR recruitment</strong><span>Sourcing, screening, and onboarding caregivers and healthcare staff to US compliance standards.</span></div></li>
+          <li class="rit-hc-item"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span><div><strong>US healthcare accounting</strong><span>Financial operations support for home care agencies, staffing firms, and healthcare providers.</span></div></li>
+          <li class="rit-hc-item"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span><div><strong>HIPAA-aware operations</strong><span>All team members handling client-adjacent data trained on HIPAA compliance requirements.</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 06 — ONBOARDING TIMELINE -->
+<section class="es-sec band-white" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)" data-screen-label="Onboarding Timeline">
+  <div class="container">
+    <div class="es-head"><div class="left"><span class="eyebrow">Onboarding</span><h2 class="es-h2">From contract to operational team <span class="ital">in 3 weeks.</span></h2></div></div>
+    <div class="oo-steps">
+      <div class="oo-step"><div class="circle">01</div><h4>Scoping</h4><p>We define the roles, hours, systems access, and performance benchmarks for your outsourced team.</p></div>
+      <div class="oo-step"><div class="circle">02</div><h4>Team Selection</h4><p>Kleza identifies and briefs candidates from our trained operational team &mdash; matched to your specific requirements.</p></div>
+      <div class="oo-step"><div class="circle">03</div><h4>Domain Training</h4><p>Selected team members complete your organisation&rsquo;s onboarding &mdash; your systems, your SOPs, your communication standards.</p></div>
+      <div class="oo-step"><div class="circle">04</div><h4>Go-Live &amp; Handover</h4><p>Your outsourced team becomes operational. A Kleza account manager remains your single point of contact.</p></div>
+    </div>
+    <div class="rit-flow-note"><span class="dot"></span>Most outsourced teams are fully operational within 15-21 days of contract signing.</div>
+  </div>
+</section>
+
+<!-- SECTION 07 — CASE STUDY -->
+<section class="es-sec" data-screen-label="Case Study">
+  <div class="container">
+    <div class="es-head"><div class="left" style="max-width:840px"><span class="eyebrow">Case Study</span><h2 class="es-h2" style="margin-top:14px;font-size:clamp(28px,3.4vw,44px)">Scaling a home care agency&rsquo;s scheduling operation <span class="ital">&mdash; without a single additional US hire.</span></h2></div></div>
+    <div class="oo-case">
+      <div class="oo-case-metric">
+        <div class="inner">
+          <div class="stat">98%</div>
+          <div class="stat-lab">Shift coverage rate post-deployment, up from 87% prior.</div>
+          <div class="client">
+            <div class="k">Client</div>
+            <div class="v">Regional home care agency &middot; United States</div>
+          </div>
+        </div>
+      </div>
+      <div class="oo-case-body">
+        <div class="oo-case-row"><div class="lab">Challenge</div><p>A fast-growing home care agency was struggling with scheduling coverage as client volume grew <b>40%</b> in 12 months. Internal coordinators were consistently overloaded, leading to missed shifts and caregiver churn.</p></div>
+        <div class="oo-case-row"><div class="lab">Approach</div><p>Kleza deployed two dedicated scheduling coordinators, trained on the agency&rsquo;s scheduling software and caregiver roster, both operating during US business hours.</p></div>
+        <div class="oo-case-row"><div class="lab">Outcome</div><p>Shift coverage improved from <b>87% to 98%</b> within 60 days and internal coordinator overtime fell by <b>60%</b> &mdash; the agency continued scaling without adding US-based administrative headcount.</p></div>
+        <div class="oo-case-note">Illustrative engagement &mdash; metrics to be verified against approved client data before publishing.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 08 — BUNDLE SIGNAL + CTA BAND -->
+<section class="es-sec" data-screen-label="Bundle CTA">
+  <div class="container">
+    <div class="es-bundle">
+      <span class="eyebrow">Combined Operational Support</span>
+      <h2 class="es-h2">Operational outsourcing works harder when your digital infrastructure <span class="ital">does too.</span></h2>
+      <p>Kleza clients who combine operational outsourcing with website management, digital marketing, or IT monitoring consistently see better outcomes across both functions &mdash; because the teams share context, systems access, and goals. Ask about our combined Operational Support packages.</p>
+      <div class="ctas">
+        <a class="btn btn-accent" href="contact.html">Talk to Our Outsourcing Team <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a class="btn btn-ghost" href="enterprise-services.html">See how we structure packages <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 09 — FAQ -->
+<section class="es-sec" style="padding-top:0" data-screen-label="FAQ">
+  <div class="container">
+    <div class="es-head" style="justify-content:center;text-align:center;flex-direction:column;align-items:center"><span class="eyebrow">FAQ</span><h2 class="es-h2" style="margin-top:14px">Frequently asked <span class="ital">questions.</span></h2></div>
+    <div class="es-faq">
+      <div class="es-faq-item"><button class="es-faq-q">What types of roles can Kleza outsource for my organisation?<span class="plus">+</span></button><div class="es-faq-a"><p>Kleza covers four operational categories: US accounting and finance, HR and talent acquisition, scheduling and care coordination, and administrative and back-office support. All roles are staffed with trained, dedicated team members &mdash; not shared resources.</p></div></div>
+      <div class="es-faq-item"><button class="es-faq-q">How is confidential data handled by the outsourced team?<span class="plus">+</span></button><div class="es-faq-a"><p>All Kleza outsourcing engagements include signed confidentiality and data processing agreements. Team members handling client, patient, or financial data operate under HIPAA-compliant protocols for healthcare clients, and under agreed data handling standards for all clients.</p></div></div>
+      <div class="es-faq-item"><button class="es-faq-q">How quickly can an outsourced team become operational?<span class="plus">+</span></button><div class="es-faq-a"><p>Most engagements reach full operational readiness within 15-21 days of contract signing &mdash; covering scoping, team selection, and domain training. The exact timeline depends on role complexity and the depth of your system and process onboarding requirements.</p></div></div>
+      <div class="es-faq-item"><button class="es-faq-q">Is the outsourced team dedicated to my organisation?<span class="plus">+</span></button><div class="es-faq-a"><p>Yes. Kleza does not operate a shared resource pool. Your team members work exclusively for your organisation during agreed hours &mdash; learning your systems, your culture, and your operational standards.</p></div></div>
+      <div class="es-faq-item"><button class="es-faq-q">Can I scale the outsourced team up or down over time?<span class="plus">+</span></button><div class="es-faq-a"><p>Yes. Kleza&rsquo;s outsourcing engagements are designed to flex with your operational needs. Team size can be scaled up with 2 weeks notice and scaled down with 30 days notice, without long-term headcount commitments.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST FOOTER STRIP -->
+<section class="es-trust-foot" data-screen-label="Trust Footer">
+  <div class="grid">
+    <div class="es-tf-cell"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l9 4v6c0 5-4 9-9 10-5-1-9-5-9-10V6l9-4z"/></svg></div><div class="t"><strong>HIPAA Compliant</strong><span>Healthcare-grade data handling</span></div></div>
+    <div class="es-tf-cell"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><div class="t"><strong>Dedicated Teams</strong><span>Exclusive, never a shared pool</span></div></div>
+    <div class="es-tf-cell"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/></svg></div><div class="t"><strong>15&ndash;21 Day Onboarding</strong><span>Contract to operational team</span></div></div>
+    <div class="es-tf-cell"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="15" x2="15" y2="15"/></svg></div><div class="t"><strong>Signed Agreements</strong><span>Confidentiality &amp; data handling</span></div></div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer band-light" data-screen-label="Footer" style="padding: 56px 0px 32px">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="logo" aria-label="Kleza"><img src="/assets/kleza-logo.png" alt="Kleza" /></a>
+        <p class="tagline" style="margin-top:22px">Clinical precision meets soft, intelligent light.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/kleza-solutions-pvt-ltd/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0zM.25 8.25h4.5V24h-4.5V8.25zM8.25 8.25h4.31v2.15h.06c.6-1.14 2.07-2.34 4.26-2.34 4.56 0 5.4 3 5.4 6.9V24h-4.5v-6.75c0-1.61-.03-3.68-2.24-3.68-2.24 0-2.58 1.75-2.58 3.56V24h-4.5V8.25z"/></svg></a>
+          <a href="https://twitter.com/klezasolutions" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.656l-5.214-6.817-5.966 6.817H1.683l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644z"/></svg></a>
+          <a href="https://www.facebook.com/Klezasolution" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07c0 6.02 4.39 11.01 10.12 11.93v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.95.93-1.95 1.89v2.25h3.32l-.53 3.49h-2.79V24C19.61 23.08 24 18.09 24 12.07z"/></svg></a>
+          <a href="https://www.instagram.com/klezasolutions/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-offices">
+        <h5>Offices</h5>
+        <address class="footer-office">
+          <span class="office-tag">USA &middot; Headquarters</span>
+          <span>9331 W 87th St, Overland Park, KS 66212, United States</span>
+          <a href="tel:+19138002728">+1 913-800-2728</a>
+        </address>
+        <address class="footer-office">
+          <span class="office-tag">India &middot; Delivery Center</span>
+          <span>5B, Unit-2, 5th Floor, Bizness Square, Opp. Hitex Junction, Hitec City, Madhapur, Telangana 500081</span>
+          <a href="tel:+917396146227">+91 7396146227</a>
+        </address>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="/about">About</a></li>
+          <li><a href="/ai-products">AI Products</a></li>
+          <li><a href="/ai-services">AI Services</a></li>
+          <li><a href="/enterprise-services">Enterprise</a></li>
+          <li><a href="/resources">Resources</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Get in touch</h5>
+        <ul>
+          <li><a href="mailto:info@kleza.io">info@kleza.io</a></li>
+          <li><a href="/contact">Contact form</a></li>
+          <li><a href="tel:+19138002728">+1 913-800-2728</a></li>
+          <li><a href="tel:+917396146227">+91 7396146227</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; 2026 Kleza Solutions Pvt Ltd <span style="opacity:.5;margin:0 .5em">&middot;</span> All rights reserved</div>
+      <div class="right">Healthcare-grade AI <span style="opacity:.5;margin:0 .5em">&middot;</span> ISO Aligned</div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/nav.js"></script>
+<script id="rit-scripts">
+(function(){
+  document.querySelectorAll('.es-faq-q').forEach(function(b){
+    b.addEventListener('click', function(){ b.parentElement.classList.toggle('open'); });
+  });
+
+  var counters = document.querySelectorAll('.es-proof [data-count]');
+  var obs = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting || e.target.dataset.done) return;
+      e.target.dataset.done = '1';
+      var tgt = parseFloat(e.target.dataset.count), suf = e.target.dataset.suffix || '', isF = tgt % 1 !== 0;
+      var s = 0, step = tgt / 60;
+      var t = setInterval(function(){ s += step; if(s >= tgt){ s = tgt; clearInterval(t);} e.target.textContent = (isF ? s.toFixed(1) : Math.floor(s)) + suf; }, 18);
+    });
+  }, { threshold: .4 });
+  counters.forEach(function(c){ obs.observe(c); });
+})();
+</script>
+</body>
+</html>
