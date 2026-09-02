@@ -1,0 +1,1561 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>/* ===== shared.css (Kleza design system) ===== */
+
+:root {
+  --bg: #f5f9f9;
+  --bg-alt: #eef4f3;
+  --ink: #0e1b22;
+  --ink-2: #16242b;
+  --muted: #000000;
+  --muted-2: #8b989d;
+  --line: #e1e9e8;
+  --line-2: #cfdbd8;
+  --card: #ffffff;
+  --accent: #36c0ed;
+  --accent-2: #1aa5db;
+  --accent-3: #5accf1;
+  --dark: #0a1316;
+  --dark-2: #111d20;
+  --dark-line: #1f2c2f;
+
+  --maxw: 1280px;
+  --pad-x: clamp(20px, 4vw, 64px);
+  --sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --serif: "Instrument Serif", "Cormorant Garamond", Georgia, serif;
+  --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  border: 0;
+  background: none;
+  color: inherit;
+}
+
+.container {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding-left: var(--pad-x);
+  padding-right: var(--pad-x);
+}
+
+/* ===================== KLEZA AI ASSISTANT ===================== */
+/* Floating launcher dock — premium, highlighted, pinned bottom-right */
+.ai-va-dock {
+  position: fixed;
+  right: 26px;
+  bottom: 26px;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 14px;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.ai-va-dock.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(12px) scale(0.96);
+}
+
+.ai-va-fab {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  height: 46px;
+  padding: 0 18px;
+  border-radius: 999px;
+  color: #fff;
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  background:
+    radial-gradient(140% 140% at 25% 15%, rgb(20, 185, 164), rgb(13, 155, 139) 55%, rgb(10, 138, 120));
+  box-shadow:
+    0 14px 30px -14px rgba(13, 155, 139, 0.7),
+    0 2px 8px -3px rgba(10, 19, 22, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  overflow: visible;
+  transition: transform 0.25s cubic-bezier(0.2, 0.7, 0.2, 1), box-shadow 0.25s ease;
+  animation: ai-va-float 4.5s ease-in-out infinite;
+}
+
+.ai-va-fab:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 20px 40px -14px rgba(13, 155, 139, 0.85),
+    0 4px 12px -4px rgba(10, 19, 22, 0.26),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.ai-va-fab:active {
+  transform: translateY(-1px) scale(0.98);
+}
+
+/* Pulsing highlight rings */
+.ai-va-fab-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  border: 2px solid var(--accent-3);
+  opacity: 0;
+  animation: ai-va-ping 3s ease-out infinite;
+  pointer-events: none;
+}
+
+.ai-va-fab-ring.two {
+  animation-delay: 1.5s;
+}
+
+.ai-va-fab-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+.ai-va-fab-icon svg {
+  width: 19px;
+  height: 19px;
+  filter: drop-shadow(0 1px 2px rgba(10, 19, 22, 0.25));
+  animation: ai-va-twinkle 2.6s ease-in-out infinite;
+}
+
+.ai-va-fab-label {
+  white-space: nowrap;
+  margin-left: 8px;
+}
+
+/* Proactive teaser bubble */
+.ai-va-teaser {
+  position: relative;
+  max-width: 300px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px 18px 6px 18px;
+  box-shadow: 0 24px 50px -22px rgba(10, 19, 22, 0.45);
+  padding: 4px;
+  transform: translateY(10px) scale(0.94);
+  transform-origin: bottom right;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.ai-va-teaser.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+}
+
+.ai-va-teaser-body {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  text-align: left;
+  padding: 14px 16px;
+  border-radius: 16px 16px 4px 16px;
+  font-family: var(--sans);
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--ink);
+  background: linear-gradient(135deg, rgba(54, 192, 237, 0.06), rgba(54, 192, 237, 0.05));
+  transition: background 0.2s ease;
+}
+
+.ai-va-teaser-body:hover {
+  background: rgba(54, 192, 237, 0.09);
+}
+
+.ai-va-teaser-body strong {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.ai-va-teaser-wave {
+  font-size: 20px;
+  line-height: 1;
+  flex-shrink: 0;
+  animation: ai-va-wave 2.4s ease-in-out infinite;
+}
+
+.ai-va-teaser-x {
+  position: absolute;
+  top: -9px;
+  right: -9px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px -3px rgba(10, 19, 22, 0.5);
+  z-index: 2;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.ai-va-teaser-x:hover {
+  transform: scale(1.1);
+  background: var(--accent-2);
+}
+
+.ai-va-teaser-x svg {
+  width: 12px;
+  height: 12px;
+}
+
+@keyframes ai-va-float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes ai-va-ping {
+  0% {
+    transform: scale(1);
+    opacity: 0.55;
+  }
+
+  80%,
+  100% {
+    transform: scale(1.45);
+    opacity: 0;
+  }
+}
+
+@keyframes ai-va-twinkle {
+
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+
+  50% {
+    opacity: 0.78;
+    transform: scale(0.92) rotate(-8deg);
+  }
+}
+
+@keyframes ai-va-wave {
+
+  0%,
+  60%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(16deg);
+  }
+
+  40% {
+    transform: rotate(-10deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .ai-va-dock {
+    right: 16px;
+    bottom: 16px;
+    gap: 10px;
+  }
+
+  .ai-va-fab {
+    height: 44px;
+    padding: 0 16px;
+  }
+
+  .ai-va-fab-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .ai-va-fab-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .ai-va-teaser {
+    max-width: 250px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .ai-va-fab,
+  .ai-va-fab-ring,
+  .ai-va-fab-icon svg,
+  .ai-va-teaser-wave {
+    animation: none;
+  }
+}
+
+/* Overlay + panel — docked to the bottom-right, above the launcher.
+     The overlay never blocks or dims the page: it only positions the panel,
+     so the website stays fully visible and interactive behind it. */
+.ai-va-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1002;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 24px 26px 102px;
+  background: transparent;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.ai-va-overlay.open {
+  opacity: 1;
+}
+
+.ai-va-panel {
+  pointer-events: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 420px;
+  /* A fixed, compact working height so the panel always reads as a chat
+       window. (It used to be `auto`, which collapsed to a sliver once the
+       greeting block was removed and the thread was empty.) */
+  height: min(340px, calc(100vh - 130px));
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  box-shadow: 0 40px 80px -30px rgba(10, 19, 22, 0.6);
+  overflow: hidden;
+  transform-origin: bottom right;
+  transform: translateY(24px) scale(0.94);
+  opacity: 0;
+  transition: transform 0.32s cubic-bezier(0.2, 0.7, 0.2, 1), opacity 0.25s ease;
+}
+
+.ai-va-overlay.open .ai-va-panel {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+/* The demo calendar needs more room than the compact chat height. */
+.ai-va-panel.demo {
+  height: min(560px, calc(100vh - 130px));
+}
+
+@media (max-width: 600px) {
+  .ai-va-overlay {
+    padding: 16px 14px 90px;
+    align-items: flex-end;
+  }
+
+  .ai-va-panel {
+    max-width: none;
+    height: min(420px, calc(100vh - 120px));
+  }
+}
+
+.ai-va-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--line);
+  background: linear-gradient(135deg, rgba(54, 192, 237, 0.08), rgba(54, 192, 237, 0.06));
+}
+
+.ai-va-brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+}
+
+/* "New conversation" — replaces the old back chevron, which looked like
+     "go back" but silently erased the thread. */
+.ai-va-new {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: 8px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  transition: background 0.2s, color 0.2s;
+}
+
+.ai-va-new:hover {
+  background: rgba(54, 192, 237, 0.1);
+  color: var(--accent);
+}
+
+.ai-va-new svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* 44px tap target without changing the visual size. */
+.ai-va-new::after {
+  content: "";
+  position: absolute;
+  inset: -7px;
+  border-radius: 50%;
+}
+
+.ai-va-brand-ic {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: radial-gradient(120% 120% at 30% 20%, var(--accent-3), var(--accent));
+}
+
+.ai-va-brand-ic svg {
+  width: 16px;
+  height: 16px;
+}
+
+.ai-va-brand-name {
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ai-va-close {
+  position: relative;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.ai-va-close:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.ai-va-close svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* The main way out: give it a 44px tap target without resizing the circle. */
+.ai-va-close::after {
+  content: "";
+  position: absolute;
+  inset: -5px;
+  border-radius: 50%;
+}
+
+.ai-va-mic {
+  position: relative;
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  margin: 0 auto 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: radial-gradient(120% 120% at 30% 20%, var(--accent-3), var(--accent));
+  box-shadow: 0 18px 40px -16px rgba(54, 192, 237, 0.7);
+  transition: transform 0.2s ease;
+}
+
+.ai-va-mic:hover {
+  transform: scale(1.04);
+}
+
+.ai-va-mic svg {
+  width: 34px;
+  height: 34px;
+  position: relative;
+  z-index: 2;
+}
+
+.ai-va-mic-ring {
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  border: 2px solid var(--accent-3);
+  opacity: 0;
+}
+
+.ai-va-mic.on .ai-va-mic-ring {
+  animation: ai-va-pulse 1.4s ease-out infinite;
+}
+
+.ai-va-mic.on {
+  animation: ai-va-glow 1.4s ease-in-out infinite;
+}
+
+@keyframes ai-va-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes ai-va-glow {
+
+  0%,
+  100% {
+    box-shadow: 0 18px 40px -16px rgba(54, 192, 237, 0.7);
+  }
+
+  50% {
+    box-shadow: 0 18px 54px -10px rgba(54, 192, 237, 0.95);
+  }
+}
+
+/* Scrollable middle */
+.ai-va-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.ai-va-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.ai-va-scroll::-webkit-scrollbar-thumb {
+  background: rgba(10, 19, 22, 0.14);
+  border-radius: 999px;
+}
+
+/* Home view */
+.ai-va-home {
+  padding: 20px 18px 18px;
+}
+
+.ai-va-greet {
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--ink);
+  margin: 0;
+}
+
+.ai-va-greet-sub {
+  font-size: 13.5px;
+  color: var(--muted);
+  line-height: 1.55;
+  margin: 6px 0 0;
+}
+
+.ai-va-tap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+  margin: 18px 0 4px;
+  padding: 18px;
+  border: 1.5px dashed rgba(54, 192, 237, 0.4);
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(54, 192, 237, 0.05), rgba(54, 192, 237, 0.04));
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.ai-va-tap:hover {
+  border-color: var(--accent);
+  background: rgba(54, 192, 237, 0.08);
+}
+
+.ai-va-tap-mic {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 14.5px;
+  color: var(--accent);
+}
+
+.ai-va-tap-mic svg {
+  width: 19px;
+  height: 19px;
+}
+
+.ai-va-tap-sub {
+  font-size: 12px;
+  color: var(--muted-2);
+}
+
+.ai-va-section {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--muted-2);
+  margin: 20px 0 10px;
+}
+
+/* Chat view */
+/* ----- Book a demo: actions + inline calendar (UI only) ----- */
+.ai-va-actions {
+  display: flex;
+  gap: 8px;
+  padding: 0 14px 2px;
+}
+
+.ai-va-act {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 10px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 13px;
+  white-space: nowrap;
+  transition: background 0.2s, border-color 0.2s, color 0.2s, transform 0.15s;
+}
+
+.ai-va-act svg {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+.ai-va-act:hover {
+  background: #36c0ed;
+  border-color: transparent;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.ai-va-act.primary {
+  background: rgb(155 234 166);
+  border-color: transparent;
+}
+
+.ai-va-act.primary:hover {
+  background: #36c0ed;
+  color: #fff;
+}
+
+/* Chosen slot summary on the details step */
+.ai-va-demo-when {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 9px 12px;
+  border-radius: 12px;
+  background: rgba(155, 234, 166, 0.2);
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.ai-va-demo-when button {
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent-2);
+  text-decoration: underline;
+}
+
+.ai-va-demo-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ai-va-field {
+  width: 100%;
+  font-family: var(--sans);
+  font-size: 13.5px;
+  color: var(--ink);
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 10px 13px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.ai-va-field:focus {
+  border-color: var(--accent);
+}
+
+.ai-va-demo {
+  padding: 14px 16px 18px;
+}
+
+.ai-va-demo-top {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+  font-family: var(--sans);
+  font-size: 14px;
+  color: var(--ink);
+}
+
+.ai-va-demo-back {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+}
+
+.ai-va-demo-back:hover {
+  background: rgba(54, 192, 237, 0.1);
+  color: var(--accent);
+}
+
+.ai-va-demo-back svg {
+  width: 15px;
+  height: 15px;
+}
+
+.ai-va-cal-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 13.5px;
+  color: var(--ink);
+}
+
+.ai-va-cal-head button {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+}
+
+.ai-va-cal-head button:hover {
+  background: rgba(54, 192, 237, 0.1);
+  color: var(--accent);
+}
+
+.ai-va-cal-head svg {
+  width: 14px;
+  height: 14px;
+}
+
+.ai-va-cal-dow,
+.ai-va-cal-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 3px;
+}
+
+.ai-va-cal-dow {
+  margin-bottom: 3px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: var(--muted-2);
+  text-align: center;
+}
+
+.ai-va-cal-day {
+  height: 30px;
+  border-radius: 8px;
+  font-family: var(--sans);
+  font-size: 12.5px;
+  color: var(--ink);
+  transition: background 0.15s, color 0.15s;
+}
+
+.ai-va-cal-day:hover:not(:disabled) {
+  background: rgba(54, 192, 237, 0.12);
+}
+
+.ai-va-cal-day:disabled {
+  color: var(--line-2);
+  cursor: not-allowed;
+}
+
+.ai-va-cal-day.sel {
+  background: rgb(155 234 166);
+  color: #000;
+  font-weight: 700;
+}
+
+.ai-va-demo-label {
+  margin: 12px 0 6px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted-2);
+}
+
+.ai-va-slots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.ai-va-slot {
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #fff;
+  font-family: var(--sans);
+  font-size: 12.5px;
+  color: var(--ink);
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.ai-va-slot:hover {
+  border-color: var(--accent);
+}
+
+.ai-va-slot.sel {
+  background: rgb(155 234 166);
+  border-color: transparent;
+  font-weight: 700;
+}
+
+.ai-va-demo-confirm {
+  width: 100%;
+  margin-top: 14px;
+  padding: 11px 16px;
+  border-radius: 999px;
+  background: rgb(155 234 166);
+  color: #000;
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 13.5px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.ai-va-demo-confirm:hover:not(:disabled) {
+  background: #36c0ed;
+  color: #fff;
+}
+
+.ai-va-demo-confirm:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.ai-va-chat {
+  padding: 18px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.ai-va-msg {
+  display: flex;
+  gap: 9px;
+  max-width: 100%;
+}
+
+.ai-va-msg.user {
+  justify-content: flex-end;
+}
+
+.ai-va-msg.ai {
+  justify-content: flex-start;
+}
+
+.ai-va-avatar {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: radial-gradient(120% 120% at 30% 20%, var(--accent-3), var(--accent));
+}
+
+.ai-va-avatar svg {
+  width: 16px;
+  height: 16px;
+}
+
+.ai-va-ai-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 86%;
+}
+
+.ai-va-bubble {
+  font-family: var(--sans);
+  font-size: 13.5px;
+  line-height: 1.5;
+  padding: 10px 14px;
+  border-radius: 14px;
+}
+
+.ai-va-msg.ai .ai-va-bubble {
+  background: var(--bg);
+  color: var(--ink);
+  border-top-left-radius: 4px;
+}
+
+.ai-va-msg.user .ai-va-bubble {
+  max-width: 86%;
+  background: var(--accent);
+  color: #fff;
+  border-top-right-radius: 4px;
+}
+
+.ai-va-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ai-va-confirm {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 12px 14px;
+  background: linear-gradient(135deg, rgba(54, 192, 237, 0.05), rgba(54, 192, 237, 0.04));
+}
+
+.ai-va-confirm p {
+  font-size: 13px;
+  color: var(--ink);
+  margin: 0 0 10px;
+  line-height: 1.45;
+}
+
+.ai-va-confirm-btns {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.ai-va-btn {
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 13px;
+  padding: 9px 16px;
+  border-radius: 999px;
+  transition: background 0.2s, border-color 0.2s, color 0.2s, transform 0.15s;
+}
+
+.ai-va-btn.primary {
+  color: #000;
+  background: rgb(155 234 166);
+  box-shadow: 0 12px 22px -12px rgba(54, 192, 237, 0.9);
+}
+
+.ai-va-btn.primary:hover {
+  background: #36c0ed;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.ai-va-btn.ghost {
+  color: #000;
+  background: rgb(155 234 166);
+  border: 1px solid transparent;
+}
+
+.ai-va-btn.ghost:hover {
+  background: #36c0ed;
+  border-color: transparent;
+  color: #fff;
+}
+
+/* Typing indicator */
+.ai-va-typing {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 13px 16px;
+  background: var(--bg);
+  border-radius: 14px;
+  border-top-left-radius: 4px;
+}
+
+.ai-va-typing span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--muted-2);
+  animation: ai-va-bounce 1.2s ease-in-out infinite;
+}
+
+.ai-va-typing span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.ai-va-typing span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes ai-va-bounce {
+
+  0%,
+  80%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.4;
+  }
+
+  40% {
+    transform: translateY(-5px);
+    opacity: 1;
+  }
+}
+
+/* Footer input */
+.ai-va-foot {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  padding: 12px 14px;
+  border-top: 1px solid var(--line);
+  background: var(--card);
+}
+
+.ai-va-foot textarea {
+  flex: 1;
+  min-width: 0;
+  font-family: var(--sans);
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--ink);
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 11px 16px;
+  outline: none;
+  resize: none;
+  overflow-y: auto;
+  /* One line by default, growing to ~4 lines so long questions stay visible. */
+  max-height: 96px;
+  transition: border-color 0.2s;
+}
+
+.ai-va-foot textarea:focus {
+  border-color: var(--accent);
+}
+
+.ai-va-foot-mic {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s, background 0.2s, transform 0.15s;
+}
+
+.ai-va-foot-mic:hover {
+  border-color: var(--accent);
+  background: rgba(54, 192, 237, 0.08);
+  transform: scale(1.05);
+}
+
+.ai-va-foot-mic svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Actively dictating — clearly different from idle. */
+.ai-va-foot-mic.on {
+  background: #36c0ed;
+  border-color: #36c0ed;
+  color: #fff;
+  animation: ai-va-mic-pulse 1.4s ease-in-out infinite;
+}
+
+@keyframes ai-va-mic-pulse {
+
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(54, 192, 237, 0.45);
+  }
+
+  50% {
+    box-shadow: 0 0 0 7px rgba(54, 192, 237, 0);
+  }
+}
+
+.ai-va-send {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: rgb(155 234 166);
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s, transform 0.15s;
+}
+
+.ai-va-send:hover {
+  background: #36c0ed;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* "Press Enter to send" hint — kept narrow so the input keeps the width. */
+.ai-va-enter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 30px;
+  flex-shrink: 0;
+  color: var(--muted-2);
+}
+
+.ai-va-enter svg {
+  width: 15px;
+  height: 15px;
+}
+
+.ai-va-send svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Listening overlay (covers panel body, header stays visible) */
+.ai-va-listen {
+  position: absolute;
+  top: 59px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+
+.ai-va-listen-title {
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--ink);
+  margin: 6px 0 0;
+}
+
+.ai-va-listen-sub {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 15px;
+  color: var(--muted);
+  text-align: center;
+  margin: 0;
+  min-height: 1.2em;
+  max-width: 30ch;
+}
+
+/* =================================================================
+     BRAND PALETTE OVERRIDES
+     The prototype content pages (content/*.html) ship their own inline
+     <style> rules and inline style="" attributes that would otherwise win
+     over the base rules above. These !important rules force the agreed
+     palette everywhere: green buttons (blue on hover) + white menu/banner.
+     ================================================================= */
+
+/* Buttons — green default, blue hover, across every solid button variant. */
+.btn-accent,
+.btn-dark,
+.nav-cta,
+.sol-card-cta,
+.sol-card[data-tone="2"] .sol-card-cta,
+.sol-card[data-tone="3"] .sol-card-cta,
+.sol-footer .btn-talk,
+.news-band .signup button,
+.ai-va-btn.primary {
+  background: rgb(155 234 166) !important;
+  color: #000 !important;
+  border-color: transparent !important;
+}
+
+.btn-accent:hover,
+.btn-dark:hover,
+.nav-cta:hover,
+.sol-card-cta:hover,
+.sol-footer .btn-talk:hover,
+.news-band .signup button:hover,
+.ai-va-btn.primary:hover {
+  background: #36c0ed !important;
+  color: #fff !important;
+  border-color: transparent !important;
+}
+
+/* Secondary/ghost button — transparent, outline only (no fill). */
+.btn-ghost,
+.ai-va-btn.ghost {
+  background: transparent !important;
+  color: #000 !important;
+  border: 1px solid #000 !important;
+}
+
+.btn-ghost:hover,
+.ai-va-btn.ghost:hover {
+  background: transparent !important;
+  color: #36c0ed !important;
+  border-color: #36c0ed !important;
+}
+
+/* "Ask AI" launcher — reversed palette: blue default, green on hover. */
+.ai-va-fab {
+  background: #36c0ed !important;
+  color: #fff !important;
+  border-color: transparent !important;
+}
+
+.ai-va-fab:hover {
+  background: rgb(155 234 166) !important;
+  color: #000 !important;
+  border-color: transparent !important;
+}
+
+/* Keep the launcher icon/label legible on the fill. */
+.ai-va-fab .ai-va-fab-icon,
+.ai-va-fab .ai-va-fab-label {
+  color: inherit !important;
+}
+
+/* Menu + banner — solid white. */
+.nav,
+.site-header.is-scrolled .nav {
+  background: #fff !important;
+}
+
+.hero,
+.inner-hero,
+.breadcrumb-bar {
+  background: #fff !important;
+}
+
+/* Footer column headings — consistent sans font + divider line below.
+     The !important beats both the prototype inline styles and the homepage
+     serif override that otherwise makes these headings inconsistent. */
+.footer h5 {
+  font-family: var(--sans) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.01em !important;
+  padding-bottom: 12px !important;
+  border-bottom: 1px solid var(--line) !important;
+}
+
+/* Footer tagline — normal weight and the body sans, not the display serif. */
+.footer .tagline {
+  font-style: normal !important;
+  font-family: var(--sans) !important;
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+  max-width: 30ch !important;
+}
+
+/* Mega-menu icons — brand green instead of blue. */
+.mega-link .mega-link-ico {
+  background: rgba(155, 234, 166, 0.35) !important;
+  color: #0e7c5a !important;
+}
+
+.mega-link:hover .mega-link-ico {
+  background: rgb(155 234 166) !important;
+  color: #0e7c5a !important;
+}
+
+/* Product-logo icons (real brand PNGs) — sit on a clean white tile. */
+.mega-link .mega-link-ico--img {
+  background: #fff !important;
+  border: 1px solid var(--line) !important;
+}
+
+.mega-link:hover .mega-link-ico--img {
+  background: #fff !important;
+}
+
+.mega-link .mega-link-ico--img img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Compact product panels — smaller overall than the wide mega-lg panel. */
+.mega.mega-compact {
+  width: 720px !important;
+  padding: 20px !important;
+  /* Narrow gutter between the side-by-side columns. */
+  gap: 10px !important;
+}
+
+.mega.mega-compact.mega-grid-3 {
+  grid-template-columns: 1fr 1fr 1.05fr !important;
+  align-items: start !important;
+}
+
+.mega-compact .mega-col+.mega-col {
+  padding-left: 12px !important;
+}
+
+/* Tooltips need to escape the panel edge; keep the wash rounded. */
+.mega {
+  overflow: visible !important;
+}
+
+.mega::before {
+  border-radius: inherit !important;
+}
+
+/* Product row spacing — as it was before (only the column gutter changed). */
+.mega-compact .mega-list {
+  gap: 0 !important;
+}
+
+.mega-compact .mega-link {
+  padding: 10px 10px !important;
+}
+
+.mega-compact .mega-subtitle {
+  margin: 10px 0 4px !important;
+}
+
+/* Agentic Solutions only: a little more room per companion, and names kept
+     on one line so every row is evenly spaced. */
+.mega-agentic .mega-link-text,
+.mega-agentic .mega-link-name {
+  line-height: 1.5 !important;
+}
+
+.mega-agentic .mega-link {
+  padding: 12px !important;
+}
+
+.mega-agentic .mega-link-name {
+  white-space: nowrap;
+}
+
+/* Companion glyphs get the same white tile as the AI Products logos. */
+.mega-link .mega-link-ico--glyph {
+  background: #fff !important;
+  border: 1px solid var(--line) !important;
+  color: #0e7c5a !important;
+}
+
+.mega-link:hover .mega-link-ico--glyph {
+  background: #fff !important;
+}
+
+.mega-link .mega-link-ico--glyph svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Trim the promo card so it stops driving the panel height. */
+.mega-compact .mega-feature {
+  padding: 18px !important;
+}
+
+.mega-compact .mega-feature h4 {
+  font-size: 18px !important;
+  margin-bottom: 8px !important;
+}
+
+.mega-compact .mega-feature p {
+  font-size: 12px !important;
+  margin-bottom: 12px !important;
+}
+
+/* Product description = a card floating BESIDE the hovered row, right next to
+     the product name and vertically centred on it. Above/below would cover the
+     product names in its own column; out to the side it reads as attached to
+     the row. position:absolute keeps it out of flow so the list never shifts. */
+/* Anchored to the name span, not the row. .mega-link-text is a flex item with
+     flex-grow:0 and its only in-flow child is the name, so its width IS the
+     name's width — the card starts right after the text instead of way out at
+     the end of the full-width row. */
+.mega-compact .mega-link-text {
+  position: relative;
+}
+
+.mega-compact .mega-link .mega-link-sub {
+  position: absolute !important;
+  /* Kept small and tight so it intrudes as little as possible on the
+     neighbouring column while the row is hovered. */
+  left: calc(100% + 18px);
+  top: 50%;
+  bottom: auto;
+  z-index: 8;
+  width: 192px;
+  max-width: 192px;
+  margin: 0 !important;
+  padding: 9px 11px !important;
+  border-radius: 9px;
+  /* Same soft-green look as before. Opaque — it floats over whatever sits in
+     the neighbouring column. */
+  background: rgb(237, 251, 239);
+  border: 1px solid rgba(155, 234, 166, 0.6);
+  border-left: 3px solid var(--accent);
+  color: var(--ink) !important;
+  font-size: 12.5px !important;
+  line-height: 1.45 !important;
+  box-shadow: 0 14px 30px -14px rgba(10, 19, 22, 0.28);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(-50%) translateX(-6px);
+  transition: opacity .16s ease, transform .16s ease, visibility .16s;
+}
+
+/* Pointer on the left edge, aimed back at the product it describes. Coloured
+     to match the accent bar it sits against. */
+.mega-compact .mega-link .mega-link-sub::after {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  margin-top: -5px;
+  border: 5px solid transparent;
+  border-right-color: var(--accent);
+}
+
+.mega-compact .mega-link:hover .mega-link-sub {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-50%) translateX(0);
+}
+
+/* Mega-menu section headings — darker + bold instead of light grey.
+     Use the sans font (loaded up to 900) — the mono font is only loaded at
+     400/500, so a heavy weight couldn't render on it. */
+.mega-title {
+  font-family: var(--sans) !important;
+  color: var(--ink) !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.08em !important;
+}
+html,body{margin:0;padding:0}
+body{width:440px;background:var(--bg);position:relative}
+button{font-family:var(--sans);border:none;background:none;cursor:pointer;color:inherit;padding:0}
+input,textarea{font-family:var(--sans)}
+.pgbg{position:fixed;inset:0;padding:28px 30px}
+.pgbg h4{font-family:var(--serif);font-size:30px;color:#c9d6d9;margin:0 0 8px;font-weight:400}
+.pgbg p{font-size:13px;color:#d4dee0;margin:0;max-width:300px;line-height:1.6}
+
+.pgbg{display:none}
+.ai-va-overlay{position:static;padding:34px;opacity:1;justify-content:flex-start}
+.ai-va-panel{transform:none;opacity:1;
+  box-shadow:0 18px 40px -22px rgba(10,19,22,.35)}
+
+.co{position:absolute;width:26px;height:26px;border-radius:50%;
+  background:#0d8f80;color:#fff;font:700 14px/26px var(--sans);text-align:center;
+  box-shadow:0 0 0 3px #fff,0 3px 8px rgba(10,30,36,.3);z-index:9999}
+</style></head><body>
+<div class="pgbg"><h4>Intelligence, engineered</h4><p>Page content sits behind the assistant. The overlay background is transparent, so the site stays visible and readable.</p></div>
+<div class="ai-va-overlay open"><div class="ai-va-panel" role="dialog" aria-modal="true"><div class="ai-va-head"><span class="ai-va-brand">
+    <span class="ai-va-brand-ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10.5 4.5C10.5 9.2 14.3 13 19 13C14.3 13 10.5 16.8 10.5 21.5C10.5 16.8 6.7 13 2 13C6.7 13 10.5 9.2 10.5 4.5Z"/><path d="M18.5 2.5C18.5 4.2 19.8 5.5 21.5 5.5C19.8 5.5 18.5 6.8 18.5 8.5C18.5 6.8 17.2 5.5 15.5 5.5C17.2 5.5 18.5 4.2 18.5 2.5Z"/></svg></span><span class="ai-va-brand-name">Kleza AI Assistant</span></span>
+    <button class="ai-va-close" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg></button></div><div class="ai-va-scroll"><div class="ai-va-chat"></div></div><div class="ai-va-actions"><button class="ai-va-act primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Book Demo</button><button class="ai-va-act"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>Start Chat</button></div><form class="ai-va-foot">
+  <textarea rows="1" placeholder="Ask anything&hellip;" aria-label="Ask anything"></textarea>
+  <span class="ai-va-enter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 10 4 15 9 20"/><path d="M20 4v7a4 4 0 0 1-4 4H4"/></svg></span>
+  <button type="button" class="ai-va-foot-mic" aria-label="Dictate your question"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1.5a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0v-7a3 3 0 0 0-3-3z"/><path d="M5 11a7 7 0 0 0 14 0"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="8" y1="22" x2="16" y2="22"/></svg></button>
+  <button type="submit" class="ai-va-send" aria-label="Send"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button></form></div></div></body></html>

@@ -51,6 +51,16 @@ try {
 const htaccess = `# Kleza — static export for Hostinger (Apache / LiteSpeed)
 Options -MultiViews
 
+# Directory routes are exported as /path/index.html (trailingSlash: true).
+# Explicitly add the trailing slash for real directories so /marketplace
+# resolves to /marketplace/index.html even if the host has DirectorySlash off.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteCond %{REQUEST_URI} !/$
+  RewriteRule ^(.+)$ /$1/ [L,R=301]
+</IfModule>
+
 # Friendly 404 (Next exports this file)
 ErrorDocument 404 /404.html
 

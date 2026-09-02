@@ -3,16 +3,18 @@
 import { useEffect, useRef, useState } from "react";
 
 /**
- * Kleza AI Assistant — a site-wide, voice-driven concierge.
+ * Kleza AI Assistant — a site-wide, text-only Q&A concierge.
  *
  * Mounted once in the root layout, it:
- *   1. renders a premium, highlighted floating launcher pinned to the
- *      bottom-right of every page (not a nav item — it reads as an assistant),
- *   2. proactively greets visitors with a dismissable teaser bubble shortly
- *      after they land, and
- *   3. opens a chat-style panel (docked bottom-right) that answers questions,
- *      suggests solutions, and navigates by voice or text — speaking back with
- *      a female voice (Web Speech API, with a typed fallback).
+ *   1. renders a floating launcher pinned to the bottom-right of every page,
+ *      plus a nudge bubble that appears 30s after landing and returns every
+ *      2 minutes until the visitor opens the panel (or dismisses it),
+ *   2. stays closed on landing — it never opens by itself, and
+ *   3. opens a plain chat panel that answers questions with information drawn
+ *      from the site's own content. Answers are text only: no voice, no link
+ *      cards, and it never navigates the visitor away. The thread is kept in
+ *      localStorage, so history survives page loads and return visits, and is
+ *      cleared only by "New conversation".
  */
 
 interface Intent {
@@ -100,44 +102,132 @@ const NAV: Intent[] = [
   },
 ];
 
-// The visitor explicitly wants to be taken to a page (vs. just asking about it).
-function wantsNavigation(raw: string): boolean {
-  return /\b(open|go to|goto|take me|bring me|navigate|visit|show me|load|jump to)\b/i.test(raw);
-}
-
-function normPath(p: string): string {
-  const path = (p.split("#")[0] || "").replace(/\/+$/, "");
-  return path === "" ? "/" : path;
-}
-function currentPath(): string {
-  if (typeof window === "undefined") return "/";
-  return normPath(window.location.pathname);
-}
-
-interface Action {
-  key: string;
-  title: string;
-  sub: string;
-  route: string;
-}
-
-const QUICK_ACTIONS: Action[] = [
-  { key: "products", title: "AI Products", sub: "Explore our AI products", route: "/ai-products" },
-  { key: "services", title: "AI Services", sub: "Discover our AI services", route: "/ai-services" },
-  { key: "enterprise", title: "Enterprise Services", sub: "Solutions for enterprises", route: "/enterprise-services" },
-  { key: "resources", title: "Resources", sub: "Blogs, case studies and more", route: "/resources" },
-  { key: "contact", title: "Contact Team", sub: "Talk to our experts", route: "/contact" },
-  { key: "demo", title: "Schedule a Demo", sub: "Book a free consultation", route: "/contact/schedule" },
+// Detailed, specific knowledge — individual products, services, and company
+// facts drawn from the site's own content, so the assistant can answer
+// "anything asked" with real detail (matched ahead of the broad NAV topics).
+const DETAIL: Intent[] = [
+  // --- AI Products ---
+  {
+    keys: ["voica", "voice ai", "voice intelligence", "voice product"],
+    say: "Voica is our voice-intelligence product — real-time conversational AI for patient intake, support, and care coordination. It handles natural turn-taking and live transcription, and escalates to a human the moment it's unsure.",
+    route: "/ai-products/voica",
+  },
+  {
+    keys: ["docui", "document ai", "document intelligence", "paperwork", "pdf"],
+    say: "DocUI is our document-intelligence product. It reads, classifies, and routes paperwork automatically — with e-signature, batch approval, and a full audit trail — turning an inbox of PDFs into a clean, auditable pipeline.",
+    route: "/ai-products/docui",
+  },
+  {
+    keys: ["pulse", "pulse board", "ops dashboard", "operations dashboard", "kpi"],
+    say: "Pulse Board is our real-time operations dashboard — live KPI tiles, anomaly detection, and smart alerts in one role-based view, so leaders catch what's slipping before it slips.",
+    route: "/ai-products/pulse",
+  },
+  {
+    keys: ["assessment app", "assessment", "digital assessment"],
+    say: "The Assessment App delivers digital assessments that adapt to the responder, score instantly, and route results automatically — replacing paper forms with a clean audit trail.",
+    route: "/ai-products/assessment",
+  },
+  {
+    keys: ["onboarding app", "onboarding"],
+    say: "The Onboarding App runs onboarding end to end — document collection, ID verification, e-signature, and status tracking — to get new staff, caregivers, and clients productive faster.",
+    route: "/ai-products/onboarding",
+  },
+  {
+    keys: ["3 llms", "three llms", "multi-model", "multi model", "reasoning", "triangulat"],
+    say: "Our 3 LLMs system triangulates reasoning across multiple models and reconciles their outputs into a single, confidence-scored answer — so you're never relying on a single-point bet.",
+    route: "/ai-products/llms",
+  },
+  {
+    keys: ["marketplace", "integration", "integrations", "connector", "template"],
+    say: "The Marketplace offers ready-to-deploy integrations, connectors, and templates that link Kleza products to the tools you already use — installable in minutes.",
+    route: "/ai-products/marketplace",
+  },
+  {
+    keys: ["companion", "companions", "hr companion", "admin companion", "scheduler", "caregiver", "client companion", "workforce", "comes360", "agentic"],
+    say: "Our Comes360 companions are agentic assistants for your teams — HR, Admin, and Scheduler companions for workforce operations, plus Caregiver and Client companions for direct care and engagement.",
+    route: "/ai-products",
+  },
+  // --- AI Services ---
+  {
+    keys: ["fine tun", "fine-tun", "custom model", "train a model", "rag pipeline", "bespoke model", "data curation", "mlops"],
+    say: "We build business-specific AI — data curation, fine-tuning, RAG pipelines, evaluation suites, and MLOps — so your models reflect how your business actually operates, validated against your standards.",
+    route: "/ai-services/training",
+  },
+  {
+    keys: ["support assistant", "customer support", "24/7", "chatbot", "conversational ai", "help desk"],
+    say: "Our AI Support Assistant is 24/7 conversational AI trained on your knowledge base — tone-matched, multi-channel, with smart escalation to a human and analytics built in.",
+    route: "/ai-services/assistant",
+  },
+  // --- Enterprise Services ---
+  {
+    keys: ["website", "web development", "web design", "build a site", "build a website"],
+    say: "Our Website Development team builds modern, high-performance, SEO-ready sites — design systems, accessibility, CMS integration, and performance budgets included.",
+    route: "/enterprise-services/website-development",
+  },
+  {
+    keys: ["ppc", "paid ads", "google ads", "meta ads", "campaign", "growth marketing"],
+    say: "Our Digital Marketing covers paid and organic growth — campaigns, content, analytics, A/B testing, and automation that turns spend into pipeline.",
+    route: "/enterprise-services/digital-marketing",
+  },
+  {
+    keys: ["seo", "search ranking", "rank", "serp", "search visibility", "indexing"],
+    say: "We handle SEO and search visibility — technical and content SEO, rank tracking with our SERP Agent, and instant indexing so your freshest content gets seen.",
+    route: "/enterprise-services/search-visibility",
+  },
+  {
+    keys: ["it service", "managed it", "infrastructure", "remote it", "patching", "backup"],
+    say: "Remote IT Services give you 24/7 infrastructure care — monitoring, patching, backups, security hardening, and remote support with response times you can count on.",
+    route: "/enterprise-services/remote-it-services",
+  },
+  {
+    keys: ["outsourc", "back office", "back-office", "operations support", "managed operations"],
+    say: "Operational Outsourcing gives you a trained, SLA-backed team that runs your repeatable operations with documented processes and AI tooling — quality stays high as you scale.",
+    route: "/enterprise-services/operational-outsourcing",
+  },
+  {
+    keys: ["blog automation", "social media", "content automation", "scheduling tool"],
+    say: "Our automation tools run content and marketing on autopilot — AI drafting with a human review gate, multi-channel social scheduling, and best-time posting.",
+    route: "/enterprise-services/automation-tools",
+  },
+  {
+    keys: ["uptime", "domain expiry", "performance monitoring", "website performance", "monitoring"],
+    say: "Monitoring & Verification keeps your digital surface reliable — uptime and Core Web Vitals checks, plus domain and SSL expiry alerts so nothing lapses.",
+    route: "/enterprise-services/monitoring-verification",
+  },
+  // --- Company facts ---
+  {
+    keys: ["founded", "since", "how long", "experience", "established", "how old", "years in business"],
+    say: "Kleza was founded in 2016. We're a team of 40-plus specialists operating across the USA and India, with about 75% of our work in healthcare.",
+    route: "/about",
+  },
+  {
+    keys: ["why kleza", "why choose", "different", "what makes", "why you", "advantage", "stand out"],
+    say: "What sets Kleza apart is healthcare depth plus human-in-the-loop AI — we build precise, domain-specific systems that augment your teams rather than replace them, and we stay accountable at every step.",
+    route: "/about",
+  },
+  {
+    keys: ["security", "compliance", "data privacy", "secure", "hipaa compliant", "is it safe"],
+    say: "Security and privacy are built in. Our healthcare work is HIPAA-aligned, with audit trails, human oversight, and privacy-by-design across every deployment.",
+    route: "/about#healthcare",
+  },
+  {
+    keys: ["industries", "industry", "sectors", "who do you work with", "your clients", "type of clients"],
+    say: "About 75% of our work is in healthcare — home care, hospitals, pharmacies, and health-tech — but we also serve businesses that need digital and AI services across other sectors.",
+    route: "/about",
+  },
 ];
 
 function matchIntent(raw: string): Intent | null {
   const q = raw.toLowerCase().trim();
   if (!q) return null;
   let best: { intent: Intent; score: number } | null = null;
-  for (const intent of [...INFO, ...NAV]) {
+  for (const intent of [...INFO, ...DETAIL, ...NAV]) {
     for (const key of intent.keys) {
       if (q.includes(key)) {
-        const score = key.length + (INFO.includes(intent) ? 100 : 0);
+        // Specific INFO/DETAIL answers outrank the broad NAV topics; among
+        // equals, the longest matched keyword wins.
+        const bonus = INFO.includes(intent) ? 100 : DETAIL.includes(intent) ? 60 : 0;
+        const score = key.length + bonus;
         if (!best || score > best.score) best = { intent, score };
       }
     }
@@ -145,96 +235,52 @@ function matchIntent(raw: string): Intent | null {
   return best?.intent ?? null;
 }
 
-function actionForRoute(route: string): Action {
-  const hit = QUICK_ACTIONS.find(
-    (a) => route === a.route || route.startsWith(a.route + "/") || route.startsWith(a.route + "#")
-  );
-  if (hit) return hit;
-  if (route === "/") return { key: "home", title: "Home", sub: "Overview of everything Kleza", route: "/" };
-  if (route.startsWith("/about")) return { key: "about", title: "About Kleza", sub: "Our story and mission", route };
-  return { key: "page", title: "this page", sub: "Learn more about Kleza", route };
-}
-
 interface Message {
   id: number;
   role: "user" | "ai";
   text: string;
-  cards?: Action[];
-  confirm?: { route: string; title: string };
 }
 
-const GREETING_SPOKEN =
-  "Hi! I'm Kleza's AI assistant. I can help you find information, explore our solutions, or connect you with the right team.";
-
-/* ---------- icons ---------- */
-const ICONS: Record<string, JSX.Element> = {
-  products: (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round">
-      <path d="M12 2 3 7l9 5 9-5-9-5Z" /><path d="m3 12 9 5 9-5" /><path d="m3 17 9 5 9-5" />
-    </svg>
-  ),
-  services: (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round">
-      <circle cx="12" cy="12" r="3" /><path d="M19.4 15a1.6 1.6 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.6 1.6 0 0 0-1.8-.3 1.6 1.6 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.6 1.6 0 0 0-1-1.5 1.6 1.6 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.6 1.6 0 0 0 .3-1.8 1.6 1.6 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.6 1.6 0 0 0 1.5-1 1.6 1.6 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.6 1.6 0 0 0 1.8.3H9a1.6 1.6 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.6 1.6 0 0 0 1 1.5 1.6 1.6 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.6 1.6 0 0 0-.3 1.8V9a1.6 1.6 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.6 1.6 0 0 0-1.5 1Z" />
-    </svg>
-  ),
-  enterprise: (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round">
-      <rect x="3" y="3" width="8" height="8" rx="1" /><rect x="13" y="3" width="8" height="8" rx="1" /><rect x="3" y="13" width="8" height="8" rx="1" /><rect x="13" y="13" width="8" height="8" rx="1" />
-    </svg>
-  ),
-  resources: (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round">
-      <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" /><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z" />
-    </svg>
-  ),
-  contact: (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round">
-      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z" />
-    </svg>
-  ),
-  demo: (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round">
-      <rect x="3" y="4" width="18" height="18" rx="2" /><line x1="16" y1="2" x2="16" y2="6" /><line x1="8" y1="2" x2="8" y2="6" /><line x1="3" y1="10" x2="21" y2="10" />
-    </svg>
-  ),
-  page: (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round">
-      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" /><path d="M14 2v6h6" />
-    </svg>
-  ),
-};
-ICONS.home = ICONS.page;
-ICONS.about = ICONS.page;
+/** Where the conversation is kept, so history survives page loads. */
+const STORE = "kleza-ai-msgs";
 
 export default function VoiceAssistant() {
   const [open, setOpen] = useState(false);
-  const [listening, setListening] = useState(false);
-  const [supported, setSupported] = useState(true);
-  const [transcript, setTranscript] = useState("");
   const [typed, setTyped] = useState("");
   const [teaser, setTeaser] = useState(false);
-  const [greeted, setGreeted] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
   const [thinking, setThinking] = useState(false);
+  const [listening, setListening] = useState(false);
+  // Book-a-demo picker (UI only — nothing is sent anywhere yet).
+  const [demoOpen, setDemoOpen] = useState(false);
+  // The Book Demo / Start Chat row hides once the visitor starts chatting.
+  const [showActions, setShowActions] = useState(true);
+  const [demoMonth, setDemoMonth] = useState<{ y: number; m: number } | null>(null);
+  const [demoDay, setDemoDay] = useState<number | null>(null);
+  const [demoSlot, setDemoSlot] = useState<string | null>(null);
+  // Step 1 = pick date & time, step 2 = who the demo is for.
+  const [demoStep, setDemoStep] = useState<1 | 2>(1);
+  const [demoName, setDemoName] = useState("");
+  const [demoEmail, setDemoEmail] = useState("");
+  const [demoPhone, setDemoPhone] = useState("");
 
-  const recogRef = useRef<any>(null);
-  const navTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const thinkTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const recogRef = useRef<any>(null);
   const idRef = useRef(0);
   const scrollRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLTextAreaElement>(null);
 
   const nextId = () => ++idRef.current;
   const inChat = messages.length > 0;
 
-  /* ----- restore the conversation + state across page navigations -----
+  /* ----- restore the conversation across page loads -----
      The site uses full page loads, so React state resets on every route
-     change. We persist the session so the assistant continues seamlessly
-     and acknowledges each page it guides the user to (expert-guide mode). */
+     change. History is kept in localStorage so the thread is still there when
+     the visitor comes back, and is only ever cleared by "New conversation". */
   useEffect(() => {
     let restored: Message[] = [];
     try {
-      const raw = sessionStorage.getItem("kleza-ai-msgs");
+      const raw = localStorage.getItem(STORE);
       if (raw) {
         const arr = JSON.parse(raw);
         if (Array.isArray(arr)) restored = arr as Message[];
@@ -243,34 +289,8 @@ export default function VoiceAssistant() {
       /* ignore */
     }
     idRef.current = restored.reduce((m, x) => Math.max(m, x?.id ?? 0), 0);
+    if (restored.length) setMessages(restored);
 
-    // Did we just navigate the user somewhere from the assistant?
-    let arrival: { title: string } | null = null;
-    try {
-      const a = sessionStorage.getItem("kleza-ai-arrival");
-      if (a) {
-        arrival = JSON.parse(a);
-        sessionStorage.removeItem("kleza-ai-arrival");
-      }
-    } catch {
-      /* ignore */
-    }
-
-    if (arrival) {
-      const msg = `You're now on the ${arrival.title} page. Is there anything else I can help you with?`;
-      restored = [...restored, { id: ++idRef.current, role: "ai", text: msg }];
-      setMessages(restored);
-      setGreeted(true);
-      setOpen(true);
-      // Note: no speak() here — the explanation was already spoken before the
-      // navigation, so this stays text-only to avoid a second overlapping voice.
-      return;
-    }
-
-    if (restored.length) {
-      setMessages(restored);
-      setGreeted(true);
-    }
     let wasOpen = false;
     try {
       wasOpen = sessionStorage.getItem("kleza-ai-openstate") === "1";
@@ -284,7 +304,7 @@ export default function VoiceAssistant() {
   /* ----- persist the conversation + open state ----- */
   useEffect(() => {
     try {
-      sessionStorage.setItem("kleza-ai-msgs", JSON.stringify(messages));
+      localStorage.setItem(STORE, JSON.stringify(messages));
     } catch {
       /* ignore */
     }
@@ -305,53 +325,44 @@ export default function VoiceAssistant() {
     return () => window.removeEventListener("kleza-ai-open", openHandler);
   }, []);
 
-  /* ----- auto-open the panel on the first landing, once per session ----- */
-  useEffect(() => {
-    let seen = false;
-    try {
-      seen = sessionStorage.getItem("kleza-ai-auto") === "1";
-    } catch {
-      /* ignore */
-    }
-    if (seen) return;
-    const t = setTimeout(() => {
-      setOpen(true);
-      try {
-        sessionStorage.setItem("kleza-ai-auto", "1");
-      } catch {
-        /* ignore */
-      }
-    }, 1100);
-    return () => clearTimeout(t);
-  }, []);
+  /* ----- the nudge -----
+     The assistant never opens by itself. The bubble shows as soon as the page
+     loads, stays for 30s, closes itself, then reopens every 2 minutes until the
+     visitor uses it. "Used" is tracked per page view only (a ref, not storage):
+     a stored flag meant that opening the panel once silenced the nudge for the
+     whole tab. */
+  const NUDGE_FIRST = 1_000; // ~immediately on load (lets the panel animate in)
+  const NUDGE_VISIBLE = 30_000; // then it closes itself
+  const NUDGE_REPEAT = 120_000; // and comes back every 2 minutes
+  const nudgeDone = useRef(false);
 
-  /* ----- proactive teaser on later page views (after the first auto-open) ----- */
   useEffect(() => {
-    let firstDone = false;
-    let dismissed = false;
-    try {
-      firstDone = sessionStorage.getItem("kleza-ai-auto") === "1";
-      dismissed = sessionStorage.getItem("kleza-ai-teaser") === "1";
-    } catch {
-      /* ignore */
-    }
-    // On the very first landing the full panel auto-opens, so skip the teaser.
-    if (!firstDone || dismissed) return;
-    const show = setTimeout(() => setTeaser(true), 2600);
-    const hide = setTimeout(() => setTeaser(false), 12000);
-    return () => {
-      clearTimeout(show);
-      clearTimeout(hide);
+    if (open) nudgeDone.current = true;
+    if (open || nudgeDone.current) return;
+
+    const timers: ReturnType<typeof setTimeout>[] = [];
+    const cycle = (delay: number) => {
+      timers.push(
+        setTimeout(() => {
+          setTeaser(true);
+          timers.push(
+            setTimeout(() => {
+              setTeaser(false);
+              // ...and comes back 2 minutes after closing, until it's used.
+              cycle(NUDGE_REPEAT);
+            }, NUDGE_VISIBLE)
+          );
+        }, delay)
+      );
     };
-  }, []);
+    cycle(NUDGE_FIRST);
+    return () => timers.forEach(clearTimeout);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [open]);
 
   function dismissTeaser() {
     setTeaser(false);
-    try {
-      sessionStorage.setItem("kleza-ai-teaser", "1");
-    } catch {
-      /* ignore */
-    }
+    nudgeDone.current = true;
   }
 
   function launch() {
@@ -359,43 +370,67 @@ export default function VoiceAssistant() {
     setOpen(true);
   }
 
-  /* ----- warm up voice list (loads async) + stop speech on page unload ----- */
-  useEffect(() => {
-    try {
-      const synth = window.speechSynthesis;
-      if (!synth) return;
-      synth.getVoices();
-      const onVoices = () => synth.getVoices();
-      const stopSpeech = () => {
-        try {
-          synth.cancel();
-        } catch {
-          /* ignore */
-        }
-      };
-      synth.addEventListener?.("voiceschanged", onVoices);
-      window.addEventListener("beforeunload", stopSpeech);
-      window.addEventListener("pagehide", stopSpeech);
-      return () => {
-        synth.removeEventListener?.("voiceschanged", onVoices);
-        window.removeEventListener("beforeunload", stopSpeech);
-        window.removeEventListener("pagehide", stopSpeech);
-      };
-    } catch {
-      /* ignore */
+  /* ----- dictation -----
+     The mic only fills the input box; the visitor still presses Enter (or the
+     send button) to ask. The assistant never speaks its answers aloud.
+     The button always renders — feature detection happens on click, so it can
+     never silently disappear (it used to be hidden until a client-side check
+     ran, which meant it sometimes never showed at all). ----- */
+  function toggleDictation() {
+    if (listening) {
+      try {
+        recogRef.current?.stop();
+      } catch {
+        /* ignore */
+      }
+      setListening(false);
+      return;
     }
-  }, []);
+    const SR = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+    if (!SR) {
+      pushAI({
+        text:
+          "Dictation isn't supported in this browser — please type your question below instead. (It works in Chrome and Edge.)",
+      });
+      return;
+    }
+    const recog = new SR();
+    recog.lang = "en-US";
+    recog.interimResults = true;
+    recog.continuous = false;
+    let finalText = "";
+    recog.onresult = (e: any) => {
+      let interim = "";
+      for (let i = e.resultIndex; i < e.results.length; i++) {
+        const r = e.results[i];
+        if (r.isFinal) finalText += r[0].transcript;
+        else interim += r[0].transcript;
+      }
+      setTyped((finalText + interim).trimStart());
+    };
+    recog.onerror = () => setListening(false);
+    recog.onend = () => setListening(false);
+    recogRef.current = recog;
+    setListening(true);
+    try {
+      recog.start();
+    } catch {
+      setListening(false);
+    }
+  }
 
-  /* ----- feature-detect speech recognition ----- */
+  /* ----- grow the input with the question (up to the CSS max-height) -----
+     `scrollHeight` excludes the border, and box-sizing is border-box, so the
+     border width has to be added back or the last line gets clipped. */
   useEffect(() => {
-    const SR =
-      (typeof window !== "undefined" &&
-        ((window as any).SpeechRecognition || (window as any).webkitSpeechRecognition)) ||
-      null;
-    setSupported(!!SR);
-  }, []);
+    const el = inputRef.current;
+    if (!el) return;
+    el.style.height = "auto";
+    const border = el.offsetHeight - el.clientHeight;
+    el.style.height = `${el.scrollHeight + border}px`;
+  }, [typed]);
 
-  /* ----- auto-scroll chat to bottom (chat view only — never the home view) ----- */
+  /* ----- auto-scroll chat to bottom ----- */
   useEffect(() => {
     if (messages.length === 0) return;
     const el = scrollRef.current;
@@ -409,271 +444,115 @@ export default function VoiceAssistant() {
     if (el && messages.length === 0) el.scrollTop = 0;
   }, [open, messages.length]);
 
-  function pickFemaleVoice(): SpeechSynthesisVoice | null {
-    try {
-      const voices = window.speechSynthesis?.getVoices?.() ?? [];
-      if (!voices.length) return null;
-
-      // Known Indian-English female voices, in order of quality/naturalness.
-      const indianFemale = [
-        "neerja", // Microsoft Neerja Online (Natural) — en-IN, very natural
-        "heera", // Microsoft Heera — en-IN
-        "priya",
-        "kalpana",
-        "swara",
-        "aditi", // Amazon Polly (Indian English)
-        "raveena", // Amazon Polly (Indian English)
-        "isha",
-        "ananya",
-      ];
-      // High-quality female voices in other English locales (fallbacks).
-      const otherFemale = [
-        "google uk english female",
-        "google us english",
-        "microsoft aria",
-        "microsoft jenny",
-        "microsoft michelle",
-        "microsoft sonia",
-        "microsoft libby",
-        "microsoft zira",
-        "samantha",
-        "victoria",
-        "karen",
-        "moira",
-        "tessa",
-        "fiona",
-        "serena",
-        "female",
-        "woman",
-      ];
-
-      const byName = (names: string[], list: SpeechSynthesisVoice[]) => {
-        for (const n of names) {
-          const hit = list.find((v) => v.name.toLowerCase().includes(n));
-          if (hit) return hit;
-        }
-        return null;
-      };
-
-      const maleRe = /(david|mark|george|daniel|fred|alex|male|man|rishi|ravi|prabhat|hemant|guy|eric|tony)/i;
-      const isNatural = (v: SpeechSynthesisVoice) => /natural|neural|online/i.test(v.name);
-
-      const enIN = voices.filter((v) => /^en[-_]IN/i.test(v.lang));
-      const enAll = voices.filter((v) => /^en(-|_|$)/i.test(v.lang));
-
-      // 1) An explicitly-known Indian female voice.
-      let pick = byName(indianFemale, voices);
-      // 2) Any en-IN voice that isn't obviously male (prefer natural/neural).
-      if (!pick && enIN.length) {
-        const female = enIN.filter((v) => !maleRe.test(v.name));
-        pick =
-          female.find(isNatural) ??
-          female[0] ??
-          enIN.find(isNatural) ??
-          enIN[0];
-      }
-      // 3) A known good female voice in another English locale.
-      if (!pick) pick = byName(otherFemale, enAll.length ? enAll : voices);
-      // 4) Any English voice that isn't obviously male.
-      if (!pick) {
-        const pool = enAll.length ? enAll : voices;
-        pick = pool.find((v) => isNatural(v) && !maleRe.test(v.name)) ?? pool.find((v) => !maleRe.test(v.name)) ?? pool[0];
-      }
-      return pick ?? null;
-    } catch {
-      return null;
-    }
-  }
-
-  function speak(text: string) {
-    try {
-      const synth = window.speechSynthesis;
-      if (!synth) return;
-      // Stop anything already speaking/queued so only one voice is ever heard.
-      synth.cancel();
-      const start = () => {
-        synth.cancel();
-        const u = new SpeechSynthesisUtterance(text);
-        u.rate = 0.97;
-        u.pitch = 1.05;
-        const v = pickFemaleVoice();
-        if (v) {
-          u.voice = v;
-          u.lang = v.lang;
-        } else {
-          u.lang = "en-US";
-        }
-        synth.speak(u);
-      };
-      // A tiny delay lets the cancel flush its queue first (prevents the
-      // occasional double/overlapping utterance in Chrome & Edge).
-      setTimeout(start, 60);
-    } catch {
-      /* ignore */
-    }
-  }
-
   function pushAI(msg: Omit<Message, "id" | "role">) {
     setMessages((m) => [...m, { id: nextId(), role: "ai", ...msg }]);
   }
 
-  /* ----- core: respond to a user query ----- */
+  /* ----- core: answer a typed question, in text, from the site's own content.
+     Information only — the assistant never navigates the visitor away. ----- */
   function send(raw: string) {
     const text = raw.trim();
     if (!text) return;
-    setTranscript("");
     setMessages((m) => [...m, { id: nextId(), role: "user", text }]);
     setThinking(true);
     if (thinkTimer.current) clearTimeout(thinkTimer.current);
     thinkTimer.current = setTimeout(() => {
       setThinking(false);
       const intent = matchIntent(text);
-      if (!intent) {
-        const msg =
-          "I can tell you about Kleza's AI products, AI services, enterprise services, resources, careers, or our contact details and locations. What would you like to know?";
-        pushAI({ text: msg });
-        speak(msg);
-        return;
-      }
-
-      // Always explain the answer in the chat, professionally.
-      const here = currentPath();
-      const navigate =
-        !!intent.route && normPath(intent.route) !== here && wantsNavigation(text);
-
-      if (navigate) {
-        const card = actionForRoute(intent.route!);
-        const msg = `${intent.say} Opening the ${card.title} page for you now.`;
-        pushAI({ text: msg });
-        speak(msg);
-        go(intent.route!, 2600);
-      } else {
-        pushAI({ text: intent.say });
-        speak(intent.say);
-      }
+      pushAI({
+        text:
+          intent?.say ??
+          "I can tell you about Kleza's AI products, AI services, enterprise services, resources, careers, or our contact details and locations. What would you like to know?",
+      });
     }, 700);
   }
 
-  function go(route: string, delay = 900) {
-    // Remember where we're sending the user so the assistant can greet them
-    // on arrival and keep the conversation going across the page load.
-    try {
-      const title = actionForRoute(route).title;
-      sessionStorage.setItem("kleza-ai-arrival", JSON.stringify({ title, route }));
-      sessionStorage.setItem("kleza-ai-openstate", "1");
-    } catch {
-      /* ignore */
-    }
-    if (navTimer.current) clearTimeout(navTimer.current);
-    navTimer.current = setTimeout(() => {
-      window.location.href = route;
-    }, delay);
+  /* ----- book a demo -----
+     A small inline calendar. The month is only computed on open, never during
+     render, so the server and client can't disagree about "today". ----- */
+  const DEMO_SLOTS = ["09:30", "11:00", "13:30", "15:00", "16:30"];
+  const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+  function openDemo() {
+    const now = new Date();
+    setDemoMonth({ y: now.getFullYear(), m: now.getMonth() });
+    setDemoDay(null);
+    setDemoSlot(null);
+    setDemoStep(1);
+    setDemoName("");
+    setDemoEmail("");
+    setDemoPhone("");
+    setDemoOpen(true);
   }
 
-  function startListening() {
-    const SR = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
-    if (!SR) {
-      setSupported(false);
-      return;
-    }
-    try {
-      window.speechSynthesis?.cancel();
-    } catch {
-      /* ignore */
-    }
-    const recog = new SR();
-    recog.lang = "en-US";
-    recog.interimResults = true;
-    recog.continuous = false;
-    recog.maxAlternatives = 1;
-    let finalText = "";
-    recog.onresult = (e: any) => {
-      let interim = "";
-      for (let i = e.resultIndex; i < e.results.length; i++) {
-        const r = e.results[i];
-        if (r.isFinal) finalText += r[0].transcript;
-        else interim += r[0].transcript;
-      }
-      setTranscript(finalText || interim);
-    };
-    recog.onerror = (e: any) => {
-      setListening(false);
-      if (e?.error === "not-allowed" || e?.error === "service-not-allowed") {
-        const msg =
-          "I couldn't access your microphone — please allow mic access, or just type your question below.";
-        pushAI({ text: msg });
-        speak(msg);
-      }
-    };
-    recog.onend = () => {
-      setListening(false);
-      if (finalText.trim()) send(finalText.trim());
-    };
-    recogRef.current = recog;
-    setTranscript("");
-    setListening(true);
-    try {
-      recog.start();
-    } catch {
-      setListening(false);
-    }
+  /** Human-readable form of the chosen slot, e.g. "Wed, 29 Jul at 13:30". */
+  function demoWhen(): string {
+    if (!demoMonth || !demoDay || !demoSlot) return "";
+    const d = new Date(demoMonth.y, demoMonth.m, demoDay);
+    return `${d.toLocaleDateString(undefined, {
+      weekday: "short",
+      day: "numeric",
+      month: "short",
+    })} at ${demoSlot}`;
   }
 
-  function stopListening() {
-    try {
-      recogRef.current?.stop();
-    } catch {
-      /* ignore */
-    }
-    setListening(false);
+  const emailLooksValid = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(demoEmail.trim());
+  const phoneLooksValid = demoPhone.replace(/\D/g, "").length >= 7;
+  const detailsReady = demoName.trim().length >= 2 && emailLooksValid && phoneLooksValid;
+
+  function shiftMonth(step: number) {
+    setDemoMonth((cur) => {
+      if (!cur) return cur;
+      const d = new Date(cur.y, cur.m + step, 1);
+      return { y: d.getFullYear(), m: d.getMonth() };
+    });
+    setDemoDay(null);
+    setDemoSlot(null);
   }
 
-  function cancelListening() {
-    try {
-      recogRef.current?.abort?.();
-    } catch {
-      /* ignore */
-    }
-    setTranscript("");
-    setListening(false);
+  /** Day cells for the visible month, padded so the 1st lands on its weekday. */
+  function monthCells(y: number, m: number): (number | null)[] {
+    const lead = new Date(y, m, 1).getDay();
+    const total = new Date(y, m + 1, 0).getDate();
+    const cells: (number | null)[] = Array(lead).fill(null);
+    for (let d = 1; d <= total; d++) cells.push(d);
+    return cells;
   }
 
-  function resetChat() {
-    cancelListening();
-    try {
-      window.speechSynthesis?.cancel();
-    } catch {
-      /* ignore */
-    }
-    if (navTimer.current) clearTimeout(navTimer.current);
+  /** Past days (and Sundays) can't be booked. */
+  function dayDisabled(y: number, m: number, d: number): boolean {
+    const now = new Date();
+    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    const cell = new Date(y, m, d);
+    return cell < today || cell.getDay() === 0;
+  }
+
+  function confirmDemo() {
+    if (!demoMonth || !demoDay || !demoSlot || !detailsReady) return;
+    const name = demoName.trim().split(/\s+/)[0];
+    pushAI({
+      text: `Thanks ${name} — your demo is requested for ${demoWhen()}. We'll send the confirmation and joining details to ${demoEmail.trim()}, and call you if we need anything before then.`,
+    });
+    setDemoOpen(false);
+  }
+
+  /* Clears the thread deliberately — the button is labelled "New conversation"
+     so it can't be mistaken for a back arrow (which used to erase silently). */
+  function newConversation() {
     if (thinkTimer.current) clearTimeout(thinkTimer.current);
     setThinking(false);
     setMessages([]);
+    setShowActions(true);
     try {
-      sessionStorage.removeItem("kleza-ai-msgs");
+      localStorage.removeItem(STORE);
     } catch {
       /* ignore */
     }
   }
 
   function close() {
-    cancelListening();
-    try {
-      window.speechSynthesis?.cancel();
-    } catch {
-      /* ignore */
-    }
-    if (navTimer.current) clearTimeout(navTimer.current);
     setOpen(false);
   }
-
-  /* ----- greet on first open ----- */
-  useEffect(() => {
-    if (!open || greeted) return;
-    setGreeted(true);
-    speak(GREETING_SPOKEN);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [open]);
 
   /* ----- Esc to close ----- */
   useEffect(() => {
@@ -693,21 +572,6 @@ export default function VoiceAssistant() {
     </svg>
   );
 
-  function ActionRow({ a }: { a: Action }) {
-    return (
-      <button className="ai-va-action" onClick={() => go(a.route)}>
-        <span className="ai-va-action-ic">{ICONS[a.key] ?? ICONS.page}</span>
-        <span className="ai-va-action-tx">
-          <span className="ai-va-action-t">{a.title}</span>
-          <span className="ai-va-action-s">{a.sub}</span>
-        </span>
-        <svg className="ai-va-action-go" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
-          <polyline points="9 18 15 12 9 6" />
-        </svg>
-      </button>
-    );
-  }
-
   return (
     <>
       {/* Floating launcher — premium, highlighted, bottom-right */}
@@ -722,7 +586,7 @@ export default function VoiceAssistant() {
           <button className="ai-va-teaser-body" onClick={launch}>
             <span className="ai-va-teaser-wave" aria-hidden="true">👋</span>
             <span>
-              <strong>Need a hand?</strong> Ask me anything — I can talk, search and guide you around Kleza.
+              <strong>Need a hand?</strong> Ask me anything about Kleza — our products, services or how to reach us.
             </span>
           </button>
         </div>
@@ -743,7 +607,7 @@ export default function VoiceAssistant() {
         aria-hidden={!open}
       >
         <div
-          className={"ai-va-panel" + (listening ? " listening" : "")}
+          className={"ai-va-panel" + (demoOpen ? " demo" : "")}
           role="dialog"
           aria-modal="true"
           aria-label="Kleza AI Assistant"
@@ -751,16 +615,22 @@ export default function VoiceAssistant() {
           {/* Header */}
           <div className="ai-va-head">
             <span className="ai-va-brand">
-              {inChat && (
-                <button className="ai-va-back" onClick={resetChat} aria-label="Back">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.2} strokeLinecap="round" strokeLinejoin="round">
-                    <polyline points="15 18 9 12 15 6" />
-                  </svg>
-                </button>
-              )}
               <span className="ai-va-brand-ic">{SPARKLE}</span>
               <span className="ai-va-brand-name">Kleza AI Assistant</span>
             </span>
+            {inChat && (
+              <button
+                className="ai-va-new"
+                onClick={newConversation}
+                aria-label="New conversation"
+                title="New conversation"
+              >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M21 12a9 9 0 1 1-3.5-7.1" />
+                  <polyline points="21 3 21 9 15 9" />
+                </svg>
+              </button>
+            )}
             <button className="ai-va-close" onClick={close} aria-label="Close">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.2} strokeLinecap="round">
                 <line x1="6" y1="6" x2="18" y2="18" />
@@ -769,66 +639,187 @@ export default function VoiceAssistant() {
             </button>
           </div>
 
-          {/* Scrollable middle */}
+          {/* Scrollable middle — the chat thread, or the demo picker */}
           <div className="ai-va-scroll" ref={scrollRef}>
-            {!inChat ? (
-              <div className="ai-va-home">
-                <p className="ai-va-greet">Hi! How can I help you today?</p>
-                <p className="ai-va-greet-sub">
-                  I can help you find information, explore our solutions or connect you with the right team.
-                </p>
-
-                {supported && (
-                  <button className="ai-va-tap" onClick={startListening}>
-                    <span className="ai-va-tap-mic">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M12 1.5a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0v-7a3 3 0 0 0-3-3z" />
-                        <path d="M5 11a7 7 0 0 0 14 0" />
-                        <line x1="12" y1="18" x2="12" y2="22" />
-                        <line x1="8" y1="22" x2="16" y2="22" />
-                      </svg>
-                      Tap to speak
-                    </span>
-                    <span className="ai-va-tap-sub">or type your question below</span>
+            {demoOpen && demoMonth ? (
+              <div className="ai-va-demo">
+                <div className="ai-va-demo-top">
+                  <button className="ai-va-demo-back" onClick={() => setDemoOpen(false)} aria-label="Back to chat">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.2} strokeLinecap="round" strokeLinejoin="round">
+                      <polyline points="15 18 9 12 15 6" />
+                    </svg>
                   </button>
+                  <strong>Book a demo</strong>
+                </div>
+
+                {demoStep === 1 ? (
+                  <>
+                    <div className="ai-va-cal-head">
+                      <button onClick={() => shiftMonth(-1)} aria-label="Previous month">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.2} strokeLinecap="round" strokeLinejoin="round">
+                          <polyline points="15 18 9 12 15 6" />
+                        </svg>
+                      </button>
+                      <span>{MONTHS[demoMonth.m]} {demoMonth.y}</span>
+                      <button onClick={() => shiftMonth(1)} aria-label="Next month">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.2} strokeLinecap="round" strokeLinejoin="round">
+                          <polyline points="9 18 15 12 9 6" />
+                        </svg>
+                      </button>
+                    </div>
+
+                    <div className="ai-va-cal-dow" aria-hidden="true">
+                      {["S", "M", "T", "W", "T", "F", "S"].map((d, i) => (
+                        <span key={i}>{d}</span>
+                      ))}
+                    </div>
+                    <div className="ai-va-cal-grid" role="grid">
+                      {monthCells(demoMonth.y, demoMonth.m).map((d, i) =>
+                        d === null ? (
+                          <span key={`x${i}`} />
+                        ) : (
+                          <button
+                            key={d}
+                            className={"ai-va-cal-day" + (demoDay === d ? " sel" : "")}
+                            disabled={dayDisabled(demoMonth.y, demoMonth.m, d)}
+                            onClick={() => {
+                              setDemoDay(d);
+                              setDemoSlot(null);
+                            }}
+                          >
+                            {d}
+                          </button>
+                        )
+                      )}
+                    </div>
+
+                    {demoDay && (
+                      <>
+                        <div className="ai-va-demo-label">Pick a time</div>
+                        <div className="ai-va-slots">
+                          {DEMO_SLOTS.map((s) => (
+                            <button
+                              key={s}
+                              className={"ai-va-slot" + (demoSlot === s ? " sel" : "")}
+                              onClick={() => setDemoSlot(s)}
+                            >
+                              {s}
+                            </button>
+                          ))}
+                        </div>
+                      </>
+                    )}
+
+                    <button
+                      className="ai-va-demo-confirm"
+                      disabled={!demoDay || !demoSlot}
+                      onClick={() => setDemoStep(2)}
+                    >
+                      Continue
+                    </button>
+                  </>
+                ) : (
+                  <>
+                    {/* Chosen slot stays visible, and can be changed. */}
+                    <div className="ai-va-demo-when">
+                      <span>{demoWhen()}</span>
+                      <button onClick={() => setDemoStep(1)}>Change</button>
+                    </div>
+
+                    <div className="ai-va-demo-label">Your details</div>
+                    <div className="ai-va-demo-fields">
+                      <input
+                        className="ai-va-field"
+                        type="text"
+                        value={demoName}
+                        onChange={(e) => setDemoName(e.target.value)}
+                        placeholder="Full name"
+                        aria-label="Full name"
+                        autoComplete="name"
+                      />
+                      <input
+                        className="ai-va-field"
+                        type="email"
+                        value={demoEmail}
+                        onChange={(e) => setDemoEmail(e.target.value)}
+                        placeholder="Work email"
+                        aria-label="Work email"
+                        autoComplete="email"
+                      />
+                      <input
+                        className="ai-va-field"
+                        type="tel"
+                        value={demoPhone}
+                        onChange={(e) => setDemoPhone(e.target.value)}
+                        placeholder="Phone number"
+                        aria-label="Phone number"
+                        autoComplete="tel"
+                      />
+                    </div>
+
+                    <button className="ai-va-demo-confirm" disabled={!detailsReady} onClick={confirmDemo}>
+                      Confirm demo
+                    </button>
+                  </>
                 )}
               </div>
             ) : (
-              <div className="ai-va-chat">
-                {messages.map((m) =>
-                  m.role === "user" ? (
-                    <div key={m.id} className="ai-va-msg user">
+            <div className="ai-va-chat">
+              {messages.map((m) =>
+                m.role === "user" ? (
+                  <div key={m.id} className="ai-va-msg user">
+                    <div className="ai-va-bubble">{m.text}</div>
+                  </div>
+                ) : (
+                  <div key={m.id} className="ai-va-msg ai">
+                    <span className="ai-va-avatar">{SPARKLE}</span>
+                    <div className="ai-va-ai-body">
                       <div className="ai-va-bubble">{m.text}</div>
                     </div>
-                  ) : (
-                    <div key={m.id} className="ai-va-msg ai">
-                      <span className="ai-va-avatar">{SPARKLE}</span>
-                      <div className="ai-va-ai-body">
-                        <div className="ai-va-bubble">{m.text}</div>
-                        {m.cards && (
-                          <div className="ai-va-cards">
-                            {m.cards.map((c) => (
-                              <ActionRow key={c.key + m.id} a={c} />
-                            ))}
-                          </div>
-                        )}
-                      </div>
-                    </div>
-                  )
-                )}
-                {thinking && (
-                  <div className="ai-va-msg ai">
-                    <span className="ai-va-avatar">{SPARKLE}</span>
-                    <div className="ai-va-typing">
-                      <span />
-                      <span />
-                      <span />
-                    </div>
                   </div>
-                )}
-              </div>
+                )
+              )}
+              {thinking && (
+                <div className="ai-va-msg ai">
+                  <span className="ai-va-avatar">{SPARKLE}</span>
+                  <div className="ai-va-typing">
+                    <span />
+                    <span />
+                    <span />
+                  </div>
+                </div>
+              )}
+            </div>
             )}
           </div>
+
+          {/* Two actions: book a demo, or just start typing. Hidden once the
+              visitor taps Start Chat or the conversation is under way. */}
+          {!demoOpen && showActions && !inChat && (
+            <div className="ai-va-actions">
+              <button className="ai-va-act primary" onClick={openDemo}>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" />
+                  <line x1="16" y1="2" x2="16" y2="6" />
+                  <line x1="8" y1="2" x2="8" y2="6" />
+                  <line x1="3" y1="10" x2="21" y2="10" />
+                </svg>
+                Book Demo
+              </button>
+              <button
+                className="ai-va-act"
+                onClick={() => {
+                  setShowActions(false);
+                  inputRef.current?.focus();
+                }}
+              >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                </svg>
+                Start Chat
+              </button>
+            </div>
+          )}
 
           {/* Footer input */}
           <form
@@ -840,28 +831,46 @@ export default function VoiceAssistant() {
               setTyped("");
             }}
           >
-            <input
-              type="text"
+            {/* A textarea, not an input: long questions wrap and stay readable
+                instead of scrolling out of sight. Enter sends, Shift+Enter
+                starts a new line. */}
+            <textarea
+              ref={inputRef}
+              rows={1}
               value={typed}
               onChange={(e) => setTyped(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" && !e.shiftKey) {
+                  e.preventDefault();
+                  if (!typed.trim()) return;
+                  send(typed.trim());
+                  setTyped("");
+                }
+              }}
               placeholder="Ask anything…"
               aria-label="Ask anything"
             />
-            {supported && (
-              <button
-                type="button"
-                className="ai-va-foot-mic"
-                onClick={startListening}
-                aria-label="Speak your question"
-              >
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 1.5a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0v-7a3 3 0 0 0-3-3z" />
-                  <path d="M5 11a7 7 0 0 0 14 0" />
-                  <line x1="12" y1="18" x2="12" y2="22" />
-                  <line x1="8" y1="22" x2="16" y2="22" />
-                </svg>
-              </button>
-            )}
+            {/* Enter hint, then the mic (dictates into the box), then send. */}
+            <span className="ai-va-enter" aria-hidden="true" title="Press Enter to send">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="9 10 4 15 9 20" />
+                <path d="M20 4v7a4 4 0 0 1-4 4H4" />
+              </svg>
+            </span>
+            <button
+              type="button"
+              className={"ai-va-foot-mic" + (listening ? " on" : "")}
+              onClick={toggleDictation}
+              aria-label={listening ? "Stop dictation" : "Dictate your question"}
+              title={listening ? "Listening — tap to stop" : "Speak your question"}
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+                <path d="M12 1.5a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0v-7a3 3 0 0 0-3-3z" />
+                <path d="M5 11a7 7 0 0 0 14 0" />
+                <line x1="12" y1="18" x2="12" y2="22" />
+                <line x1="8" y1="22" x2="16" y2="22" />
+              </svg>
+            </button>
             <button type="submit" className="ai-va-send" aria-label="Send">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.2} strokeLinecap="round" strokeLinejoin="round">
                 <line x1="5" y1="12" x2="19" y2="12" />
@@ -869,26 +878,6 @@ export default function VoiceAssistant() {
               </svg>
             </button>
           </form>
-
-          {/* Listening overlay (covers panel body) */}
-          {listening && (
-            <div className="ai-va-listen">
-              <button className={"ai-va-mic on"} onClick={stopListening} aria-label="Stop listening">
-                <span className="ai-va-mic-ring" />
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 1.5a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0v-7a3 3 0 0 0-3-3z" />
-                  <path d="M5 11a7 7 0 0 0 14 0" />
-                  <line x1="12" y1="18" x2="12" y2="22" />
-                  <line x1="8" y1="22" x2="16" y2="22" />
-                </svg>
-              </button>
-              <p className="ai-va-listen-title">Listening…</p>
-              <p className="ai-va-listen-sub">{transcript ? `“${transcript}”` : "Speak now"}</p>
-              <button className="ai-va-btn ghost" onClick={cancelListening}>
-                Cancel
-              </button>
-            </div>
-          )}
         </div>
       </div>
     </>
