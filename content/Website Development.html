@@ -27,6 +27,14 @@
 .es-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(900px 500px at 80% 20%,rgba(90, 204, 241,.18),transparent 60%),radial-gradient(700px 400px at 10% 90%,rgba(54,192,237,.12),transparent 60%);pointer-events:none}
 .es-hero-inner{position:relative;z-index:1}
 .es-hero .eyebrow{color:#9fb3b8}
+/* Breadcrumb now sits inside the dark hero panel (it used to be a white strip
+   above it), so it needs light-on-dark colours. */
+.es-crumb{margin-bottom:22px}
+.es-crumb .breadcrumb{color:#8fa3a8}
+.es-crumb .breadcrumb a{color:#b8c8cc}
+.es-crumb .breadcrumb a:hover{color:var(--accent-3)}
+.es-crumb .breadcrumb .sep{color:#5d6f74}
+.es-crumb .breadcrumb .current{color:var(--accent-3)}
 .es-hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(38px,5vw,68px);line-height:1.08;letter-spacing:-.01em;color:#fff;margin:18px 0 26px;text-wrap:balance}
 .es-hero h1 .ital{font-style:italic;color:var(--accent-3)}
 .es-hero p.lede{color:#aebcc0;max-width:560px;font-size:clamp(15px,1.1vw,18px);line-height:1.6;margin:0}
@@ -364,13 +372,12 @@
   </div>
 </header>
 
-<div class="breadcrumb-bar"><div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="Kleza.html">Home</a><span class="sep">&raquo;</span><a href="enterprise-services.html">Enterprise Services</a><span class="sep">&raquo;</span><span class="current">Website Development</span></nav></div></div>
 
 <!-- SECTION 01 — HERO -->
 <section data-screen-label="Hero" style="padding-top:8px">
   <div class="es-hero">
     <div class="es-hero-inner">
-      <span class="eyebrow">Enterprise Services <span class="dot">·</span> Website Development</span>
+      <div class="es-crumb"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="Kleza.html">Home</a><span class="sep">&raquo;</span><a href="enterprise-services.html">Enterprise Services</a><span class="sep">&raquo;</span><span class="current">Website Development</span></nav></div>
       <h1>AI-Powered Website Development &mdash; Built for Performance, <span class="ital">Designed for Growth.</span></h1>
       <p class="lede">Kleza builds AI-powered websites that actually work the way they&rsquo;re supposed to, fast, easy to use, and built with real technical care behind the scenes. Whether you&rsquo;re starting from scratch or fixing what&rsquo;s not working, every site we build is designed to help visitors find you, stay with you, and turn into real business growth.</p>
       <div class="es-hero-ctas">
@@ -413,7 +420,6 @@
   <div class="container">
     <div class="es-head">
       <div class="left">
-        <span class="eyebrow">Capabilities</span>
         <h2 class="es-h2">Everything your website needs, <span class="ital">in one place.</span></h2>
       </div>
       <p class="es-lede">From custom builds to intelligent, adaptive features, our team owns every layer, so nothing falls through the cracks between vendors.</p>
@@ -458,7 +464,7 @@
   <div class="container">
     <div class="es-head">
       <div class="left">
-        <span class="eyebrow">Build Standards</span>
+        <span class="eyebrow">Capabilities</span>
         <h2 class="es-h2">The standards we <span class="ital">don&rsquo;t compromise on.</span></h2>
       </div>
       <p class="es-lede">Every Kleza build meets the same baseline, regardless of industry or budget. Where compliance requirements apply, like HIPAA for healthcare, we build to meet them from day one.</p>
@@ -512,7 +518,7 @@
 <!-- SECTION 05 — PROCESS -->
 <section class="es-sec" data-screen-label="Process">
   <div class="container">
-    <div class="es-head"><div class="left"><span class="eyebrow">Process</span><h2 class="es-h2">Our website development <span class="ital">process.</span></h2></div></div>
+    <div class="es-head"><div class="left"><h2 class="es-h2">Our website development <span class="ital">process.</span></h2></div></div>
     <div class="wd-steps">
       <div class="wd-step"><div class="circle">01</div><h4>Discovery &amp; Scope</h4></div>
       <div class="wd-step"><div class="circle">02</div><h4>UX Research &amp; Wireframes</h4></div>
@@ -546,7 +552,7 @@
 <!-- SECTION 07 — FAQ -->
 <section class="es-sec" data-screen-label="FAQ">
   <div class="container">
-    <div class="es-head" style="justify-content:center;text-align:center;flex-direction:column;align-items:center"><span class="eyebrow">FAQ</span><h2 class="es-h2" style="margin-top:14px">Frequently asked <span class="ital">questions.</span></h2></div>
+    <div class="es-head" style="justify-content:center;text-align:center;flex-direction:column;align-items:center"><h2 class="es-h2">Frequently asked <span class="ital">questions.</span></h2></div>
     <div class="es-faq">
       <div class="es-faq-item"><button class="es-faq-q">How long does it take to build an enterprise website?<span class="plus">+</span></button><div class="es-faq-a"><p>Most builds take 8 to 14 weeks, depending on scope and content readiness.</p></div></div>
       <div class="es-faq-item"><button class="es-faq-q">Will my website be optimised for Google search?<span class="plus">+</span></button><div class="es-faq-a"><p>Yes, every build includes SEO architecture, schema markup, and Core Web Vitals optimisation.</p></div></div>
@@ -561,7 +567,7 @@
 <section class="es-sec" style="padding-top:0" data-screen-label="Closing CTA">
   <div class="container">
     <div class="es-bundle">
-      <span class="eyebrow">Integrated Solutions</span>
+      
       <h2 class="es-h2">A website that works hard. <span class="ital">A system that gets smarter.</span></h2>
       <p>Combine your build with AI-powered personalisation, SEO, marketing, or automation for a foundation that doesn&rsquo;t just perform, it adapts.</p>
       <div class="ctas">

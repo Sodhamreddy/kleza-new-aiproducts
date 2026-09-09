@@ -27,6 +27,14 @@
 .es-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(900px 500px at 80% 20%,rgba(90, 204, 241,.18),transparent 60%),radial-gradient(700px 400px at 10% 90%,rgba(54,192,237,.12),transparent 60%);pointer-events:none}
 .es-hero-inner{position:relative;z-index:1}
 .es-hero .eyebrow{color:#9fb3b8}
+/* Breadcrumb now sits inside the dark hero panel (it used to be a white strip
+   above it), so it needs light-on-dark colours. */
+.es-crumb{margin-bottom:22px}
+.es-crumb .breadcrumb{color:#8fa3a8}
+.es-crumb .breadcrumb a{color:#b8c8cc}
+.es-crumb .breadcrumb a:hover{color:var(--accent-3)}
+.es-crumb .breadcrumb .sep{color:#5d6f74}
+.es-crumb .breadcrumb .current{color:var(--accent-3)}
 .es-hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(38px,5vw,68px);line-height:1.08;letter-spacing:-.01em;color:#fff;margin:18px 0 26px;text-wrap:balance}
 .es-hero h1 .ital{font-style:italic;color:var(--accent-3)}
 .es-hero p.lede{color:#aebcc0;max-width:560px;font-size:clamp(15px,1.1vw,18px);line-height:1.6;margin:0}
@@ -361,13 +369,12 @@
   </div>
 </header>
 
-<div class="breadcrumb-bar"><div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="Kleza.html">Home</a><span class="sep">&raquo;</span><a href="enterprise-services.html">Enterprise Services</a><span class="sep">&raquo;</span><span class="current">Digital Marketing</span></nav></div></div>
 
 <!-- SECTION 01 — HERO -->
 <section data-screen-label="Hero" style="padding-top:8px">
   <div class="es-hero">
     <div class="es-hero-inner">
-      <span class="eyebrow">Enterprise Services <span class="dot">·</span> Digital Marketing</span>
+      <div class="es-crumb"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="Kleza.html">Home</a><span class="sep">&raquo;</span><a href="enterprise-services.html">Enterprise Services</a><span class="sep">&raquo;</span><span class="current">Digital Marketing</span></nav></div>
       <h1>AI-Powered Digital Marketing That Drives <span class="ital">Traffic, Leads &amp; Business Growth</span></h1>
       <p class="lede">Kleza combines AI-powered insights, data-driven strategy, and digital marketing expertise to reach the right audience, generate qualified leads, and turn every marketing opportunity into measurable business growth.</p>
       <div class="es-hero-ctas">
@@ -513,7 +520,7 @@
 <!-- SECTION 07 — FAQ -->
 <section class="es-sec band-white" style="background:#fff;border-top:1px solid var(--line)" data-screen-label="FAQ">
   <div class="container">
-    <div class="es-head" style="justify-content:center;text-align:center;flex-direction:column;align-items:center"><span class="eyebrow">Frequently Asked Questions</span><h2 class="es-h2" style="margin-top:14px">Everything You Need to Know <span class="ital">About Digital Marketing</span></h2></div>
+    <div class="es-head" style="justify-content:center;text-align:center;flex-direction:column;align-items:center"><h2 class="es-h2">Everything You Need to Know <span class="ital">About Digital Marketing</span></h2></div>
     <div class="es-faq">
       <div class="es-faq-item"><button class="es-faq-q">What digital marketing services does Kleza Solutions offer?<span class="plus">+</span></button><div class="es-faq-a"><p>Kleza offers a full suite of digital marketing services, including social media marketing, SEO, website development, PPC, Google Ads, and performance marketing &mdash; all tailored to each client&rsquo;s industry and goals.</p></div></div>
       <div class="es-faq-item"><button class="es-faq-q">How much do your digital marketing services cost?<span class="plus">+</span></button><div class="es-faq-a"><p>We offer customised services that align with your budget, scope, and objectives of your digital marketing campaigns. For a free consultation, call us at <a href="tel:+19138002728">+1 913-800-2728</a> or <a href="tel:+917396146227">+91 7396146227</a>.</p></div></div>
@@ -528,7 +535,7 @@
 <section class="es-sec" style="padding-top:0" data-screen-label="Closing CTA">
   <div class="container">
     <div class="es-bundle">
-      <span class="eyebrow">Combined Engagements</span>
+      
       <h2 class="es-h2">Stop marketing to everyone. <span class="ital">Start marketing to the right people.</span></h2>
       <p>Let&rsquo;s audit your digital presence. Combine with website development or automation for a fully integrated growth stack.</p>
       <div class="ctas">
