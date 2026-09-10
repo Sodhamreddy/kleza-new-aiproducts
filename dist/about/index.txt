@@ -1,25 +1,38 @@
 3:I[4707,[],""]
 4:I[6423,[],""]
 5:I[5753,["185","static/chunks/app/layout-e08f2b19d9c06fff.js"],"default"]
-0:["iXMU0zGvXdobHgxs5XgFY",[[["",{"children":["about",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",{"children":["about",{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","about","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/02fb55590a3f1e38.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":""}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Instrument+Serif:ital,wght@0,400;1,400&family=JetBrains+Mono:wght@400;500&family=Mukta:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"children":[["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}],["$","$L5",null,{}]]}]]}]],null],null],["$L6",null]]]]
+0:["IaUfnyqODNBAxVLJ-CeZ_",[[["",{"children":["about",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",{"children":["about",{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","about","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/02fb55590a3f1e38.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":""}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Instrument+Serif:ital,wght@0,400;1,400&family=JetBrains+Mono:wght@400;500&family=Mukta:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"children":[["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}],["$","$L5",null,{}]]}]]}]],null],null],["$L6",null]]]]
 6:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"About — Kleza"}],["$","meta","3",{"name":"description","content":"Kleza is a fast-growing AI Transformation Company built on a singular vision: to humanize technology and make intelligence accessible, ethical, and meaningful for every business."}],["$","link","4",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","5",{"rel":"icon","href":"/favicon-32.png","sizes":"32x32","type":"image/png"}],["$","link","6",{"rel":"icon","href":"/favicon-192.png","sizes":"192x192","type":"image/png"}],["$","link","7",{"rel":"apple-touch-icon","href":"/apple-touch-icon.png","sizes":"180x180","type":"image/png"}]]
 1:null
-9:I[1797,["301","static/chunks/app/about/page-bece568b0d2737fc.js"],"default"]
-7:T3bfe,
+9:I[1797,["301","static/chunks/app/about/page-b7b36f431f238288.js"],"default"]
+7:T3b73,
 /* ===================== ABOUT PAGE ===================== */
+/* body sets line-height:1.55 and there is no global heading reset, so any
+   heading without an explicit line-height inherits it. This floor keeps that
+   from happening; the per-section rules below override it. */
+.ab-hero :is(h1,h2,h3,h4),.ab-story :is(h2,h3,h4),.ab-vision :is(h2,h3,h4),.ab-hc-dark :is(h2,h3,h4),.ab-mile :is(h2,h3,h4),.ab-team :is(h2,h3,h4),.ab-entry :is(h2,h3,h4){line-height:1.15}
 /* Section 01 — story hero (full-viewport, cinematic, centered) */
-.ab-hero{position:relative;min-height:clamp(600px,90vh,880px);display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;
+.ab-hero{position:relative;--ab-header:72px;min-height:clamp(600px,calc(100vh - var(--ab-header)),880px);display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;padding-bottom:var(--ab-header);
   background:radial-gradient(120% 90% at 50% -10%,#ffffff 0%,#eef7f3 38%,#e3f1ea 70%,#dbeee6 100%)}
+/* svh keeps the band correct when mobile browser chrome shows/hides. Gated,
+   because a var()-bearing declaration is parse-valid even where svh is not,
+   which would silently kill min-height on browsers without svh. */
+@supports (height:100svh){.ab-hero{min-height:clamp(600px,calc(100svh - var(--ab-header)),880px)}}
 .ab-hero::before{content:"";position:absolute;inset:0;
   background-image:radial-gradient(rgba(54, 192, 237,.08) 1.2px,transparent 1.2px);background-size:32px 32px;
   -webkit-mask-image:radial-gradient(75% 65% at 50% 35%,#000,transparent 82%);mask-image:radial-gradient(75% 65% at 50% 35%,#000,transparent 82%);pointer-events:none}
 .ab-hero::after{content:"";position:absolute;width:1100px;height:1100px;left:50%;top:42%;transform:translate(-50%,-50%);pointer-events:none;
   background:radial-gradient(closest-side,rgba(90, 204, 241,.12),transparent 70%)}
 .ab-hero .container{position:relative;z-index:1}
+/* Breadcrumb lives inside the band (it used to be a separate white strip
+   above it, which read as a seam). Pinned like .ab-scroll so it takes no
+   part in the flex centring of the headline. */
+.ab-hero .ab-crumb{position:absolute;top:0;left:0;right:0;z-index:2;padding-top:18px}
+.ab-hero .ab-crumb .breadcrumb .sep{color:var(--muted-2)}
 .ab-hero .eyebrow{display:inline-block;margin-bottom:26px}
-.ab-hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(38px,5.8vw,82px);line-height:1.04;letter-spacing:-.02em;color:var(--ink);margin:0 auto;max-width:18ch;text-wrap:balance}
+.ab-hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(38px,5.8vw,82px);line-height:1.04;letter-spacing:-.02em;color:var(--ink);margin:0 auto;max-width:26ch;text-wrap:balance}
 .ab-hero h1 .ital{font-style:italic;color:var(--accent)}
-.ab-hero .brandline{margin:26px auto 0;max-width:54ch;font-size:clamp(16px,1.3vw,20px);line-height:1.55;color:var(--muted);text-wrap:pretty}
+.ab-hero .brandline{margin:26px auto 0;max-width:62ch;font-size:clamp(16px,1.3vw,20px);line-height:1.55;color:var(--muted);text-wrap:pretty}
 .ab-scroll{position:absolute;left:50%;bottom:clamp(24px,4vh,44px);transform:translateX(-50%);z-index:1;display:flex;flex-direction:column;align-items:center;gap:9px;font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted-2)}
 .ab-scroll svg{width:18px;height:18px;color:var(--accent);animation:ab-bob 1.8s ease-in-out infinite}
 @keyframes ab-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
@@ -36,21 +49,23 @@
 .ab-pullquote .mk{font-family:var(--serif);font-style:italic;font-size:72px;line-height:.5;color:var(--accent);opacity:.32;display:block;margin-bottom:18px}
 .ab-pullquote p{font-family:var(--serif);font-style:italic;font-weight:400;font-size:clamp(24px,2.6vw,36px);line-height:1.28;letter-spacing:-.01em;color:var(--ink);margin:0;text-wrap:balance}
 .ab-facts{margin-top:clamp(48px,6vw,80px);display:grid;grid-template-columns:repeat(4,1fr);gap:24px;border-top:1px solid var(--line);padding-top:clamp(36px,4vw,52px)}
+.ab-fact{text-align:center}
 .ab-fact .n{font-family:var(--serif);font-weight:400;font-size:clamp(36px,3.6vw,52px);line-height:1;letter-spacing:-.02em;color:var(--accent);margin-bottom:10px}
 .ab-fact .l{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
 
 /* Section 03 — vision */
 .ab-vision{background:var(--bg-alt);padding:clamp(64px,8vw,120px) 0}
-.ab-vision-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:clamp(40px,5vw,80px);align-items:start}
+.ab-vision-grid{display:grid;grid-template-columns:1fr;gap:clamp(38px,4.5vw,64px)}
+.ab-vision-head{text-align:center}
 .ab-vision .eyebrow{display:inline-block;margin-bottom:18px}
-.ab-vision h2{font-family:var(--serif);font-weight:400;font-size:clamp(34px,4.6vw,64px);line-height:1.05;letter-spacing:-.02em;color:var(--ink);margin:0;text-wrap:balance}
+.ab-vision h2{font-family:var(--serif);font-weight:400;font-size:clamp(32px,4.4vw,58px);line-height:1.05;letter-spacing:-.02em;color:var(--ink);margin:0 auto;max-width:24ch;text-wrap:balance}
 .ab-vision h2 .ital{font-style:italic;color:var(--accent)}
-.ab-principles{display:flex;flex-direction:column}
-.ab-principle{padding:24px 0;border-top:1px solid var(--line)}
-.ab-principle:first-child{border-top:0;padding-top:0}
+.ab-principles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(22px,2.6vw,40px)}
+.ab-principle{padding:0 0 0 clamp(20px,2.2vw,32px);border-left:1px solid var(--line)}
+.ab-principle:first-child{border-left:0;padding-left:0}
 .ab-principle .pn{font-family:var(--mono);font-size:12px;letter-spacing:.16em;color:var(--accent);margin-bottom:10px}
-.ab-principle h3{font-family:var(--sans);font-weight:700;font-size:clamp(18px,1.6vw,21px);letter-spacing:-.01em;color:var(--ink);margin:0 0 9px}
-.ab-principle p{color:var(--muted);font-size:14.5px;line-height:1.65;margin:0;max-width:46ch}
+.ab-principle h3{font-family:var(--sans);font-weight:700;font-size:clamp(18px,1.6vw,21px);line-height:1.3;letter-spacing:-.01em;color:var(--ink);margin:0 0 9px}
+.ab-principle p{color:var(--muted);font-size:14.5px;line-height:1.65;margin:0}
 .ab-vision-quote{margin-top:clamp(48px,6vw,84px);text-align:center;max-width:1000px;margin-left:auto;margin-right:auto}
 .ab-vision-quote p{font-family:var(--serif);font-style:italic;font-weight:400;font-size:clamp(26px,3.4vw,48px);line-height:1.18;letter-spacing:-.015em;color:var(--ink);margin:0;text-wrap:balance}
 .ab-vision-quote .mk{font-family:var(--serif);font-style:italic;font-size:64px;line-height:.4;color:var(--accent);opacity:.3;display:block;margin-bottom:20px}
@@ -60,35 +75,22 @@
 .ab-hc-dark::before{content:"";position:absolute;inset:0;background:radial-gradient(800px 460px at 82% 16%,rgba(90, 204, 241,.16),transparent 60%),radial-gradient(620px 380px at 8% 92%,rgba(54,192,237,.10),transparent 60%);pointer-events:none}
 .ab-hc-grid{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(40px,5vw,80px);align-items:center}
 .ab-hc-dark .eyebrow{color:var(--accent-3);display:inline-block;margin-bottom:16px}
-.ab-hc-dark h2{font-family:var(--serif);font-weight:400;font-size:clamp(32px,4.2vw,56px);line-height:1.05;letter-spacing:-.02em;color:#fff;margin:0 0 24px;text-wrap:balance}
+.ab-hc-dark h2{font-family:var(--serif);font-weight:400;font-size:clamp(32px,4.4vw,58px);line-height:1.05;letter-spacing:-.02em;color:#fff;margin:0 0 24px;text-wrap:balance}
 .ab-hc-dark h2 .ital{font-style:italic;color:var(--accent-3)}
 .ab-hc-dark p{color:#a4b1ae;font-size:clamp(15px,1.1vw,16.5px);line-height:1.7;margin:0 0 18px;max-width:54ch}
 .ab-hc-dark p:last-child{margin-bottom:0}
 .ab-hc-stats{display:flex;flex-direction:column;gap:24px}
 .ab-hc-stat{border-left:2px solid rgba(90, 204, 241,.4);padding-left:20px}
 .ab-hc-stat .n{font-family:var(--serif);font-weight:400;font-size:clamp(38px,4vw,56px);line-height:1;letter-spacing:-.02em;color:var(--accent-3);margin-bottom:8px}
+.ab-hc-stat .n .u{font-family:var(--sans);font-size:.4em;font-weight:600;letter-spacing:-.01em;vertical-align:.3em;margin-left:1px}
 .ab-hc-stat .l{font-size:14.5px;color:#cfe1da;font-weight:600;margin-bottom:3px}
 .ab-hc-stat .c{font-size:12.5px;color:#7d8a87;line-height:1.45}
-.ab-hc-caps{padding:clamp(56px,7vw,96px) 0}
-.ab-hc-caps .head{max-width:640px;margin:0 0 clamp(32px,3.6vw,48px)}
-.ab-hc-caps .eyebrow{display:inline-block;margin-bottom:14px}
-.ab-hc-caps h3{font-family:var(--serif);font-weight:400;font-size:clamp(26px,3vw,40px);letter-spacing:-.02em;color:var(--ink);margin:0;text-wrap:balance}
-.ab-hc-caps h3 .ital{font-style:italic;color:var(--accent)}
-.ab-cap-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.ab-cap{display:grid;grid-template-columns:auto 1fr;gap:18px;background:#fff;border:1px solid var(--line);border-radius:20px;padding:clamp(22px,2.4vw,30px);transition:border-color .3s,box-shadow .3s,transform .3s}
-.ab-cap:hover{border-color:rgba(54, 192, 237,.35);box-shadow:0 26px 48px -32px rgba(10,19,22,.16);transform:translateY(-3px)}
-.ab-cap .ic{width:50px;height:50px;border-radius:13px;background:linear-gradient(160deg,rgba(54, 192, 237,.14),rgba(54, 192, 237,.04));border:1px solid rgba(54, 192, 237,.18);color:var(--accent);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:transform .35s}
-.ab-cap:hover .ic{transform:rotate(-6deg) scale(1.06)}
-.ab-cap .ic svg{width:22px;height:22px}
-.ab-cap h4{font-family:var(--sans);font-weight:700;font-size:16px;letter-spacing:-.01em;color:var(--ink);margin:0 0 7px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
-.ab-cap .badge{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;color:var(--accent-2);background:rgba(54, 192, 237,.1);border-radius:999px;padding:3px 8px}
-.ab-cap p{color:var(--muted);font-size:14px;line-height:1.55;margin:0}
 
 /* Section 05 — milestones timeline */
 .ab-mile{padding:clamp(56px,7vw,104px) 0;overflow:hidden}
 .ab-mile .head{max-width:680px;margin:0 0 clamp(36px,4vw,56px)}
 .ab-mile .eyebrow{display:inline-block;margin-bottom:14px}
-.ab-mile h2{font-family:var(--serif);font-weight:400;font-size:clamp(32px,4.4vw,58px);letter-spacing:-.02em;color:var(--ink);margin:0}
+.ab-mile h2{font-family:var(--serif);font-weight:400;font-size:clamp(32px,4.4vw,58px);line-height:1.05;letter-spacing:-.02em;color:var(--ink);margin:0;text-wrap:balance}
 .ab-mile h2 .ital{font-style:italic;color:var(--accent)}
 .ab-timeline{position:relative;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;-ms-overflow-style:none;padding:8px 0;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 3%,#000 96%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 3%,#000 96%,transparent 100%)}
 .ab-timeline::-webkit-scrollbar{display:none}
@@ -103,7 +105,7 @@
 .ab-ms.down{justify-content:flex-end}
 .ab-ms.down .box::after{bottom:100%}
 .ab-ms .yr{font-family:var(--serif);font-weight:400;font-size:clamp(30px,2.6vw,40px);line-height:1;letter-spacing:-.02em;color:var(--accent);margin-bottom:10px}
-.ab-ms h4{font-family:var(--sans);font-weight:700;font-size:16px;letter-spacing:-.01em;color:var(--ink);margin:0 0 8px}
+.ab-ms h4{font-family:var(--sans);font-weight:700;font-size:16px;line-height:1.3;letter-spacing:-.01em;color:var(--ink);margin:0 0 8px}
 .ab-ms p{color:var(--muted);font-size:13.5px;line-height:1.55;margin:0}
 .ab-tl-hint{margin-top:18px;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-2);display:flex;align-items:center;gap:8px}
 .ab-tl-hint svg{width:14px;height:14px;color:var(--accent)}
@@ -112,7 +114,7 @@
 .ab-team{background:var(--bg-alt);padding:clamp(56px,7vw,104px) 0}
 .ab-team .head{max-width:680px;margin:0 0 clamp(28px,3vw,40px)}
 .ab-team .eyebrow{display:inline-block;margin-bottom:14px}
-.ab-team h2{font-family:var(--serif);font-weight:400;font-size:clamp(32px,4.4vw,58px);letter-spacing:-.02em;color:var(--ink);margin:0 0 14px}
+.ab-team h2{font-family:var(--serif);font-weight:400;font-size:clamp(32px,4.4vw,58px);line-height:1.05;letter-spacing:-.02em;color:var(--ink);margin:0 0 14px;text-wrap:balance}
 .ab-team h2 .ital{font-style:italic;color:var(--accent)}
 .ab-team .head p{color:var(--muted);font-size:clamp(15px,1.1vw,17px);line-height:1.6;margin:0;max-width:60ch}
 .ab-team-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:clamp(28px,3vw,40px)}
@@ -157,7 +159,10 @@
 .ab-entry-card.light .cta{color:var(--accent)}
 
 @media (max-width:900px){
-  .ab-story-grid,.ab-vision-grid,.ab-hc-grid,.ab-cap-grid{grid-template-columns:1fr}
+  .ab-story-grid,.ab-vision-grid,.ab-hc-grid{grid-template-columns:1fr}
+  .ab-principles{grid-template-columns:1fr;gap:0}
+  .ab-principle{padding:24px 0 0;border-left:0;border-top:1px solid var(--line)}
+  .ab-principle:first-child{padding-top:0;border-top:0}
   .ab-facts{grid-template-columns:repeat(2,1fr);gap:28px 24px}
   .ab-team-grid,.ab-team-grid.lead{grid-template-columns:repeat(3,1fr)}
   .ab-entry-grid{grid-template-columns:1fr}
@@ -176,7 +181,7 @@
   .ab-facts{grid-template-columns:1fr}
   .ab-team-grid,.ab-team-grid.lead{grid-template-columns:1fr 1fr}
 }
-8:Ta314,
+8:T9bfa,
 <header class="site-header" id="header" data-screen-label="Header">
   <div class="nav-shell">
     <nav class="nav" aria-label="Primary" style="border-color: rgb(13, 155, 139)">
@@ -380,14 +385,13 @@
   </div>
 </header>
 
-<div class="breadcrumb-bar"><div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span class="sep">&raquo;</span><span class="current">About</span></nav></div></div>
-
 <!-- ===== SECTION 01 — STORY HERO ===== -->
 <section class="ab-hero" data-screen-label="Story Hero">
+  <div class="ab-crumb"><div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span class="sep">&raquo;</span><span class="current">About</span></nav></div></div>
   <div class="container">
     <span class="eyebrow">ABOUT KLEZA</span>
-    <h1>Where artificial intelligence meets human intention &mdash; <span class="ital">that&rsquo;s where Kleza builds the future.</span></h1>
-    <p class="brandline">A healthcare-first AI and digital services company, operating across the USA and India since 2016.</p>
+    <h1>Where complexity meets clarity. <br><span class="ital">That&rsquo;s where Kleza makes a difference.</span></h1>
+    <p class="brandline">A team that works as an extension of yours, building everything from websites and apps to AI trained on your own business.</p>
   </div>
   <a class="ab-scroll" href="#story" aria-label="Scroll to explore">Scroll to explore<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></a>
 </section>
@@ -399,20 +403,24 @@
       <div>
         <span class="eyebrow">WHO WE ARE</span>
         <h2>We built Kleza because small businesses deserved the same AI advantage as the <span class="ital">enterprises that could afford it.</span></h2>
-        <p>Kleza was founded in 2016 with a single conviction: that true progress comes from getting the balance right between technology and human expertise. Not AI as a replacement for people &mdash; AI as a precision instrument in the hands of people who know what they&rsquo;re doing.</p>
-        <p>Today, 75% of our work is in healthcare &mdash; an industry where the stakes of getting AI wrong are higher than almost anywhere else. We serve home care agencies, hospitals, pharmacies, and health-tech companies across the USA, with a delivery team of 40+ specialists operating from Hyderabad, India.</p>
-        <p>We are Kleza Solutions &mdash; and our product is the intelligence, the engineering, and the human care that powers the work of caring for others.</p>
+        <p>Kleza didn't start out chasing trends. It started with a problem we kept seeing everywhere, small and mid-sized businesses wanted the same quality and results that big enterprises could afford, but never had access to the same tools or budgets. So we set out to close that gap, and we're still closing it today, one client at a time. </p>
+        <p>For years, our growth had nothing to do with any single technology, it came from doing good work and earning trust the hard way. Then, as the tools available to businesses started changing, we didn't rush in just to keep up. We took the time to learn it properly, and built it into how we already worked, so it strengthened our team instead of replacing it.</p>
+        <p>Along the way, healthcare became where we proved ourselves the most. It's an industry with no room for mistakes, and working with home care agencies, hospitals, pharmacies, and health-tech companies across the USA taught us exactly what "getting it right" means, and what it costs to get it wrong. Those same standards now go into everything we build, for every business we work with. 
+
+Today, that promise is carried forward by a team of more than 60 people in Hyderabad, India, who bring the same care, precision, and honest effort to every single project. 
+
+We're Kleza Solutions. What you get from us is simple: solid engineering, smart technology, and people who are genuinely invested in getting it right for you, every time.</p>
       </div>
       <div class="ab-pullquote">
         <span class="mk">&ldquo;</span>
-        <p>With Kleza, you&rsquo;re not choosing a service. You&rsquo;re choosing a smarter way to grow.</p>
+        <p>With Kleza, you're not keeping up with the future. You're building it.</p>
       </div>
     </div>
     <div class="ab-facts">
-      <div class="ab-fact"><div class="n">2016</div><div class="l">Founded</div></div>
+      <div class="ab-fact"><div class="n">2020</div><div class="l">Founded</div></div>
       <div class="ab-fact"><div class="n">USA + India</div><div class="l">Locations</div></div>
-      <div class="ab-fact"><div class="n">40+</div><div class="l">Team members</div></div>
-      <div class="ab-fact"><div class="n">75%</div><div class="l">Healthcare-focused</div></div>
+      <div class="ab-fact"><div class="n">60+</div><div class="l">Team members</div></div>
+      <div class="ab-fact"><div class="n">50%</div><div class="l">Clients Served</div></div>
     </div>
   </div>
 </section>
@@ -421,17 +429,17 @@
 <section class="ab-vision" id="vision" data-screen-label="AI Transformation Vision">
   <div class="container">
     <div class="ab-vision-grid">
-      <div>
+      <div class="ab-vision-head">
         <span class="eyebrow">OUR VISION</span>
-        <h2>AI is not the future of healthcare. <span class="ital">AI plus human judgment is.</span></h2>
+        <h2>We don't chase every AI trend. <span class="ital">We build what actually moves your business forward. </span></h2>
       </div>
       <div class="ab-principles">
-        <div class="ab-principle"><div class="pn">01</div><h3>Precision over generalisation</h3><p>Generic AI gives generic answers. Every system Kleza builds is trained on domain-specific data &mdash; producing outputs that earn clinical trust rather than demanding it.</p></div>
-        <div class="ab-principle"><div class="pn">02</div><h3>Humans in the loop, always</h3><p>No Kleza AI system operates without human oversight. We design escalation paths, review cycles, and quality checks into every deployment &mdash; because technology that replaces human judgment in healthcare is a risk, not a feature.</p></div>
-        <div class="ab-principle"><div class="pn">03</div><h3>Intelligence that improves over time</h3><p>We build AI that learns from operational reality &mdash; models that get more accurate as your data evolves, not systems that decay after deployment.</p></div>
+        <div class="ab-principle"><div class="pn">01</div><h3>Your data stays yours</h3><p>We don't train other systems on your data, and we don't sell or share it. What's built for your business stays yours, full stop.</p></div>
+        <div class="ab-principle"><div class="pn">02</div><h3>Someone is always accountable</h3><p>No output ships without a person responsible for it. If something goes wrong, you get a name and a fix, never "the AI did it. </p></div>
+        <div class="ab-principle"><div class="pn">03</div><h3>We tell you what it can't do, too</h3><p>We're upfront about where a system's limits are, because knowing where human judgment still has to take over matters more than a polished pitch. </p></div>
       </div>
     </div>
-    <div class="ab-vision-quote"><span class="mk">&ldquo;</span><p>The most powerful technology in healthcare is not the one that replaces the caregiver. It is the one that makes the caregiver more capable.</p></div>
+    <div class="ab-vision-quote"><span class="mk">&ldquo;</span><p>Real progress isn't AI instead of people. It's AI in the hands of people who know exactly what they're doing.</p></div>
   </div>
 </section>
 
@@ -441,31 +449,33 @@
     <div class="ab-hc-grid">
       <div>
         <span class="eyebrow">HEALTHCARE INNOVATION</span>
-        <h2>75% healthcare. <span class="ital">100% intentional.</span></h2>
-        <p>Healthcare is not a vertical we entered for market size. It is the industry where the need for intelligent, reliable, human-centred technology is most acute &mdash; and where the consequences of poor technology are most serious.</p>
-        <p>Our healthcare clients include home care agencies, long-term care facilities, pharmacies, staffing organisations, and health-tech companies. We understand their regulatory environment, their staffing challenges, their documentation burden, and the human cost of getting any of it wrong.</p>
+        <h2>We didn't chase the hardest vertical. <br><span class="ital">We just kept getting it right. </span></h2>
+        <p>We didn't plan to become a healthcare-focused company. It happened because we kept solving healthcare's hardest problems well, regulatory complexity, staffing pressure, documentation overload, and the real human stakes behind every one of them.</p>
+        <p>Today, our clients span home care agencies, pharmacies, therapists, hospitals, and family physicians. We understand this industry not from a market study, but from years of doing the work inside it.</p>
       </div>
       <div class="ab-hc-stats">
-        <div class="ab-hc-stat"><div class="n">1.24M+</div><div class="l">Documents processed</div><div class="c">Through Kleza AI systems</div></div>
-        <div class="ab-hc-stat"><div class="n">67%</div><div class="l">Documentation time reduction</div><div class="c">Average for healthcare clients</div></div>
-        <div class="ab-hc-stat"><div class="n">99.9%</div><div class="l">System uptime</div><div class="c">Across healthcare infrastructure deployments</div></div>
+        <div class="ab-hc-stat"><div class="n">25+</div><div class="l">HIPAA-compliant deployments</div><div class="c">Across every healthcare client engagement</div></div>
+        <div class="ab-hc-stat"><div class="n">25+</div><div class="l">Healthcare organisations served</div><div class="c">Home care agencies, facilities, pharmacies, and health-tech companies</div></div>
+        <div class="ab-hc-stat"><div class="n">5+ <span class="u">Years</span></div><div class="l">Average client relationship length</div><div class="c">Many of our clients have been with us since nearly the beginning.</div></div>
       </div>
     </div>
   </div>
 </section>
-<section class="ab-hc-caps band-white" data-screen-label="Healthcare Capabilities">
-  <div class="container">
-    <div class="head"><span class="eyebrow">BUILT FOR CARE</span><h3>Capabilities designed for <span class="ital">clinical reality.</span></h3></div>
-    <div class="ab-cap-grid"><div class="ab-cap"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.4 8.6-8 10-4.6-1.4-8-5-8-10V6l8-4z"/><polyline points="9 12 11 14 15 10"/></svg></span><div><h4>HIPAA-Compliant AI<span class="badge">HIPAA</span></h4><p>Every AI system built for healthcare follows HIPAA data handling protocols from ingestion to output.</p></div></div><div class="ab-cap"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span><div><h4>Clinical Terminology Training</h4><p>Models trained to understand care plans, ADL documentation, and caregiver communications.</p></div></div><div class="ab-cap"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-5"/></svg></span><div><h4>Workflow-Aware Deployment</h4><p>AI designed to fit existing workflows rather than require new ones.</p></div></div><div class="ab-cap"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><polyline points="9 15 11 17 15 13"/></svg></span><div><h4>Regulatory Documentation Support<span class="badge">Compliance</span></h4><p>AI-assisted compliance documentation that reduces administrative burden without increasing risk.</p></div></div></div>
-  </div>
-</section>
-
 <!-- ===== SECTION 05 — MILESTONES ===== -->
 <section class="ab-mile" data-screen-label="Milestones">
   <div class="container">
     <div class="head"><span class="eyebrow">MILESTONES</span><h2>How we <span class="ital">got here.</span></h2></div>
   </div>
-  <div class="ab-timeline" id="abTimeline"><div class="ab-track"><div class="ab-ms up"><span class="dot"></span><div class="box"><div class="yr">2016</div><h4>Founded</h4><p>Kleza Solutions established in Hyderabad with a focus on digital services for small and mid-size businesses.</p></div></div><div class="ab-ms down"><span class="dot"></span><div class="box"><div class="yr">2018</div><h4>USA Expansion</h4><p>Opened operations in Overland Park, Kansas, extending service delivery across North American time zones.</p></div></div><div class="ab-ms up"><span class="dot"></span><div class="box"><div class="yr">2020</div><h4>Healthcare Pivot</h4><p>First major healthcare client engagements. Began building domain expertise in home care and long-term care operations.</p></div></div><div class="ab-ms down"><span class="dot"></span><div class="box"><div class="yr">2022</div><h4>IVNA Launch</h4><p>Launched IVNA.ai, our dedicated AI products platform, starting with Voica AI and the Pulse Board.</p></div></div><div class="ab-ms up"><span class="dot"></span><div class="box"><div class="yr">2024</div><h4>AI Services Expansion</h4><p>Launched Business-Specific AI Training and AI Support Assistant as standalone service lines.</p></div></div><div class="ab-ms down"><span class="dot"></span><div class="box"><div class="yr">2026</div><h4>Full Ecosystem</h4><p>Kleza operates as an integrated ecosystem: AI Products (IVNA.ai) + AI Services + Enterprise Services across USA and India.</p></div></div></div></div>
+  <div class="ab-timeline" id="abTimeline">
+   <div class="ab-track">
+    <div class="ab-ms up"><span class="dot"></span><div class="box"><div class="yr">2020</div><h4>Founded</h4><p>Kleza Solutions opened in Hyderabad, built to give smaller businesses an enterprise-grade edge.</p></div></div>
+    <div class="ab-ms down"><span class="dot"></span><div class="box"><div class="yr">2021</div><h4>Going Global</h4><p>We opened operations in Overland Park, Kansas, extending delivery across North American time zones.</p></div></div>
+    <div class="ab-ms up"><span class="dot"></span><div class="box"><div class="yr">2022</div><h4>Deep Domain Expertise</h4><p>Our first major healthcare engagements taught us to master high-stakes work where getting it right is everything.</p></div></div>
+    <div class="ab-ms down"><span class="dot"></span><div class="box"><div class="yr">2023</div><h4>The AI Shift</h4><p>We made AI the core of everything we do, evolving from a digital services company into an AI-first one.</p></div></div>
+    <div class="ab-ms up"><span class="dot"></span><div class="box"><div class="yr">2025</div><h4>IVNA Launch</h4><p>We launched IVNA.ai, our AI products platform, starting with Voica AI and Pulse Board.</p></div></div>
+    <div class="ab-ms down"><span class="dot"></span><div class="box"><div class="yr">2026</div><h4>Full Ecosystem</h4><p>Kleza now runs as one connected ecosystem, uniting AI products, AI services and enterprise solutions across the USA and India.</p></div></div>
+   </div>
+  </div>
   <div class="container"><div class="ab-tl-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>Scroll the timeline</div></div>
 </section>
 
@@ -474,7 +484,7 @@
   <div class="container">
     <div class="head">
       <span class="eyebrow">THE TEAM</span>
-      <h2>The people behind <span class="ital">the intelligence.</span></h2>
+      <h2>Real intelligence starts with <span class="ital">real people.</span></h2>
       <p>Kleza is 40+ specialists across two continents &mdash; each chosen for domain expertise, not just technical skill.</p>
     </div>
     <div class="ab-team-tabs" id="abTeamTabs"></div>
@@ -489,15 +499,17 @@
       <div class="ab-entry-card dark">
         <a class="lk" href="/about#partnerships" aria-label="Explore partnerships"></a>
         <span class="lbl">Partners</span>
-        <h3>Grow with Kleza as a partner.</h3>
-        <p>Technology vendors, referral partners, and resellers &mdash; if you serve the same clients we do, let&rsquo;s build something together.</p>
+        <h3>Whatever you need, we are here. </h3>
+        <p>To us, every client is a partner. So, if you are facing a challenge, exploring an idea, or just not sure where to start, come talk to us. 
+
+<br>Meet Our Clients/ See Who We’ve Helped</p>
         <span class="cta">Explore Partnerships <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
       </div>
       <div class="ab-entry-card light" id="careers">
         <a class="lk" href="/about/careers" aria-label="See open roles"></a>
         <span class="lbl">Careers</span>
-        <h3>Build the future of healthcare AI with us.</h3>
-        <p>We&rsquo;re growing. If you care about doing meaningful work with intelligent technology, there&rsquo;s a place for you at Kleza.</p>
+        <h3>Build the future of AI with us. </h3>
+        <p>We're growing fast, and we want people who want to build something that matters. There's room for you here.</p>
         <span class="cta">See Open Roles <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
       </div>
     </div>
@@ -575,7 +587,7 @@
 </footer>
 
 
-a:Tb15,
+a:Taff,
 (function(){
   var TEAM={"Management":[["Manoj Paritala","Founder & CEO"]],"Digital Marketing":[["Vasudha","Project Manager"],["Praveen","Digital Marketing Specialist"],["Divya","Digital Marketing Specialist"],["Swathi","Digital Marketing Executive"],["Sulakshana","Sr. Content Writer"],["Salwa","Content Writer"],["Lubna","Content Writer"],["Rajesh","Sr. UI/UX Designer"],["Sahitya","UI/UX Designer"],["Deeraj","Jr. Graphic Designer"],["Raghavendra","Jr. Graphic Designer"]],"Development":[["Pawan","Sr. Manager, Product Management"],["Dhanush","Sr. Software Engineer"],["Veerababu","Sr. Backend Engineer"],["Avinash","Sr. Frontend Engineer"],["Kranthi","Developer"],["Sodham","Sr. Developer, Web Technologies"],["Navadeep","WordPress Developer"],["Silpa","Sr. QA Engineer"],["Sarvani","QA Engineer"],["Vamsi","Jr. QA Engineer"],["Sumalatha","Jr. Developer"],["Geyasree","Software Engineer"],["Suresh","Full Stack Developer"]],"HR & Accounts":[["Nandini","HR & Accounts Executive"]],"Managed IT":[["Murali","IT Manager"],["Trinadh Peddi","Sr. System Administrator"],["Srikanth","Jr. System Administrator"]],"Operational Outsourcing":[["Manasa","Manager"],["Vani","US Accounting Specialist"],["Ramya","US Accounting Specialist"],["Rebeca","Talent Acquisition Specialist"],["Renuka","Sr. Hiring Assistant"],["Samreen","Schedule Coordinator"],["Maliha Khanam","Schedule Coordinator"],["Madhu","Schedule Coordinator"],["Reeshma","Administrative Assistant"],["Naga Laxmi","US Accountant"],["Saumya","HR Recruiter"],["Chenee","Hiring Assistant"],["Jeana","Schedule Coordinator"],["Honey","Schedule Coordinator"],["Nestea","Schedule Coordinator"],["Yuki","Schedule Coordinator"],["Raphaella","Schedule Coordinator"]]};
   var tabs=document.getElementById('abTeamTabs');

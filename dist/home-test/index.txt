@@ -1,11 +1,11 @@
 3:I[4707,[],""]
 4:I[6423,[],""]
 5:I[5753,["185","static/chunks/app/layout-e08f2b19d9c06fff.js"],"default"]
-0:["iXMU0zGvXdobHgxs5XgFY",[[["",{"children":["home-test",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",{"children":["home-test",{"children":["__PAGE__",{},[["$L1",["$L2",["$","style",null,{"dangerouslySetInnerHTML":{"__html":"\n            :is(h1, h2, h3, h4, h5, h6) {\n              font-family: \"Plus Jakarta Sans\", var(--sans) !important;\n            }\n\n            .ecosystem-header h2 {\n              font-size: clamp(40px, 5vw, 72px) !important;\n              line-height: 1.04 !important;\n              letter-spacing: -0.045em !important;\n              word-spacing: 0.06em !important;\n            }\n\n            .section-head h2 {\n              font-size: clamp(36px, 4.7vw, 64px) !important;\n              line-height: 1.04 !important;\n              letter-spacing: -0.045em !important;\n              word-spacing: 0.06em !important;\n            }\n\n            .stats-text h2 {\n              font-size: clamp(34px, 4.2vw, 55px) !important;\n              line-height: 1.05 !important;\n              letter-spacing: -0.045em !important;\n              word-spacing: 0.06em !important;\n            }\n\n            .ecosystem-header h2 .ital {\n              word-spacing: 0.12em !important;\n            }\n          "}}]],null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","home-test","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/02fb55590a3f1e38.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":""}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Instrument+Serif:ital,wght@0,400;1,400&family=JetBrains+Mono:wght@400;500&family=Mukta:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"children":[["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}],["$","$L5",null,{}]]}]]}]],null],null],["$L6",null]]]]
+0:["IaUfnyqODNBAxVLJ-CeZ_",[[["",{"children":["home-test",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",{"children":["home-test",{"children":["__PAGE__",{},[["$L1",["$L2",["$","style",null,{"dangerouslySetInnerHTML":{"__html":"\n            :is(h1, h2, h3, h4, h5, h6) {\n              font-family: \"Plus Jakarta Sans\", var(--sans) !important;\n            }\n\n            .ecosystem-header h2 {\n              font-size: clamp(40px, 5vw, 72px) !important;\n              line-height: 1.04 !important;\n              letter-spacing: -0.045em !important;\n              word-spacing: 0.06em !important;\n            }\n\n            .section-head h2 {\n              font-size: clamp(36px, 4.7vw, 64px) !important;\n              line-height: 1.04 !important;\n              letter-spacing: -0.045em !important;\n              word-spacing: 0.06em !important;\n            }\n\n            .stats-text h2 {\n              font-size: clamp(34px, 4.2vw, 55px) !important;\n              line-height: 1.05 !important;\n              letter-spacing: -0.045em !important;\n              word-spacing: 0.06em !important;\n            }\n\n            .ecosystem-header h2 .ital {\n              word-spacing: 0.12em !important;\n            }\n          "}}]],null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","home-test","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/02fb55590a3f1e38.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":""}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Instrument+Serif:ital,wght@0,400;1,400&family=JetBrains+Mono:wght@400;500&family=Mukta:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"children":[["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}],["$","$L5",null,{}]]}]]}]],null],null],["$L6",null]]]]
 6:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Home Test - Kleza"}],["$","meta","3",{"name":"description","content":"Kleza is a fast-growing AI Transformation Company built on a singular vision: to humanize technology and make intelligence accessible, ethical, and meaningful for every business."}],["$","link","4",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","5",{"rel":"icon","href":"/favicon-32.png","sizes":"32x32","type":"image/png"}],["$","link","6",{"rel":"icon","href":"/favicon-192.png","sizes":"192x192","type":"image/png"}],["$","link","7",{"rel":"apple-touch-icon","href":"/apple-touch-icon.png","sizes":"180x180","type":"image/png"}]]
 1:null
-9:I[1797,["98","static/chunks/app/home-test/page-3feffab865eb131c.js"],"default"]
-7:T11d12,
+9:I[1797,["98","static/chunks/app/home-test/page-a4c1a919954361e4.js"],"default"]
+7:T110d4,
     :root {
       --bg: #f5f9f9;
       --bg-alt: #eef4f3;
@@ -3139,7 +3139,7 @@
         align-items: start;
       }
     }
-  8:T11254,
+  8:T10e9b,
 
   <!-- ============ HEADER ============ -->
   <header class="site-header" id="header" data-screen-label="Header">
@@ -4021,7 +4021,7 @@
     <div class="container">
       <div class="products-head">
         <h2>A glimpse. <span class="ital">Of what we ship.</span></h2>
-        <a href="#">All products
+        <a href="/ai-products">All products
           <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
             stroke-linecap="round" stroke-linejoin="round">
             <line x1="7" y1="17" x2="17" y2="7" />
@@ -4054,7 +4054,7 @@
           <div class="product-info">
             <h3>VOICA</h3>
             <p>Every call reviewed automatically, so nothing important gets missed or forgotten.</p>
-            <a href="#" class="product-link" style="color: rgb(14, 27, 34)">View product
+            <a href="https://slategray-jay-545015.hostingersite.com/" target="_blank" rel="noopener noreferrer" class="product-link" style="color: rgb(14, 27, 34)">View product
               <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
                 stroke-linecap="round" stroke-linejoin="round" style="stroke: rgb(14, 27, 34)">
                 <line x1="7" y1="17" x2="17" y2="7" />
@@ -4083,7 +4083,7 @@
           <div class="product-info">
             <h3>AssessFlo</h3>
             <p>Turn client assessments into action, in the office, in the field, or offline.</p>
-            <a href="#" class="product-link" style="color: rgb(14, 27, 34)">View product
+            <a href="https://lightslategray-curlew-597776.hostingersite.com/" target="_blank" rel="noopener noreferrer" class="product-link" style="color: rgb(14, 27, 34)">View product
               <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
                 stroke-linecap="round" stroke-linejoin="round" style="stroke: rgb(14, 27, 34)">
                 <line x1="7" y1="17" x2="17" y2="7" style="stroke: rgb(14, 27, 34)" />
@@ -4119,7 +4119,7 @@
           <div class="product-info">
             <h3>HireOrbit</h3>
             <p>From first application to first day, without a single form getting lost in the shuffle.</p>
-            <a href="#" class="product-link" style="color: rgb(14, 27, 34)">View product
+            <a href="http://orange-salamander-203350.hostingersite.com/" target="_blank" rel="noopener noreferrer" class="product-link" style="color: rgb(14, 27, 34)">View product
               <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
                 stroke-linecap="round" stroke-linejoin="round" style="stroke: rgb(14, 27, 34)">
                 <line x1="7" y1="17" x2="17" y2="7" />
@@ -4380,7 +4380,7 @@
   
   
 
-a:Tc2a,
+a:Tbe6,
     (function () {
       const track = document.getElementById('testiTrack');
       const stage = document.getElementById('testiStage');
@@ -4448,7 +4448,7 @@ a:Tc2a,
       update();
       startAuto();
     })();
-  b:T842,
+  b:T814,
     // header scroll state
     const header = document.getElementById('header');
     const onScroll = () => {
@@ -4494,4 +4494,4 @@ a:Tc2a,
         tile.style.setProperty('--my', `${e.clientY - r.top}px`);
       });
     });
-  2:[[],["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$7"}}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$8"}}],["$","$L9",null,{"scripts":[{"code":"\r\n    // Hover-driven accordion — first card is open by default; hovering swaps active\r\n    (function () {\r\n      const cards = document.querySelectorAll('#solAccordion .sol-card');\r\n      cards.forEach(card => {\r\n        card.addEventListener('mouseenter', () => {\r\n          cards.forEach(c => c.setAttribute('data-open', c === card ? 'true' : 'false'));\r\n        });\r\n      });\r\n    })();\r\n  "},{"code":"$a"},{"code":"$b"}],"bodyAttrs":{"data-method-layout":"timeline"}}]]
+  2:[[],["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$7"}}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$8"}}],["$","$L9",null,{"scripts":[{"code":"\n    // Hover-driven accordion — first card is open by default; hovering swaps active\n    (function () {\n      const cards = document.querySelectorAll('#solAccordion .sol-card');\n      cards.forEach(card => {\n        card.addEventListener('mouseenter', () => {\n          cards.forEach(c => c.setAttribute('data-open', c === card ? 'true' : 'false'));\n        });\n      });\n    })();\n  "},{"code":"$a"},{"code":"$b"}],"bodyAttrs":{"data-method-layout":"timeline"}}]]

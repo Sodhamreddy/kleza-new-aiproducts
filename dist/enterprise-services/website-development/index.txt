@@ -2,7 +2,7 @@
 5:I[6423,[],""]
 6:I[5753,["185","static/chunks/app/layout-e08f2b19d9c06fff.js"],"default"]
 4:["slug","website-development","d"]
-0:["iXMU0zGvXdobHgxs5XgFY",[[["",{"children":["enterprise-services",{"children":[["slug","website-development","d"],{"children":["__PAGE__?{\"slug\":\"website-development\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["enterprise-services",{"children":[["slug","website-development","d"],{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","enterprise-services","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","enterprise-services","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/02fb55590a3f1e38.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":""}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Instrument+Serif:ital,wght@0,400;1,400&family=JetBrains+Mono:wght@400;500&family=Mukta:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"children":[["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}],["$","$L6",null,{}]]}]]}]],null],null],["$L7",null]]]]
+0:["IaUfnyqODNBAxVLJ-CeZ_",[[["",{"children":["enterprise-services",{"children":[["slug","website-development","d"],{"children":["__PAGE__?{\"slug\":\"website-development\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["enterprise-services",{"children":[["slug","website-development","d"],{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","enterprise-services","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","enterprise-services","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/02fb55590a3f1e38.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":""}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Instrument+Serif:ital,wght@0,400;1,400&family=JetBrains+Mono:wght@400;500&family=Mukta:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"children":[["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}],["$","$L6",null,{}]]}]]}]],null],null],["$L7",null]]]]
 b:I[1797,["972","static/chunks/972-8c737d6cac936def.js","983","static/chunks/app/enterprise-services/%5Bslug%5D/page-da117cad34ad955f.js"],"default"]
 8:T471,{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
 {"@type":"Question","name":"How long does it take to build an enterprise website?","acceptedAnswer":{"@type":"Answer","text":"Most builds take 8 to 14 weeks, depending on scope and content readiness."}},
@@ -10,12 +10,20 @@ b:I[1797,["972","static/chunks/972-8c737d6cac936def.js","983","static/chunks/app
 {"@type":"Question","name":"Can Kleza redesign an existing website instead of building a new one?","acceptedAnswer":{"@type":"Answer","text":"Yes, from a full rebuild to a modernisation of your current site."}},
 {"@type":"Question","name":"Do you provide ongoing website maintenance after launch?","acceptedAnswer":{"@type":"Answer","text":"Yes, including security patches, performance monitoring, and content updates."}},
 {"@type":"Question","name":"What technologies does Kleza use to build websites?","acceptedAnswer":{"@type":"Answer","text":"React, Next.js, Node.js, and Python, plus WordPress, Webflow, and Shopify for CMS and e-commerce."}}
-]}9:T2f80,
+]}9:T3102,
 /* ---------- HERO (reuses .es-hero dark hero pattern) ---------- */
 .es-hero{background:var(--dark);color:#e8f0f0;border-radius:28px;margin:24px auto 0;max-width:var(--maxw);padding:clamp(40px,5vw,64px) clamp(28px,4vw,56px);display:grid;grid-template-columns:1.15fr 1fr;gap:48px;align-items:center;position:relative;overflow:hidden}
 .es-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(900px 500px at 80% 20%,rgba(90, 204, 241,.18),transparent 60%),radial-gradient(700px 400px at 10% 90%,rgba(54,192,237,.12),transparent 60%);pointer-events:none}
 .es-hero-inner{position:relative;z-index:1}
 .es-hero .eyebrow{color:#9fb3b8}
+/* Breadcrumb now sits inside the dark hero panel (it used to be a white strip
+   above it), so it needs light-on-dark colours. */
+.es-crumb{margin-bottom:22px}
+.es-crumb .breadcrumb{color:#8fa3a8}
+.es-crumb .breadcrumb a{color:#b8c8cc}
+.es-crumb .breadcrumb a:hover{color:var(--accent-3)}
+.es-crumb .breadcrumb .sep{color:#5d6f74}
+.es-crumb .breadcrumb .current{color:var(--accent-3)}
 .es-hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(38px,5vw,68px);line-height:1.08;letter-spacing:-.01em;color:#fff;margin:18px 0 26px;text-wrap:balance}
 .es-hero h1 .ital{font-style:italic;color:var(--accent-3)}
 .es-hero p.lede{color:#aebcc0;max-width:560px;font-size:clamp(15px,1.1vw,18px);line-height:1.6;margin:0}
@@ -148,7 +156,7 @@ b:I[1797,["972","static/chunks/972-8c737d6cac936def.js","983","static/chunks/app
 @media (max-width:520px){
 .wd-std-grid,.es-trust-foot .grid{grid-template-columns:1fr}
 }
-a:Tb45f,
+a:Tb319,
 <!-- ============ HEADER ============ -->
 <header class="site-header" id="header" data-screen-label="Header">
   <div class="nav-shell">
@@ -353,13 +361,12 @@ a:Tb45f,
   </div>
 </header>
 
-<div class="breadcrumb-bar"><div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span class="sep">&raquo;</span><a href="/enterprise-services">Enterprise Services</a><span class="sep">&raquo;</span><span class="current">Website Development</span></nav></div></div>
 
 <!-- SECTION 01 — HERO -->
 <section data-screen-label="Hero" style="padding-top:8px">
   <div class="es-hero">
     <div class="es-hero-inner">
-      <span class="eyebrow">Enterprise Services <span class="dot">·</span> Website Development</span>
+      <div class="es-crumb"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span class="sep">&raquo;</span><a href="/enterprise-services">Enterprise Services</a><span class="sep">&raquo;</span><span class="current">Website Development</span></nav></div>
       <h1>AI-Powered Website Development &mdash; Built for Performance, <span class="ital">Designed for Growth.</span></h1>
       <p class="lede">Kleza builds AI-powered websites that actually work the way they&rsquo;re supposed to, fast, easy to use, and built with real technical care behind the scenes. Whether you&rsquo;re starting from scratch or fixing what&rsquo;s not working, every site we build is designed to help visitors find you, stay with you, and turn into real business growth.</p>
       <div class="es-hero-ctas">
@@ -402,7 +409,6 @@ a:Tb45f,
   <div class="container">
     <div class="es-head">
       <div class="left">
-        <span class="eyebrow">Capabilities</span>
         <h2 class="es-h2">Everything your website needs, <span class="ital">in one place.</span></h2>
       </div>
       <p class="es-lede">From custom builds to intelligent, adaptive features, our team owns every layer, so nothing falls through the cracks between vendors.</p>
@@ -447,7 +453,7 @@ a:Tb45f,
   <div class="container">
     <div class="es-head">
       <div class="left">
-        <span class="eyebrow">Build Standards</span>
+        <span class="eyebrow">Capabilities</span>
         <h2 class="es-h2">The standards we <span class="ital">don&rsquo;t compromise on.</span></h2>
       </div>
       <p class="es-lede">Every Kleza build meets the same baseline, regardless of industry or budget. Where compliance requirements apply, like HIPAA for healthcare, we build to meet them from day one.</p>
@@ -501,7 +507,7 @@ a:Tb45f,
 <!-- SECTION 05 — PROCESS -->
 <section class="es-sec" data-screen-label="Process">
   <div class="container">
-    <div class="es-head"><div class="left"><span class="eyebrow">Process</span><h2 class="es-h2">Our website development <span class="ital">process.</span></h2></div></div>
+    <div class="es-head"><div class="left"><h2 class="es-h2">Our website development <span class="ital">process.</span></h2></div></div>
     <div class="wd-steps">
       <div class="wd-step"><div class="circle">01</div><h4>Discovery &amp; Scope</h4></div>
       <div class="wd-step"><div class="circle">02</div><h4>UX Research &amp; Wireframes</h4></div>
@@ -535,7 +541,7 @@ a:Tb45f,
 <!-- SECTION 07 — FAQ -->
 <section class="es-sec" data-screen-label="FAQ">
   <div class="container">
-    <div class="es-head" style="justify-content:center;text-align:center;flex-direction:column;align-items:center"><span class="eyebrow">FAQ</span><h2 class="es-h2" style="margin-top:14px">Frequently asked <span class="ital">questions.</span></h2></div>
+    <div class="es-head" style="justify-content:center;text-align:center;flex-direction:column;align-items:center"><h2 class="es-h2">Frequently asked <span class="ital">questions.</span></h2></div>
     <div class="es-faq">
       <div class="es-faq-item"><button class="es-faq-q">How long does it take to build an enterprise website?<span class="plus">+</span></button><div class="es-faq-a"><p>Most builds take 8 to 14 weeks, depending on scope and content readiness.</p></div></div>
       <div class="es-faq-item"><button class="es-faq-q">Will my website be optimised for Google search?<span class="plus">+</span></button><div class="es-faq-a"><p>Yes, every build includes SEO architecture, schema markup, and Core Web Vitals optimisation.</p></div></div>
@@ -550,7 +556,7 @@ a:Tb45f,
 <section class="es-sec" style="padding-top:0" data-screen-label="Closing CTA">
   <div class="container">
     <div class="es-bundle">
-      <span class="eyebrow">Integrated Solutions</span>
+      
       <h2 class="es-h2">A website that works hard. <span class="ital">A system that gets smarter.</span></h2>
       <p>Combine your build with AI-powered personalisation, SEO, marketing, or automation for a foundation that doesn&rsquo;t just perform, it adapts.</p>
       <div class="ctas">
