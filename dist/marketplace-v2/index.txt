@@ -1,11 +1,11 @@
 3:I[4707,[],""]
 4:I[6423,[],""]
-5:I[5753,["185","static/chunks/app/layout-e08f2b19d9c06fff.js"],"default"]
-0:["IaUfnyqODNBAxVLJ-CeZ_",[[["",{"children":["marketplace-v2",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",{"children":["marketplace-v2",{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","marketplace-v2","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/02fb55590a3f1e38.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":""}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Instrument+Serif:ital,wght@0,400;1,400&family=JetBrains+Mono:wght@400;500&family=Mukta:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"children":[["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}],["$","$L5",null,{}]]}]]}]],null],null],["$L6",null]]]]
+5:I[5753,["185","static/chunks/app/layout-1704edfb8ec21a88.js"],"default"]
+0:["Csb1WEQrs-Jyc_c4tqzj0",[[["",{"children":["marketplace-v2",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",{"children":["marketplace-v2",{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","marketplace-v2","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/02fb55590a3f1e38.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":""}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700;800;900&family=Instrument+Serif:ital,wght@0,400;1,400&family=JetBrains+Mono:wght@400;500&family=Mukta:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"children":[["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}],["$","$L5",null,{}]]}]]}]],null],null],["$L6",null]]]]
 6:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Marketplace — Kleza"}],["$","meta","3",{"name":"description","content":"Explore the KLEZA ecosystem of intelligent products built to simplify workflows, connect teams, and transform the work of care."}],["$","link","4",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","5",{"rel":"icon","href":"/favicon-32.png","sizes":"32x32","type":"image/png"}],["$","link","6",{"rel":"icon","href":"/favicon-192.png","sizes":"192x192","type":"image/png"}],["$","link","7",{"rel":"apple-touch-icon","href":"/apple-touch-icon.png","sizes":"180x180","type":"image/png"}]]
 1:null
 a:I[1797,["831","static/chunks/app/marketplace-v2/page-393fdf3adce9fb0f.js"],"default"]
-7:T5e20,<header class="site-header" id="header" data-screen-label="Header">
+7:T6010,<header class="site-header" id="header" data-screen-label="Header">
   <div class="nav-shell">
     <nav class="nav" aria-label="Primary" style="border-color: rgb(13, 155, 139)">
       <a href="#" class="logo" aria-label="Kleza"><img src="/assets/kleza-logo.png" alt="Kleza" /></a>
@@ -59,7 +59,7 @@ a:I[1797,["831","static/chunks/app/marketplace-v2/page-393fdf3adce9fb0f.js"],"de
                 <li><a class="mega-link" href="https://slategray-jay-545015.hostingersite.com/" target="_blank" rel="noopener noreferrer"><span class="mega-link-ico mega-link-ico--img"><img src="/assets/icon-voica.png" alt="Voica" /></span><span class="mega-link-text"><span class="mega-link-name">Voica</span><span class="mega-link-sub">Records and analyzes every call &mdash; inquiries, compliance flags, scheduling issues.</span></span></a></li>
                 <li><a class="mega-link" href="https://lightslategray-curlew-597776.hostingersite.com/" target="_blank" rel="noopener noreferrer"><span class="mega-link-ico mega-link-ico--img"><img src="/assets/icon-assessflo.png" alt="AssessFlo" /></span><span class="mega-link-text"><span class="mega-link-name">AssessFlo</span><span class="mega-link-sub">Digital client assessments, online or offline, with automatic WellSky sync.</span></span></a></li>
                 <li><a class="mega-link" href="http://orange-salamander-203350.hostingersite.com/" target="_blank" rel="noopener noreferrer"><span class="mega-link-ico mega-link-ico--img"><img src="/assets/icon-hireorbit.png" alt="HireOrbit" /></span><span class="mega-link-text"><span class="mega-link-name">HireOrbit</span><span class="mega-link-sub">Caregiver hiring end to end &mdash; parsing, onboarding, e-signatures, compliance.</span></span></a></li>
-                <li><a class="mega-link" href="https://slategray-oryx-438842.hostingersite.com/" target="_blank" rel="noopener noreferrer"><span class="mega-link-ico mega-link-ico--img"><img src="/assets/icon-nexxio.png" alt="Nexxio" /></span><span class="mega-link-text"><span class="mega-link-name">Nexxio</span><span class="mega-link-sub">Captures inquiries and referrals from every source and helps you convert them.</span></span></a></li>
+                <li><a class="mega-link" href="https://slategray-oryx-438842.hostingersite.com/" target="_blank" rel="noopener noreferrer"><span class="mega-link-ico mega-link-ico--img"><img src="/assets/icon-nexxio.png" alt="Inqvue" /></span><span class="mega-link-text"><span class="mega-link-name">Inqvue</span><span class="mega-link-sub">Captures inquiries and referrals from every source and helps you convert them.</span></span></a></li>
               </ul>
               </div>
             <div class="mega-col">
@@ -148,6 +148,7 @@ a:I[1797,["831","static/chunks/app/marketplace-v2/page-393fdf3adce9fb0f.js"],"de
                 <li><a class="mega-link" href="/ai-services"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Overview</span></span></a></li>
                 <li><a class="mega-link" href="/ai-services/training"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-7M14 17H4M9 7l-5 5 5 5M15 12l5 5"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Business-Specific AI Training</span></span></a></li>
                 <li><a class="mega-link" href="/ai-services/assistant"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></span><span class="mega-link-text"><span class="mega-link-name">AI Support Assistant</span></span></a></li>
+                <li><a class="mega-link" href="/ai-services/automation"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><path d="M10 6.5h4a2 2 0 0 1 2 2V14"/></svg></span><span class="mega-link-text"><span class="mega-link-name">End-to-End Business Process Automation</span></span></a></li>
               </ul>
             </div>
             <div class="mega-col">
@@ -241,7 +242,7 @@ a:I[1797,["831","static/chunks/app/marketplace-v2/page-393fdf3adce9fb0f.js"],"de
           <li><a href="https://slategray-jay-545015.hostingersite.com/" target="_blank" rel="noopener noreferrer">Voica</a></li>
           <li><a href="https://lightslategray-curlew-597776.hostingersite.com/" target="_blank" rel="noopener noreferrer">AssessFlo</a></li>
           <li><a href="http://orange-salamander-203350.hostingersite.com/" target="_blank" rel="noopener noreferrer">HireOrbit</a></li>
-          <li><a href="https://slategray-oryx-438842.hostingersite.com/" target="_blank" rel="noopener noreferrer">Nexxio</a></li>
+          <li><a href="https://slategray-oryx-438842.hostingersite.com/" target="_blank" rel="noopener noreferrer">Inqvue</a></li>
           <li><a href="https://darkorange-finch-216111.hostingersite.com/" target="_blank" rel="noopener noreferrer">Docunyx</a></li>
           <li><a href="https://excelliq-ai.kleza.io/" target="_blank" rel="noopener noreferrer">Excelliq</a></li>
         </ul>
@@ -274,7 +275,7 @@ a:I[1797,["831","static/chunks/app/marketplace-v2/page-393fdf3adce9fb0f.js"],"de
     </div>
   </div>
 </footer>2:[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$7"}}],"$L8",["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$9"}}],["$","$La",null,{"scripts":[{"src":"/assets/nav.js"}],"bodyAttrs":{}}]]
-b:T5b40,
+b:T533e,
 /* ==========================================================================
    KLEZA Marketplace v2 — scoped stylesheet. THE BINDING CLASS CONTRACT.
    Every class the markup may use is defined here. Nothing else exists.
@@ -351,30 +352,18 @@ b:T5b40,
 }
 .mv2-h2 { font-size: 21px; font-weight: 700; line-height: 1.2; }
 .mv2-sub { margin-top: 5px; font-size: 12.5px; color: var(--desc); }
-.mv2-link {
-  flex: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 12.5px;
-  font-weight: 600;
-  color: var(--purple);
-}
 .mv2-arrow { display: inline-block; transition: transform .18s ease; }
-.mv2-link:hover .mv2-arrow,
-.mv2-cat:hover .mv2-arrow,
-.mv2-feat:hover .mv2-arrow,
 .mv2-prod:hover .mv2-arrow { transform: translateX(3px); }
 
 /* ---------- icon tiles + tints ---------- */
-.mv2-cat-ico, .mv2-prod-ico, .mv2-eco-ico, .mv2-why-ico {
+.mv2-prod-ico, .mv2-eco-ico, .mv2-why-ico {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   flex: none;
   border-radius: 10px;
 }
-.mv2-cat-ico svg, .mv2-prod-ico svg,
+.mv2-prod-ico svg,
 .mv2-eco-ico svg, .mv2-why-ico svg { display: block; }
 
 .t-purple { background: var(--purple-l); color: var(--purple); }
@@ -386,314 +375,221 @@ b:T5b40,
 .t-teal   { background: var(--teal-l);   color: var(--teal); }
 
 /* ==========================================================================
-   1 — HERO  (centred display banner over a soft wave/dot backdrop)
+   1 — HERO  (split banner: display copy + search on the left, a rotating
+   product deck on the right, over two slowly drifting colour blobs)
+
+   Replicates the KLEZA ecosystem hub hero. Its palette is deliberately its
+   own — the teal/navy token set from that design — and is declared as local
+   custom properties on `.mv2-hero`, so the purple marketplace tokens the
+   rest of the page runs on are never touched.
    ========================================================================== */
 .mv2-hero {
+  /* ink */
+  --h-primary: #002864;
+  --h-navy-soft: #005189;
+  --h-muted: #486781;
+  /* surface */
+  --h-bg: #fbfefe;
+  --h-card: #fff;
+  --h-border: #cbe3e9;
+  /* brand */
+  --h-accent: #00afa8;
+  --h-mint: #bdf7dc;
+  --h-sky: #9ce9fc;
+  /* elevation */
+  --h-sh-card: 0 14px 40px rgba(0, 40, 100, .08);
+  --h-sh-btn: 0 8px 20px rgba(0, 40, 100, .18);
+  /* deck geometry — the horizontal step between two neighbouring cards */
+  --h-step: 130px;
+
   position: relative;
   overflow: hidden;
-  /* Flat lavender behind the artwork, so the band never flashes white while
-     the backdrop image is still decoding. */
-  background: linear-gradient(180deg, #f4f2fc 0%, #eeebf9 100%);
-  border-bottom: 1px solid #efebfb;
+  background: #edfbfa;
+  border-bottom: 1px solid #ddf2f3;
 }
-.mv2-hero-bg {
+
+/* Soft out-of-frame blobs. Decorative only, so they sit behind everything
+   and never take pointer events. */
+.mv2-hero-blob {
   position: absolute;
-  inset: 0;
   pointer-events: none;
+  animation: mv2Drift 10s ease-in-out infinite;
 }
-/* The supplied banner artwork. Cropped rather than stretched; biased low so
-   the lower wave stays in frame on short bands. */
-.mv2-hero-bg-img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 62%;
+.mv2-hero-blob--mint {
+  left: -96px;
+  bottom: -160px;
+  width: 320px;
+  height: 320px;
+  border-radius: 45%;
+  background: rgba(189, 247, 220, .45);
+  filter: blur(40px);
 }
-/* Dot-grid overlay, which the artwork itself does not carry. */
-.mv2-hero-bg-svg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
+.mv2-hero-blob--sky {
+  right: 8%;
+  top: -180px;
+  width: 470px;
+  height: 470px;
+  border-radius: 9999px;
+  border: 1px solid rgba(0, 175, 168, .15);
+  background: rgba(156, 233, 252, .35);
+  filter: blur(24px);
+}
+@keyframes mv2Drift {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  50% { transform: translate(12px, -10px) rotate(3deg); }
 }
 
 .mv2-hero > .mv2-wrap {
   position: relative;
-  padding-top: 52px;
-  padding-bottom: 54px;
+  display: grid;
+  align-items: center;
+  gap: 40px;
+  grid-template-columns: .88fr 1.12fr;
+  min-height: 386px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
-.mv2-hero-inner { max-width: 760px; margin: 0 auto; text-align: center; }
+
+/* ---------- left column ---------- */
+.mv2-hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 576px;
+  margin: 0;
+  text-align: left;
+}
 
 .mv2-hero-kicker {
+  margin-bottom: 12px;
   font-family: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
-  font-size: 17px;
-  font-weight: 700;
-  letter-spacing: -.02em;
-  color: #454f74;
-}
-.mv2-hero-display {
-  margin-top: 6px;
-  font-family: "Playfair Display", "Instrument Serif", Georgia, serif;
-  font-size: clamp(50px, 7.5vw, 96px);
+  font-size: 12px;
   font-weight: 800;
-  line-height: 1.06;
-  letter-spacing: .012em;
-  /* Kleza brand blue, taken from the site token so the two stay in step. */
-  color: var(--accent, #36c0ed);
+  text-transform: uppercase;
+  letter-spacing: .18em;
+  color: var(--h-primary);
 }
+/* Two lines, always: the <br /> sets the break and each line refuses to wrap,
+   so the size is what has to give on a narrow viewport - hence the vw term. */
+.mv2-hero-display {
+  margin-top: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(26px, 3.45vw, 48px);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -.01em;
+  white-space: nowrap;
+  color: var(--h-primary);
+}
+.mv2-hero-em { color: var(--h-accent); }
+
 .mv2-hero-lede {
-  margin: 15px auto 0;
-  max-width: 480px;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 1.62;
-  color: var(--desc);
+  margin: 20px 0 0;
+  max-width: 512px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--h-navy-soft);
 }
+.mv2-hero-lede strong { font-weight: 700; color: var(--h-primary); }
 
-.mv2-search {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin: 26px auto 0;
-  max-width: 545px;
-  padding: 5px 5px 5px 18px;
-  border: 1px solid #e7e3f7;
-  border-radius: 9999px;
-  background: #fff;
-  box-shadow: 0 1px 2px rgba(15, 23, 42, .04), 0 18px 38px -26px rgba(28, 43, 74, .55);
-  transition: border-color .18s ease, box-shadow .18s ease;
-}
-.mv2-search:focus-within {
-  border-color: var(--accent, #36c0ed);
-  box-shadow: 0 0 0 4px rgba(54, 192, 237, .18), 0 18px 38px -26px rgba(28, 43, 74, .55);
-}
-.mv2-search-ico { flex: none; display: flex; color: #9aa3ba; }
-.mv2-search-ico svg { display: block; width: 18px; height: 18px; }
-.mv2-search-input {
-  flex: 1 1 auto;
-  min-width: 0;
-  border: 0;
-  outline: 0;
-  background: transparent;
-  font: inherit;
-  font-size: 14px;
-  color: var(--ink);
-  padding: 7px 0;
-}
-.mv2-search-input::placeholder { color: #9aa3ba; }
-.mv2-search-input::-webkit-search-cancel-button { -webkit-appearance: none; }
-.mv2-search-go {
-  flex: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  border: 0;
-  border-radius: 9999px;
-  background: linear-gradient(140deg, var(--accent, #36c0ed), var(--accent-2, #1aa5db));
-  color: #fff;
-  transition: filter .18s ease, transform .18s ease;
-}
-.mv2-search-go svg { display: block; width: 17px; height: 17px; }
-.mv2-search-go:hover { filter: brightness(1.08); transform: translateX(1px); }
-
-.mv2-pop {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  margin-top: 18px;
-}
-.mv2-pop-label { font-size: 12px; font-weight: 500; color: #6b7897; margin-right: 2px; }
-.mv2-pill {
-  display: inline-flex;
-  align-items: center;
-  padding: 7px 14px;
-  border: 1px solid transparent;
-  border-radius: 9999px;
-  background: #f0edfb;
-  font-size: 11.5px;
-  font-weight: 500;
-  color: #4a5878;
-  transition: border-color .18s, color .18s, background .18s, transform .18s;
-}
-.mv2-pill:hover {
-  border-color: var(--purple);
-  background: #fff;
-  color: var(--purple);
-  transform: translateY(-1px);
-}
-
-/* ==========================================================================
-   2 — EXPLORE BY CATEGORY
-   ========================================================================== */
-.mv2-cat-grid { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 14px; }
-.mv2-cat {
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  padding: 18px 16px 16px;
-  border: 1px solid var(--line);
-  border-radius: var(--r);
-  background: #fff;
-  box-shadow: var(--card-sh);
-  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
-}
-.mv2-cat:hover { transform: translateY(-3px); border-color: #dcd6f4; box-shadow: var(--card-sh-h); }
-.mv2-cat-ico { width: 34px; height: 34px; }
-.mv2-cat-ico svg { width: 19px; height: 19px; }
-.mv2-cat-name { margin-top: 14px; font-size: 12.5px; font-weight: 700; line-height: 1.25; }
-.mv2-cat-desc {
-  margin-top: 6px;
-  font-size: 11.5px;
-  line-height: 1.45;
-  color: var(--desc);
-  flex: 1 1 auto;
-}
-.mv2-cat-foot {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 16px;
-  font-size: 11px;
-  font-weight: 600;
-  color: var(--purple);
-}
-
-/* ==========================================================================
-   3 — FEATURED FROM KLEZA
-   ========================================================================== */
-.mv2-feat-shell { position: relative; margin-bottom: 34px; }
-.mv2-feat-rail {
-  display: flex;
-  gap: 16px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  scroll-snap-type: x proximity;
-  scrollbar-width: none;
-  padding-bottom: 4px;
-}
-.mv2-feat-rail::-webkit-scrollbar { display: none; }
-.mv2-feat {
+/* ---------- right column: the rotating product deck ---------- */
+.mv2-hero-stage {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  /* three across; the rail scrolls to reach the rest */
-  flex: 0 0 calc((100% - 32px) / 3);
-  min-width: 0;
-  overflow: hidden;
-  scroll-snap-align: start;
-  padding: 18px 18px 16px;
-  border: 1px solid var(--line);
-  border-radius: var(--r);
-  box-shadow: var(--card-sh);
-  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  min-height: 316px;
+  user-select: none;
 }
-.mv2-feat:hover { transform: translateY(-3px); box-shadow: var(--card-sh-h); }
-.mv2-feat.f-purple { background: linear-gradient(150deg, #f6f2ff, #fbf9ff 62%); border-color: #e7dffb; }
-.mv2-feat.f-green  { background: linear-gradient(150deg, #edfaf3, #f9fdfb 62%); border-color: #d8f0e4; }
-.mv2-feat.f-indigo { background: linear-gradient(150deg, #eef1fe, #f8f9ff 62%); border-color: #dfe3fb; }
-.mv2-feat.f-teal   { background: linear-gradient(150deg, #eaf7f9, #f8fcfd 62%); border-color: #d5ecef; }
-
-
-/* Supplied per-product backdrop artwork, full-bleed behind the card copy. */
-.mv2-feat-bg {
+.mv2-hero-halo {
   position: absolute;
-  inset: 0;
-  overflow: hidden;
-  border-radius: inherit;
+  left: 17%;
+  top: 8%;
+  width: 288px;
+  height: 288px;
+  border-radius: 9999px;
+  border: 1px solid rgba(0, 175, 168, .2);
+  background: rgba(189, 247, 220, .4);
+  filter: blur(8px);
   pointer-events: none;
 }
-.mv2-feat-bg img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: right center;
-}
-/* Scrim so the copy stays legible over the artwork. */
-.mv2-feat-bg::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(100deg, rgba(255, 255, 255, .74) 0%, rgba(255, 255, 255, .38) 46%, rgba(255, 255, 255, 0) 78%);
-}
-
-.mv2-feat-top { position: relative; display: flex; align-items: center; }
-.mv2-feat-name {
-  font-family: "Plus Jakarta Sans", "Inter", sans-serif;
-  font-size: 19.5px;
-  font-weight: 700;
-  letter-spacing: -.03em;
-  line-height: 1.2;
-}
-.mv2-feat-desc {
-  position: relative;
-  margin-top: 12px;
-  max-width: 24ch;
-  font-size: 12px;
-  line-height: 1.5;
-  color: var(--desc);
-}
-.mv2-feat-tags { position: relative; display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; }
-.mv2-tag {
-  padding: 4px 9px;
-  border-radius: 6px;
-  background: rgba(255, 255, 255, .8);
-  border: 1px solid rgba(28, 43, 74, .07);
-  font-size: 10.5px;
-  font-weight: 500;
-  color: var(--ink-2);
-  white-space: nowrap;
-}
-.mv2-feat-cta {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 18px;
-  font-size: 11.5px;
-  font-weight: 600;
-}
-.f-purple .mv2-feat-cta { color: var(--purple); }
-.f-green  .mv2-feat-cta { color: var(--green); }
-.f-indigo .mv2-feat-cta { color: var(--indigo); }
-.f-teal   .mv2-feat-cta { color: var(--teal); }
-
-.mv2-nav {
+.mv2-hero-deck {
   position: absolute;
   left: 0;
-  bottom: -34px;
-  display: flex;
-  gap: 8px;
+  right: 0;
+  top: 4px;
+  bottom: 44px;
 }
-.mv2-nav-btn {
+.mv2-hero-card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: block;
+  width: 225px;
+  padding: 20px;
+  border: 1px solid var(--h-border);
+  border-radius: 24px;
+  background: var(--h-card);
+  text-align: center;
+  box-shadow: var(--h-sh-card);
+  transform: translate(-50%, -50%);
+  transition: transform .7s cubic-bezier(0, 0, .2, 1), opacity .7s cubic-bezier(0, 0, .2, 1), filter .7s cubic-bezier(0, 0, .2, 1);
+}
+/* Deck slots, by signed distance from the active card. `--h-step` is the
+   shoulder offset; the responsive block tightens it on narrow viewports. */
+.mv2-hero-card[data-slot="0"]  { transform: translate(-50%, -50%) scale(1);   opacity: 1;   z-index: 10; filter: none; }
+.mv2-hero-card[data-slot="1"]  { transform: translate(calc(-50% + var(--h-step)), -50%) scale(.84); opacity: .72; z-index: 9; filter: saturate(.75); }
+.mv2-hero-card[data-slot="2"]  { transform: translate(calc(-50% + var(--h-step) * 2), -50%) scale(.7);  opacity: .35; z-index: 8; filter: saturate(.75); }
+.mv2-hero-card[data-slot="-1"] { transform: translate(calc(-50% - var(--h-step)), -50%) scale(.84); opacity: .72; z-index: 9; filter: saturate(.75); }
+.mv2-hero-card[data-slot="-2"] { transform: translate(calc(-50% - var(--h-step) * 2), -50%) scale(.7);  opacity: .35; z-index: 8; filter: saturate(.75); }
+/* Anything further out parks off-stage so it can rotate back in. */
+.mv2-hero-card[data-slot="hidden"] { transform: translate(-50%, -50%) scale(.6); opacity: 0; z-index: 7; pointer-events: none; }
+
+.mv2-hero-card-logo { display: flex; align-items: center; justify-content: center; height: 80px; }
+.mv2-hero-card-logo img { max-width: 100%; height: 48px; object-fit: contain; }
+.mv2-hero-card-name { margin-top: 12px; font-size: 18px; font-weight: 700; letter-spacing: -.01em; color: var(--h-primary); }
+.mv2-hero-card-desc {
+  margin: 8px 0 0;
+  min-height: 40px;
+  font-size: 12px;
+  line-height: 1.66;
+  color: var(--h-muted);
+}
+.mv2-hero-card-cta {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  border: 1px solid var(--line);
+  gap: 4px;
+  margin-top: 16px;
+  padding: 8px 16px;
   border-radius: 9999px;
-  background: #fff;
-  color: var(--ink-2);
-  box-shadow: 0 2px 8px -3px rgba(28, 43, 74, .22);
-  transition: border-color .18s, color .18s, transform .18s;
+  background: var(--h-accent);
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
 }
-.mv2-nav-btn svg { display: block; width: 15px; height: 15px; }
-.mv2-nav-btn:hover { border-color: var(--purple); color: var(--purple); }
-.mv2-nav-btn:active { transform: scale(.94); }
-.mv2-nav-btn[aria-disabled="true"] {
-  opacity: .38;
-  cursor: default;
-  border-color: var(--line);
-  color: var(--muted-2);
+.mv2-hero-card-cta svg { display: block; width: 14px; height: 14px; }
+/* Only the front card advertises itself. */
+.mv2-hero-card:not([data-slot="0"]) .mv2-hero-card-cta { visibility: hidden; }
+
+/* ---------- deck controls ---------- */
+/* The deck turns on its own; the dots are a position readout you can also
+   click, so they are all that sits under it. */
+.mv2-hero-ctrls {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.mv2-hero-dots { display: flex; gap: 8px; }
+.mv2-hero-dot {
+  width: 8px;
+  height: 8px;
+  border: 0;
+  border-radius: 9999px;
+  background: rgba(0, 40, 100, .2);
+  transition: width .3s ease, background .3s ease;
+}
+.mv2-hero-dot.is-on { width: 24px; background: var(--h-accent); }
 
 /* ==========================================================================
    4 — EXPLORE ALL PRODUCTS
@@ -969,14 +865,21 @@ b:T5b40,
    RESPONSIVE
    ========================================================================== */
 @media (max-width: 1280px) {
-  .mv2-cat-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .mv2-prod-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .mv2-feat { flex-basis: calc((100% - 16px) / 2); }
+}
+/* Below this the two hero columns stack: copy centred, deck underneath. */
+@media (max-width: 1080px) {
+  .mv2-hero > .mv2-wrap { grid-template-columns: minmax(0, 1fr); gap: 24px; min-height: 0; }
+  .mv2-hero-inner { max-width: 640px; margin: 0 auto; text-align: center; }
+  .mv2-hero-lede { margin-left: auto; margin-right: auto; }
+  .mv2-hero-halo { left: 50%; margin-left: -144px; }
 }
 @media (max-width: 900px) {
   .mv2-hero > .mv2-wrap { padding-top: 40px; padding-bottom: 42px; }
-  .mv2-hero-kicker { font-size: 14.5px; }
-  .mv2-hero-lede { font-size: 13.5px; }
+  /* Stacked, so the headline has the full width back - it can grow again,
+     still on two nowrap lines. */
+  .mv2-hero-display { font-size: clamp(22px, 5.2vw, 40px); }
+  .mv2-hero-lede { font-size: 14.5px; }
   .mv2-eco-grid { grid-template-columns: minmax(0, 1fr); }
     .mv2-cta { flex-wrap: wrap; }
   .mv2-cta-art { display: none; }
@@ -984,14 +887,15 @@ b:T5b40,
   .mv2-prod-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 640px) {
-  .mv2-cat-grid, .mv2-prod-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .mv2-prod-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .mv2-why-grid { grid-template-columns: minmax(0, 1fr); }
   .mv2-head { flex-direction: column; align-items: flex-start; }
-  .mv2-feat { flex-basis: 86%; }
-  .mv2-nav { display: none; }
   .mv2-eco { padding: 22px 20px; }
     .mv2-wrap { padding: 0 20px; }
-  .mv2-search { max-width: none; }
+  /* Tighten the deck so the shoulder cards stay on screen. */
+  .mv2-hero { --h-step: 96px; }
+  .mv2-hero-card { width: 190px; }
+  .mv2-hero-stage { min-height: 296px; }
   .mv2-cta { flex-direction: column; align-items: flex-start; gap: 16px; }
   .mv2-cta-acts { width: 100%; }
   .mv2-btn-ghost, .mv2-btn-solid { flex: 1 1 auto; }
@@ -1008,292 +912,126 @@ b:T5b40,
 /* The product filter toggles [hidden]; it has to beat the cards' own display. */
 .mv2 [hidden] { display: none !important; }
 
-c:T9f1b,
+c:T81b3,
 
 <div class="mv2">
 
   <!-- SECTION HERO -->
   <section class="mv2-hero">
 
-    <span class="mv2-hero-bg" aria-hidden="true">
-      <picture>
-        <source
-          type="image/webp"
-          srcset="/marketplace-banner-1200.webp 1200w, /marketplace-banner.webp 2048w"
-          sizes="100vw" />
-        <img class="mv2-hero-bg-img" src="/marketplace-banner.png" alt="" width="2048" height="768" decoding="async" fetchpriority="high" />
-      </picture>
-      <svg class="mv2-hero-bg-svg" viewBox="0 0 1440 400" preserveAspectRatio="xMidYMid slice" fill="none">
-        <defs>
-          <pattern id="mv2Dots" width="15" height="15" patternUnits="userSpaceOnUse">
-            <circle cx="1.7" cy="1.7" r="1.7" fill="#9c91da" />
-          </pattern>
-        </defs>
-        <rect x="0" y="18" width="72" height="76" fill="url(#mv2Dots)" opacity="0.34" />
-        <rect x="1352" y="28" width="88" height="76" fill="url(#mv2Dots)" opacity="0.30" />
-        <rect x="0" y="252" width="46" height="62" fill="url(#mv2Dots)" opacity="0.18" />
-        <rect x="1394" y="286" width="46" height="62" fill="url(#mv2Dots)" opacity="0.16" />
-      </svg>
-    </span>
+    <span class="mv2-hero-blob mv2-hero-blob--mint" aria-hidden="true"></span>
+    <span class="mv2-hero-blob mv2-hero-blob--sky" aria-hidden="true"></span>
 
     <div class="mv2-wrap">
+
       <div class="mv2-hero-inner">
 
-        <p class="mv2-hero-kicker">Solutions that power better care.</p>
+        <p class="mv2-hero-kicker">KLEZA Marketplace</p>
 
-        <h1 class="mv2-hero-display">Marketplace</h1>
+        <h1 class="mv2-hero-display">Intelligent solutions<br />for a <span class="mv2-hero-em">kinder tomorrow.</span></h1>
 
-        <p class="mv2-hero-lede">Explore the KLEZA ecosystem of intelligent products built to simplify workflows, connect teams, and transform the work of care.</p>
-
-        <form class="mv2-search" action="/ai-products">
-          <span class="mv2-search-ico" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="11" cy="11" r="7" />
-              <line x1="21" y1="21" x2="16.65" y2="16.65" />
-            </svg>
-          </span>
-          <input class="mv2-search-input" type="search" name="q" placeholder="Search products, solutions, or capabilities" aria-label="Search products, solutions, or capabilities" />
-          <button class="mv2-search-go" type="submit" aria-label="Search">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="5" y1="12" x2="19" y2="12" />
-              <polyline points="12 5 19 12 12 19" />
-            </svg>
-          </button>
-        </form>
-
-        <div class="mv2-pop">
-          <span class="mv2-pop-label">Popular:</span>
-          <a class="mv2-pill" href="/ai-products">AI &amp; Intelligence</a>
-          <a class="mv2-pill" href="/ai-products">Care Management</a>
-          <a class="mv2-pill" href="/ai-products">Automation</a>
-          <a class="mv2-pill" href="/ai-products">Workforce</a>
-          <a class="mv2-pill" href="/ai-products">Analytics</a>
-        </div>
+        <p class="mv2-hero-lede">Explore the KLEZA ecosystem of <strong>AI-powered products</strong> built to simplify workflows, connect teams, and transform the work of care.</p>
 
       </div>
-    </div>
 
-  </section>
+      <div class="mv2-hero-stage">
 
-  <!-- SECTION CAT -->
-  <section class="mv2-sec">
-    <div class="mv2-wrap">
+        <span class="mv2-hero-halo" aria-hidden="true"></span>
 
-      <div class="mv2-head">
-        <div>
-          <h2 class="mv2-h2">Explore by category</h2>
-          <p class="mv2-sub">Find the right intelligence for every part of the care journey.</p>
+        <!-- Rotating product deck. Server-rendered in its resting order; the
+             page script re-stamps data-slot as the deck turns. Without the
+             script every card is still a working product link. -->
+        <div class="mv2-hero-deck" id="mv2HeroDeck">
+
+          <a class="mv2-hero-card" data-slot="0" href="https://slategray-jay-545015.hostingersite.com/" target="_blank" rel="noopener noreferrer" aria-label="Explore Voica">
+            <span class="mv2-hero-card-logo"><img src="/assets/hero-voica.png" alt="Voica logo" width="1678" height="435" loading="eager" decoding="async" /></span>
+            <h2 class="mv2-hero-card-name">Voica</h2>
+            <p class="mv2-hero-card-desc">AI-powered voice intelligence.</p>
+            <span class="mv2-hero-card-cta">Explore
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </span>
+          </a>
+
+          <a class="mv2-hero-card" data-slot="1" href="https://lightslategray-curlew-597776.hostingersite.com/" target="_blank" rel="noopener noreferrer" aria-label="Explore AssessFlo">
+            <span class="mv2-hero-card-logo"><img src="/assets/hero-assessflo.png" alt="AssessFlo logo" width="1679" height="372" loading="lazy" decoding="async" /></span>
+            <h2 class="mv2-hero-card-name">AssessFlo</h2>
+            <p class="mv2-hero-card-desc">Digital assessments made simple.</p>
+            <span class="mv2-hero-card-cta">Explore
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </span>
+          </a>
+
+          <a class="mv2-hero-card" data-slot="2" href="http://orange-salamander-203350.hostingersite.com/" target="_blank" rel="noopener noreferrer" aria-label="Explore HireOrbit">
+            <span class="mv2-hero-card-logo"><img src="/assets/hero-hireorbit.png" alt="HireOrbit logo" width="1667" height="421" loading="lazy" decoding="async" /></span>
+            <h2 class="mv2-hero-card-name">HireOrbit</h2>
+            <p class="mv2-hero-card-desc">Smarter hiring for care teams.</p>
+            <span class="mv2-hero-card-cta">Explore
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </span>
+          </a>
+
+          <a class="mv2-hero-card" data-slot="hidden" href="https://slategray-oryx-438842.hostingersite.com/" target="_blank" rel="noopener noreferrer" aria-label="Explore Inqvue">
+            <span class="mv2-hero-card-logo"><img src="/assets/hero-inqvue.png" alt="Inqvue logo" width="1694" height="456" loading="lazy" decoding="async" /></span>
+            <h2 class="mv2-hero-card-name">Inqvue</h2>
+            <p class="mv2-hero-card-desc">CRM built for care organizations.</p>
+            <span class="mv2-hero-card-cta">Explore
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </span>
+          </a>
+
+          <a class="mv2-hero-card" data-slot="-2" href="https://darkorange-finch-216111.hostingersite.com/" target="_blank" rel="noopener noreferrer" aria-label="Explore Docunyx">
+            <span class="mv2-hero-card-logo"><img src="/assets/hero-docunyx.png" alt="Docunyx logo" width="1681" height="359" loading="lazy" decoding="async" /></span>
+            <h2 class="mv2-hero-card-name">Docunyx</h2>
+            <p class="mv2-hero-card-desc">Intelligent document management.</p>
+            <span class="mv2-hero-card-cta">Explore
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </span>
+          </a>
+
+          <a class="mv2-hero-card" data-slot="-1" href="https://excelliq-ai.kleza.io/" target="_blank" rel="noopener noreferrer" aria-label="Explore Excelliq">
+            <span class="mv2-hero-card-logo"><img src="/assets/hero-excelliq.png" alt="Excelliq logo" width="1685" height="435" loading="lazy" decoding="async" /></span>
+            <h2 class="mv2-hero-card-name">Excelliq</h2>
+            <p class="mv2-hero-card-desc">Performance insights that drive results.</p>
+            <span class="mv2-hero-card-cta">Explore
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </span>
+          </a>
+
         </div>
-      </div>
 
-      <div class="mv2-cat-grid">
-
-        <a class="mv2-cat" href="/ai-products">
-          <span class="mv2-cat-ico t-purple" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 0 0 12 18Z"/>
-              <path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 0 1 12 18Z"/>
-              <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/>
-            </svg>
-          </span>
-          <h3 class="mv2-cat-name">AI &amp; Intelligence</h3>
-          <p class="mv2-cat-desc">Smarter insights powered by AI.</p>
-          <span class="mv2-cat-foot">18 products <span class="mv2-arrow">&#8594;</span></span>
-        </a>
-
-        <a class="mv2-cat" href="/ai-products">
-          <span class="mv2-cat-ico t-green" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 8.6C10.2 7.1 9 6.2 9 4.9A1.8 1.8 0 0 1 12 3.8A1.8 1.8 0 0 1 15 4.9C15 6.2 13.8 7.1 12 8.6Z"/>
-              <circle cx="6.6" cy="13.4" r="2.1"/>
-              <circle cx="17.4" cy="13.4" r="2.1"/>
-              <path d="M2.6 20.4a4 4 0 0 1 8 0"/>
-              <path d="M13.4 20.4a4 4 0 0 1 8 0"/>
-            </svg>
-          </span>
-          <h3 class="mv2-cat-name">Care Management</h3>
-          <p class="mv2-cat-desc">Solutions for better care outcomes.</p>
-          <span class="mv2-cat-foot">16 products <span class="mv2-arrow">&#8594;</span></span>
-        </a>
-
-        <a class="mv2-cat" href="/ai-products">
-          <span class="mv2-cat-ico t-pink" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M17 20.5v-2a4 4 0 0 0-4-4H5.5a4 4 0 0 0-4 4v2"/>
-              <circle cx="9.25" cy="7" r="4"/>
-              <path d="M22.5 20.5v-2a4 4 0 0 0-3-3.87"/>
-              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-            </svg>
-          </span>
-          <h3 class="mv2-cat-name">Workforce</h3>
-          <p class="mv2-cat-desc">Empower and manage your care teams.</p>
-          <span class="mv2-cat-foot">15 products <span class="mv2-arrow">&#8594;</span></span>
-        </a>
-
-        <a class="mv2-cat" href="/ai-products">
-          <span class="mv2-cat-ico t-orange" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="3"/>
-              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"/>
-            </svg>
-          </span>
-          <h3 class="mv2-cat-name">Operations</h3>
-          <p class="mv2-cat-desc">Streamline operations &amp; reduce complexity.</p>
-          <span class="mv2-cat-foot">14 products <span class="mv2-arrow">&#8594;</span></span>
-        </a>
-
-        <a class="mv2-cat" href="/ai-products">
-          <span class="mv2-cat-ico t-purple" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8Z"/>
-            </svg>
-          </span>
-          <h3 class="mv2-cat-name">Automation</h3>
-          <p class="mv2-cat-desc">Automate tasks and eliminate busywork.</p>
-          <span class="mv2-cat-foot">17 products <span class="mv2-arrow">&#8594;</span></span>
-        </a>
-
-        <a class="mv2-cat" href="/ai-products">
-          <span class="mv2-cat-ico t-indigo" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 20h16"/>
-              <path d="M7.5 20v-5"/>
-              <path d="M12 20v-9"/>
-              <path d="M16.5 20v-13"/>
-            </svg>
-          </span>
-          <h3 class="mv2-cat-name">Analytics</h3>
-          <p class="mv2-cat-desc">Turn data into insights that drive decisions.</p>
-          <span class="mv2-cat-foot">14 products <span class="mv2-arrow">&#8594;</span></span>
-        </a>
-
-        <a class="mv2-cat" href="/ai-products">
-          <span class="mv2-cat-ico t-teal" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8Z"/>
-            </svg>
-          </span>
-          <h3 class="mv2-cat-name">Communication</h3>
-          <p class="mv2-cat-desc">Connect with teams, clients and families.</p>
-          <span class="mv2-cat-foot">12 products <span class="mv2-arrow">&#8594;</span></span>
-        </a>
-
-        <a class="mv2-cat" href="/ai-products">
-          <span class="mv2-cat-ico t-indigo" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M3.5 3.5h6.5a2 2 0 0 1 4 0h6.5v6.5a2 2 0 0 1 0 4v6.5H3.5v-6.5a2 2 0 0 0 0-4Z"/>
-            </svg>
-          </span>
-          <h3 class="mv2-cat-name">Integrations</h3>
-          <p class="mv2-cat-desc">Connect your favourite tools and systems.</p>
-          <span class="mv2-cat-foot">20 products <span class="mv2-arrow">&#8594;</span></span>
-        </a>
+        <div class="mv2-hero-ctrls">
+          <div class="mv2-hero-dots" id="mv2HeroDots">
+            <button class="mv2-hero-dot is-on" type="button" data-deck-go="0" aria-label="Show Voica"></button>
+            <button class="mv2-hero-dot" type="button" data-deck-go="1" aria-label="Show AssessFlo"></button>
+            <button class="mv2-hero-dot" type="button" data-deck-go="2" aria-label="Show HireOrbit"></button>
+            <button class="mv2-hero-dot" type="button" data-deck-go="3" aria-label="Show Inqvue"></button>
+            <button class="mv2-hero-dot" type="button" data-deck-go="4" aria-label="Show Docunyx"></button>
+            <button class="mv2-hero-dot" type="button" data-deck-go="5" aria-label="Show Excelliq"></button>
+          </div>
+        </div>
 
       </div>
 
     </div>
-  </section>
 
-  <!-- SECTION FEAT -->
-  <section class="mv2-sec">
-    <div class="mv2-wrap">
-
-      <div class="mv2-head">
-        <div>
-          <h2 class="mv2-h2">Featured from KLEZA</h2>
-          <p class="mv2-sub">Discover products designed to solve the challenges that matter most.</p>
-        </div>
-        <a class="mv2-link" href="/ai-products">View all featured products <span class="mv2-arrow">&#8594;</span></a>
-      </div>
-
-      <div class="mv2-feat-shell">
-        <div class="mv2-feat-rail" id="mv2Rail">
-
-          <!-- 1 — HireOrbit -->
-          <a class="mv2-feat f-teal" href="http://orange-salamander-203350.hostingersite.com/" target="_blank" rel="noopener noreferrer">
-            <span class="mv2-feat-bg" aria-hidden="true">
-              <img src="/assets/hireorbit-bg.png" alt="" width="200" height="120" loading="lazy" decoding="async" />
-            </span>
-            <span class="mv2-feat-top">
-              <span class="mv2-feat-name">HireOrbit</span>
-            </span>
-            <p class="mv2-feat-desc">Smarter hiring solutions to find, engage and retain the right talent for better care.</p>
-            <span class="mv2-feat-tags">
-              <span class="mv2-tag">Team Management</span>
-              <span class="mv2-tag">Compliance</span>
-              <span class="mv2-tag">Insights</span>
-            </span>
-            <span class="mv2-feat-cta">Explore product <span class="mv2-arrow">&#8594;</span></span>
-          </a>
-
-          <!-- 2 — Voica -->
-          <a class="mv2-feat f-purple" href="https://slategray-jay-545015.hostingersite.com/" target="_blank" rel="noopener noreferrer">
-        <span class="mv2-feat-bg" aria-hidden="true">
-          <img src="/assets/voica-bg.png" alt="" width="200" height="120" loading="lazy" decoding="async" />
-        </span>
-            <span class="mv2-feat-top">
-              <span class="mv2-feat-name">Voica</span>
-            </span>
-            <p class="mv2-feat-desc">Smarter voice intelligence for better client and caregiver conversations.</p>
-            <span class="mv2-feat-tags">
-              <span class="mv2-tag">Voice AI</span>
-              <span class="mv2-tag">Transcription</span>
-              <span class="mv2-tag">Insights</span>
-            </span>
-            <span class="mv2-feat-cta">Explore product <span class="mv2-arrow">&#8594;</span></span>
-          </a>
-
-          <!-- 3 — AssessFlo -->
-          <a class="mv2-feat f-green" href="https://lightslategray-curlew-597776.hostingersite.com/" target="_blank" rel="noopener noreferrer">
-        <span class="mv2-feat-bg" aria-hidden="true">
-          <img src="/assets/assessflo-bg.png" alt="" width="200" height="120" loading="lazy" decoding="async" />
-        </span>
-            <span class="mv2-feat-top">
-              <span class="mv2-feat-name">AssessFlo</span>
-            </span>
-            <p class="mv2-feat-desc">Digital assessments that simplify workflows and improve accuracy.</p>
-            <span class="mv2-feat-tags">
-              <span class="mv2-tag">Assessments</span>
-              <span class="mv2-tag">Care Plans</span>
-              <span class="mv2-tag">Compliance</span>
-            </span>
-            <span class="mv2-feat-cta">Explore product <span class="mv2-arrow">&#8594;</span></span>
-          </a>
-
-          <!-- 4 — Inqvue -->
-          <a class="mv2-feat f-indigo" href="/ai-products">
-        <span class="mv2-feat-bg" aria-hidden="true">
-          <img src="/assets/inqvue-bg.png" alt="" width="200" height="120" loading="lazy" decoding="async" />
-        </span>
-            <span class="mv2-feat-top">
-              <span class="mv2-feat-name">Inqvue</span>
-            </span>
-            <p class="mv2-feat-desc">CRM built for care to track leads, referrals and relationships.</p>
-            <span class="mv2-feat-tags">
-              <span class="mv2-tag">CRM</span>
-              <span class="mv2-tag">Referrals</span>
-              <span class="mv2-tag">Pipeline</span>
-            </span>
-            <span class="mv2-feat-cta">Explore product <span class="mv2-arrow">&#8594;</span></span>
-          </a>
-
-        </div>
-
-        <div class="mv2-nav">
-          <button type="button" class="mv2-nav-btn" aria-label="Scroll featured products left" data-rail-prev>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="15 18 9 12 15 6"/>
-            </svg>
-          </button>
-          <button type="button" class="mv2-nav-btn" aria-label="Scroll featured products right" data-rail-next>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="9 18 15 12 9 6"/>
-            </svg>
-          </button>
-        </div>
-      </div>
-
-    </div>
   </section>
 
   <!-- SECTION PROD -->
@@ -1844,70 +1582,12 @@ c:T9f1b,
 
 
 
-d:T1a7d,
+d:T1654,
 /* Marketplace interactions: featured rail, product filter/sort, and the hero
    search + category shortcuts that drive the product grid. Progressive —
    every control is a working link or a real form without this script. */
 var root = document.querySelector('.mv2');
 if (!root) return;
-
-/* ---------- featured rail ---------- */
-/* Absolute scrollTo against measured card offsets. Relative scrollBy is
-   unreliable on a snap container - the snap engine can re-snap to the card
-   that is already aligned, which makes the arrows look dead. */
-var rail = root.querySelector('#mv2Rail');
-var railPrev = root.querySelector('[data-rail-prev]');
-var railNext = root.querySelector('[data-rail-next]');
-
-if (rail) {
-  var railCards = function () {
-    return Array.prototype.slice.call(rail.querySelectorAll('.mv2-feat'));
-  };
-
-  var railMax = function () {
-    return Math.max(0, rail.scrollWidth - rail.clientWidth);
-  };
-
-  var railSync = function () {
-    var max = railMax();
-    var at = rail.scrollLeft;
-    if (railPrev) railPrev.setAttribute('aria-disabled', at <= 1 ? 'true' : 'false');
-    if (railNext) railNext.setAttribute('aria-disabled', at >= max - 1 ? 'true' : 'false');
-  };
-
-  var railGo = function (dir) {
-    var cards = railCards();
-    if (!cards.length) return;
-    var max = railMax();
-    if (max <= 0) return;
-
-    // offsetLeft is measured against the positioned shell, so work in deltas
-    // from the first card - that stays correct whatever the offsetParent is.
-    var base = cards[0].offsetLeft;
-    var at = rail.scrollLeft;
-    var cur = 0;
-    var best = Infinity;
-    for (var i = 0; i < cards.length; i++) {
-      var d = Math.abs((cards[i].offsetLeft - base) - at);
-      if (d < best) { best = d; cur = i; }
-    }
-
-    var next = cur + dir;
-    if (next < 0) next = 0;
-    if (next > cards.length - 1) next = cards.length - 1;
-
-    var target = cards[next].offsetLeft - base;
-    if (target < 0) target = 0;
-    if (target > max) target = max;
-    rail.scrollTo({ left: target, behavior: 'smooth' });
-  };
-
-  if (railPrev) railPrev.addEventListener('click', function () { railGo(-1); });
-  if (railNext) railNext.addEventListener('click', function () { railGo(1); });
-  rail.addEventListener('scroll', railSync);
-  window.addEventListener('resize', railSync);
-  railSync();
-}
 
 /* ---------- product filter + sort ---------- */
 var grid = root.querySelector('#mv2Grid');
@@ -1918,7 +1598,6 @@ var catSel = root.querySelector('#mv2Cat');
 var famSel = root.querySelector('#mv2Fam');
 var sortSel = root.querySelector('#mv2Sort');
 var emptyMsg = root.querySelector('#mv2Empty');
-var prodSection = grid.closest('section');
 var moreBtn = root.querySelector('.mv2-more');
 
 var cards = Array.prototype.slice.call(grid.querySelectorAll('.mv2-prod'));
@@ -2000,62 +1679,76 @@ if (qInput) qInput.addEventListener('input', applyAndReveal);
   if (sel) sel.addEventListener('change', applyAndReveal);
 });
 
-/* ---------- hero search + category shortcuts drive the grid ---------- */
-function showProducts() {
-  if (prodSection && prodSection.scrollIntoView) {
-    prodSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
-}
+/* ---------- hero product deck ---------- */
+/* Positions are pure CSS - the script only stamps each card with its signed
+   distance from the active one (…-2, -1, 0, 1, 2, then 'hidden'), so the
+   cards rotate through the deck rather than sliding off one end. */
+var deck = root.querySelector('#mv2HeroDeck');
+if (deck) {
+  var deckCards = Array.prototype.slice.call(deck.querySelectorAll('.mv2-hero-card'));
+  var deckDots = Array.prototype.slice.call(root.querySelectorAll('[data-deck-go]'));
+  var deckN = deckCards.length;
+  var deckAt = 0;
+  var deckTimer = null;
+  var deckStill =
+    window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-function filterByCategory(label, e) {
-  if (!catSel) return;
-  for (var o = 0; o < catSel.options.length; o++) {
-    if ((catSel.options[o].textContent || '').trim() === label) {
-      e.preventDefault();
-      catSel.selectedIndex = o;
-      if (qInput) qInput.value = '';
-      if (famSel) famSel.selectedIndex = 0;
-      expandGrid();
-      apply();
-      showProducts();
-      return;
+  var deckPaint = function () {
+    for (var i = 0; i < deckN; i++) {
+      var rel = (i - deckAt + deckN) % deckN;
+      if (rel > deckN / 2) rel -= deckN;
+      deckCards[i].setAttribute('data-slot', Math.abs(rel) <= 2 ? String(rel) : 'hidden');
     }
+    for (var d = 0; d < deckDots.length; d++) {
+      if (d === deckAt) deckDots[d].classList.add('is-on');
+      else deckDots[d].classList.remove('is-on');
+    }
+  };
+
+  var deckGo = function (to) {
+    deckAt = ((to % deckN) + deckN) % deckN;
+    deckPaint();
+  };
+
+  var deckStop = function () {
+    if (deckTimer) { clearInterval(deckTimer); deckTimer = null; }
+  };
+  var deckPlay = function () {
+    if (deckStill || deckTimer) return;
+    deckTimer = setInterval(function () { deckGo(deckAt + 1); }, 4500);
+  };
+  /* A click jumps the deck, then hands it straight back to the timer - the
+     rotation is the only thing driving the banner, so it must not stall. The
+     restart also re-arms the full interval, so the chosen card gets its turn. */
+  var deckTake = function (to) { deckStop(); deckGo(to); deckPlay(); };
+
+  for (var dd = 0; dd < deckDots.length; dd++) {
+    (function (dot) {
+      dot.addEventListener('click', function () {
+        deckTake(parseInt(dot.getAttribute('data-deck-go'), 10) || 0);
+      });
+    })(deckDots[dd]);
   }
-}
 
-var heroForm = root.querySelector('.mv2-search');
-if (heroForm && qInput) {
-  heroForm.addEventListener('submit', function (e) {
-    var input = heroForm.querySelector('.mv2-search-input');
-    var value = input ? input.value.trim() : '';
-    if (!value) return;
-    e.preventDefault();
-    qInput.value = value;
-    if (catSel) catSel.selectedIndex = 0;
-    if (famSel) famSel.selectedIndex = 0;
-    expandGrid();
-    apply();
-    showProducts();
-  });
-}
+  /* Bringing a shoulder card forward is friendlier than following its link
+     on the first click, so only the front card navigates. */
+  for (var dc = 0; dc < deckN; dc++) {
+    (function (card, index) {
+      card.addEventListener('click', function (e) {
+        if (index === deckAt) return;
+        e.preventDefault();
+        deckTake(index);
+      });
+    })(deckCards[dc], dc);
+  }
 
-var pills = root.querySelectorAll('.mv2-pill');
-for (var p = 0; p < pills.length; p++) {
-  (function (pill) {
-    pill.addEventListener('click', function (e) {
-      filterByCategory((pill.textContent || '').trim(), e);
-    });
-  })(pills[p]);
-}
+  /* Hold still while someone is reading a card, then carry on. */
+  deck.addEventListener('mouseenter', deckStop);
+  deck.addEventListener('mouseleave', deckPlay);
+  deck.addEventListener('focusin', deckStop);
+  deck.addEventListener('focusout', deckPlay);
 
-var catCards = root.querySelectorAll('.mv2-cat');
-for (var c2 = 0; c2 < catCards.length; c2++) {
-  (function (card) {
-    var name = card.querySelector('.mv2-cat-name');
-    if (!name) return;
-    card.addEventListener('click', function (e) {
-      filterByCategory((name.textContent || '').trim(), e);
-    });
-  })(catCards[c2]);
+  deckPaint();
+  deckPlay();
 }
 8:[[],["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$b"}}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$c"}}],["$","$La",null,{"scripts":[{"code":"$d"}],"bodyAttrs":{}}]]

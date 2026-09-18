@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>End-to-End Business Process Automation &mdash; Kleza</title>
+<meta name="description" content="Kleza maps and automates whole business processes - intake to invoice, referral to roster - with agentic orchestration, document intelligence, and exceptions routed to a named owner. HIPAA-compliant." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Instrument+Serif:ital,wght@0,400;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/shared.css" />
+<link rel="stylesheet" href="assets/inner.css" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"How to automate a business process end to end","description":"The Kleza 6-step process for taking a business process from manual to unattended.","step":[{"@type":"HowToStep","position":1,"name":"Process Discovery","text":"We sit with the people who run the work, follow a real case end to end, and record every system, form, and handoff it actually touches."},{"@type":"HowToStep","position":2,"name":"Mapping & Business Case","text":"The current process is mapped with volumes, cycle times, and error rates attached, so the automation is costed against the hours it returns."},{"@type":"HowToStep","position":3,"name":"Automation Design","text":"We redesign rather than replicate - removing steps that only existed to compensate for the manual version, and deciding where human approval belongs."},{"@type":"HowToStep","position":4,"name":"Build & Integration","text":"Orchestration, integrations, and document extraction are built and wired into existing systems by API, or by supervised automation where no API exists."},{"@type":"HowToStep","position":5,"name":"Pilot & Exception Tuning","text":"The process runs alongside the manual one on live volume. Every exception is either designed out or given a named owner and a route."},{"@type":"HowToStep","position":6,"name":"Rollout & Continuous Optimisation","text":"Full cutover with monitoring, alerting, and a throughput dashboard, then scheduled reviews as volumes and upstream systems change."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How is this different from the automation tools we already use?","acceptedAnswer":{"@type":"Answer","text":"Most tools automate a task - a form submission, a scheduled report, a reminder. Kleza automates the process that connects those tasks, including the handoffs between systems and the decisions in between."}},{"@type":"Question","name":"Do we need to replace our existing systems?","acceptedAnswer":{"@type":"Answer","text":"No. We integrate with what you already run. Where a system offers an API we use it; where it does not, we use supervised automation to drive the interface the same way a person would, with the same permissions and a full audit trail."}},{"@type":"Question","name":"What happens when a process hits something unexpected?","acceptedAnswer":{"@type":"Answer","text":"Exceptions are a designed part of the process. Anything the automation cannot complete confidently is routed to a named owner with the context already gathered, and the run is recorded."}},{"@type":"Question","name":"How long before a process is running unattended?","acceptedAnswer":{"@type":"Answer","text":"A single well-understood process typically moves from discovery to live in 6-10 weeks, including a pilot period running alongside the manual version."}},{"@type":"Question","name":"How do you handle processes that touch patient data?","acceptedAnswer":{"@type":"Answer","text":"They are built under HIPAA-compliant protocols and signed Data Processing Agreements, with least-privilege access for every system the automation touches and a complete run history available for audit."}},{"@type":"Question","name":"Can this build on AI you have already trained for us?","acceptedAnswer":{"@type":"Answer","text":"Yes. A process automation that calls a model trained on your own documentation and terminology reads your referrals, notes, and forms far more accurately than one using a generic base model."}}]}]}
+</script>
+<style id="automation-page">
+/* ===================== PROCESS AUTOMATION PAGE ===================== */
+/* 01 · DARK HERO — asymmetric, pipeline visual */
+.au-hero{position:relative;background:var(--dark);color:#e8f0f0;overflow:hidden;display:flex;flex-direction:column}
+.au-hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:64px 64px;-webkit-mask-image:radial-gradient(120% 120% at 78% 32%,#000 28%,transparent 78%);mask-image:radial-gradient(120% 120% at 78% 32%,#000 28%,transparent 78%);pointer-events:none;z-index:0}
+.au-hero-inner{position:relative;z-index:1;max-width:var(--maxw);width:100%;margin:0 auto;padding:clamp(24px,4vw,52px) var(--pad-x) clamp(48px,6vw,80px);flex:1;display:grid;grid-template-columns:1.5fr 1fr;gap:clamp(36px,5vw,72px);align-items:center}
+.au-bc{display:flex;align-items:center;gap:9px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#7e9499;margin-bottom:26px}
+.au-bc a{color:#93a8ac;transition:color .2s}.au-bc a:hover{color:var(--accent-3)}
+.au-bc .sep{color:#3a4c50}.au-bc .current{color:var(--accent-3);font-weight:500}
+.au-hero .eyebrow{color:var(--accent-3);display:inline-flex;align-items:center;margin-bottom:20px}
+.au-hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(40px,5.4vw,76px);line-height:1.03;letter-spacing:-.018em;color:#fff;margin:0;text-wrap:balance;max-width:16ch}
+.au-hero h1 .ital{font-style:italic;color:var(--accent-3)}
+.au-hero .lede{color:#aebcc0;font-size:clamp(16px,1.2vw,19px);line-height:1.62;margin:26px 0 0;max-width:54ch;text-wrap:pretty}
+.au-hero .lede b{color:#e8f0f0;font-weight:600}
+.au-hero-cta{margin-top:clamp(30px,4vw,40px);display:flex;flex-wrap:wrap;gap:14px}
+.au-btn-sky{background:#1eaadc;color:#fff;padding:17px 30px;font-size:15.5px}
+.au-btn-sky:hover{background:#19a0ce;transform:translateY(-1px);box-shadow:0 16px 34px -12px rgba(30,170,220,.55)}
+.au-btn-dghost{background:transparent;color:#e8f0f0;border:1px solid rgba(255,255,255,.22);padding:17px 30px;font-size:15.5px}
+.au-btn-dghost:hover{border-color:var(--accent-3);color:#fff;transform:translateY(-1px)}
+
+/* hero visual: a trigger entering a pipeline of steps, branching at a decision */
+.au-visual{position:relative;aspect-ratio:1/1;width:100%;max-width:520px;justify-self:end}
+.au-visual svg{width:100%;height:100%;display:block;overflow:visible}
+.au-visual .glow{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:66%;height:52%;background:radial-gradient(50% 50% at 50% 50%,rgba(90, 204, 241,.24),transparent 70%);filter:blur(10px);border-radius:50%;z-index:-1}
+.au-plabel{font-family:var(--mono);font-size:9.5px;letter-spacing:.04em;fill:#7e9499;text-transform:uppercase}
+.au-pnode{fill:#0e1f22;stroke:rgba(90, 204, 241,.42);stroke-width:1.4}
+.au-pnode.key{stroke:rgba(90, 204, 241,.72)}
+.au-picon{fill:none;stroke:var(--accent-3);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.au-ptrack{stroke:rgba(90, 204, 241,.22);stroke-width:1.2;fill:none}
+.au-ppulse{stroke:var(--accent-3);stroke-width:1.6;fill:none;stroke-dasharray:5 58;animation:au-run 2.9s linear infinite}
+.au-ppulse:nth-of-type(2){animation-delay:-.6s}
+.au-ppulse:nth-of-type(3){animation-delay:-1.2s}
+.au-ppulse:nth-of-type(4){animation-delay:-1.8s}
+.au-ppulse:nth-of-type(5){animation-delay:-2.4s}
+@keyframes au-run{to{stroke-dashoffset:-126}}
+.au-gate{fill:#0e1f22;stroke:var(--accent-3);stroke-width:1.5}
+.au-gatering{fill:none;stroke:rgba(90, 204, 241,.4);transform-box:fill-box;transform-origin:center;animation:au-expand 3s ease-out infinite}
+@keyframes au-expand{0%{transform:scale(.45);opacity:.9}100%{transform:scale(1.8);opacity:0}}
+.au-outdot{fill:var(--accent-3);animation:au-blink 2.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+.au-outdot:nth-of-type(2){animation-delay:-.8s}.au-outdot:nth-of-type(3){animation-delay:-1.6s}
+@keyframes au-blink{0%,100%{opacity:.45}50%{opacity:1}}
+@media (prefers-reduced-motion:reduce){.au-ppulse,.au-gatering,.au-outdot{animation:none}.au-ppulse{stroke-dasharray:none}}
+
+/* shared section heading */
+.au-h2{font-family:var(--serif);font-weight:400;font-size:clamp(30px,4vw,52px);line-height:1.08;letter-spacing:-.018em;margin:0;color:var(--ink);text-wrap:balance}
+.au-h2 .ital{font-style:italic;color:var(--accent)}
+.au-eyebrow{display:block;margin-bottom:14px}
+
+/* 02 · PROBLEM + COMPARISON */
+.au-problem{padding:clamp(72px,9vw,128px) 0;background:var(--bg)}
+.au-problem-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(40px,6vw,88px);align-items:center}
+.au-problem h2{font-family:var(--serif);font-weight:400;font-size:clamp(30px,4.4vw,60px);line-height:1.06;letter-spacing:-.02em;margin:0 0 24px;color:var(--ink);text-wrap:balance}
+.au-problem h2 .ital{font-style:italic;color:var(--accent)}
+.au-problem p{color:var(--muted);font-size:clamp(15px,1.15vw,17px);line-height:1.72;margin:0;max-width:60ch}
+.au-compare{border-top:1px solid var(--line)}
+.au-crow{display:grid;grid-template-columns:1fr 1fr;gap:clamp(18px,3vw,40px);padding:22px 0;border-bottom:1px solid var(--line);align-items:start}
+.au-chead{display:grid;grid-template-columns:1fr 1fr;gap:clamp(18px,3vw,40px);padding:0 0 16px}
+.au-chead .c{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:500}
+.au-chead .c.gen{color:var(--muted-2)}
+.au-chead .c.kl{color:var(--accent)}
+.au-cval{font-size:14.5px;line-height:1.5}
+.au-cval.gen{color:var(--muted)}
+.au-cval.kl{color:var(--ink);font-weight:600;display:flex;gap:10px;align-items:flex-start}
+.au-cval.kl svg{width:16px;height:16px;color:var(--accent);flex-shrink:0;margin-top:1px}
+
+/* 03 · WHAT WE AUTOMATE */
+.au-scope{padding:clamp(64px,8vw,110px) 0;background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.au-scope .head{max-width:680px;margin:0 0 clamp(36px,4vw,52px)}
+.au-scope-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line-2)}
+.au-scol{padding:clamp(30px,3vw,44px) clamp(22px,2.4vw,36px) clamp(22px,2.4vw,32px);border-left:1px solid var(--line-2)}
+.au-scol:first-child{border-left:0;padding-left:0}
+.au-scol .ic{width:52px;height:52px;border-radius:13px;background:rgba(54, 192, 237,.1);border:1px solid rgba(54, 192, 237,.16);color:var(--accent);display:flex;align-items:center;justify-content:center;margin-bottom:20px;transition:transform .4s cubic-bezier(.2,.7,.2,1)}
+.au-scol:hover .ic{transform:rotate(-6deg) scale(1.06)}
+.au-scol .ic svg{width:24px;height:24px}
+.au-scol h4{font-family:var(--sans);font-weight:700;font-size:clamp(17px,1.5vw,20px);letter-spacing:-.01em;color:var(--ink);margin:0 0 6px}
+.au-scol .htag{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;color:var(--accent-2);background:rgba(54, 192, 237,.1);border-radius:999px;padding:4px 9px;display:inline-block;margin-bottom:18px}
+.au-slist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:11px}
+.au-slist li{font-family:var(--mono);font-size:13px;line-height:1.45;color:var(--ink-2);display:flex;gap:11px;align-items:flex-start}
+.au-slist li::before{content:"\203A";color:var(--accent);font-weight:700;flex-shrink:0}
+.au-scope-note{display:flex;gap:12px;align-items:flex-start;margin-top:clamp(28px,3vw,40px);padding-top:24px;border-top:1px solid var(--line);font-size:13.5px;color:var(--muted);line-height:1.6;max-width:84ch}
+.au-scope-note svg{width:18px;height:18px;color:var(--accent);flex-shrink:0;margin-top:1px}
+
+/* 04 · CAPABILITIES — pill inventory */
+.au-caps{padding:clamp(64px,8vw,110px) 0;background:var(--bg-alt)}
+.au-caps .head{max-width:680px;margin:0 0 clamp(32px,3.6vw,48px)}
+.au-caps .head p{color:var(--muted);font-size:clamp(15px,1.1vw,17px);line-height:1.65;margin:16px 0 0;max-width:62ch}
+.au-cap-cloud{display:flex;flex-wrap:wrap;gap:14px;max-width:1000px}
+.au-cap{display:inline-flex;align-items:center;gap:11px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:13px 22px 13px 18px;font-family:var(--sans);font-weight:600;font-size:15px;letter-spacing:-.01em;color:var(--ink);cursor:default;transition:border-color .25s,transform .25s,box-shadow .25s,background .25s}
+.au-cap:hover{border-color:rgba(54, 192, 237,.4);transform:translateY(-2px);box-shadow:0 18px 34px -22px rgba(10,19,22,.2);background:linear-gradient(110deg,rgba(54, 192, 237,.05),#fff 60%)}
+.au-cap .ic{width:28px;height:28px;border-radius:8px;background:rgba(54, 192, 237,.1);color:var(--accent);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.au-cap .ic svg{width:15px;height:15px}
+.au-cap.lg{font-size:16.5px;padding:15px 26px 15px 20px}
+.au-cap.hc{background:linear-gradient(110deg,rgba(90, 204, 241,.08),#fff 70%);border-color:rgba(90, 204, 241,.28)}
+.au-cap.hc .ic{background:rgba(90, 204, 241,.14);color:var(--accent-3)}
+
+/* 05 · PROCESS TIMELINE */
+.au-proc{padding:clamp(64px,8vw,110px) 0;background:#fff;border-top:1px solid var(--line)}
+.au-proc .head{margin-bottom:clamp(40px,5vw,64px);max-width:680px}
+.au-timeline{max-width:940px}
+.au-tl-step{display:grid;grid-template-columns:clamp(96px,12vw,150px) 1fr;gap:clamp(20px,3vw,48px);position:relative;padding:clamp(22px,2.6vw,34px) 0}
+.au-tl-step::before{content:"";position:absolute;left:clamp(34px,4.2vw,52px);top:0;bottom:0;width:1px;background:var(--line-2)}
+.au-tl-step:first-child::before{top:50%}.au-tl-step:last-child::before{bottom:50%}
+.au-tl-num{position:relative;font-family:var(--serif);font-weight:400;font-size:clamp(40px,4.4vw,64px);line-height:1;letter-spacing:-.03em;color:var(--ink);padding-left:clamp(54px,7vw,84px)}
+.au-tl-num::before{content:"";position:absolute;left:clamp(28px,3.5vw,46px);top:50%;transform:translateY(-50%);width:13px;height:13px;border-radius:50%;background:#fff;border:2px solid var(--accent);box-shadow:0 0 0 5px #fff;z-index:1}
+.au-tl-body{align-self:center;padding-bottom:2px}
+.au-tl-body h4{font-family:var(--sans);font-weight:700;font-size:clamp(18px,1.6vw,22px);letter-spacing:-.02em;color:var(--ink);margin:0 0 8px}
+.au-tl-body p{color:var(--muted);font-size:15px;line-height:1.6;margin:0;max-width:56ch}
+.au-reveal.armed{opacity:0;transform:translateY(22px)}
+.au-reveal.armed.in{opacity:1;transform:translateY(0);transition:opacity .6s ease,transform .65s cubic-bezier(.22,1,.36,1)}
+
+/* 06 · HEALTHCARE DEEP DIVE — tinted editorial band */
+.au-hc{background:var(--dark);color:#e8f0f0;position:relative;overflow:hidden}
+.au-hc::before{content:"";position:absolute;inset:0;background:radial-gradient(760px 460px at 10% 18%,rgba(90, 204, 241,.18),transparent 60%),radial-gradient(640px 420px at 96% 92%,rgba(30,170,220,.12),transparent 60%);pointer-events:none}
+.au-hc-inner{position:relative;z-index:1;max-width:var(--maxw);margin:0 auto;padding:clamp(56px,7vw,100px) var(--pad-x)}
+.au-hc-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:clamp(40px,5vw,80px);align-items:start}
+.au-hc .eyebrow{color:var(--accent-3);display:block;margin-bottom:18px}
+.au-hc-ico-lg{width:60px;height:60px;border-radius:15px;background:rgba(90, 204, 241,.12);border:1px solid rgba(90, 204, 241,.22);color:var(--accent-3);display:flex;align-items:center;justify-content:center;margin-bottom:24px}
+.au-hc-ico-lg svg{width:28px;height:28px}
+.au-hc h3{font-family:var(--serif);font-weight:400;font-size:clamp(28px,3.6vw,48px);line-height:1.1;letter-spacing:-.018em;color:#fff;margin:0;text-wrap:balance}
+.au-hc h3 .ital{font-style:italic;color:var(--accent-3)}
+.au-hc-cases{display:flex;flex-direction:column;gap:0}
+.au-hc-case{display:grid;grid-template-columns:auto 1fr;gap:18px;padding:22px 0;border-top:1px solid rgba(255,255,255,.1)}
+.au-hc-case:first-child{border-top:0;padding-top:0}
+.au-hc-case .n{font-family:var(--mono);font-size:12px;letter-spacing:.1em;color:var(--accent-3);padding-top:3px}
+.au-hc-case h4{font-family:var(--sans);font-weight:700;font-size:16px;color:#fff;margin:0 0 6px;letter-spacing:-.01em}
+.au-hc-case p{color:#a4b1ae;font-size:14px;line-height:1.55;margin:0;max-width:52ch}
+.au-hc-hipaa{position:relative;z-index:1;display:flex;gap:12px;align-items:center;margin-top:clamp(36px,4vw,52px);padding-top:24px;border-top:1px solid rgba(255,255,255,.1);font-size:13.5px;color:#cfe1da;line-height:1.55}
+.au-hc-hipaa svg{width:20px;height:20px;color:var(--accent-3);flex-shrink:0}
+
+/* 07 · CASE STUDY */
+.au-case{padding:clamp(64px,8vw,110px) 0;background:var(--bg)}
+.au-case .head{margin-bottom:clamp(36px,4vw,52px);max-width:840px}
+.au-case-card{display:grid;grid-template-columns:40% 60%;background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden}
+.au-case-left{background:radial-gradient(120% 100% at 0% 0%,#11272b,#0a1316);color:#e8f0f0;padding:clamp(36px,4vw,56px);display:flex;flex-direction:column;justify-content:center}
+.au-case-metric{font-family:var(--serif);font-weight:400;font-size:clamp(64px,8vw,120px);line-height:.86;letter-spacing:-.04em;color:var(--accent-3)}
+.au-case-mlabel{font-size:15px;color:#a4b1ae;line-height:1.5;margin:18px 0 0;max-width:30ch}
+.au-case-client{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-3);margin-top:clamp(28px,3vw,40px);padding-top:20px;border-top:1px solid rgba(255,255,255,.14)}
+.au-case-right{padding:clamp(36px,4vw,56px);display:flex;flex-direction:column;gap:24px}
+.au-case-block .lab{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:9px}
+.au-case-block p{color:var(--muted);font-size:15px;line-height:1.65;margin:0;max-width:56ch}
+.au-case-block.outcome p{color:var(--ink);font-weight:500}
+
+/* 08 · FAQ */
+.au-faq-sec{padding:clamp(64px,8vw,110px) 0;background:#fff;border-top:1px solid var(--line)}
+.au-faq-head{text-align:center;margin-bottom:clamp(40px,5vw,56px)}
+.au-faq-head .eyebrow{display:inline-block;margin-bottom:14px}
+.au-faq{max-width:880px;margin:0 auto}
+.au-faq-item{border-bottom:1px solid var(--line)}
+.au-faq-q{width:100%;background:none;border:none;text-align:left;padding:24px 0;display:flex;justify-content:space-between;align-items:center;gap:24px;cursor:pointer;font-family:var(--serif);font-weight:400;font-size:clamp(19px,1.8vw,24px);color:var(--ink);letter-spacing:-.005em}
+.au-faq-q .plus{flex-shrink:0;width:32px;height:32px;border-radius:50%;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:18px;transition:transform .3s,background .3s,color .3s,border-color .3s}
+.au-faq-item.open .au-faq-q .plus{transform:rotate(45deg);background:var(--accent);color:#fff;border-color:var(--accent)}
+.au-faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.au-faq-a p{margin:0;padding:0 0 24px;color:var(--muted);font-size:15.5px;line-height:1.65;max-width:780px}
+.au-faq-item.open .au-faq-a{max-height:460px}
+
+/* 09 · CLOSING CTA */
+.au-close{background:var(--dark);color:#e8f0f0;position:relative;overflow:hidden}
+.au-close::before{content:"";position:absolute;inset:0;background:radial-gradient(900px 520px at 50% 0%,rgba(90, 204, 241,.18),transparent 60%),radial-gradient(700px 480px at 80% 100%,rgba(30,170,220,.12),transparent 60%);pointer-events:none}
+.au-close-inner{position:relative;z-index:1;max-width:860px;margin:0 auto;padding:clamp(72px,9vw,128px) var(--pad-x);text-align:center}
+.au-close .eyebrow{color:var(--accent-3);display:inline-block;margin-bottom:20px}
+.au-close h2{font-family:var(--serif);font-weight:400;font-size:clamp(32px,4.6vw,60px);line-height:1.06;letter-spacing:-.02em;color:#fff;margin:0;text-wrap:balance}
+.au-close h2 .ital{font-style:italic;color:var(--accent-3)}
+.au-close p{color:#aebcc0;font-size:clamp(15px,1.2vw,18px);line-height:1.66;margin:24px auto 0;max-width:60ch}
+.au-close .cta{margin-top:clamp(34px,4vw,44px)}
+.au-close .au-btn-sky{padding:18px 36px;font-size:16px}
+
+@media (max-width:900px){
+  .au-hero-inner{grid-template-columns:1fr;gap:40px}
+  .au-visual{max-width:420px;justify-self:center;order:2}
+  .au-problem-grid{grid-template-columns:1fr;gap:40px}
+  .au-hc-grid{grid-template-columns:1fr;gap:36px}
+  .au-case-card{grid-template-columns:1fr}
+}
+@media (max-width:768px){
+  .au-scope-grid{grid-template-columns:1fr}
+  .au-scol{border-left:0;padding-left:0;border-top:1px solid var(--line-2)}
+  .au-scol:first-child{border-top:0}
+  .au-tl-step{grid-template-columns:clamp(72px,22vw,96px) 1fr;gap:16px}
+}
+@media (max-width:560px){
+  .au-chead,.au-crow{grid-template-columns:1fr;gap:8px}
+  .au-crow{gap:14px;padding:18px 0}
+}
+</style>
+</head>
+<body>
+<header class="site-header" id="header" data-screen-label="Header">
+  <div class="nav-shell">
+    <nav class="nav" aria-label="Primary" style="border-color: rgb(13, 155, 139)">
+      <a href="Kleza.html" class="logo" aria-label="Kleza"><img src="assets/kleza-logo.png" alt="Kleza" /></a>
+
+                  <div class="nav-links">
+
+        <!-- HOME -->
+        <div class="nav-item">
+          <a class="nav-link" href="Kleza.html">Home</a>
+        </div>
+
+        <!-- ABOUT -->
+        <div class="nav-item" data-mega>
+          <a class="nav-link" href="about.html">About
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <div class="mega mega-md mega-grid mega-grid-2" role="menu">
+            <div class="mega-bridge" aria-hidden="true"></div>
+            <div class="mega-col">
+              <ul class="mega-list">
+                <li><a class="mega-link" href="about.html#story"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10A15.3 15.3 0 0 1 8 12 15.3 15.3 0 0 1 12 2z"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Company Overview</span></span></a></li>
+                <li><a class="mega-link" href="about.html#vision"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/><circle cx="12" cy="12" r="3"/></svg></span><span class="mega-link-text"><span class="mega-link-name">AI Transformation Vision</span></span></a></li>
+                <li><a class="mega-link" href="about.html#healthcare"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s8-4 8-12V5l-8-3-8 3v5c0 8 8 12 8 12z"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Healthcare Innovation</span></span></a></li>
+                <li><a class="mega-link" href="about.html#partnerships"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="18" r="2.5"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="6" y1="8" x2="6" y2="16"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Partnerships</span></span></a></li>
+                <li><a class="mega-link" href="about.html#careers"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Careers</span></span></a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <div class="mega-feature">
+                <span class="feat-label">Our Philosophy</span>
+                <h4>Human expertise, refined by intelligent systems.</h4>
+                <p>We design AI that augments care teams &mdash; never replaces them.</p>
+                <a class="feat-cta" href="about.html">Learn the vision
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI PRODUCTS (reroutes to IVNA.ai) -->
+        <div class="nav-item" data-mega>
+          <a class="nav-link" href="https://yellow-jellyfish-536374.hostingersite.com/" target="_blank" rel="noopener noreferrer">AI Products
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <div class="mega mega-lg mega-compact mega-grid mega-grid-3" role="menu">
+            <div class="mega-bridge" aria-hidden="true"></div>
+            <div class="mega-col">
+              <div class="mega-subtitle">Workforce Suite</div>
+              <ul class="mega-list">
+                <li><a class="mega-link" href="https://slategray-jay-545015.hostingersite.com/" target="_blank" rel="noopener noreferrer"><span class="mega-link-ico mega-link-ico--img"><img src="/assets/icon-voica.png" alt="Voica" /></span><span class="mega-link-text"><span class="mega-link-name">Voica</span><span class="mega-link-sub">Records and analyzes every call &mdash; inquiries, compliance flags, scheduling issues.</span></span></a></li>
+                <li><a class="mega-link" href="https://lightslategray-curlew-597776.hostingersite.com/" target="_blank" rel="noopener noreferrer"><span class="mega-link-ico mega-link-ico--img"><img src="/assets/icon-assessflo.png" alt="AssessFlo" /></span><span class="mega-link-text"><span class="mega-link-name">AssessFlo</span><span class="mega-link-sub">Digital client assessments, online or offline, with automatic WellSky sync.</span></span></a></li>
+                <li><a class="mega-link" href="http://orange-salamander-203350.hostingersite.com/" target="_blank" rel="noopener noreferrer"><span class="mega-link-ico mega-link-ico--img"><img src="/assets/icon-hireorbit.png" alt="HireOrbit" /></span><span class="mega-link-text"><span class="mega-link-name">HireOrbit</span><span class="mega-link-sub">Caregiver hiring end to end &mdash; parsing, onboarding, e-signatures, compliance.</span></span></a></li>
+                <li><a class="mega-link" href="https://slategray-oryx-438842.hostingersite.com/" target="_blank" rel="noopener noreferrer"><span class="mega-link-ico mega-link-ico--img"><img src="/assets/icon-nexxio.png" alt="Inqvue" /></span><span class="mega-link-text"><span class="mega-link-name">Inqvue</span><span class="mega-link-sub">Captures inquiries and referrals from every source and helps you convert them.</span></span></a></li>
+              </ul>
+              </div>
+            <div class="mega-col">
+              <div class="mega-subtitle">Productivity Apps</div>
+              <ul class="mega-list">
+                <li><a class="mega-link" href="https://darkorange-finch-216111.hostingersite.com/" target="_blank" rel="noopener noreferrer"><span class="mega-link-ico mega-link-ico--img"><img src="/assets/icon-docunyx.png" alt="Docunyx" /></span><span class="mega-link-text"><span class="mega-link-name">Docunyx</span><span class="mega-link-sub">Turns PDFs, docs and scans into accurate digital forms in seconds.</span></span></a></li>
+                <li><a class="mega-link" href="https://excelliq-ai.kleza.io/" target="_blank" rel="noopener noreferrer"><span class="mega-link-ico mega-link-ico--img"><img src="/assets/icon-excelliq.png" alt="Excelliq" /></span><span class="mega-link-text"><span class="mega-link-name">Excelliq</span><span class="mega-link-sub">Asks several LLMs at once and merges their answers into one conclusion.</span></span></a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <div class="mega-feature">
+                <span class="feat-label">Powered by</span>
+                <h4>IVNA.ai &mdash; enterprise AI for modern healthcare.</h4>
+                <p>Turnkey intelligence platforms designed for immediate deployment.</p>
+                <a class="feat-cta" href="https://yellow-jellyfish-536374.hostingersite.com/" target="_blank" rel="noopener noreferrer">Visit IVNA.ai
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AGENTIC SOLUTIONS (reroutes to Comes360) -->
+        <div class="nav-item" data-mega>
+          <a class="nav-link" href="ai-products.html">Agentic Solutions
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <div class="mega mega-lg mega-compact mega-agentic mega-grid mega-grid-3" role="menu">
+            <div class="mega-bridge" aria-hidden="true"></div>
+            <div class="mega-col">
+              <div class="mega-subtitle">Agency Companions</div>
+              <ul class="mega-list">
+                <li><a class="mega-link" href="ai-products.html"><span class="mega-link-ico mega-link-ico--glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><span class="mega-link-text"><span class="mega-link-name">HR Companion</span><span class="mega-link-sub">Screens candidates and books interviews, escalating when judgement is needed.</span></span></a></li>
+                <li><a class="mega-link" href="ai-products.html"><span class="mega-link-ico mega-link-ico--glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Admin Companion</span><span class="mega-link-sub">Handles data entry, routine approvals and reporting for your team.</span></span></a></li>
+                <li><a class="mega-link" href="ai-products.html"><span class="mega-link-ico mega-link-ico--glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M12 14l2 2"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Scheduler Companion</span><span class="mega-link-sub">Builds conflict-free schedules and re-optimizes instantly when plans change.</span></span></a></li>
+                <li><a class="mega-link" href="ai-products.html"><span class="mega-link-ico mega-link-ico--glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="8" r="4"/><path d="M4 21v-1a6 6 0 0 1 6-6h1"/><circle cx="18" cy="17" r="3.5"/><line x1="20.5" y1="19.5" x2="23" y2="22"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Recruiter Companion</span><span class="mega-link-sub">Sources and screens candidates, keeping your hiring pipeline warm.</span></span></a></li>
+              </ul>
+              </div>
+            <div class="mega-col">
+              <div class="mega-subtitle">Care Companions</div>
+              <ul class="mega-list">
+                <li><a class="mega-link" href="ai-products.html"><span class="mega-link-ico mega-link-ico--glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 6.6a5 5 0 0 0-7.1 0L12 8.3l-1.7-1.7a5 5 0 0 0-7.1 7.1L12 22l8.8-8.3a5 5 0 0 0 0-7.1z"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Caregiver Companion</span><span class="mega-link-sub">On-call assistant for caregivers &mdash; care plans, answers and visit logs.</span></span></a></li>
+                <li><a class="mega-link" href="ai-products.html"><span class="mega-link-ico mega-link-ico--glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Client Companion</span><span class="mega-link-sub">Timely updates for clients and families; sensitive matters go to a person.</span></span></a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <div class="mega-feature">
+                <span class="feat-label">Powered by</span>
+                <h4>Comes360 &mdash; agentic companions for care teams.</h4>
+                <p>Workforce and care companions that coordinate the day-to-day.</p>
+                <a class="feat-cta" href="ai-products.html">Visit Comes360
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ENTERPRISE (AI Services live under it) -->
+        <div class="nav-item" data-mega>
+          <a class="nav-link" href="enterprise-services.html">Enterprise Services</a>
+          <div class="mega mega-lg mega-grid mega-grid-4" role="menu">
+            <div class="mega-bridge" aria-hidden="true"></div>
+            <div class="mega-col">
+              <div class="mega-subtitle">Digital Presence</div>
+              <ul class="mega-list">
+                <li><a class="mega-link" href="Website Development.html"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10A15.3 15.3 0 0 1 8 12 15.3 15.3 0 0 1 12 2z"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Website Development</span></span></a></li>
+                <li><a class="mega-link" href="Digital Marketing.html"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><polyline points="14 7 21 7 21 14"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Digital Marketing</span></span></a></li>
+              </ul>
+              <div class="mega-subtitle">Managed Operations</div>
+              <ul class="mega-list">
+                <li><a class="mega-link" href="Operational Outsourcing.html"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Operational Outsourcing</span></span></a></li>
+                <li><a class="mega-link" href="Remote IT Services.html"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Remote IT Services</span></span></a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <div class="mega-subtitle">Content Automation</div>
+              <ul class="mega-list">
+                <li><a class="mega-link" href="Automation Tools.html"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Blog Automation</span></span></a></li>
+                <li><a class="mega-link" href="Automation Tools.html"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Social Media Scheduling</span></span></a></li>
+              </ul>
+              <div class="mega-subtitle">AI Services</div>
+              <ul class="mega-list">
+                <li><a class="mega-link" href="ai-services.html"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Overview</span></span></a></li>
+                <li><a class="mega-link" href="ai-services.html#training"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-7M14 17H4M9 7l-5 5 5 5M15 12l5 5"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Business-Specific AI Training</span></span></a></li>
+                <li><a class="mega-link" href="ai-services.html#assistant"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></span><span class="mega-link-text"><span class="mega-link-name">AI Support Assistant</span></span></a></li>
+                <li><a class="mega-link" href="ai-services.html#automation"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><path d="M10 6.5h4a2 2 0 0 1 2 2V14"/></svg></span><span class="mega-link-text"><span class="mega-link-name">End-to-End Business Process Automation</span></span></a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <div class="mega-subtitle">Site Health &amp; Monitoring</div>
+              <ul class="mega-list">
+                <li><a class="mega-link" href="Search Visibility.html"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span><span class="mega-link-text"><span class="mega-link-name">SERP Agent</span></span></a></li>
+                <li><a class="mega-link" href="Search Visibility.html"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10"/><path d="M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Auto Indexing</span></span></a></li>
+              
+                <li><a class="mega-link" href="Monitoring Verification.html"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Domain Expiry Verification</span></span></a></li>
+                <li><a class="mega-link" href="Monitoring Verification.html"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><polyline points="7 14 11 10 14 13 21 6"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Website Performance</span></span></a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <div class="mega-feature">
+                <span class="feat-label">All-in-One Stack</span>
+                <h4>One accountable team. Every digital surface.</h4>
+                <p>Web, marketing, automation, and IT &mdash; under one roof.</p>
+                <a class="feat-cta" href="enterprise-services.html">Explore Enterprise
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RESOURCES -->
+        <div class="nav-item" data-mega>
+          <a class="nav-link" href="resources.html">Resources
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <div class="mega mega-sm" role="menu">
+            <div class="mega-bridge" aria-hidden="true"></div>
+            <ul class="mega-list">
+              <li><a class="mega-link" href="resources.html#newsletter"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Newsletters</span></span></a></li>
+              <li><a class="mega-link" href="resources.html#articles"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Blogs</span></span></a></li>
+            </ul>
+            <a class="mega-article" href="resources.html">
+              <span class="mega-article-label">Featured Story</span>
+              <h5 class="mega-article-title">How Meridian Health cut documentation time by 67%.</h5>
+            </a>
+          </div>
+        </div>
+        <!-- MARKETPLACE -->
+        <div class="nav-item">
+          <a class="nav-link" href="/marketplace/">Marketplace</a>
+        </div>
+      </div>
+
+      <a href="contact.html" class="nav-cta">
+        Contact Us
+        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+
+      <button class="nav-burger" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== 01 · HERO ===== -->
+<section class="au-hero" data-screen-label="Hero">
+  <div class="au-hero-inner">
+    <div class="au-hero-text">
+      <nav class="au-bc" aria-label="Breadcrumb"><a href="Kleza.html">Home</a><span class="sep">&raquo;</span><a href="ai-services.html">AI Services</a><span class="sep">&raquo;</span><span class="current">Process Automation</span></nav>
+      <span class="eyebrow">End-to-End Business Process Automation <span class="dot" style="margin:0 .5em">&middot;</span> Kleza</span>
+      <h1>Processes that run themselves &mdash; <span class="ital">from first trigger to final handoff.</span></h1>
+      <p class="lede">Most automation stops at a single task. Kleza maps the whole process &mdash; intake to invoice, referral to roster &mdash; and rebuilds it so the systems hand off to each other, and a person is only pulled in when <b>judgement is genuinely required</b>.</p>
+      <div class="au-hero-cta">
+        <a class="btn au-btn-sky" href="contact.html">Map My Processes <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a class="btn au-btn-dghost" href="#process">See How It Works</a>
+      </div>
+    </div>
+    <div class="au-visual" aria-hidden="true"><div class="glow"></div><svg viewBox="0 0 460 460" role="presentation">
+  <text class="au-plabel" x="6" y="86">TRIGGER</text>
+  <rect class="au-pnode key" x="6" y="96" width="112" height="56" rx="12"/>
+  <path class="au-picon" d="M40 112 h28 M40 122 h40 M40 132 h20"/>
+
+  <path class="au-ptrack" d="M118,124 C160,124 168,172 206,180"/>
+  <path class="au-ppulse" d="M118,124 C160,124 168,172 206,180"/>
+
+  <text class="au-plabel" x="6" y="266">SYSTEMS</text>
+  <rect class="au-pnode" x="6" y="276" width="112" height="46" rx="11"/>
+  <path class="au-picon" d="M30 299 h20 M62 291 l10 8 -10 8"/>
+  <rect class="au-pnode" x="6" y="336" width="112" height="46" rx="11"/>
+  <path class="au-picon" d="M30 359 h20 M62 351 l10 8 -10 8"/>
+
+  <path class="au-ptrack" d="M118,299 C162,299 170,214 206,206"/>
+  <path class="au-ppulse" d="M118,299 C162,299 170,214 206,206"/>
+  <path class="au-ptrack" d="M118,359 C170,359 176,226 206,216"/>
+  <path class="au-ppulse" d="M118,359 C170,359 176,226 206,216"/>
+
+  <text class="au-plabel" x="206" y="150">ORCHESTRATION</text>
+  <rect class="au-pnode key" x="206" y="160" width="86" height="86" rx="18"/>
+  <path class="au-picon" d="M233 188 h32 M233 203 h32 M233 218 h18"/>
+  <circle class="au-gatering" cx="249" cy="203" r="30"/>
+
+  <path class="au-ptrack" d="M292,203 L330,203"/>
+  <path class="au-ppulse" d="M292,203 L330,203"/>
+
+  <text class="au-plabel" x="306" y="150" text-anchor="middle">RULE</text>
+  <rect class="au-gate" x="330" y="181" width="44" height="44" rx="10" transform="rotate(45 352 203)"/>
+  <path class="au-picon" d="M344 203 l6 6 12 -14"/>
+
+  <path class="au-ptrack" d="M374,203 C400,203 404,132 430,132"/>
+  <path class="au-ppulse" d="M374,203 C400,203 404,132 430,132"/>
+  <path class="au-ptrack" d="M374,203 L430,203"/>
+  <path class="au-ppulse" d="M374,203 L430,203"/>
+  <path class="au-ptrack" d="M374,203 C400,203 404,274 430,274"/>
+  <path class="au-ppulse" d="M374,203 C400,203 404,274 430,274"/>
+
+  <circle class="au-outdot" cx="436" cy="132" r="6"/>
+  <circle class="au-outdot" cx="436" cy="203" r="6"/>
+  <circle class="au-outdot" cx="436" cy="274" r="6"/>
+  <text class="au-plabel" x="436" y="300" text-anchor="middle" style="fill:#9fb6ba">DONE</text>
+
+  <text class="au-plabel" x="352" y="262" text-anchor="middle" style="fill:#9fb6ba">ESCALATE</text>
+  <path class="au-ptrack" d="M352,225 L352,246" stroke-dasharray="3 4"/>
+</svg></div>
+  </div>
+</section>
+
+<!-- ===== 02 · THE PROBLEM WITH POINT AUTOMATION ===== -->
+<section class="au-problem" data-screen-label="The Problem with Point Automation">
+  <div class="container">
+    <div class="au-problem-grid">
+      <div>
+        <span class="eyebrow au-eyebrow">The Case for End-to-End</span>
+        <h2>Automating one step <span class="ital">just moves the bottleneck.</span></h2>
+        <p>Most organisations have automated something &mdash; a form, a report, a reminder. The work that remains is the work between the steps: re-keying the same record into a second system, chasing an approval, noticing that a file never arrived. That is where the hours go, and no single-task tool touches it. End-to-end automation treats the process as one object &mdash; trigger, steps, decisions, exceptions, and the audit trail behind all of it.</p>
+      </div>
+      <div class="au-compare" role="table" aria-label="Point automation versus Kleza end-to-end automation">
+        <div class="au-chead" role="row"><span class="c gen" role="columnheader">Point automation</span><span class="c kl" role="columnheader">Kleza end-to-end</span></div>
+        <div class="au-crow"><div class="au-cval gen">Automates a single task</div><div class="au-cval kl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Automates the whole process</span></div></div><div class="au-crow"><div class="au-cval gen">People still stitch the steps together</div><div class="au-cval kl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Systems hand off to each other</span></div></div><div class="au-crow"><div class="au-cval gen">Fails silently when a form or field changes</div><div class="au-cval kl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Monitored, with alerts and fallbacks</span></div></div><div class="au-crow"><div class="au-cval gen">Edge cases quietly return to manual</div><div class="au-cval kl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Exceptions routed to a named owner</span></div></div><div class="au-crow"><div class="au-cval gen">No view of the process as a whole</div><div class="au-cval kl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Every run measured end to end</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 03 · WHAT WE AUTOMATE ===== -->
+<section class="au-scope" data-screen-label="What We Automate">
+  <div class="container">
+    <div class="head">
+      <span class="eyebrow au-eyebrow">Scope</span>
+      <h2 class="au-h2">The processes <span class="ital">we take off your desk.</span></h2>
+    </div>
+    <div class="au-scope-grid">
+      <div class="au-scol">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18"/><path d="M8 15h5"/></svg></span>
+        <h4>Back-Office Operations</h4>
+        <span class="htag spacer" style="visibility:hidden">placeholder</span>
+        <ul class="au-slist"><li>Invoice capture, matching and approval</li><li>Payroll and timesheet preparation</li><li>Recurring reporting and reconciliations</li></ul>
+      </div>
+      <div class="au-scol">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.5-1.5 3-3.4 3-5.5A4.5 4.5 0 0 0 12 5 4.5 4.5 0 0 0 2 8.5c0 2.1 1.5 4 3 5.5l7 7z"/><path d="M3.5 11h4l2-3 2.5 5 1.5-2h6"/></svg></span>
+        <h4>Client &amp; Care Workflows</h4>
+        <span class="htag">HIPAA-compliant</span>
+        <ul class="au-slist"><li>Referral intake through to first visit</li><li>Scheduling, rostering and shift backfill</li><li>Care plan routing, review and sign-off</li></ul>
+      </div>
+      <div class="au-scol">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h11l-3-3M20 17H9l3 3"/><rect x="3" y="3" width="4" height="4" rx="1"/><rect x="17" y="17" width="4" height="4" rx="1"/></svg></span>
+        <h4>Cross-System Data Movement</h4>
+        <span class="htag spacer" style="visibility:hidden">placeholder</span>
+        <ul class="au-slist"><li>Record sync between EMR, CRM and finance</li><li>Bulk migrations and de-duplication</li><li>Nightly reconciliation with exception reports</li></ul>
+      </div>
+    </div>
+    <div class="au-scope-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.4 8.6-8 10-4.6-1.4-8-5-8-10V6l8-4z"/><polyline points="9 12 11 14 15 10"/></svg><span>Every automated process keeps a full run history &mdash; what ran, what it changed, and who approved it. Processes touching healthcare data are built under HIPAA-compliant protocols and signed DPAs.</span></div>
+  </div>
+</section>
+
+<!-- ===== 04 · CAPABILITIES ===== -->
+<section class="au-caps" data-screen-label="Capabilities">
+  <div class="container">
+    <div class="head">
+      <span class="eyebrow au-eyebrow">Capabilities</span>
+      <h2 class="au-h2">What we <span class="ital">build and operate.</span></h2>
+      <p>From the first process map to the dashboard your operations lead checks on a Monday morning &mdash; Kleza owns the full lifecycle of the automation, not just the build.</p>
+    </div>
+    <div class="au-cap-cloud"><span class="au-cap lg"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-6 3 4 4-7"/></svg></span>Process Discovery &amp; Mapping</span><span class="au-cap lg"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><path d="M10 6.5h4a2 2 0 0 1 2 2V14"/></svg></span>Agentic Workflow Orchestration</span><span class="au-cap"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg></span>RPA &amp; Browser Automation</span><span class="au-cap"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M21 16v3a2 2 0 0 1-2 2h-3M3 16v3a2 2 0 0 0 2 2h3"/></svg></span>API &amp; Webhook Integration</span><span class="au-cap lg"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M8 15l2 2 5-5"/></svg></span>Document Intelligence &amp; Extraction</span><span class="au-cap"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9 2.6 17a2 2 0 0 0 1.7 3h15.4a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg></span>Exception Handling &amp; Escalation</span><span class="au-cap"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Human-in-the-Loop Approvals</span><span class="au-cap"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6c0-1.7 4-3 9-3s9 1.3 9 3-4 3-9 3-9-1.3-9-3zM3 6v12c0 1.7 4 3 9 3s9-1.3 9-3V6"/></svg></span>Legacy System Bridging</span><span class="au-cap"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span>Run Monitoring &amp; Alerting</span><span class="au-cap"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>SLA &amp; Throughput Dashboards</span><span class="au-cap hc"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.4 8.6-8 10-4.6-1.4-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg></span>HIPAA-Compliant Process Design</span><span class="au-cap hc"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>Audit Trails &amp; Run History</span></div>
+  </div>
+</section>
+
+<!-- ===== 05 · AUTOMATION PROCESS ===== -->
+<section class="au-proc" id="process" data-screen-label="Automation Process">
+  <div class="container">
+    <div class="head">
+      <span class="eyebrow au-eyebrow">The Process</span>
+      <h2 class="au-h2">How we take a process <span class="ital">from manual to unattended.</span></h2>
+    </div>
+    <div class="au-timeline" id="auTimeline"><div class="au-tl-step au-reveal"><div class="au-tl-num">01</div><div class="au-tl-body"><h4>Process Discovery</h4><p>We sit with the people who run the work, follow a real case end to end, and record every system, form, and handoff it actually touches &mdash; including the undocumented steps.</p></div></div><div class="au-tl-step au-reveal"><div class="au-tl-num">02</div><div class="au-tl-body"><h4>Mapping &amp; Business Case</h4><p>The current process is mapped with volumes, cycle times, and error rates attached, so the automation is costed against the hours it actually returns before anyone commits.</p></div></div><div class="au-tl-step au-reveal"><div class="au-tl-num">03</div><div class="au-tl-body"><h4>Automation Design</h4><p>We redesign rather than replicate &mdash; removing steps that only existed to compensate for the manual version, and deciding where a human approval genuinely belongs.</p></div></div><div class="au-tl-step au-reveal"><div class="au-tl-num">04</div><div class="au-tl-body"><h4>Build &amp; Integration</h4><p>Orchestration, integrations, and document extraction are built and wired into your existing systems &mdash; by API where one exists, and by supervised automation where it does not.</p></div></div><div class="au-tl-step au-reveal"><div class="au-tl-num">05</div><div class="au-tl-body"><h4>Pilot &amp; Exception Tuning</h4><p>The process runs alongside the manual one on live volume. Every exception it throws is either designed out or given a named owner and a route before we go further.</p></div></div><div class="au-tl-step au-reveal"><div class="au-tl-num">06</div><div class="au-tl-body"><h4>Rollout &amp; Continuous Optimisation</h4><p>Full cutover with monitoring, alerting, and a throughput dashboard &mdash; then scheduled reviews to tighten the process as volumes and upstream systems change.</p></div></div></div>
+  </div>
+</section>
+
+<!-- ===== 06 · HEALTHCARE DEEP DIVE ===== -->
+<section class="au-hc" data-screen-label="Healthcare Deep Dive">
+  <div class="au-hc-inner">
+    <div class="au-hc-grid">
+      <div>
+        <span class="eyebrow">Healthcare</span>
+        <div class="au-hc-ico-lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.5-1.5 3-3.4 3-5.5A4.5 4.5 0 0 0 12 5 4.5 4.5 0 0 0 2 8.5c0 2.1 1.5 4 3 5.5l7 7z"/><path d="M3.5 11h4l2-3 2.5 5 1.5-2h6"/></svg></div>
+        <h3>The processes care organisations <span class="ital">lose the most hours to.</span></h3>
+      </div>
+      <div class="au-hc-cases"><div class="au-hc-case"><span class="n">01</span><div><h4>Referral to Scheduled Visit</h4><p>Referral documents are read, the client record is created, eligibility is checked, and the first visit is offered to matching caregivers &mdash; without anyone re-keying the intake.</p></div></div><div class="au-hc-case"><span class="n">02</span><div><h4>Caregiver Onboarding &amp; Credentialing</h4><p>Applications, background checks, and credential documents are collected and tracked, with chase-ups sent automatically and expiring credentials flagged before they lapse.</p></div></div><div class="au-hc-case"><span class="n">03</span><div><h4>Visit Verification to Billing</h4><p>Completed visits are reconciled against the roster and the authorisation, exceptions are surfaced for review, and clean claims are prepared without a manual export.</p></div></div><div class="au-hc-case"><span class="n">04</span><div><h4>Authorisation Tracking &amp; Renewals</h4><p>Remaining authorised units are tracked per client, and renewals are raised with the paperwork pre-filled well before service is at risk of interruption.</p></div></div></div>
+    </div>
+    <div class="au-hc-hipaa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.4 8.6-8 10-4.6-1.4-8-5-8-10V6l8-4z"/><polyline points="9 12 11 14 15 10"/></svg><span>Automations handling patient or client data run under HIPAA-compliant protocols, with least-privilege system access and a complete, reviewable audit trail for every run.</span></div>
+  </div>
+</section>
+
+<!-- ===== 07 · CASE STUDY ===== -->
+<section class="au-case" data-screen-label="Case Study">
+  <div class="container">
+    <div class="head">
+      <span class="eyebrow au-eyebrow">Case Study</span>
+      <h2 class="au-h2">Referral to roster in under an hour &mdash; <span class="ital">with nobody re-keying a thing.</span></h2>
+    </div>
+    <div class="au-case-card">
+      <div class="au-case-left">
+        <div class="au-case-metric">71%</div>
+        <p class="au-case-mlabel">Of referrals now reach a scheduled visit with no manual step at all.</p>
+        <div class="au-case-client">Client &mdash; Multi-site home care provider</div>
+      </div>
+      <div class="au-case-right">
+        <div class="au-case-block"><div class="lab">Challenge</div><p>Referrals arrived as email attachments and fax PDFs. Coordinators re-typed each one into the care system, checked eligibility by hand, then called round for cover &mdash; an average of 2.5 days from referral to a scheduled first visit.</p></div>
+        <div class="au-case-block"><div class="lab">Approach</div><p>Kleza mapped the process end to end, then automated it: document extraction reads the referral, the client record is created and eligibility checked against the payer rules, and matching caregivers are offered the visit. Anything ambiguous routes to a named coordinator with the extracted data attached.</p></div>
+        <div class="au-case-block outcome"><div class="lab">Outcome</div><p>71% of referrals now complete unattended, with a median of 48 minutes from referral to scheduled visit. Coordinators handle the 29% that need judgement instead of the whole queue.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 08 · FAQ ===== -->
+<section class="au-faq-sec" data-screen-label="FAQ">
+  <div class="container">
+    <div class="au-faq-head"><span class="eyebrow au-eyebrow">FAQ</span><h2 class="au-h2">Questions about <span class="ital">process automation.</span></h2></div>
+    <div class="au-faq" id="auFaq"><div class="au-faq-item"><button class="au-faq-q">How is this different from the automation tools we already use?<span class="plus">+</span></button><div class="au-faq-a"><p>Most tools automate a task &mdash; a form submission, a scheduled report, a reminder. Kleza automates the process that connects those tasks, including the handoffs between systems and the decisions in between. The work that disappears is usually the invisible work: re-keying, chasing, checking whether something arrived.</p></div></div><div class="au-faq-item"><button class="au-faq-q">Do we need to replace our existing systems?<span class="plus">+</span></button><div class="au-faq-a"><p>No. We integrate with what you already run. Where a system offers an API we use it; where it does not &mdash; which is common with older care and billing platforms &mdash; we use supervised automation to drive the interface the same way a person would, with the same permissions and a full audit trail.</p></div></div><div class="au-faq-item"><button class="au-faq-q">What happens when a process hits something unexpected?<span class="plus">+</span></button><div class="au-faq-a"><p>Exceptions are a designed part of the process, not a failure of it. Anything the automation cannot complete confidently is routed to a named owner with the context already gathered, and the run is recorded. During the pilot we tune those routes until the exception rate settles at a level your team is comfortable owning.</p></div></div><div class="au-faq-item"><button class="au-faq-q">How long before a process is running unattended?<span class="plus">+</span></button><div class="au-faq-a"><p>A single well-understood process typically moves from discovery to live in 6-10 weeks, including a pilot period running alongside the manual version. Multi-process programmes are sequenced so the first automation is returning hours while the next is still being mapped.</p></div></div><div class="au-faq-item"><button class="au-faq-q">How do you handle processes that touch patient data?<span class="plus">+</span></button><div class="au-faq-a"><p>They are built under HIPAA-compliant protocols and signed Data Processing Agreements, with least-privilege access for every system the automation touches and a complete run history available for audit. Where data can be de-identified before processing, it is.</p></div></div><div class="au-faq-item"><button class="au-faq-q">Can this build on AI you have already trained for us?<span class="plus">+</span></button><div class="au-faq-a"><p>Yes, and it is the strongest combination. A process automation that calls a model trained on your own documentation and terminology reads your referrals, notes, and forms far more accurately than one using a generic base model. Ask about combining this with Business-Specific AI Training.</p></div></div></div>
+  </div>
+</section>
+
+<!-- ===== 09 · CLOSING CTA ===== -->
+<section class="au-close" id="contact" data-screen-label="Closing CTA">
+  <div class="au-close-inner">
+    <span class="eyebrow">Get Started</span>
+    <h2>Start with the process <span class="ital">that costs you the most hours.</span></h2>
+    <p>Before anything is built, Kleza runs a no-obligation process discovery session &mdash; following one real process end to end and putting volumes, cycle times, and a cost of delay against it. You get the map and the business case whether or not you go ahead.</p>
+    <div class="cta"><a class="btn au-btn-sky" href="contact.html">Book a Process Discovery Session <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer band-light" data-screen-label="Footer" style="padding: 56px 0px 32px">
+  <div class="container">
+                <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="logo" aria-label="Kleza"><img src="/assets/kleza-logo.png" alt="Kleza" /></a>
+        <p class="tagline" style="margin-top:22px">Clinical precision meets soft, intelligent light.</p>
+        <div class="footer-phones">
+          <a href="tel:+19138002728"><span class="ph-tag">USA</span><span class="ph-num">+1 913-800-2728</span></a>
+          <a href="tel:+917396146227"><span class="ph-tag">India</span><span class="ph-num">+91 7396146227</span></a>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/kleza-solutions-pvt-ltd/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0zM.25 8.25h4.5V24h-4.5V8.25zM8.25 8.25h4.31v2.15h.06c.6-1.14 2.07-2.34 4.26-2.34 4.56 0 5.4 3 5.4 6.9V24h-4.5v-6.75c0-1.61-.03-3.68-2.24-3.68-2.24 0-2.58 1.75-2.58 3.56V24h-4.5V8.25z"/></svg></a>
+          <a href="https://twitter.com/klezasolutions" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.656l-5.214-6.817-5.966 6.817H1.683l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644z"/></svg></a>
+          <a href="https://www.facebook.com/Klezasolution" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07c0 6.02 4.39 11.01 10.12 11.93v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.95.93-1.95 1.89v2.25h3.32l-.53 3.49h-2.79V24C19.61 23.08 24 18.09 24 12.07z"/></svg></a>
+          <a href="https://www.instagram.com/klezasolutions/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <ul>
+          <li><a href="/enterprise-services/website-development">Website Development</a></li>
+          <li><a href="/enterprise-services/digital-marketing">Digital Marketing</a></li>
+          <li><a href="/enterprise-services/operational-outsourcing">Operational Outsourcing</a></li>
+          <li><a href="/enterprise-services/remote-it-services">Remote IT Services</a></li>
+          <li><a href="/enterprise-services/automation-tools">Automation Tools</a></li>
+          <li><a href="/enterprise-services/search-visibility">Search Visibility</a></li>
+          <li><a href="/enterprise-services/monitoring-verification">Monitoring &amp; Verification</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>IVNA</h5>
+        <ul>
+          <li><a href="https://slategray-jay-545015.hostingersite.com/" target="_blank" rel="noopener noreferrer">Voica</a></li>
+          <li><a href="https://lightslategray-curlew-597776.hostingersite.com/" target="_blank" rel="noopener noreferrer">AssessFlo</a></li>
+          <li><a href="http://orange-salamander-203350.hostingersite.com/" target="_blank" rel="noopener noreferrer">HireOrbit</a></li>
+          <li><a href="https://slategray-oryx-438842.hostingersite.com/" target="_blank" rel="noopener noreferrer">Inqvue</a></li>
+          <li><a href="https://darkorange-finch-216111.hostingersite.com/" target="_blank" rel="noopener noreferrer">Docunyx</a></li>
+          <li><a href="https://excelliq-ai.kleza.io/" target="_blank" rel="noopener noreferrer">Excelliq</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Comes360</h5>
+        <ul>
+          <li><a href="/ai-products/hr">HR Companion</a></li>
+          <li><a href="/ai-products/admin">Admin Companion</a></li>
+          <li><a href="/ai-products/scheduler">Scheduler Companion</a></li>
+          <li><a href="/ai-products">Recruiter Companion</a></li>
+          <li><a href="/ai-products/caregiver">Caregiver Companion</a></li>
+          <li><a href="/ai-products/client">Client Companion</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="/about">About</a></li>
+          <li><a href="/marketplace/">Marketplace</a></li>
+          <li><a href="/resources">Resources</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="#">Privacy / Terms</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; 2026 Kleza Solutions Pvt Ltd <span style="opacity:.5;margin:0 .5em">&middot;</span> All rights reserved</div>
+      <div class="right">Healthcare-grade AI <span style="opacity:.5;margin:0 .5em">&middot;</span> ISO Aligned</div>
+    </div>
+  </div>
+</footer>
+<script src="assets/nav.js"></script>
+<script>
+(function(){
+  document.querySelectorAll('#auFaq .au-faq-q').forEach(function(b){ b.addEventListener('click',function(){ b.parentElement.classList.toggle('open'); }); });
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var steps=document.querySelectorAll('#auTimeline .au-reveal');
+  if(!reduce && 'IntersectionObserver' in window){
+    steps.forEach(function(s){s.classList.add('armed');});
+    var obs=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target);}});},{threshold:.25,rootMargin:'0px 0px -8% 0px'});
+    steps.forEach(function(s){obs.observe(s);});
+  }
+})();
+</script>
+</body>
+</html>

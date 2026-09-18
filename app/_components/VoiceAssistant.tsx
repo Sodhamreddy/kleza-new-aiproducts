@@ -253,7 +253,7 @@ export default function VoiceAssistant() {
   const [listening, setListening] = useState(false);
   // Book-a-demo picker (UI only — nothing is sent anywhere yet).
   const [demoOpen, setDemoOpen] = useState(false);
-  // The Book Demo / Start Chat row hides once the visitor starts chatting.
+  // The Start chat / Book a Demo row hides once the visitor starts chatting.
   const [showActions, setShowActions] = useState(true);
   const [demoMonth, setDemoMonth] = useState<{ y: number; m: number } | null>(null);
   const [demoDay, setDemoDay] = useState<number | null>(null);
@@ -595,7 +595,7 @@ export default function VoiceAssistant() {
           <span className="ai-va-fab-ring" aria-hidden="true" />
           <span className="ai-va-fab-ring two" aria-hidden="true" />
           <span className="ai-va-fab-icon">{SPARKLE}</span>
-          <span className="ai-va-fab-label">Ask&nbsp;AI</span>
+          <span className="ai-va-fab-label">Ask&nbsp;KI</span>
         </button>
       </div>
 
@@ -793,21 +793,12 @@ export default function VoiceAssistant() {
             )}
           </div>
 
-          {/* Two actions: book a demo, or just start typing. Hidden once the
-              visitor taps Start Chat or the conversation is under way. */}
+          {/* Two actions: start chatting, or book a demo. Hidden once the
+              visitor taps Start chat or the conversation is under way. */}
           {!demoOpen && showActions && !inChat && (
             <div className="ai-va-actions">
-              <button className="ai-va-act primary" onClick={openDemo}>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="3" y="4" width="18" height="18" rx="2" />
-                  <line x1="16" y1="2" x2="16" y2="6" />
-                  <line x1="8" y1="2" x2="8" y2="6" />
-                  <line x1="3" y1="10" x2="21" y2="10" />
-                </svg>
-                Book Demo
-              </button>
               <button
-                className="ai-va-act"
+                className="ai-va-act primary"
                 onClick={() => {
                   setShowActions(false);
                   inputRef.current?.focus();
@@ -816,7 +807,16 @@ export default function VoiceAssistant() {
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
                   <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
                 </svg>
-                Start Chat
+                Start chat
+              </button>
+              <button className="ai-va-act" onClick={openDemo}>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" />
+                  <line x1="16" y1="2" x2="16" y2="6" />
+                  <line x1="8" y1="2" x2="8" y2="6" />
+                  <line x1="3" y1="10" x2="21" y2="10" />
+                </svg>
+                Book a Demo
               </button>
             </div>
           )}

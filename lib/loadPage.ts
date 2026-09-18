@@ -30,6 +30,7 @@ const PAGE_MAP: Record<string, string> = {
   "partners.html": "/about/partners",
   "ai-training.html": "/ai-services/training",
   "ai-assistant.html": "/ai-services/assistant",
+  "ai-automation.html": "/ai-services/automation",
   "Blog.html": "/resources/articles",
   "Website Development.html": "/enterprise-services/website-development",
   "Digital Marketing.html": "/enterprise-services/digital-marketing",

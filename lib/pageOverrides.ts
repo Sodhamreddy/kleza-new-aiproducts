@@ -5,7 +5,11 @@
  */
 export const PAGE_OVERRIDES: Record<string, Record<string, string>> = {
   about: { careers: "careers.html", partners: "partners.html" },
-  "ai-services": { training: "ai-training.html", assistant: "ai-assistant.html" },
+  "ai-services": {
+    training: "ai-training.html",
+    assistant: "ai-assistant.html",
+    automation: "ai-automation.html",
+  },
   resources: { articles: "Blog.html" },
   "enterprise-services": {
     "website-development": "Website Development.html",
