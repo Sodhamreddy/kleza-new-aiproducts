@@ -70,7 +70,7 @@
 
 /* ---------- layout primitives ---------- */
 .mv2-wrap { max-width: 1400px; margin: 0 auto; padding: 0 32px; }
-.mv2-sec { padding: 46px 0 6px; }
+.mv2-sec { padding: 38px 0 6px; }
 .mv2-sec--last { padding-bottom: 72px; }
 
 .mv2-head {
@@ -81,7 +81,6 @@
   margin-bottom: 18px;
 }
 .mv2-h2 { font-size: 21px; font-weight: 700; line-height: 1.2; }
-.mv2-sub { margin-top: 5px; font-size: 12.5px; color: var(--desc); }
 .mv2-arrow { display: inline-block; transition: transform .18s ease; }
 .mv2-prod:hover .mv2-arrow { transform: translateX(3px); }
 
@@ -181,11 +180,15 @@
 }
 
 /* ---------- left column ---------- */
+/* Sits above the optical centre of the band rather than dead centre, so the
+   copy leads the deck instead of floating level with it. The stacked layout
+   below 1080px re-centres it with its own `margin: 0 auto`. */
 .mv2-hero-inner {
   position: relative;
   z-index: 1;
+  align-self: start;
   max-width: 576px;
-  margin: 0;
+  margin: 28px 0 0;
   text-align: left;
 }
 
@@ -327,7 +330,7 @@
 /* ==========================================================================
    4 — EXPLORE ALL PRODUCTS
    ========================================================================== */
-.mv2-tools { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 16px; }
+.mv2-tools { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 10px; }
 .mv2-tool-search {
   display: flex;
   align-items: center;
@@ -475,11 +478,13 @@
   object-fit: cover;
   object-position: right bottom;
 }
+/* The artwork already fades out under the copy, so this only needs to lift
+   contrast a touch behind the left-hand text - not wash the colour out. */
 .mv2-eco-bg::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(95deg, rgba(255, 255, 255, .58) 0%, rgba(255, 255, 255, .18) 42%, rgba(255, 255, 255, 0) 66%);
+  background: linear-gradient(95deg, rgba(255, 255, 255, .34) 0%, rgba(255, 255, 255, .12) 45%, rgba(255, 255, 255, 0) 70%);
 }
 .mv2-eco-mark {
   position: relative;
@@ -775,39 +780,38 @@
       <div class="mv2-head">
         <div>
           <h2 class="mv2-h2">Explore all products</h2>
-          <p class="mv2-sub">One ecosystem. Built around the work of care.</p>
         </div>
-      </div>
 
-      <div class="mv2-tools">
-        <div class="mv2-tool-search">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="11" cy="11" r="7" />
-            <line x1="16.5" y1="16.5" x2="21" y2="21" />
-          </svg>
-          <input id="mv2Q" type="search" placeholder="Search products..." aria-label="Search products">
+        <div class="mv2-tools">
+          <div class="mv2-tool-search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="7" />
+              <line x1="16.5" y1="16.5" x2="21" y2="21" />
+            </svg>
+            <input id="mv2Q" type="search" placeholder="Search products..." aria-label="Search products">
+          </div>
+          <select class="mv2-select" id="mv2Cat" aria-label="Filter by category">
+            <option>All Categories</option>
+            <option>AI &amp; Intelligence</option>
+            <option>Care Management</option>
+            <option>Workforce</option>
+            <option>Operations</option>
+            <option>Automation</option>
+            <option>Analytics</option>
+            <option>Communication</option>
+            <option>Integrations</option>
+          </select>
+          <select class="mv2-select" id="mv2Fam" aria-label="Filter by family">
+            <option>All Families</option>
+            <option>IVNA</option>
+            <option>Comes360</option>
+          </select>
+          <select class="mv2-select" id="mv2Sort" aria-label="Sort products">
+            <option>Sort: A&#8211;Z</option>
+            <option>Sort: Z&#8211;A</option>
+            <option>Sort: Family</option>
+          </select>
         </div>
-        <select class="mv2-select" id="mv2Cat" aria-label="Filter by category">
-          <option>All Categories</option>
-          <option>AI &amp; Intelligence</option>
-          <option>Care Management</option>
-          <option>Workforce</option>
-          <option>Operations</option>
-          <option>Automation</option>
-          <option>Analytics</option>
-          <option>Communication</option>
-          <option>Integrations</option>
-        </select>
-        <select class="mv2-select" id="mv2Fam" aria-label="Filter by family">
-          <option>All Families</option>
-          <option>IVNA</option>
-          <option>Comes360</option>
-        </select>
-        <select class="mv2-select" id="mv2Sort" aria-label="Sort products">
-          <option>Sort: A&#8211;Z</option>
-          <option>Sort: Z&#8211;A</option>
-          <option>Sort: Family</option>
-        </select>
       </div>
 
       <div class="mv2-prod-grid is-collapsed" id="mv2Grid">
@@ -1018,18 +1022,12 @@
   <section class="mv2-sec">
     <div class="mv2-wrap">
 
-      <div class="mv2-head">
-        <div>
-          <h2 class="mv2-h2">One ecosystem. Two powerful ways to work smarter.</h2>
-        </div>
-      </div>
-
       <div class="mv2-eco-grid">
 
         <!-- IVNA -->
         <div class="mv2-eco mv2-eco--ivna">
         <span class="mv2-eco-bg" aria-hidden="true">
-          <img src="/assets/ivna-bg.png" alt="" width="200" height="120" loading="lazy" decoding="async" />
+          <img src="/assets/ivna-bg-v2.png" alt="" width="660" height="286" loading="lazy" decoding="async" />
         </span>
 
           <span class="mv2-eco-mark">IVNA</span>
@@ -1112,7 +1110,7 @@
         <!-- Comes360 -->
         <div class="mv2-eco mv2-eco--comes">
         <span class="mv2-eco-bg" aria-hidden="true">
-          <img src="/assets/comes360-bg.png" alt="" width="200" height="120" loading="lazy" decoding="async" />
+          <img src="/assets/comes360-bg-v2.png" alt="" width="660" height="286" loading="lazy" decoding="async" />
         </span>
 
           <span class="mv2-eco-mark">Comes<span class="mv2-eco-mark-b">360</span></span>
