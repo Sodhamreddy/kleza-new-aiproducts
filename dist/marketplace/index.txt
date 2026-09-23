@@ -1,10 +1,10 @@
 3:I[4707,[],""]
 4:I[6423,[],""]
 5:I[5753,["185","static/chunks/app/layout-1704edfb8ec21a88.js"],"default"]
-0:["DxIEMIzBhQShiRtYpsCj2",[[["",{"children":["marketplace",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",{"children":["marketplace",{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","marketplace","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/02fb55590a3f1e38.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":""}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700;800;900&family=Instrument+Serif:ital,wght@0,400;1,400&family=JetBrains+Mono:wght@400;500&family=Mukta:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"children":[["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}],["$","$L5",null,{}]]}]]}]],null],null],["$L6",null]]]]
-6:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Marketplace — Kleza"}],["$","meta","3",{"name":"description","content":"Kleza is a fast-growing AI Transformation Company built on a singular vision: to humanize technology and make intelligence accessible, ethical, and meaningful for every business."}],["$","link","4",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","5",{"rel":"icon","href":"/favicon-32.png","sizes":"32x32","type":"image/png"}],["$","link","6",{"rel":"icon","href":"/favicon-192.png","sizes":"192x192","type":"image/png"}],["$","link","7",{"rel":"apple-touch-icon","href":"/apple-touch-icon.png","sizes":"180x180","type":"image/png"}]]
+0:["H0IzwrsonFOpj7kJ-MuyE",[[["",{"children":["marketplace",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",{"children":["marketplace",{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","marketplace","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/02fb55590a3f1e38.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":""}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700;800;900&family=Instrument+Serif:ital,wght@0,400;1,400&family=JetBrains+Mono:wght@400;500&family=Mukta:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"children":[["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}],["$","$L5",null,{}]]}]]}]],null],null],["$L6",null]]]]
+6:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Marketplace — Kleza"}],["$","meta","3",{"name":"description","content":"Explore the KLEZA ecosystem of intelligent products built to simplify workflows, connect teams, and transform the work of care."}],["$","link","4",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","5",{"rel":"icon","href":"/favicon-32.png","sizes":"32x32","type":"image/png"}],["$","link","6",{"rel":"icon","href":"/favicon-192.png","sizes":"192x192","type":"image/png"}],["$","link","7",{"rel":"apple-touch-icon","href":"/apple-touch-icon.png","sizes":"180x180","type":"image/png"}]]
 1:null
-b:I[1797,["240","static/chunks/app/marketplace/page-ff03a0856fbeb819.js"],"default"]
+a:I[1797,["240","static/chunks/app/marketplace/page-60bfd5048d9907df.js"],"default"]
 7:T6010,<header class="site-header" id="header" data-screen-label="Header">
   <div class="nav-shell">
     <nav class="nav" aria-label="Primary" style="border-color: rgb(13, 155, 139)">
@@ -207,44 +207,7 @@ b:I[1797,["240","static/chunks/app/marketplace/page-ff03a0856fbeb819.js"],"defau
       </button>
     </nav>
   </div>
-</header>8:Tafd,
-  @keyframes mpfloat { 0%,100% { transform: translate(0); } 50% { transform: translate(22px,-20px); } }
-  @keyframes mpfloat2 { 0%,100% { transform: translate(0); } 50% { transform: translate(-26px,18px); } }
-
-  .mp-scope, .mp-scope * { box-sizing: border-box; }
-  .mp-scope { font-family: Inter, ui-sans-serif, system-ui, sans-serif; color: rgb(28,43,74); -webkit-font-smoothing: antialiased; letter-spacing: -0.011em; background: #fff; }
-  .mp-scope p, .mp-scope li { font-family: Mukta, Inter, ui-sans-serif, system-ui, sans-serif; }
-  .mp-scope h1, .mp-scope h2, .mp-scope h3, .mp-scope h4 { letter-spacing: -0.035em; margin: 0; }
-  .mp-scope a { text-decoration: none; color: inherit; }
-  .mp-scope button { font-family: inherit; cursor: pointer; }
-
-  .mp-scope .mp-title { font-size: 58px; }
-  .mp-scope .mp-cards-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 16px; }
-  .mp-scope .mp-features-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 24px; }
-  .mp-scope .mp-card { transition: transform .18s ease, box-shadow .18s ease; }
-  .mp-scope .mp-card:hover { transform: translateY(-3px); box-shadow: rgba(15,23,42,.04) 0 1px 2px, rgba(15,23,42,.2) 0 22px 44px -28px; }
-  .mp-scope .mp-discover { transition: transform .18s ease, border-color .18s ease, background .18s ease; }
-  .mp-scope .mp-discover:hover { transform: translateY(-3px); border-color: rgb(151,130,230) !important; background: color-mix(in srgb, rgb(151,130,230) 6%, #fff) !important; }
-
-  .mp-scope .cat-pill { transition: background .18s, color .18s, border-color .18s; }
-  .mp-scope .cat-pill:not(.is-active):hover { border-color: rgb(151,130,230) !important; color: rgb(107,91,214) !important; background: color-mix(in srgb, rgb(151,130,230) 8%, #fff) !important; }
-  .mp-scope .cat-pill.is-active:hover { filter: brightness(1.06); }
-  .mp-scope .card-cta { transition: background .2s, color .2s, border-color .2s; }
-  .mp-scope .card-cta:hover { background: rgb(124,92,219) !important; border-color: rgb(124,92,219) !important; color: #fff !important; }
-  .mp-scope .btn-glass { transition: background .2s, border-color .2s, transform .2s, box-shadow .2s; }
-  .mp-scope .btn-glass:hover { transform: translateY(-2px); background: #fff !important; border-color: #fff !important; box-shadow: rgba(15,23,42,.35) 0 14px 26px -14px !important; }
-  .mp-scope .btn-glass:active { transform: translateY(0); }
-
-  @media (max-width: 1024px) {
-    .mp-scope .mp-title { font-size: 42px; }
-    .mp-scope .mp-cards-grid, .mp-scope .mp-features-grid { grid-template-columns: 1fr 1fr; }
-    .mp-scope .mp-search-row { flex-wrap: wrap; }
-  }
-  @media (max-width: 640px) {
-    .mp-scope .mp-title { font-size: 34px; }
-    .mp-scope .mp-cards-grid, .mp-scope .mp-features-grid { grid-template-columns: 1fr; }
-  }
-9:Tb9d5,<div style="min-height: 100vh; background: rgb(255, 255, 255); color: rgb(28, 43, 74); padding-bottom: 1px;"><div style="background: rgb(255, 255, 255); color: oklch(0.18 0.04 264);"><section style="background: rgb(255, 255, 255);"><div style="margin: 0px auto; max-width: 1152px; padding: 40px 24px 64px;"><div style="position: relative; overflow: hidden; border-radius: 32px; border: 1px solid oklch(0.92 0.005 255); background: rgb(245, 245, 245); padding: 60px 40px 52px;"><div style="pointer-events: none; position: absolute; top: -110px; left: -70px; height: 300px; width: 300px; border-radius: 9999px; background: radial-gradient(circle, rgb(54, 192, 237), transparent 70%); opacity: 0.12; filter: blur(42px); animation: 12s ease-in-out 0s infinite normal none running mpfloat;"></div><div style="pointer-events: none; position: absolute; bottom: -130px; right: -50px; height: 320px; width: 320px; border-radius: 9999px; background: radial-gradient(circle, rgb(155, 234, 166), transparent 70%); opacity: 0.1; filter: blur(48px); animation: 14s ease-in-out 0s infinite normal none running mpfloat2;"></div><div style="pointer-events: none; position: absolute; top: 10px; right: 28%; height: 200px; width: 200px; border-radius: 9999px; background: radial-gradient(circle, rgb(155, 234, 166), transparent 70%); opacity: 0.08; filter: blur(46px); animation: 16s ease-in-out 0s infinite normal none running mpfloat;"></div><div style="position: relative; display: flex; flex-direction: column; align-items: center; text-align: center;"><span style="display: inline-flex; align-items: center; gap: 7px; border-radius: 9999px; border: 1px solid rgba(255, 255, 255, 0.8); background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(8px); padding: 7px 14px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.18em; color: rgb(54, 192, 237); box-shadow: rgba(15, 23, 42, 0.12) 0px 2px 12px -4px;"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.4 5.1L18.5 8.5 13.4 9.9 12 15l-1.4-5.1L5.5 8.5l5.1-1.4z"></path></svg>Kleza Marketplace</span><h1 class="mp-title" style="margin-top: 24px; max-width: 780px; font-weight: 700; line-height: 1.02; letter-spacing: -0.04em; color: oklch(0.18 0.04 264);">The marketplace for <span style="background-image: linear-gradient(90deg, rgb(46, 191, 122) 0%, rgb(20, 160, 210) 100%); background-clip: text; color: transparent; -webkit-text-fill-color: transparent;">specialized AI</span></h1><p style="margin-top: 18px; max-width: 540px; font-size: 17px; line-height: 1.6; color: oklch(0.42 0.03 257);">Discover, compare, and enable purpose-built AI solutions for your organization — all in one place.</p><div class="mp-search-row" style="margin-top: 30px; display: flex; align-items: center; gap: 10px; width: 100%; max-width: 660px;"><div style="display: flex; align-items: center; gap: 10px; flex: 1 1 0%; border-radius: 9999px; border: 1px solid rgba(255, 255, 255, 0.9); background: rgba(255, 255, 255, 0.92); backdrop-filter: blur(8px); padding: 13px 20px; box-shadow: rgba(15, 23, 42, 0.35) 0px 12px 32px -18px;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="oklch(0.55 0.03 257)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg><input type="text" placeholder="Search 120+ AI solutions..." style="border-width: medium; border-style: none; border-color: currentcolor; border-image: none; outline: none; background: transparent; font-size: 14px; color: oklch(0.18 0.04 264); width: 100%;"><kbd style="border: 1px solid oklch(0.92 0.005 255); border-radius: 6px; padding: 2px 7px; font-size: 11px; font-weight: 600; color: oklch(0.55 0.03 257); background: rgb(255, 255, 255); font-family: inherit;">⌘K</kbd></div><button class="btn-glass" style="display: inline-flex; align-items: center; gap: 8px; border-radius: 9999px; border: 1px solid rgba(255, 255, 255, 0.9); background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(8px); padding: 13px 18px; font-size: 14px; font-weight: 500; cursor: pointer; color: oklch(0.18 0.04 264); box-shadow: rgba(15, 23, 42, 0.3) 0px 6px 18px -12px;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="6" y2="6"></line><line x1="7" x2="17" y1="12" y2="12"></line><line x1="10" x2="14" y1="18" y2="18"></line></svg>Filter</button><button class="btn-glass" style="display: inline-flex; align-items: center; gap: 8px; border-radius: 9999px; border: 1px solid rgba(255, 255, 255, 0.9); background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(8px); padding: 13px 18px; font-size: 14px; font-weight: 500; cursor: pointer; color: oklch(0.18 0.04 264); box-shadow: rgba(15, 23, 42, 0.3) 0px 6px 18px -12px;">Popular<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></button></div><div style="margin-top: 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 16px; font-size: 12.5px; font-weight: 500; color: oklch(0.45 0.03 257);"><span style="display: inline-flex; align-items: center; gap: 6px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1FA64E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>120+ verified solutions</span><span style="height: 4px; width: 4px; border-radius: 9999px; background: oklch(0.8 0.01 255);"></span><span style="display: inline-flex; align-items: center; gap: 6px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#36c0ed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg>Enterprise-grade &amp; HIPAA-compliant</span><span style="height: 4px; width: 4px; border-radius: 9999px; background: oklch(0.8 0.01 255);"></span><span style="display: inline-flex; align-items: center; gap: 6px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="#1aa5db"><path d="M12 2l1.4 5.1L18.5 8.5 13.4 9.9 12 15l-1.4-5.1L5.5 8.5l5.1-1.4z"></path></svg>New tools added weekly</span></div></div></div></div></section><section style="background: oklch(0.989 0.002 247); border-top: 1px solid oklch(0.94 0.004 255);"><div style="margin: 0px auto; max-width: 1152px; padding: 64px 24px;"><div style="display: flex; align-items: center; justify-content: space-between;"><h2 style="font-size: 24px; font-weight: 700; letter-spacing: -0.03em; color: oklch(0.18 0.04 264);">Recommended for You</h2><a href="#" style="font-size: 13px; font-weight: 500; color: rgb(54, 192, 237);">View all</a></div><div class="mp-cards-grid" style="margin-top: 20px;"><div class="mp-card" style="display: flex; flex-direction: column; border-radius: 20px; border: 1px solid oklch(0.92 0.005 255); background: rgb(255, 255, 255); padding: 22px; box-shadow: rgba(15, 23, 42, 0.04) 0px 1px 2px; transition: transform 0.25s, box-shadow 0.25s;"><div style="display: flex; align-items: flex-start; justify-content: space-between;"><span style="display: grid; place-items: center; height: 40px; width: 40px; border-radius: 12px; background: rgb(255, 255, 255); border: 1px solid oklch(0.92 0.005 255);"><img src="/assets/icon-docunyx.png" alt="Docunyx" style="width: 28px; height: 28px; object-fit: contain;"></span><span style="display: inline-flex; align-items: center; gap: 4px; border-radius: 9999px; background: color-mix(in srgb, rgb(31, 166, 78) 14%, rgb(255, 255, 255)); padding: 4px 9px; font-size: 10.5px; font-weight: 600; color: rgb(26, 140, 67);"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>Recommended</span></div><h3 style="margin-top: 18px; font-size: 16px; font-weight: 600; color: oklch(0.18 0.04 264);">Docunyx</h3><p style="margin-top: 6px; font-size: 13px; line-height: 1.5; color: oklch(0.55 0.03 257); flex: 1 1 0%;">Intelligent document processing made easy.</p><div style="margin-top: 16px; display: flex; align-items: center; justify-content: space-between;"><a href="#" class="card-cta" style="border-radius: 9999px; border: 1px solid color-mix(in srgb, rgb(54, 192, 237) 45%, rgb(255, 255, 255)); padding: 6px 16px; font-size: 12.5px; font-weight: 600; color: rgb(54, 192, 237);">Enable</a><span style="border-radius: 9999px; background: color-mix(in srgb, rgb(54, 192, 237) 14%, rgb(255, 255, 255)); padding: 4px 10px; font-size: 11px; font-weight: 600; color: rgb(54, 192, 237);">AI</span></div></div><div class="mp-card" style="display: flex; flex-direction: column; border-radius: 20px; border: 1px solid oklch(0.92 0.005 255); background: rgb(255, 255, 255); padding: 22px; box-shadow: rgba(15, 23, 42, 0.04) 0px 1px 2px; transition: transform 0.25s, box-shadow 0.25s;"><div style="display: flex; align-items: flex-start; justify-content: space-between;"><span style="display: grid; place-items: center; height: 40px; width: 40px; border-radius: 12px; background: rgb(255, 255, 255); border: 1px solid oklch(0.92 0.005 255);"><img src="/assets/icon-assessflo.png" alt="AssessFlo" style="width: 28px; height: 28px; object-fit: contain;"></span><span style="display: inline-flex; align-items: center; gap: 4px; border-radius: 9999px; background: color-mix(in srgb, rgb(31, 166, 78) 14%, rgb(255, 255, 255)); padding: 4px 9px; font-size: 10.5px; font-weight: 600; color: rgb(26, 140, 67);"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>Recommended</span></div><h3 style="margin-top: 18px; font-size: 16px; font-weight: 600; color: oklch(0.18 0.04 264);">AssessFlo</h3><p style="margin-top: 6px; font-size: 13px; line-height: 1.5; color: oklch(0.55 0.03 257); flex: 1 1 0%;">Smart assessment for better client outcomes.</p><div style="margin-top: 16px; display: flex; align-items: center; justify-content: space-between;"><a href="#" class="card-cta" style="border-radius: 9999px; border: 1px solid color-mix(in srgb, rgb(54, 192, 237) 45%, rgb(255, 255, 255)); padding: 6px 16px; font-size: 12.5px; font-weight: 600; color: rgb(54, 192, 237);">Open</a><span style="border-radius: 9999px; background: color-mix(in srgb, rgb(155, 234, 166) 16%, rgb(255, 255, 255)); padding: 4px 10px; font-size: 11px; font-weight: 600; color: rgb(193, 102, 153);">Healthcare</span></div></div><div class="mp-card" style="display: flex; flex-direction: column; border-radius: 20px; border: 1px solid oklch(0.92 0.005 255); background: rgb(255, 255, 255); padding: 22px; box-shadow: rgba(15, 23, 42, 0.04) 0px 1px 2px; transition: transform 0.25s, box-shadow 0.25s;"><div style="display: flex; align-items: flex-start; justify-content: space-between;"><span style="display: grid; place-items: center; height: 40px; width: 40px; border-radius: 12px; background-image: linear-gradient(135deg, rgb(45, 182, 168), rgb(31, 166, 78)); color: rgb(255, 255, 255);"><span style="display: grid; place-items: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"></path></svg></span></span><span style="display: inline-flex; align-items: center; gap: 4px; border-radius: 9999px; background: color-mix(in srgb, rgb(31, 166, 78) 14%, rgb(255, 255, 255)); padding: 4px 9px; font-size: 10.5px; font-weight: 600; color: rgb(26, 140, 67);"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>Recommended</span></div><h3 style="margin-top: 18px; font-size: 16px; font-weight: 600; color: oklch(0.18 0.04 264);">Patient Insights AI</h3><p style="margin-top: 6px; font-size: 13px; line-height: 1.5; color: oklch(0.55 0.03 257); flex: 1 1 0%;">AI insights for better patient care.</p><div style="margin-top: 16px; display: flex; align-items: center; justify-content: space-between;"><a href="#" class="card-cta" style="border-radius: 9999px; border: 1px solid color-mix(in srgb, rgb(54, 192, 237) 45%, rgb(255, 255, 255)); padding: 6px 16px; font-size: 12.5px; font-weight: 600; color: rgb(54, 192, 237);">Explore</a><span style="border-radius: 9999px; background: color-mix(in srgb, rgb(54, 192, 237) 14%, rgb(255, 255, 255)); padding: 4px 10px; font-size: 11px; font-weight: 600; color: rgb(54, 192, 237);">AI</span></div></div><div class="mp-card" style="display: flex; flex-direction: column; border-radius: 20px; border: 1px solid oklch(0.92 0.005 255); background: rgb(255, 255, 255); padding: 22px; box-shadow: rgba(15, 23, 42, 0.04) 0px 1px 2px; transition: transform 0.25s, box-shadow 0.25s;"><div style="display: flex; align-items: flex-start; justify-content: space-between;"><span style="display: grid; place-items: center; height: 40px; width: 40px; border-radius: 12px; background-image: linear-gradient(135deg, rgb(54, 192, 237), rgb(26, 165, 219)); color: rgb(255, 255, 255);"><span style="display: grid; place-items: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg></span></span><span style="display: inline-flex; align-items: center; gap: 4px; border-radius: 9999px; background: color-mix(in srgb, rgb(31, 166, 78) 14%, rgb(255, 255, 255)); padding: 4px 9px; font-size: 10.5px; font-weight: 600; color: rgb(26, 140, 67);"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>Recommended</span></div><h3 style="margin-top: 18px; font-size: 16px; font-weight: 600; color: oklch(0.18 0.04 264);">Risk Predictor</h3><p style="margin-top: 6px; font-size: 13px; line-height: 1.5; color: oklch(0.55 0.03 257); flex: 1 1 0%;">Predict risks and improve care outcomes.</p><div style="margin-top: 16px; display: flex; align-items: center; justify-content: space-between;"><a href="#" class="card-cta" style="border-radius: 9999px; border: 1px solid color-mix(in srgb, rgb(54, 192, 237) 45%, rgb(255, 255, 255)); padding: 6px 16px; font-size: 12.5px; font-weight: 600; color: rgb(54, 192, 237);">Explore</a><span style="border-radius: 9999px; background: color-mix(in srgb, rgb(54, 192, 237) 14%, rgb(255, 255, 255)); padding: 4px 10px; font-size: 11px; font-weight: 600; color: rgb(59, 123, 208);">Analytics</span></div></div></div></div></section><section style="background: rgb(255, 255, 255); border-top: 1px solid oklch(0.94 0.004 255);"><div style="margin: 0px auto; max-width: 1152px; padding: 64px 24px;"><h2 style="font-size: 24px; font-weight: 700; letter-spacing: -0.03em; color: oklch(0.18 0.04 264);">Products by Category</h2><div style="margin-top: 20px; display: flex; flex-wrap: wrap; gap: 10px;"><button class="cat-pill is-active" style="border-radius: 9999px; border: 1px solid transparent; padding: 8px 18px; font-size: 13px; font-weight: 600; cursor: pointer; transition: 0.2s; background: linear-gradient(135deg, rgb(54, 192, 237), rgb(54, 192, 237)); color: rgb(255, 255, 255);">All</button><button class="cat-pill" style="border-radius: 9999px; border: 1px solid oklch(0.92 0.005 255); padding: 8px 18px; font-size: 13px; font-weight: 600; cursor: pointer; transition: 0.2s; background: rgb(255, 255, 255); color: oklch(0.45 0.03 257);">AI</button><button class="cat-pill" style="border-radius: 9999px; border: 1px solid oklch(0.92 0.005 255); padding: 8px 18px; font-size: 13px; font-weight: 600; cursor: pointer; transition: 0.2s; background: rgb(255, 255, 255); color: oklch(0.45 0.03 257);">Healthcare</button><button class="cat-pill" style="border-radius: 9999px; border: 1px solid oklch(0.92 0.005 255); padding: 8px 18px; font-size: 13px; font-weight: 600; cursor: pointer; transition: 0.2s; background: rgb(255, 255, 255); color: oklch(0.45 0.03 257);">Analytics</button><button class="cat-pill" style="border-radius: 9999px; border: 1px solid oklch(0.92 0.005 255); padding: 8px 18px; font-size: 13px; font-weight: 600; cursor: pointer; transition: 0.2s; background: rgb(255, 255, 255); color: oklch(0.45 0.03 257);">Voice</button><button class="cat-pill" style="border-radius: 9999px; border: 1px solid oklch(0.92 0.005 255); padding: 8px 18px; font-size: 13px; font-weight: 600; cursor: pointer; transition: 0.2s; background: rgb(255, 255, 255); color: oklch(0.45 0.03 257);">Documentation</button><button class="cat-pill" style="border-radius: 9999px; border: 1px solid oklch(0.92 0.005 255); padding: 8px 18px; font-size: 13px; font-weight: 600; cursor: pointer; transition: 0.2s; background: rgb(255, 255, 255); color: oklch(0.45 0.03 257);">Operations</button><button class="cat-pill" style="border-radius: 9999px; border: 1px solid oklch(0.92 0.005 255); padding: 8px 18px; font-size: 13px; font-weight: 600; cursor: pointer; transition: 0.2s; background: rgb(255, 255, 255); color: oklch(0.45 0.03 257);">Security</button><button class="cat-pill" style="border-radius: 9999px; border: 1px solid oklch(0.92 0.005 255); padding: 8px 18px; font-size: 13px; font-weight: 600; cursor: pointer; transition: 0.2s; background: rgb(255, 255, 255); color: oklch(0.45 0.03 257);">Productivity</button></div><div class="mp-cards-grid" style="margin-top: 28px;"><div class="mp-card" style="display: flex; flex-direction: column; border-radius: 20px; border: 1px solid oklch(0.92 0.005 255); background: oklch(0.989 0.002 247); padding: 22px; box-shadow: rgba(15, 23, 42, 0.04) 0px 1px 2px; transition: transform 0.25s, box-shadow 0.25s;"><div style="display: flex; align-items: center; gap: 12px;"><span style="display: grid; place-items: center; height: 40px; width: 40px; border-radius: 12px; flex-shrink: 0; background: rgb(255, 255, 255); border: 1px solid oklch(0.92 0.005 255); color: rgb(54, 192, 237);"><img src="/assets/icon-hireorbit.png" alt="HireOrbit" style="width: 28px; height: 28px; object-fit: contain;"></span><h3 style="font-size: 16px; font-weight: 600; letter-spacing: -0.01em; color: oklch(0.18 0.04 264);">HireOrbit</h3></div><p style="margin-top: 14px; font-size: 13px; line-height: 1.5; color: oklch(0.55 0.03 257); flex: 1 1 0%;">Streamline candidate onboarding with AI.</p><div style="margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px;"><span style="border-radius: 9999px; padding: 4px 10px; font-size: 11px; font-weight: 600; background: color-mix(in srgb, rgb(54, 192, 237) 14%, rgb(255, 255, 255)); color: rgb(54, 192, 237);">AI</span><span style="border-radius: 9999px; padding: 4px 10px; font-size: 11px; font-weight: 600; background: color-mix(in srgb, rgb(155, 234, 166) 16%, rgb(255, 255, 255)); color: rgb(193, 102, 153);">Healthcare</span></div><div style="margin-top: 18px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid oklch(0.92 0.005 255); padding-top: 14px;"><span style="font-size: 11px; color: oklch(0.6 0.02 257);">Powered by Kleza</span><a href="#" style="border-radius: 9999px; border: 1px solid color-mix(in srgb, rgb(54, 192, 237) 45%, rgb(255, 255, 255)); padding: 6px 16px; font-size: 12.5px; font-weight: 600; color: rgb(54, 192, 237); background: rgb(255, 255, 255);">Explore</a></div></div><div class="mp-card" style="display: flex; flex-direction: column; border-radius: 20px; border: 1px solid oklch(0.92 0.005 255); background: oklch(0.989 0.002 247); padding: 22px; box-shadow: rgba(15, 23, 42, 0.04) 0px 1px 2px; transition: transform 0.25s, box-shadow 0.25s;"><div style="display: flex; align-items: center; gap: 12px;"><span style="display: grid; place-items: center; height: 40px; width: 40px; border-radius: 12px; flex-shrink: 0; background: rgb(255, 255, 255); border: 1px solid oklch(0.92 0.005 255); color: rgb(27, 158, 146);"><img src="/assets/icon-nexxio.png" alt="Inqvue" style="width: 28px; height: 28px; object-fit: contain;"></span><h3 style="font-size: 16px; font-weight: 600; letter-spacing: -0.01em; color: oklch(0.18 0.04 264);">Inqvue</h3></div><p style="margin-top: 14px; font-size: 13px; line-height: 1.5; color: oklch(0.55 0.03 257); flex: 1 1 0%;">Real-time analytics and performance insights.</p><div style="margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px;"><span style="border-radius: 9999px; padding: 4px 10px; font-size: 11px; font-weight: 600; background: color-mix(in srgb, rgb(54, 192, 237) 14%, rgb(255, 255, 255)); color: rgb(59, 123, 208);">Analytics</span></div><div style="margin-top: 18px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid oklch(0.92 0.005 255); padding-top: 14px;"><span style="font-size: 11px; color: oklch(0.6 0.02 257);">Powered by Kleza</span><a href="#" style="border-radius: 9999px; border: 1px solid color-mix(in srgb, rgb(27, 158, 146) 45%, rgb(255, 255, 255)); padding: 6px 16px; font-size: 12.5px; font-weight: 600; color: rgb(27, 158, 146); background: rgb(255, 255, 255);">Explore</a></div></div><div class="mp-card" style="display: flex; flex-direction: column; border-radius: 20px; border: 1px solid oklch(0.92 0.005 255); background: oklch(0.989 0.002 247); padding: 22px; box-shadow: rgba(15, 23, 42, 0.04) 0px 1px 2px; transition: transform 0.25s, box-shadow 0.25s;"><div style="display: flex; align-items: center; gap: 12px;"><span style="display: grid; place-items: center; height: 40px; width: 40px; border-radius: 12px; flex-shrink: 0; background: rgb(255, 255, 255); border: 1px solid oklch(0.92 0.005 255); color: rgb(54, 192, 237);"><img src="/assets/icon-voica.png" alt="Voice AI" style="width: 28px; height: 28px; object-fit: contain;"></span><h3 style="font-size: 16px; font-weight: 600; letter-spacing: -0.01em; color: oklch(0.18 0.04 264);">Voice AI</h3></div><p style="margin-top: 14px; font-size: 13px; line-height: 1.5; color: oklch(0.55 0.03 257); flex: 1 1 0%;">Voice AI for documentation and support.</p><div style="margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px;"><span style="border-radius: 9999px; padding: 4px 10px; font-size: 11px; font-weight: 600; background: color-mix(in srgb, rgb(54, 192, 237) 14%, rgb(255, 255, 255)); color: rgb(54, 192, 237);">AI</span><span style="border-radius: 9999px; padding: 4px 10px; font-size: 11px; font-weight: 600; background: color-mix(in srgb, rgb(45, 182, 168) 16%, rgb(255, 255, 255)); color: rgb(27, 158, 146);">Voice</span></div><div style="margin-top: 18px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid oklch(0.92 0.005 255); padding-top: 14px;"><span style="font-size: 11px; color: oklch(0.6 0.02 257);">Powered by Kleza</span><a href="#" style="border-radius: 9999px; border: 1px solid color-mix(in srgb, rgb(54, 192, 237) 45%, rgb(255, 255, 255)); padding: 6px 16px; font-size: 12.5px; font-weight: 600; color: rgb(54, 192, 237); background: rgb(255, 255, 255);">Enable</a></div></div><div class="mp-card" style="display: flex; flex-direction: column; border-radius: 20px; border: 1px solid oklch(0.92 0.005 255); background: oklch(0.989 0.002 247); padding: 22px; box-shadow: rgba(15, 23, 42, 0.04) 0px 1px 2px; transition: transform 0.25s, box-shadow 0.25s;"><div style="display: flex; align-items: center; gap: 12px;"><span style="display: grid; place-items: center; height: 40px; width: 40px; border-radius: 12px; flex-shrink: 0; background: color-mix(in srgb, rgb(26, 140, 67) 14%, rgb(255, 255, 255)); border: 1px solid transparent; color: rgb(26, 140, 67);"><span style="display: grid; place-items: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg></span></span><h3 style="font-size: 16px; font-weight: 600; letter-spacing: -0.01em; color: oklch(0.18 0.04 264);">Note Summarizer</h3></div><p style="margin-top: 14px; font-size: 13px; line-height: 1.5; color: oklch(0.55 0.03 257); flex: 1 1 0%;">Summarize clinical notes instantly.</p><div style="margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px;"><span style="border-radius: 9999px; padding: 4px 10px; font-size: 11px; font-weight: 600; background: color-mix(in srgb, rgb(31, 166, 78) 14%, rgb(255, 255, 255)); color: rgb(26, 140, 67);">Documentation</span></div><div style="margin-top: 18px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid oklch(0.92 0.005 255); padding-top: 14px;"><span style="font-size: 11px; color: oklch(0.6 0.02 257);">Powered by Kleza</span><a href="#" style="border-radius: 9999px; border: 1px solid color-mix(in srgb, rgb(26, 140, 67) 45%, rgb(255, 255, 255)); padding: 6px 16px; font-size: 12.5px; font-weight: 600; color: rgb(26, 140, 67); background: rgb(255, 255, 255);">Learn more</a></div></div><div class="mp-card" style="display: flex; flex-direction: column; border-radius: 20px; border: 1px solid oklch(0.92 0.005 255); background: oklch(0.989 0.002 247); padding: 22px; box-shadow: rgba(15, 23, 42, 0.04) 0px 1px 2px; transition: transform 0.25s, box-shadow 0.25s;"><div style="display: flex; align-items: center; gap: 12px;"><span style="display: grid; place-items: center; height: 40px; width: 40px; border-radius: 12px; flex-shrink: 0; background: color-mix(in srgb, rgb(54, 192, 237) 14%, rgb(255, 255, 255)); border: 1px solid transparent; color: rgb(54, 192, 237);"><span style="display: grid; place-items: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="4" x="8" y="2" rx="1"></rect><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><path d="m9 14 2 2 4-4"></path></svg></span></span><h3 style="font-size: 16px; font-weight: 600; letter-spacing: -0.01em; color: oklch(0.18 0.04 264);">Care Plan Assistant</h3></div><p style="margin-top: 14px; font-size: 13px; line-height: 1.5; color: oklch(0.55 0.03 257); flex: 1 1 0%;">AI-powered care plans in seconds.</p><div style="margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px;"><span style="border-radius: 9999px; padding: 4px 10px; font-size: 11px; font-weight: 600; background: color-mix(in srgb, rgb(54, 192, 237) 14%, rgb(255, 255, 255)); color: rgb(54, 192, 237);">AI</span><span style="border-radius: 9999px; padding: 4px 10px; font-size: 11px; font-weight: 600; background: color-mix(in srgb, rgb(54, 192, 237) 16%, rgb(255, 255, 255)); color: rgb(26, 165, 219);">Operations</span></div><div style="margin-top: 18px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid oklch(0.92 0.005 255); padding-top: 14px;"><span style="font-size: 11px; color: oklch(0.6 0.02 257);">Powered by Kleza</span><a href="#" style="border-radius: 9999px; border: 1px solid color-mix(in srgb, rgb(54, 192, 237) 45%, rgb(255, 255, 255)); padding: 6px 16px; font-size: 12.5px; font-weight: 600; color: rgb(54, 192, 237); background: rgb(255, 255, 255);">Learn more</a></div></div><div class="mp-card" style="display: flex; flex-direction: column; border-radius: 20px; border: 1px solid oklch(0.92 0.005 255); background: oklch(0.989 0.002 247); padding: 22px; box-shadow: rgba(15, 23, 42, 0.04) 0px 1px 2px; transition: transform 0.25s, box-shadow 0.25s;"><div style="display: flex; align-items: center; gap: 12px;"><span style="display: grid; place-items: center; height: 40px; width: 40px; border-radius: 12px; flex-shrink: 0; background: color-mix(in srgb, rgb(54, 192, 237) 14%, rgb(255, 255, 255)); border: 1px solid transparent; color: rgb(54, 192, 237);"><span style="display: grid; place-items: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg></span></span><h3 style="font-size: 16px; font-weight: 600; letter-spacing: -0.01em; color: oklch(0.18 0.04 264);">Compliance AI</h3></div><p style="margin-top: 14px; font-size: 13px; line-height: 1.5; color: oklch(0.55 0.03 257); flex: 1 1 0%;">Ensure compliance with AI monitoring.</p><div style="margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px;"><span style="border-radius: 9999px; padding: 4px 10px; font-size: 11px; font-weight: 600; background: color-mix(in srgb, rgb(54, 192, 237) 14%, rgb(255, 255, 255)); color: rgb(54, 192, 237);">AI</span><span style="border-radius: 9999px; padding: 4px 10px; font-size: 11px; font-weight: 600; background: color-mix(in srgb, rgb(155, 234, 166) 16%, rgb(255, 255, 255)); color: rgb(26, 165, 219);">Security</span></div><div style="margin-top: 18px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid oklch(0.92 0.005 255); padding-top: 14px;"><span style="font-size: 11px; color: oklch(0.6 0.02 257);">Powered by Kleza</span><a href="#" style="border-radius: 9999px; border: 1px solid color-mix(in srgb, rgb(54, 192, 237) 45%, rgb(255, 255, 255)); padding: 6px 16px; font-size: 12.5px; font-weight: 600; color: rgb(54, 192, 237); background: rgb(255, 255, 255);">Learn more</a></div></div><div class="mp-card" style="display: flex; flex-direction: column; border-radius: 20px; border: 1px solid oklch(0.92 0.005 255); background: oklch(0.989 0.002 247); padding: 22px; box-shadow: rgba(15, 23, 42, 0.04) 0px 1px 2px; transition: transform 0.25s, box-shadow 0.25s;"><div style="display: flex; align-items: center; gap: 12px;"><span style="display: grid; place-items: center; height: 40px; width: 40px; border-radius: 12px; flex-shrink: 0; background: color-mix(in srgb, rgb(27, 158, 146) 14%, rgb(255, 255, 255)); border: 1px solid transparent; color: rgb(27, 158, 146);"><span style="display: grid; place-items: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" x2="12" y1="19" y2="22"></line></svg></span></span><h3 style="font-size: 16px; font-weight: 600; letter-spacing: -0.01em; color: oklch(0.18 0.04 264);">Voice Scribe</h3></div><p style="margin-top: 14px; font-size: 13px; line-height: 1.5; color: oklch(0.55 0.03 257); flex: 1 1 0%;">Transcribe for hands-free documentation.</p><div style="margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px;"><span style="border-radius: 9999px; padding: 4px 10px; font-size: 11px; font-weight: 600; background: color-mix(in srgb, rgb(45, 182, 168) 16%, rgb(255, 255, 255)); color: rgb(27, 158, 146);">Voice</span><span style="border-radius: 9999px; padding: 4px 10px; font-size: 11px; font-weight: 600; background: color-mix(in srgb, rgb(54, 192, 237) 14%, rgb(255, 255, 255)); color: rgb(54, 192, 237);">AI</span></div><div style="margin-top: 18px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid oklch(0.92 0.005 255); padding-top: 14px;"><span style="font-size: 11px; color: oklch(0.6 0.02 257);">Powered by Kleza</span><a href="#" style="border-radius: 9999px; border: 1px solid color-mix(in srgb, rgb(27, 158, 146) 45%, rgb(255, 255, 255)); padding: 6px 16px; font-size: 12.5px; font-weight: 600; color: rgb(27, 158, 146); background: rgb(255, 255, 255);">Learn more</a></div></div><div class="mp-card" style="display: flex; flex-direction: column; border-radius: 20px; border: 1px solid oklch(0.92 0.005 255); background: oklch(0.989 0.002 247); padding: 22px; box-shadow: rgba(15, 23, 42, 0.04) 0px 1px 2px; transition: transform 0.25s, box-shadow 0.25s;"><div style="display: flex; align-items: center; gap: 12px;"><span style="display: grid; place-items: center; height: 40px; width: 40px; border-radius: 12px; flex-shrink: 0; background: rgb(255, 255, 255); border: 1px solid oklch(0.92 0.005 255); color: rgb(59, 123, 208);"><img src="/assets/icon-excelliq.png" alt="Excelliq" style="width: 28px; height: 28px; object-fit: contain;"></span><h3 style="font-size: 16px; font-weight: 600; letter-spacing: -0.01em; color: oklch(0.18 0.04 264);">Excelliq</h3></div><p style="margin-top: 14px; font-size: 13px; line-height: 1.5; color: oklch(0.55 0.03 257); flex: 1 1 0%;">Transform data into actionable insights.</p><div style="margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px;"><span style="border-radius: 9999px; padding: 4px 10px; font-size: 11px; font-weight: 600; background: color-mix(in srgb, rgb(54, 192, 237) 14%, rgb(255, 255, 255)); color: rgb(59, 123, 208);">Analytics</span><span style="border-radius: 9999px; padding: 4px 10px; font-size: 11px; font-weight: 600; background: color-mix(in srgb, rgb(54, 192, 237) 14%, rgb(255, 255, 255)); color: rgb(54, 192, 237);">AI</span></div><div style="margin-top: 18px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid oklch(0.92 0.005 255); padding-top: 14px;"><span style="font-size: 11px; color: oklch(0.6 0.02 257);">Powered by Kleza</span><a href="#" style="border-radius: 9999px; border: 1px solid color-mix(in srgb, rgb(59, 123, 208) 45%, rgb(255, 255, 255)); padding: 6px 16px; font-size: 12.5px; font-weight: 600; color: rgb(59, 123, 208); background: rgb(255, 255, 255);">Learn more</a></div></div><div class="mp-card" style="display: flex; flex-direction: column; border-radius: 20px; border: 1px solid oklch(0.92 0.005 255); background: oklch(0.989 0.002 247); padding: 22px; box-shadow: rgba(15, 23, 42, 0.04) 0px 1px 2px; transition: transform 0.25s, box-shadow 0.25s;"><div style="display: flex; align-items: center; gap: 12px;"><span style="display: grid; place-items: center; height: 40px; width: 40px; border-radius: 12px; flex-shrink: 0; background: color-mix(in srgb, rgb(26, 165, 219) 14%, rgb(255, 255, 255)); border: 1px solid transparent; color: rgb(26, 165, 219);"><span style="display: grid; place-items: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></span></span><h3 style="font-size: 16px; font-weight: 600; letter-spacing: -0.01em; color: oklch(0.18 0.04 264);">Secure Share</h3></div><p style="margin-top: 14px; font-size: 13px; line-height: 1.5; color: oklch(0.55 0.03 257); flex: 1 1 0%;">Share data securely across care teams.</p><div style="margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px;"><span style="border-radius: 9999px; padding: 4px 10px; font-size: 11px; font-weight: 600; background: color-mix(in srgb, rgb(155, 234, 166) 16%, rgb(255, 255, 255)); color: rgb(26, 165, 219);">Security</span><span style="border-radius: 9999px; padding: 4px 10px; font-size: 11px; font-weight: 600; background: color-mix(in srgb, rgb(54, 192, 237) 16%, rgb(255, 255, 255)); color: rgb(26, 165, 219);">Operations</span></div><div style="margin-top: 18px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid oklch(0.92 0.005 255); padding-top: 14px;"><span style="font-size: 11px; color: oklch(0.6 0.02 257);">Powered by Kleza</span><a href="#" style="border-radius: 9999px; border: 1px solid color-mix(in srgb, rgb(26, 165, 219) 45%, rgb(255, 255, 255)); padding: 6px 16px; font-size: 12.5px; font-weight: 600; color: rgb(26, 165, 219); background: rgb(255, 255, 255);">Learn more</a></div></div><div class="mp-card" style="display: flex; flex-direction: column; border-radius: 20px; border: 1px solid oklch(0.92 0.005 255); background: oklch(0.989 0.002 247); padding: 22px; box-shadow: rgba(15, 23, 42, 0.04) 0px 1px 2px; transition: transform 0.25s, box-shadow 0.25s;"><div style="display: flex; align-items: center; gap: 12px;"><span style="display: grid; place-items: center; height: 40px; width: 40px; border-radius: 12px; flex-shrink: 0; background: color-mix(in srgb, rgb(194, 133, 63) 14%, rgb(255, 255, 255)); border: 1px solid transparent; color: rgb(194, 133, 63);"><span style="display: grid; place-items: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"></path><rect width="16" height="12" x="4" y="8" rx="2"></rect><path d="M2 14h2"></path><path d="M20 14h2"></path><path d="M15 13v2"></path><path d="M9 13v2"></path></svg></span></span><h3 style="font-size: 16px; font-weight: 600; letter-spacing: -0.01em; color: oklch(0.18 0.04 264);">CareBot</h3></div><p style="margin-top: 14px; font-size: 13px; line-height: 1.5; color: oklch(0.55 0.03 257); flex: 1 1 0%;">AI assistant for care team productivity.</p><div style="margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px;"><span style="border-radius: 9999px; padding: 4px 10px; font-size: 11px; font-weight: 600; background: color-mix(in srgb, rgb(54, 192, 237) 14%, rgb(255, 255, 255)); color: rgb(54, 192, 237);">AI</span><span style="border-radius: 9999px; padding: 4px 10px; font-size: 11px; font-weight: 600; background: color-mix(in srgb, rgb(54, 192, 237) 16%, rgb(255, 255, 255)); color: rgb(26, 165, 219);">Operations</span></div><div style="margin-top: 18px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid oklch(0.92 0.005 255); padding-top: 14px;"><span style="font-size: 11px; color: oklch(0.6 0.02 257);">Powered by Kleza</span><a href="#" style="border-radius: 9999px; border: 1px solid color-mix(in srgb, rgb(194, 133, 63) 45%, rgb(255, 255, 255)); padding: 6px 16px; font-size: 12.5px; font-weight: 600; color: rgb(194, 133, 63); background: rgb(255, 255, 255);">Explore</a></div></div><div class="mp-card" style="display: flex; flex-direction: column; border-radius: 20px; border: 1px solid oklch(0.92 0.005 255); background: oklch(0.989 0.002 247); padding: 22px; box-shadow: rgba(15, 23, 42, 0.04) 0px 1px 2px; transition: transform 0.25s, box-shadow 0.25s;"><div style="display: flex; align-items: center; gap: 12px;"><span style="display: grid; place-items: center; height: 40px; width: 40px; border-radius: 12px; flex-shrink: 0; background: color-mix(in srgb, rgb(193, 102, 153) 14%, rgb(255, 255, 255)); border: 1px solid transparent; color: rgb(193, 102, 153);"><span style="display: grid; place-items: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg></span></span><h3 style="font-size: 16px; font-weight: 600; letter-spacing: -0.01em; color: oklch(0.18 0.04 264);">Clinical Decision Support</h3></div><p style="margin-top: 14px; font-size: 13px; line-height: 1.5; color: oklch(0.55 0.03 257); flex: 1 1 0%;">Evidence-based clinical recommendations.</p><div style="margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px;"><span style="border-radius: 9999px; padding: 4px 10px; font-size: 11px; font-weight: 600; background: color-mix(in srgb, rgb(155, 234, 166) 16%, rgb(255, 255, 255)); color: rgb(193, 102, 153);">Healthcare</span><span style="border-radius: 9999px; padding: 4px 10px; font-size: 11px; font-weight: 600; background: color-mix(in srgb, rgb(54, 192, 237) 14%, rgb(255, 255, 255)); color: rgb(54, 192, 237);">AI</span></div><div style="margin-top: 18px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid oklch(0.92 0.005 255); padding-top: 14px;"><span style="font-size: 11px; color: oklch(0.6 0.02 257);">Powered by Kleza</span><a href="#" style="border-radius: 9999px; border: 1px solid color-mix(in srgb, rgb(193, 102, 153) 45%, rgb(255, 255, 255)); padding: 6px 16px; font-size: 12.5px; font-weight: 600; color: rgb(193, 102, 153); background: rgb(255, 255, 255);">Explore</a></div></div><a href="#" class="mp-discover" style="display: flex; flex-direction: column; align-items: flex-start; border-radius: 20px; border: 1.5px dashed oklch(0.86 0.01 255); background: oklch(0.989 0.002 247); padding: 22px; transition: border-color 0.2s, background 0.2s;"><span style="display: grid; place-items: center; height: 40px; width: 40px; border-radius: 12px; border: 1.5px dashed oklch(0.82 0.01 255); color: oklch(0.55 0.03 257);"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg></span><h3 style="margin-top: 14px; font-size: 16px; font-weight: 600; color: oklch(0.18 0.04 264);">Discover More</h3><p style="margin-top: 8px; font-size: 13px; line-height: 1.5; color: oklch(0.55 0.03 257); flex: 1 1 0%;">Explore more AI solutions built for your teams.</p><span style="margin-top: 18px; display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; color: rgb(54, 192, 237);">Explore <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span></a></div></div></section><section style="background: oklch(0.989 0.002 247); border-top: 1px solid oklch(0.94 0.004 255);"><div style="margin: 0px auto; max-width: 1152px; padding: 64px 24px;"><div class="mp-features-grid" style="border-radius: 24px; background-image: linear-gradient(120deg, rgba(225, 232, 254, 0.5), rgba(234, 223, 251, 0.5), rgba(251, 227, 239, 0.5), rgba(252, 235, 217, 0.5)); border: 1px solid oklch(0.92 0.005 255); padding: 36px 40px;"><div style="display: flex; flex-direction: column; gap: 12px;"><span style="display: grid; place-items: center; height: 36px; width: 36px; border-radius: 11px; background: rgb(255, 255, 255); color: rgb(54, 192, 237); box-shadow: rgba(15, 23, 42, 0.2) 0px 4px 12px -6px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg></span><h4 style="font-size: 15px; font-weight: 600; color: oklch(0.18 0.04 264);">Trusted &amp; Secure</h4><p style="font-size: 12.5px; line-height: 1.5; color: oklch(0.55 0.03 257);">All solutions are enterprise-grade and HIPAA-compliant.</p></div><div style="display: flex; flex-direction: column; gap: 12px;"><span style="display: grid; place-items: center; height: 36px; width: 36px; border-radius: 11px; background: rgb(255, 255, 255); color: rgb(155, 234, 166); box-shadow: rgba(15, 23, 42, 0.2) 0px 4px 12px -6px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></span><h4 style="font-size: 15px; font-weight: 600; color: oklch(0.18 0.04 264);">Built for Healthcare</h4><p style="font-size: 12.5px; line-height: 1.5; color: oklch(0.55 0.03 257);">Curated solutions by healthcare experts for real impact.</p></div><div style="display: flex; flex-direction: column; gap: 12px;"><span style="display: grid; place-items: center; height: 36px; width: 36px; border-radius: 11px; background: rgb(255, 255, 255); color: rgb(54, 192, 237); box-shadow: rgba(15, 23, 42, 0.2) 0px 4px 12px -6px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"></path><path d="m6 8-4 4 4 4"></path><path d="m14.5 4-5 16"></path></svg></span><h4 style="font-size: 15px; font-weight: 600; color: oklch(0.18 0.04 264);">Easy to Integrate</h4><p style="font-size: 12.5px; line-height: 1.5; color: oklch(0.55 0.03 257);">Seamlessly integrate with your existing workflows.</p></div><div style="display: flex; flex-direction: column; gap: 12px;"><span style="display: grid; place-items: center; height: 36px; width: 36px; border-radius: 11px; background: rgb(255, 255, 255); color: rgb(155, 234, 166); box-shadow: rgba(15, 23, 42, 0.2) 0px 4px 12px -6px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .962 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.962 0z"></path></svg></span><h4 style="font-size: 15px; font-weight: 600; color: oklch(0.18 0.04 264);">Always Evolving</h4><p style="font-size: 12.5px; line-height: 1.5; color: oklch(0.55 0.03 257);">New solutions added regularly for your needs.</p></div></div></div></section><section style="background: rgb(255, 255, 255);"><div style="margin: 0px auto; max-width: 1152px; padding: 24px 24px 80px;"><div style="border-radius: 28px; border: 1px solid #e6e8ec; background: linear-gradient(120deg, rgba(155,234,166,0.20), rgba(54,192,237,0.16)); padding: 56px 40px; text-align: center;"><span style="display:inline-block; font-family: var(--mono, ui-monospace, monospace); font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #1aa5db; font-weight: 700;">Get started</span><h2 style="margin: 14px 0 0; font-size: 40px; font-weight: 700; line-height: 1.06; letter-spacing: -0.03em; color: rgb(28, 43, 74);">Need help finding the right solution?</h2><p style="margin: 16px auto 0; max-width: 580px; font-size: 16px; line-height: 1.55; color: #5b6472;">Our team will help you match the right AI solutions to your organization &mdash; from first question to full rollout.</p><div style="margin-top: 30px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;"><a class="btn btn-accent" href="/contact">Contact our team<svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a><a class="btn btn-ghost" href="/contact">Schedule a demo</a></div></div></div></section></div></div>a:T147f,<footer class="footer band-light" data-screen-label="Footer" style="padding: 56px 0px 32px">
+</header>9:T147f,<footer class="footer band-light" data-screen-label="Footer" style="padding: 56px 0px 32px">
   <div class="container">
                 <div class="footer-grid">
       <div class="footer-brand">
@@ -311,4 +274,1485 @@ b:I[1797,["240","static/chunks/app/marketplace/page-ff03a0856fbeb819.js"],"defau
       <div class="right">Healthcare-grade AI <span style="opacity:.5;margin:0 .5em">&middot;</span> ISO Aligned</div>
     </div>
   </div>
-</footer>2:[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$7"}}],[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$8"}}],["$","div",null,{"className":"mp-scope","dangerouslySetInnerHTML":{"__html":"$9"}}]],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$a"}}],["$","$Lb",null,{"scripts":[{"src":"/assets/nav.js"}],"bodyAttrs":{}}]]
+</footer>2:[["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$7"}}],"$L8",["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$9"}}],["$","$La",null,{"scripts":[{"src":"/assets/nav.js"}],"bodyAttrs":{}}]]
+b:T56ab,
+/* ==========================================================================
+   KLEZA Marketplace — scoped stylesheet. THE BINDING CLASS CONTRACT.
+   Every class the markup may use is defined here. Nothing else exists.
+   Injected by app/marketplace/page.tsx; all rules are scoped under .mv2
+   so the shared header/footer chrome is never touched.
+   ========================================================================== */
+
+.mv2, .mv2 * { box-sizing: border-box; }
+
+.mv2 {
+  /* ink */
+  --ink: #1c2b4a;
+  --ink-2: #33405e;
+  --muted: #68758f;
+  --muted-2: #8792a8;
+  /* every descriptive / body paragraph on the page */
+  --desc: #444;
+  --line: #e8e9f1;
+  --line-2: #f0f1f7;
+  /* brand */
+  --purple: #7c5cdb;
+  --purple-d: #6842c8;
+  --purple-l: #f2eeff;
+  --blue: #2f6fe4;
+  --blue-d: #1f57c4;
+  --blue-l: #e9f1ff;
+  --green: #17a673;
+  --green-l: #e6f8ef;
+  --pink: #e8467c;
+  --pink-l: #fdebf2;
+  --orange: #ef8b22;
+  --orange-l: #fff4e7;
+  --indigo: #4f46e5;
+  --indigo-l: #edeeff;
+  --teal: #0e9a9a;
+  --teal-l: #e4f6f6;
+  /* shape */
+  --r: 14px;
+  --r-lg: 22px;
+  --r-xl: 28px;
+  --card-sh: 0 1px 2px rgba(15, 23, 42, .04);
+  --card-sh-h: 0 1px 2px rgba(15, 23, 42, .04), 0 18px 34px -22px rgba(28, 43, 74, .3);
+
+  background: #fff;
+  color: var(--ink);
+  font-family: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -.011em;
+  padding-bottom: 1px;
+}
+
+.mv2 :where(h1, h2, h3, h4) {
+  font-family: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  margin: 0;
+  letter-spacing: -.03em;
+  color: var(--ink);
+}
+.mv2 :where(p) { margin: 0; }
+.mv2 :where(a) { color: inherit; text-decoration: none; }
+.mv2 :where(button) { font: inherit; color: inherit; cursor: pointer; }
+.mv2 ::selection { background: #ddd2ff; }
+
+/* ---------- layout primitives ---------- */
+.mv2-wrap { max-width: 1400px; margin: 0 auto; padding: 0 32px; }
+.mv2-sec { padding: 38px 0 6px; }
+.mv2-sec--last { padding-bottom: 72px; }
+
+.mv2-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 18px;
+}
+.mv2-h2 { font-size: 21px; font-weight: 700; line-height: 1.2; }
+.mv2-arrow { display: inline-block; transition: transform .18s ease; }
+.mv2-prod:hover .mv2-arrow { transform: translateX(3px); }
+
+/* ---------- icon tiles + tints ---------- */
+.mv2-prod-ico, .mv2-eco-ico, .mv2-why-ico {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  border-radius: 10px;
+}
+.mv2-prod-ico svg,
+.mv2-eco-ico svg, .mv2-why-ico svg { display: block; }
+
+.t-purple { background: var(--purple-l); color: var(--purple); }
+.t-blue   { background: var(--blue-l);   color: var(--blue); }
+.t-green  { background: var(--green-l);  color: var(--green); }
+.t-pink   { background: var(--pink-l);   color: var(--pink); }
+.t-orange { background: var(--orange-l); color: var(--orange); }
+.t-indigo { background: var(--indigo-l); color: var(--indigo); }
+.t-teal   { background: var(--teal-l);   color: var(--teal); }
+
+/* ==========================================================================
+   1 — HERO  (split banner: display copy + search on the left, a rotating
+   product deck on the right, over two slowly drifting colour blobs)
+
+   Replicates the KLEZA ecosystem hub hero. Its palette is deliberately its
+   own — the teal/navy token set from that design — and is declared as local
+   custom properties on `.mv2-hero`, so the purple marketplace tokens the
+   rest of the page runs on are never touched.
+   ========================================================================== */
+.mv2-hero {
+  /* ink */
+  --h-primary: #002864;
+  --h-navy-soft: #005189;
+  --h-muted: #486781;
+  /* surface */
+  --h-bg: #fbfefe;
+  --h-card: #fff;
+  --h-border: #cbe3e9;
+  /* brand */
+  --h-accent: #00afa8;
+  --h-mint: #bdf7dc;
+  --h-sky: #9ce9fc;
+  /* elevation */
+  --h-sh-card: 0 14px 40px rgba(0, 40, 100, .08);
+  --h-sh-btn: 0 8px 20px rgba(0, 40, 100, .18);
+  /* deck geometry — the horizontal step between two neighbouring cards */
+  --h-step: 130px;
+
+  position: relative;
+  overflow: hidden;
+  background: #edfbfa;
+  border-bottom: 1px solid #ddf2f3;
+}
+
+/* Soft out-of-frame blobs. Decorative only, so they sit behind everything
+   and never take pointer events. */
+.mv2-hero-blob {
+  position: absolute;
+  pointer-events: none;
+  animation: mv2Drift 10s ease-in-out infinite;
+}
+.mv2-hero-blob--mint {
+  left: -96px;
+  bottom: -160px;
+  width: 320px;
+  height: 320px;
+  border-radius: 45%;
+  background: rgba(189, 247, 220, .45);
+  filter: blur(40px);
+}
+.mv2-hero-blob--sky {
+  right: 8%;
+  top: -180px;
+  width: 470px;
+  height: 470px;
+  border-radius: 9999px;
+  border: 1px solid rgba(0, 175, 168, .15);
+  background: rgba(156, 233, 252, .35);
+  filter: blur(24px);
+}
+@keyframes mv2Drift {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  50% { transform: translate(12px, -10px) rotate(3deg); }
+}
+
+.mv2-hero > .mv2-wrap {
+  position: relative;
+  display: grid;
+  align-items: center;
+  gap: 40px;
+  grid-template-columns: .88fr 1.12fr;
+  min-height: 386px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+/* ---------- left column ---------- */
+/* Sits above the optical centre of the band rather than dead centre, so the
+   copy leads the deck instead of floating level with it. The stacked layout
+   below 1080px re-centres it with its own `margin: 0 auto`. */
+.mv2-hero-inner {
+  position: relative;
+  z-index: 1;
+  align-self: start;
+  max-width: 576px;
+  margin: 28px 0 0;
+  text-align: left;
+}
+
+.mv2-hero-kicker {
+  margin-bottom: 12px;
+  font-family: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .18em;
+  color: var(--h-primary);
+}
+/* Two lines, always: the <br /> sets the break and each line refuses to wrap,
+   so the size is what has to give on a narrow viewport - hence the vw term. */
+/* Same face, weight and tracking as the home-page h1, so the two headlines
+   read as one voice. Only the leading is tighter - this is a compact two-line
+   display beside the deck, not a full-width statement. */
+.mv2-hero-display {
+  margin-top: 0;
+  font-family: "Playfair Display", ui-serif, Georgia, serif;
+  font-size: clamp(26px, 3.45vw, 48px);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -.02em;
+  white-space: nowrap;
+  color: var(--h-primary);
+}
+.mv2-hero-em { color: var(--h-accent); }
+
+.mv2-hero-lede {
+  margin: 20px 0 0;
+  max-width: 512px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--h-navy-soft);
+}
+.mv2-hero-lede strong { font-weight: 700; color: var(--h-primary); }
+
+/* ---------- right column: the rotating product deck ---------- */
+.mv2-hero-stage {
+  position: relative;
+  min-height: 316px;
+  user-select: none;
+}
+.mv2-hero-halo {
+  position: absolute;
+  left: 17%;
+  top: 8%;
+  width: 288px;
+  height: 288px;
+  border-radius: 9999px;
+  border: 1px solid rgba(0, 175, 168, .2);
+  background: rgba(189, 247, 220, .4);
+  filter: blur(8px);
+  pointer-events: none;
+}
+.mv2-hero-deck {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 4px;
+  bottom: 44px;
+}
+.mv2-hero-card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: block;
+  width: 225px;
+  padding: 20px;
+  border: 1px solid var(--h-border);
+  border-radius: 24px;
+  background: var(--h-card);
+  text-align: center;
+  box-shadow: var(--h-sh-card);
+  transform: translate(-50%, -50%);
+  transition: transform .7s cubic-bezier(0, 0, .2, 1), opacity .7s cubic-bezier(0, 0, .2, 1), filter .7s cubic-bezier(0, 0, .2, 1);
+}
+/* Deck slots, by signed distance from the active card. `--h-step` is the
+   shoulder offset; the responsive block tightens it on narrow viewports. */
+.mv2-hero-card[data-slot="0"]  { transform: translate(-50%, -50%) scale(1);   opacity: 1;   z-index: 10; filter: none; }
+.mv2-hero-card[data-slot="1"]  { transform: translate(calc(-50% + var(--h-step)), -50%) scale(.84); opacity: .72; z-index: 9; filter: saturate(.75); }
+.mv2-hero-card[data-slot="2"]  { transform: translate(calc(-50% + var(--h-step) * 2), -50%) scale(.7);  opacity: .35; z-index: 8; filter: saturate(.75); }
+.mv2-hero-card[data-slot="-1"] { transform: translate(calc(-50% - var(--h-step)), -50%) scale(.84); opacity: .72; z-index: 9; filter: saturate(.75); }
+.mv2-hero-card[data-slot="-2"] { transform: translate(calc(-50% - var(--h-step) * 2), -50%) scale(.7);  opacity: .35; z-index: 8; filter: saturate(.75); }
+/* Anything further out parks off-stage so it can rotate back in. */
+.mv2-hero-card[data-slot="hidden"] { transform: translate(-50%, -50%) scale(.6); opacity: 0; z-index: 7; pointer-events: none; }
+
+.mv2-hero-card-logo { display: flex; align-items: center; justify-content: center; height: 80px; }
+.mv2-hero-card-logo img { max-width: 100%; height: 48px; object-fit: contain; }
+.mv2-hero-card-name { margin-top: 12px; font-size: 18px; font-weight: 700; letter-spacing: -.01em; color: var(--h-primary); }
+.mv2-hero-card-desc {
+  margin: 8px 0 0;
+  min-height: 40px;
+  font-size: 12px;
+  line-height: 1.66;
+  color: var(--h-muted);
+}
+.mv2-hero-card-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 16px;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  background: var(--h-accent);
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+}
+.mv2-hero-card-cta svg { display: block; width: 14px; height: 14px; }
+/* Only the front card advertises itself. */
+.mv2-hero-card:not([data-slot="0"]) .mv2-hero-card-cta { visibility: hidden; }
+
+/* ---------- deck controls ---------- */
+/* The deck turns on its own; the dots are a position readout you can also
+   click, so they are all that sits under it. */
+.mv2-hero-ctrls {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mv2-hero-dots { display: flex; gap: 8px; }
+.mv2-hero-dot {
+  width: 8px;
+  height: 8px;
+  border: 0;
+  border-radius: 9999px;
+  background: rgba(0, 40, 100, .2);
+  transition: width .3s ease, background .3s ease;
+}
+.mv2-hero-dot.is-on { width: 24px; background: var(--h-accent); }
+
+/* ==========================================================================
+   4 — EXPLORE ALL PRODUCTS
+   ========================================================================== */
+.mv2-tools { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 10px; }
+.mv2-tool-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 0 1 210px;
+  padding: 0 12px;
+  height: 34px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: #fff;
+  transition: border-color .18s, box-shadow .18s;
+}
+.mv2-tool-search:focus-within { border-color: var(--purple); box-shadow: 0 0 0 3px rgba(124, 92, 219, .1); }
+.mv2-tool-search svg { flex: none; display: block; width: 14px; height: 14px; color: var(--muted-2); }
+.mv2-tool-search input {
+  flex: 1 1 auto;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font: inherit;
+  font-size: 12.5px;
+  color: var(--ink);
+}
+.mv2-tool-search input::placeholder { color: var(--muted-2); }
+.mv2-tool-search input::-webkit-search-cancel-button { -webkit-appearance: none; }
+.mv2-select {
+  flex: 0 0 auto;
+  height: 34px;
+  padding: 0 30px 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2368758f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  -webkit-appearance: none;
+  appearance: none;
+  font: inherit;
+  font-size: 12.5px;
+  color: var(--ink-2);
+  transition: border-color .18s, box-shadow .18s;
+}
+.mv2-select:hover { border-color: #dcd6f4; }
+.mv2-select:focus { outline: 0; border-color: var(--purple); box-shadow: 0 0 0 3px rgba(124, 92, 219, .1); }
+
+.mv2-prod-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.mv2-prod {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 16px 17px 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  background: #fff;
+  box-shadow: var(--card-sh);
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.mv2-prod:hover { transform: translateY(-3px); border-color: #dcd6f4; box-shadow: var(--card-sh-h); }
+.mv2-prod-fam { font-size: 9.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .13em; }
+.fam-ivna { color: var(--purple); }
+.fam-comes { color: var(--blue); }
+.mv2-prod-top { display: flex; align-items: center; gap: 8px; margin-top: 12px; }
+.mv2-prod-ico { width: 30px; height: 30px; border-radius: 9px; }
+.mv2-prod-ico svg { width: 17px; height: 17px; }
+/* Products that ship their own favicon: neutral chip, since the mark already
+   carries the brand colour and a tint behind it muddies both. */
+.mv2-prod-ico.is-fav { background: #fff; border: 1px solid var(--line); padding: 4px; }
+.mv2-prod-ico.is-fav img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.mv2-prod-name {
+  font-family: "Plus Jakarta Sans", "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -.025em;
+  line-height: 1.2;
+  min-width: 0;
+}
+.mv2-prod-desc { margin-top: 10px; font-size: 12px; line-height: 1.5; color: var(--desc); flex: 1 1 auto; }
+.mv2-prod-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 16px;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--purple);
+}
+/* Collapsed by default: only the first row of 4 shows until "View all
+   products" is used. The count follows the responsive column count so a
+   partial row is never left dangling. */
+.mv2-prod-grid.is-collapsed > .mv2-prod:nth-child(n+5) { display: none; }
+@media (max-width: 1280px) {
+  .mv2-prod-grid.is-collapsed > .mv2-prod:nth-child(n+4) { display: none; }
+}
+@media (max-width: 900px) {
+  .mv2-prod-grid.is-collapsed > .mv2-prod:nth-child(n+3) { display: none; }
+}
+.mv2-empty { margin-top: 22px; text-align: center; font-size: 13px; color: var(--desc); }
+.mv2-more-row { display: flex; justify-content: center; margin-top: 22px; }
+.mv2-more {
+  display: inline-flex;
+  align-items: center;
+  padding: 9px 22px;
+  border: 1px solid #ddd7f3;
+  border-radius: 9999px;
+  background: #fff;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--purple);
+  box-shadow: var(--card-sh);
+  transition: background .18s, border-color .18s, color .18s, transform .18s;
+}
+.mv2-more:hover { background: var(--purple); border-color: var(--purple); color: #fff; transform: translateY(-1px); }
+
+/* ==========================================================================
+   5 — ONE ECOSYSTEM
+   ========================================================================== */
+.mv2-eco-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.mv2-eco {
+  position: relative;
+  overflow: hidden;
+  min-width: 0;
+  padding: 26px 28px 24px;
+  border-radius: var(--r-xl);
+  border: 1px solid transparent;
+}
+.mv2-eco--ivna {
+  background: linear-gradient(115deg, #f3edff 0%, #eee5ff 48%, #f7f2ff 100%);
+  border-color: #e6dcfb;
+}
+.mv2-eco--comes {
+  background: linear-gradient(115deg, #eef5ff 0%, #e3effe 48%, #f4f9ff 100%);
+  border-color: #d9e7fb;
+}
+
+/* Supplied family backdrop artwork, full-bleed behind the panel copy. */
+.mv2-eco-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.mv2-eco-bg img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right bottom;
+}
+/* The artwork already fades out under the copy, so this only needs to lift
+   contrast a touch behind the left-hand text - not wash the colour out. */
+.mv2-eco-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(95deg, rgba(255, 255, 255, .34) 0%, rgba(255, 255, 255, .12) 45%, rgba(255, 255, 255, 0) 70%);
+}
+.mv2-eco-mark {
+  position: relative;
+  display: block;
+  font-family: "Plus Jakarta Sans", "Inter", sans-serif;
+  font-size: 27px;
+  font-weight: 800;
+  letter-spacing: -.035em;
+}
+.mv2-eco--ivna .mv2-eco-mark { color: var(--purple); }
+.mv2-eco--comes .mv2-eco-mark { color: var(--blue); }
+.mv2-eco-mark-b { font-weight: 800; }
+.mv2-eco-desc {
+  position: relative;
+  margin-top: 10px;
+  max-width: 40ch;
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: var(--desc);
+}
+.mv2-eco-icons {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+.mv2-eco-ico-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  width: 62px;
+  text-align: center;
+}
+.mv2-eco-ico {
+  width: 34px;
+  height: 34px;
+  background: rgba(255, 255, 255, .9);
+  box-shadow: 0 1px 3px rgba(28, 43, 74, .1);
+}
+.mv2-eco-ico svg { width: 18px; height: 18px; }
+.mv2-eco-ico-lab { font-size: 8.5px; font-weight: 600; line-height: 1.25; color: var(--muted); }
+.mv2-eco-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 22px;
+  padding: 9px 20px;
+  border-radius: 10px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #fff;
+  transition: background .18s, transform .18s, box-shadow .18s;
+}
+.mv2-eco--ivna .mv2-eco-btn { background: var(--purple); }
+.mv2-eco--ivna .mv2-eco-btn:hover { background: var(--purple-d); }
+.mv2-eco--comes .mv2-eco-btn { background: var(--blue); }
+.mv2-eco--comes .mv2-eco-btn:hover { background: var(--blue-d); }
+.mv2-eco-btn:hover { transform: translateY(-1px); box-shadow: 0 10px 20px -12px rgba(28, 43, 74, .6); }
+
+/* ==========================================================================
+   6 — WHY KLEZA MARKETPLACE
+   ========================================================================== */
+.mv2-why-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+.mv2-why { display: flex; align-items: flex-start; gap: 12px; min-width: 0; }
+.mv2-why-ico { width: 36px; height: 36px; }
+.mv2-why-ico svg { width: 19px; height: 19px; }
+.mv2-why-name { font-size: 12.5px; font-weight: 700; line-height: 1.25; }
+.mv2-why-desc { margin-top: 6px; font-size: 11.5px; line-height: 1.5; color: var(--desc); }
+
+/* ==========================================================================
+   7 — HELP / CTA BAND
+   ========================================================================== */
+.mv2-cta {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-top: 30px;
+  padding: 18px 26px;
+  border: 1px solid #d8eefa;
+  border-radius: var(--r-lg);
+  background: linear-gradient(100deg, #eef8fd 0%, #f5fbfe 58%, #ecf7fd 100%);
+}
+.mv2-cta-art { flex: none; width: 76px; pointer-events: none; }
+.mv2-cta-art svg { display: block; width: 100%; height: auto; }
+.mv2-cta-copy { flex: 1 1 auto; min-width: 0; }
+.mv2-cta-title { font-size: 15px; font-weight: 700; letter-spacing: -.02em; }
+.mv2-cta-sub { margin-top: 4px; font-size: 12.5px; line-height: 1.5; color: var(--desc); }
+.mv2-cta-acts { flex: none; display: flex; flex-wrap: wrap; gap: 12px; }
+.mv2-btn-ghost, .mv2-btn-solid {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 22px;
+  border-radius: 9px;
+  font-size: 12.5px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background .18s, border-color .18s, color .18s, transform .18s, box-shadow .18s;
+}
+.mv2-btn-ghost {
+  border: 1px solid #b7e2f5;
+  background: #fff;
+  color: var(--accent-2, #1aa5db);
+}
+.mv2-btn-ghost:hover { border-color: var(--accent, #36c0ed); background: #eaf7fd; transform: translateY(-1px); }
+.mv2-btn-solid {
+  border: 1px solid transparent;
+  background: var(--accent-2, #1aa5db);
+  color: #fff;
+}
+.mv2-btn-solid:hover { background: #1690c1; transform: translateY(-1px); box-shadow: 0 10px 20px -12px rgba(28, 43, 74, .6); }
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+@media (max-width: 1280px) {
+  .mv2-prod-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+/* Below this the two hero columns stack: copy centred, deck underneath. */
+@media (max-width: 1080px) {
+  .mv2-hero > .mv2-wrap { grid-template-columns: minmax(0, 1fr); gap: 24px; min-height: 0; }
+  .mv2-hero-inner { max-width: 640px; margin: 0 auto; text-align: center; }
+  .mv2-hero-lede { margin-left: auto; margin-right: auto; }
+  .mv2-hero-halo { left: 50%; margin-left: -144px; }
+}
+@media (max-width: 900px) {
+  .mv2-hero > .mv2-wrap { padding-top: 40px; padding-bottom: 42px; }
+  /* Stacked, so the headline has the full width back - it can grow again,
+     still on two nowrap lines. */
+  .mv2-hero-display { font-size: clamp(22px, 5.2vw, 40px); }
+  .mv2-hero-lede { font-size: 14.5px; }
+  .mv2-eco-grid { grid-template-columns: minmax(0, 1fr); }
+    .mv2-cta { flex-wrap: wrap; }
+  .mv2-cta-art { display: none; }
+  .mv2-why-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .mv2-prod-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  .mv2-prod-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .mv2-why-grid { grid-template-columns: minmax(0, 1fr); }
+  .mv2-head { flex-direction: column; align-items: flex-start; }
+  .mv2-eco { padding: 22px 20px; }
+    .mv2-wrap { padding: 0 20px; }
+  /* Tighten the deck so the shoulder cards stay on screen. */
+  .mv2-hero { --h-step: 96px; }
+  .mv2-hero-card { width: 190px; }
+  .mv2-hero-stage { min-height: 296px; }
+  .mv2-cta { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .mv2-cta-acts { width: 100%; }
+  .mv2-btn-ghost, .mv2-btn-solid { flex: 1 1 auto; }
+  .mv2-tools > * { flex: 1 1 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mv2 *, .mv2 *::before, .mv2 *::after {
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* The product filter toggles [hidden]; it has to beat the cards' own display. */
+.mv2 [hidden] { display: none !important; }
+
+c:T7bdd,
+
+<div class="mv2">
+
+  <!-- SECTION HERO -->
+  <section class="mv2-hero">
+
+    <span class="mv2-hero-blob mv2-hero-blob--mint" aria-hidden="true"></span>
+    <span class="mv2-hero-blob mv2-hero-blob--sky" aria-hidden="true"></span>
+
+    <div class="mv2-wrap">
+
+      <div class="mv2-hero-inner">
+
+        <p class="mv2-hero-kicker">KLEZA Marketplace</p>
+
+        <h1 class="mv2-hero-display">Intelligent Solutions<br />for a <span class="mv2-hero-em">Kinder Tomorrow.</span></h1>
+
+        <p class="mv2-hero-lede">Explore the KLEZA ecosystem of <strong>AI-powered products</strong> built to simplify workflows, connect teams, and transform the work of care.</p>
+
+      </div>
+
+      <div class="mv2-hero-stage">
+
+        <span class="mv2-hero-halo" aria-hidden="true"></span>
+
+        <!-- Rotating product deck. Server-rendered in its resting order; the
+             page script re-stamps data-slot as the deck turns. Without the
+             script every card is still a working product link. -->
+        <div class="mv2-hero-deck" id="mv2HeroDeck">
+
+          <a class="mv2-hero-card" data-slot="0" href="https://slategray-jay-545015.hostingersite.com/" target="_blank" rel="noopener noreferrer" aria-label="Explore Voica">
+            <span class="mv2-hero-card-logo"><img src="/assets/hero-voica.png" alt="Voica logo" width="1678" height="435" loading="eager" decoding="async" /></span>
+            <h2 class="mv2-hero-card-name">Voica</h2>
+            <p class="mv2-hero-card-desc">AI-powered voice intelligence.</p>
+            <span class="mv2-hero-card-cta">Explore
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </span>
+          </a>
+
+          <a class="mv2-hero-card" data-slot="1" href="https://lightslategray-curlew-597776.hostingersite.com/" target="_blank" rel="noopener noreferrer" aria-label="Explore AssessFlo">
+            <span class="mv2-hero-card-logo"><img src="/assets/hero-assessflo.png" alt="AssessFlo logo" width="1679" height="372" loading="lazy" decoding="async" /></span>
+            <h2 class="mv2-hero-card-name">AssessFlo</h2>
+            <p class="mv2-hero-card-desc">Digital assessments made simple.</p>
+            <span class="mv2-hero-card-cta">Explore
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </span>
+          </a>
+
+          <a class="mv2-hero-card" data-slot="2" href="http://orange-salamander-203350.hostingersite.com/" target="_blank" rel="noopener noreferrer" aria-label="Explore HireOrbit">
+            <span class="mv2-hero-card-logo"><img src="/assets/hero-hireorbit.png" alt="HireOrbit logo" width="1667" height="421" loading="lazy" decoding="async" /></span>
+            <h2 class="mv2-hero-card-name">HireOrbit</h2>
+            <p class="mv2-hero-card-desc">Smarter hiring for care teams.</p>
+            <span class="mv2-hero-card-cta">Explore
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </span>
+          </a>
+
+          <a class="mv2-hero-card" data-slot="hidden" href="https://slategray-oryx-438842.hostingersite.com/" target="_blank" rel="noopener noreferrer" aria-label="Explore Inqvue">
+            <span class="mv2-hero-card-logo"><img src="/assets/hero-inqvue.png" alt="Inqvue logo" width="1694" height="456" loading="lazy" decoding="async" /></span>
+            <h2 class="mv2-hero-card-name">Inqvue</h2>
+            <p class="mv2-hero-card-desc">CRM built for care organizations.</p>
+            <span class="mv2-hero-card-cta">Explore
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </span>
+          </a>
+
+          <a class="mv2-hero-card" data-slot="-2" href="https://darkorange-finch-216111.hostingersite.com/" target="_blank" rel="noopener noreferrer" aria-label="Explore Docunyx">
+            <span class="mv2-hero-card-logo"><img src="/assets/hero-docunyx.png" alt="Docunyx logo" width="1681" height="359" loading="lazy" decoding="async" /></span>
+            <h2 class="mv2-hero-card-name">Docunyx</h2>
+            <p class="mv2-hero-card-desc">Intelligent document management.</p>
+            <span class="mv2-hero-card-cta">Explore
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </span>
+          </a>
+
+          <a class="mv2-hero-card" data-slot="-1" href="https://excelliq-ai.kleza.io/" target="_blank" rel="noopener noreferrer" aria-label="Explore Excelliq">
+            <span class="mv2-hero-card-logo"><img src="/assets/hero-excelliq.png" alt="Excelliq logo" width="1685" height="435" loading="lazy" decoding="async" /></span>
+            <h2 class="mv2-hero-card-name">Excelliq</h2>
+            <p class="mv2-hero-card-desc">Performance insights that drive results.</p>
+            <span class="mv2-hero-card-cta">Explore
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </span>
+          </a>
+
+        </div>
+
+        <div class="mv2-hero-ctrls">
+          <div class="mv2-hero-dots" id="mv2HeroDots">
+            <button class="mv2-hero-dot is-on" type="button" data-deck-go="0" aria-label="Show Voica"></button>
+            <button class="mv2-hero-dot" type="button" data-deck-go="1" aria-label="Show AssessFlo"></button>
+            <button class="mv2-hero-dot" type="button" data-deck-go="2" aria-label="Show HireOrbit"></button>
+            <button class="mv2-hero-dot" type="button" data-deck-go="3" aria-label="Show Inqvue"></button>
+            <button class="mv2-hero-dot" type="button" data-deck-go="4" aria-label="Show Docunyx"></button>
+            <button class="mv2-hero-dot" type="button" data-deck-go="5" aria-label="Show Excelliq"></button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SECTION PROD -->
+  <section class="mv2-sec">
+    <div class="mv2-wrap">
+      <div class="mv2-head">
+        <div>
+          <h2 class="mv2-h2">Explore all products</h2>
+        </div>
+
+        <div class="mv2-tools">
+          <div class="mv2-tool-search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="7" />
+              <line x1="16.5" y1="16.5" x2="21" y2="21" />
+            </svg>
+            <input id="mv2Q" type="search" placeholder="Search products..." aria-label="Search products">
+          </div>
+          <select class="mv2-select" id="mv2Cat" aria-label="Filter by category">
+            <option>All Categories</option>
+            <option>AI &amp; Intelligence</option>
+            <option>Care Management</option>
+            <option>Workforce</option>
+            <option>Operations</option>
+            <option>Automation</option>
+            <option>Analytics</option>
+            <option>Communication</option>
+            <option>Integrations</option>
+          </select>
+          <select class="mv2-select" id="mv2Fam" aria-label="Filter by family">
+            <option>All Families</option>
+            <option>IVNA</option>
+            <option>Comes360</option>
+          </select>
+          <select class="mv2-select" id="mv2Sort" aria-label="Sort products">
+            <option>Sort: A&#8211;Z</option>
+            <option>Sort: Z&#8211;A</option>
+            <option>Sort: Family</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="mv2-prod-grid is-collapsed" id="mv2Grid">
+
+        <a class="mv2-prod" href="https://slategray-jay-545015.hostingersite.com/" target="_blank" rel="noopener noreferrer" data-name="Voica" data-fam="IVNA" data-cat="AI &amp; Intelligence">
+          <span class="mv2-prod-fam fam-ivna">IVNA</span>
+          <span class="mv2-prod-top">
+            <span class="mv2-prod-ico is-fav">
+              <img src="/assets/fav-voica.png" alt="" width="30" height="30" loading="lazy" decoding="async" />
+            </span>
+            <span class="mv2-prod-name">Voica</span>
+          </span>
+          <p class="mv2-prod-desc">AI-powered voice intelligence.</p>
+          <span class="mv2-prod-cta">Learn more <span class="mv2-arrow">&#8594;</span></span>
+        </a>
+
+        <a class="mv2-prod" href="https://lightslategray-curlew-597776.hostingersite.com/" target="_blank" rel="noopener noreferrer" data-name="AssessFlo" data-fam="IVNA" data-cat="Care Management">
+          <span class="mv2-prod-fam fam-ivna">IVNA</span>
+          <span class="mv2-prod-top">
+            <span class="mv2-prod-ico is-fav">
+              <img src="/assets/fav-assessflo.png" alt="" width="30" height="30" loading="lazy" decoding="async" />
+            </span>
+            <span class="mv2-prod-name">AssessFlo</span>
+          </span>
+          <p class="mv2-prod-desc">Digital assessments made simple.</p>
+          <span class="mv2-prod-cta">Learn more <span class="mv2-arrow">&#8594;</span></span>
+        </a>
+
+        <a class="mv2-prod" href="http://orange-salamander-203350.hostingersite.com/" target="_blank" rel="noopener noreferrer" data-name="HireOrbit" data-fam="IVNA" data-cat="Workforce">
+          <span class="mv2-prod-fam fam-ivna">IVNA</span>
+          <span class="mv2-prod-top">
+            <span class="mv2-prod-ico is-fav">
+              <img src="/assets/fav-hireorbit.png" alt="" width="30" height="30" loading="lazy" decoding="async" />
+            </span>
+            <span class="mv2-prod-name">HireOrbit</span>
+          </span>
+          <p class="mv2-prod-desc">Smarter hiring for care teams.</p>
+          <span class="mv2-prod-cta">Learn more <span class="mv2-arrow">&#8594;</span></span>
+        </a>
+
+        <a class="mv2-prod" href="/ai-products" data-name="Inqvue" data-fam="IVNA" data-cat="Operations">
+          <span class="mv2-prod-fam fam-ivna">IVNA</span>
+          <span class="mv2-prod-top">
+            <span class="mv2-prod-ico is-fav">
+              <img src="/assets/fav-inqvue.png" alt="" width="30" height="30" loading="lazy" decoding="async" />
+            </span>
+            <span class="mv2-prod-name">Inqvue</span>
+          </span>
+          <p class="mv2-prod-desc">CRM built for care organizations.</p>
+          <span class="mv2-prod-cta">Learn more <span class="mv2-arrow">&#8594;</span></span>
+        </a>
+
+        <a class="mv2-prod" href="https://darkorange-finch-216111.hostingersite.com/" target="_blank" rel="noopener noreferrer" data-name="Docunyx" data-fam="IVNA" data-cat="Operations">
+          <span class="mv2-prod-fam fam-ivna">IVNA</span>
+          <span class="mv2-prod-top">
+            <span class="mv2-prod-ico is-fav">
+              <img src="/assets/fav-docunyx.svg" alt="" width="30" height="30" loading="lazy" decoding="async" />
+            </span>
+            <span class="mv2-prod-name">Docunyx</span>
+          </span>
+          <p class="mv2-prod-desc">Intelligent document management.</p>
+          <span class="mv2-prod-cta">Learn more <span class="mv2-arrow">&#8594;</span></span>
+        </a>
+
+        <a class="mv2-prod" href="https://excelliq-ai.kleza.io/" target="_blank" rel="noopener noreferrer" data-name="Excelliq" data-fam="IVNA" data-cat="Analytics">
+          <span class="mv2-prod-fam fam-ivna">IVNA</span>
+          <span class="mv2-prod-top">
+            <span class="mv2-prod-ico is-fav">
+              <img src="/assets/fav-excelliq.svg" alt="" width="30" height="30" loading="lazy" decoding="async" />
+            </span>
+            <span class="mv2-prod-name">Excelliq</span>
+          </span>
+          <p class="mv2-prod-desc">Performance insights that drive results.</p>
+          <span class="mv2-prod-cta">Learn more <span class="mv2-arrow">&#8594;</span></span>
+        </a>
+
+        <a class="mv2-prod" href="/ai-products" data-name="HR Companion" data-fam="Comes360" data-cat="Workforce">
+          <span class="mv2-prod-fam fam-comes">Comes360</span>
+          <span class="mv2-prod-top">
+            <span class="mv2-prod-ico t-purple">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </span>
+            <span class="mv2-prod-name">HR Companion</span>
+          </span>
+          <p class="mv2-prod-desc">Everything HR, made easy for care teams.</p>
+          <span class="mv2-prod-cta">Learn more <span class="mv2-arrow">&#8594;</span></span>
+        </a>
+
+        <a class="mv2-prod" href="/ai-products" data-name="Admin Companion" data-fam="Comes360" data-cat="Operations">
+          <span class="mv2-prod-fam fam-comes">Comes360</span>
+          <span class="mv2-prod-top">
+            <span class="mv2-prod-ico t-teal">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" />
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+              </svg>
+            </span>
+            <span class="mv2-prod-name">Admin Companion</span>
+          </span>
+          <p class="mv2-prod-desc">Streamline admin and operations.</p>
+          <span class="mv2-prod-cta">Learn more <span class="mv2-arrow">&#8594;</span></span>
+        </a>
+
+        <a class="mv2-prod" href="/ai-products" data-name="Scheduler Companion" data-fam="Comes360" data-cat="Operations">
+          <span class="mv2-prod-fam fam-comes">Comes360</span>
+          <span class="mv2-prod-top">
+            <span class="mv2-prod-ico t-green">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+                <path d="M9 15.5l2.2 2.2 4-4" />
+              </svg>
+            </span>
+            <span class="mv2-prod-name">Scheduler Companion</span>
+          </span>
+          <p class="mv2-prod-desc">Smart scheduling for better care.</p>
+          <span class="mv2-prod-cta">Learn more <span class="mv2-arrow">&#8594;</span></span>
+        </a>
+
+        <a class="mv2-prod" href="/ai-products" data-name="Recruiter Companion" data-fam="Comes360" data-cat="Workforce">
+          <span class="mv2-prod-fam fam-comes">Comes360</span>
+          <span class="mv2-prod-top">
+            <span class="mv2-prod-ico t-pink">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="10" cy="7.5" r="4" />
+                <path d="M3 21v-1.5a6 6 0 0 1 6-6h1.5" />
+                <circle cx="17" cy="16" r="3.5" />
+                <line x1="19.6" y1="18.6" x2="22" y2="21" />
+              </svg>
+            </span>
+            <span class="mv2-prod-name">Recruiter Companion</span>
+          </span>
+          <p class="mv2-prod-desc">Find and hire the best caregivers.</p>
+          <span class="mv2-prod-cta">Learn more <span class="mv2-arrow">&#8594;</span></span>
+        </a>
+
+        <a class="mv2-prod" href="/ai-products" data-name="Caregiver Companion" data-fam="Comes360" data-cat="Care Management">
+          <span class="mv2-prod-fam fam-comes">Comes360</span>
+          <span class="mv2-prod-top">
+            <span class="mv2-prod-ico t-pink">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l8.84 8.84 8.84-8.84a5.5 5.5 0 0 0 0-7.78z" />
+              </svg>
+            </span>
+            <span class="mv2-prod-name">Caregiver Companion</span>
+          </span>
+          <p class="mv2-prod-desc">Support caregivers every step of the way.</p>
+          <span class="mv2-prod-cta">Learn more <span class="mv2-arrow">&#8594;</span></span>
+        </a>
+
+        <a class="mv2-prod" href="/ai-products" data-name="Client Companion" data-fam="Comes360" data-cat="Communication">
+          <span class="mv2-prod-fam fam-comes">Comes360</span>
+          <span class="mv2-prod-top">
+            <span class="mv2-prod-ico t-blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 7h9a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H8l-4 3v-3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2z" />
+                <path d="M11 7V5a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-5" />
+              </svg>
+            </span>
+            <span class="mv2-prod-name">Client Companion</span>
+          </span>
+          <p class="mv2-prod-desc">Better communication for better care.</p>
+          <span class="mv2-prod-cta">Learn more <span class="mv2-arrow">&#8594;</span></span>
+        </a>
+
+      </div>
+
+      <p class="mv2-empty" id="mv2Empty" hidden>No products match those filters.</p>
+
+      <div class="mv2-more-row">
+        <a class="mv2-more" href="/ai-products" aria-expanded="false" aria-controls="mv2Grid">View all products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION ECO -->
+  <section class="mv2-sec">
+    <div class="mv2-wrap">
+
+      <div class="mv2-eco-grid">
+
+        <!-- IVNA -->
+        <div class="mv2-eco mv2-eco--ivna">
+        <span class="mv2-eco-bg" aria-hidden="true">
+          <img src="/assets/ivna-bg-v2.png" alt="" width="660" height="286" loading="lazy" decoding="async" />
+        </span>
+
+          <span class="mv2-eco-mark">IVNA</span>
+
+          <p class="mv2-eco-desc">A collection of intelligent solutions designed to bring AI-powered capabilities into the work of care.</p>
+
+          <span class="mv2-eco-icons">
+
+            <span class="mv2-eco-ico-wrap">
+              <span class="mv2-eco-ico t-purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="4" y1="10" x2="4" y2="14"/>
+                  <line x1="8" y1="6" x2="8" y2="18"/>
+                  <line x1="12" y1="3" x2="12" y2="21"/>
+                  <line x1="16" y1="7" x2="16" y2="17"/>
+                  <line x1="20" y1="10" x2="20" y2="14"/>
+                </svg>
+              </span>
+              <span class="mv2-eco-ico-lab">Voica</span>
+            </span>
+
+            <span class="mv2-eco-ico-wrap">
+              <span class="mv2-eco-ico t-green">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
+                  <rect x="8" y="2" width="8" height="4" rx="1"/>
+                  <polyline points="9 14 11 16 15 12"/>
+                </svg>
+              </span>
+              <span class="mv2-eco-ico-lab">AssessFlo</span>
+            </span>
+
+            <span class="mv2-eco-ico-wrap">
+              <span class="mv2-eco-ico t-pink">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="9"/>
+                  <circle cx="12" cy="12" r="5"/>
+                  <circle cx="12" cy="12" r="1"/>
+                </svg>
+              </span>
+              <span class="mv2-eco-ico-lab">HireOrbit</span>
+            </span>
+
+            <span class="mv2-eco-ico-wrap">
+              <span class="mv2-eco-ico t-purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="9" cy="12" r="6"/>
+                  <circle cx="15" cy="12" r="6"/>
+                </svg>
+              </span>
+              <span class="mv2-eco-ico-lab">Inqvue</span>
+            </span>
+
+            <span class="mv2-eco-ico-wrap">
+              <span class="mv2-eco-ico t-orange">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8Z"/>
+                  <polyline points="14 3 14 8 19 8"/>
+                  <line x1="9" y1="13" x2="15" y2="13"/>
+                  <line x1="9" y1="17" x2="13" y2="17"/>
+                </svg>
+              </span>
+              <span class="mv2-eco-ico-lab">Docunyx</span>
+            </span>
+
+            <span class="mv2-eco-ico-wrap">
+              <span class="mv2-eco-ico t-blue">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 3l1.9 6.1L20 11l-6.1 1.9L12 19l-1.9-6.1L4 11l6.1-1.9Z"/>
+                </svg>
+              </span>
+              <span class="mv2-eco-ico-lab">Excelliq</span>
+            </span>
+
+          </span>
+
+          <a class="mv2-eco-btn" href="/ai-products">Explore IVNA</a>
+        </div>
+
+        <!-- Comes360 -->
+        <div class="mv2-eco mv2-eco--comes">
+        <span class="mv2-eco-bg" aria-hidden="true">
+          <img src="/assets/comes360-bg-v2.png" alt="" width="660" height="286" loading="lazy" decoding="async" />
+        </span>
+
+          <span class="mv2-eco-mark">Comes<span class="mv2-eco-mark-b">360</span></span>
+
+          <p class="mv2-eco-desc">Connected companions designed to support the people, processes, and workflows behind better care.</p>
+
+          <span class="mv2-eco-icons">
+
+            <span class="mv2-eco-ico-wrap">
+              <span class="mv2-eco-ico t-purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M15 20v-1.5a3.5 3.5 0 0 0-3.5-3.5h-4A3.5 3.5 0 0 0 4 18.5V20"/>
+                  <circle cx="9.5" cy="8" r="3.5"/>
+                  <path d="M20 20v-1.5a3.5 3.5 0 0 0-2.6-3.4"/>
+                  <path d="M15 4.6a3.5 3.5 0 0 1 0 6.8"/>
+                </svg>
+              </span>
+              <span class="mv2-eco-ico-lab">HR Companion</span>
+            </span>
+
+            <span class="mv2-eco-ico-wrap">
+              <span class="mv2-eco-ico t-teal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="7" width="18" height="13" rx="2"/>
+                  <path d="M16 20V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v15"/>
+                </svg>
+              </span>
+              <span class="mv2-eco-ico-lab">Admin Companion</span>
+            </span>
+
+            <span class="mv2-eco-ico-wrap">
+              <span class="mv2-eco-ico t-green">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 11V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h7"/>
+                  <line x1="8" y1="2" x2="8" y2="6"/>
+                  <line x1="16" y1="2" x2="16" y2="6"/>
+                  <line x1="3" y1="10" x2="21" y2="10"/>
+                  <polyline points="15 18 17 20 21 16"/>
+                </svg>
+              </span>
+              <span class="mv2-eco-ico-lab">Scheduler Companion</span>
+            </span>
+
+            <span class="mv2-eco-ico-wrap">
+              <span class="mv2-eco-ico t-pink">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="10" cy="7" r="4"/>
+                  <path d="M3 21v-1.5A4.5 4.5 0 0 1 7.5 15H11"/>
+                  <circle cx="17" cy="17" r="3"/>
+                  <line x1="19.2" y1="19.2" x2="21" y2="21"/>
+                </svg>
+              </span>
+              <span class="mv2-eco-ico-lab">Recruiter Companion</span>
+            </span>
+
+            <span class="mv2-eco-ico-wrap">
+              <span class="mv2-eco-ico t-pink">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8Z"/>
+                </svg>
+              </span>
+              <span class="mv2-eco-ico-lab">Caregiver Companion</span>
+            </span>
+
+            <span class="mv2-eco-ico-wrap">
+              <span class="mv2-eco-ico t-blue">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M13.5 12H7l-3.5 3V6.5A2.5 2.5 0 0 1 6 4h7.5A2.5 2.5 0 0 1 16 6.5v3a2.5 2.5 0 0 1-2.5 2.5Z"/>
+                  <path d="M16.5 8H18a2.5 2.5 0 0 1 2.5 2.5V19L17 16h-5a2.5 2.5 0 0 1-2.5-2.5V13"/>
+                </svg>
+              </span>
+              <span class="mv2-eco-ico-lab">Client Companion</span>
+            </span>
+
+          </span>
+
+          <a class="mv2-eco-btn" href="/ai-products">Explore Comes360</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION WHY -->
+  <section class="mv2-sec">
+    <div class="mv2-wrap">
+
+      <div class="mv2-head">
+        <div>
+          <h2 class="mv2-h2">Why KLEZA Marketplace?</h2>
+        </div>
+      </div>
+
+      <div class="mv2-why-grid">
+
+        <div class="mv2-why">
+          <span class="mv2-why-ico t-purple" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              <polyline points="9 11.8 11 13.8 15 9.8" />
+            </svg>
+          </span>
+          <div>
+            <h3 class="mv2-why-name">Built for care</h3>
+            <p class="mv2-why-desc">Technology designed around the real work of care.</p>
+          </div>
+        </div>
+
+        <div class="mv2-why">
+          <span class="mv2-why-ico t-purple" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="2.4" />
+              <circle cx="5" cy="5" r="2" />
+              <circle cx="19" cy="5" r="2" />
+              <circle cx="5" cy="19" r="2" />
+              <circle cx="19" cy="19" r="2" />
+              <line x1="6.5" y1="6.5" x2="10.3" y2="10.3" />
+              <line x1="17.5" y1="6.5" x2="13.7" y2="10.3" />
+              <line x1="6.5" y1="17.5" x2="10.3" y2="13.7" />
+              <line x1="17.5" y1="17.5" x2="13.7" y2="13.7" />
+            </svg>
+          </span>
+          <div>
+            <h3 class="mv2-why-name">Connected by intelligence</h3>
+            <p class="mv2-why-desc">Products designed to work together, not in isolation.</p>
+          </div>
+        </div>
+
+        <div class="mv2-why">
+          <span class="mv2-why-ico t-purple" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+          </span>
+          <div>
+            <h3 class="mv2-why-name">Designed for people</h3>
+            <p class="mv2-why-desc">Powerful technology without unnecessary complexity.</p>
+          </div>
+        </div>
+
+        <div class="mv2-why">
+          <span class="mv2-why-ico t-purple" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 6.5 13.5 15 9.5 11 2 18.5" />
+              <polyline points="16 6.5 22 6.5 22 12.5" />
+            </svg>
+          </span>
+          <div>
+            <h3 class="mv2-why-name">Always evolving</h3>
+            <p class="mv2-why-desc">An ecosystem built to grow with the needs of care organisations.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION CTA -->
+  <section class="mv2-sec mv2-sec--last">
+    <div class="mv2-wrap">
+
+      <div class="mv2-cta">
+
+        <span class="mv2-cta-art" aria-hidden="true">
+          <svg viewBox="0 0 96 76" fill="none">
+            <defs>
+              <linearGradient id="mv2PuzA" x1="10" y1="10" x2="86" y2="70" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#5accf1" />
+                <stop offset="1" stop-color="#1aa5db" />
+              </linearGradient>
+              <linearGradient id="mv2PuzB" x1="0" y1="30" x2="70" y2="76" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#d3eefa" />
+                <stop offset="1" stop-color="#9fd9ef" />
+              </linearGradient>
+            </defs>
+            <!-- back pieces, pale -->
+            <path d="M4 30h13a5 5 0 0 1 0-9h13v13a5 5 0 0 0 9 0V21h4v34H26a5 5 0 0 0 0-9H4z" fill="url(#mv2PuzB)" opacity=".75" />
+            <path d="M30 47h12a5 5 0 0 1 0 9H30v12a5 5 0 0 0-9 0v4H8V47h13a5 5 0 0 0 0-9h9z" fill="url(#mv2PuzB)" opacity=".55" />
+            <!-- front piece, saturated -->
+            <path d="M44 6h16a5 5 0 0 1 9 0h16v17a5.5 5.5 0 0 0 0 11v17H69a5 5 0 0 0-9 0H44V34a5.5 5.5 0 0 1 0-11z" fill="url(#mv2PuzA)" />
+          </svg>
+        </span>
+
+        <div class="mv2-cta-copy">
+          <h3 class="mv2-cta-title">Looking for something specific?</h3>
+          <p class="mv2-cta-sub">Tell us what you need. We&rsquo;ll help you find the right solution for your organisation.</p>
+        </div>
+
+        <div class="mv2-cta-acts">
+          <a class="mv2-btn-ghost" href="/ai-products">Explore all solutions</a>
+          <a class="mv2-btn-solid" href="/contact">Talk to KLEZA</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+</div>
+
+
+
+d:T194f,
+/* Marketplace interactions: featured rail, product filter/sort, and the hero
+   search + category shortcuts that drive the product grid. Progressive —
+   every control is a working link or a real form without this script. */
+var root = document.querySelector('.mv2');
+if (!root) return;
+
+/* ---------- product filter + sort ---------- */
+var grid = root.querySelector('#mv2Grid');
+if (!grid) return;
+
+var qInput = root.querySelector('#mv2Q');
+var catSel = root.querySelector('#mv2Cat');
+var famSel = root.querySelector('#mv2Fam');
+var sortSel = root.querySelector('#mv2Sort');
+var emptyMsg = root.querySelector('#mv2Empty');
+var moreBtn = root.querySelector('.mv2-more');
+
+var cards = Array.prototype.slice.call(grid.querySelectorAll('.mv2-prod'));
+cards.forEach(function (c) {
+  var desc = c.querySelector('.mv2-prod-desc');
+  c.mv2Hay = [
+    c.getAttribute('data-name') || '',
+    c.getAttribute('data-fam') || '',
+    c.getAttribute('data-cat') || '',
+    desc ? desc.textContent : ''
+  ].join(' ').toLowerCase();
+});
+
+function optText(sel) {
+  if (!sel || sel.selectedIndex < 0) return '';
+  return (sel.options[sel.selectedIndex].textContent || '').trim();
+}
+
+function apply() {
+  var term = qInput ? qInput.value.trim().toLowerCase() : '';
+  var byCat = catSel && catSel.selectedIndex > 0 ? optText(catSel) : null;
+  var byFam = famSel && famSel.selectedIndex > 0 ? optText(famSel) : null;
+  var mode = sortSel ? sortSel.selectedIndex : 0;
+
+  var order = cards.slice().sort(function (a, b) {
+    var an = a.getAttribute('data-name') || '';
+    var bn = b.getAttribute('data-name') || '';
+    if (mode === 1) return bn.localeCompare(an);
+    if (mode === 2) {
+      var af = a.getAttribute('data-fam') || '';
+      var bf = b.getAttribute('data-fam') || '';
+      if (af !== bf) return af.localeCompare(bf);
+    }
+    return an.localeCompare(bn);
+  });
+
+  var shown = 0;
+  order.forEach(function (c) {
+    var ok =
+      (!term || c.mv2Hay.indexOf(term) > -1) &&
+      (!byCat || c.getAttribute('data-cat') === byCat) &&
+      (!byFam || c.getAttribute('data-fam') === byFam);
+    if (ok) {
+      c.removeAttribute('hidden');
+      shown++;
+    } else {
+      c.setAttribute('hidden', '');
+    }
+    grid.appendChild(c);
+  });
+
+  if (emptyMsg) {
+    if (shown) emptyMsg.setAttribute('hidden', '');
+    else emptyMsg.removeAttribute('hidden');
+  }
+
+  if (moreBtn) {
+    if (term || byCat || byFam) moreBtn.setAttribute('hidden', '');
+    else moreBtn.removeAttribute('hidden');
+  }
+}
+
+function syncMore() {
+  if (!moreBtn) return;
+  var collapsed = grid.classList.contains('is-collapsed');
+  moreBtn.textContent = collapsed ? 'View all products' : 'View less';
+  moreBtn.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
+}
+
+function expandGrid() {
+  grid.classList.remove('is-collapsed');
+  syncMore();
+}
+
+function collapseGrid() {
+  grid.classList.add('is-collapsed');
+  syncMore();
+  /* Collapsing pulls rows out from above the button, so the grid can end up
+     scrolled off the top. Bring it back into view when that happens. */
+  if (grid.getBoundingClientRect().top < 0) {
+    grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
+
+if (moreBtn) {
+  moreBtn.addEventListener('click', function (e) {
+    e.preventDefault();
+    if (grid.classList.contains('is-collapsed')) expandGrid();
+    else collapseGrid();
+  });
+}
+
+/* A filtered match must never sit hidden behind the collapsed fold. */
+function applyAndReveal() {
+  if (qInput && qInput.value.trim()) expandGrid();
+  else if ((catSel && catSel.selectedIndex > 0) || (famSel && famSel.selectedIndex > 0)) expandGrid();
+  apply();
+}
+
+if (qInput) qInput.addEventListener('input', applyAndReveal);
+[catSel, famSel, sortSel].forEach(function (sel) {
+  if (sel) sel.addEventListener('change', applyAndReveal);
+});
+
+/* ---------- hero product deck ---------- */
+/* Positions are pure CSS - the script only stamps each card with its signed
+   distance from the active one (…-2, -1, 0, 1, 2, then 'hidden'), so the
+   cards rotate through the deck rather than sliding off one end. */
+var deck = root.querySelector('#mv2HeroDeck');
+if (deck) {
+  var deckCards = Array.prototype.slice.call(deck.querySelectorAll('.mv2-hero-card'));
+  var deckDots = Array.prototype.slice.call(root.querySelectorAll('[data-deck-go]'));
+  var deckN = deckCards.length;
+  var deckAt = 0;
+  var deckTimer = null;
+  var deckStill =
+    window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  var deckPaint = function () {
+    for (var i = 0; i < deckN; i++) {
+      var rel = (i - deckAt + deckN) % deckN;
+      if (rel > deckN / 2) rel -= deckN;
+      deckCards[i].setAttribute('data-slot', Math.abs(rel) <= 2 ? String(rel) : 'hidden');
+    }
+    for (var d = 0; d < deckDots.length; d++) {
+      if (d === deckAt) deckDots[d].classList.add('is-on');
+      else deckDots[d].classList.remove('is-on');
+    }
+  };
+
+  var deckGo = function (to) {
+    deckAt = ((to % deckN) + deckN) % deckN;
+    deckPaint();
+  };
+
+  var deckStop = function () {
+    if (deckTimer) { clearInterval(deckTimer); deckTimer = null; }
+  };
+  var deckPlay = function () {
+    if (deckStill || deckTimer) return;
+    deckTimer = setInterval(function () { deckGo(deckAt + 1); }, 4500);
+  };
+  /* A click jumps the deck, then hands it straight back to the timer - the
+     rotation is the only thing driving the banner, so it must not stall. The
+     restart also re-arms the full interval, so the chosen card gets its turn. */
+  var deckTake = function (to) { deckStop(); deckGo(to); deckPlay(); };
+
+  for (var dd = 0; dd < deckDots.length; dd++) {
+    (function (dot) {
+      dot.addEventListener('click', function () {
+        deckTake(parseInt(dot.getAttribute('data-deck-go'), 10) || 0);
+      });
+    })(deckDots[dd]);
+  }
+
+  /* Bringing a shoulder card forward is friendlier than following its link
+     on the first click, so only the front card navigates. */
+  for (var dc = 0; dc < deckN; dc++) {
+    (function (card, index) {
+      card.addEventListener('click', function (e) {
+        if (index === deckAt) return;
+        e.preventDefault();
+        deckTake(index);
+      });
+    })(deckCards[dc], dc);
+  }
+
+  /* Hold still while someone is reading a card, then carry on. */
+  deck.addEventListener('mouseenter', deckStop);
+  deck.addEventListener('mouseleave', deckPlay);
+  deck.addEventListener('focusin', deckStop);
+  deck.addEventListener('focusout', deckPlay);
+
+  deckPaint();
+  deckPlay();
+}
+8:[[],["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$b"}}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$c"}}],["$","$La",null,{"scripts":[{"code":"$d"}],"bodyAttrs":{}}]]
