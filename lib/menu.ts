@@ -117,7 +117,10 @@ export const MENU: MenuParent[] = [
   },
   {
     key: "ai-products",
-    route: "/ai-products",
+    // The overview page was retired; the family lives on IVNA.ai now. The 12
+    // product sub-pages below stay, so this only drives the breadcrumb and the
+    // "back to parent" buttons on those pages.
+    route: "https://yellow-jellyfish-536374.hostingersite.com/",
     label: "AI Products",
     items: [
       {
@@ -480,19 +483,21 @@ export const MENU: MenuParent[] = [
         slug: "blog",
         name: "Blog Automation",
         eyebrow: "CONTENT AUTOMATION",
-        italTail: "publishing on autopilot.",
-        lede: "AI tools that automate content workflows, publishing, and distribution end to end.",
+        // The hero reads "<name> <italTail>", so this completes the headline:
+        // "Blog Automation built to rank, publish, and stay consistent."
+        italTail: "built to rank, publish, and stay consistent.",
+        lede: "From keyword research to a published post, our automation tool handles it all. It studies trends, builds SEO-optimized content in your brand voice, links to credible sources, and connects back to your own site, all without you writing a single line.",
         sectionEyebrow: "CONTENT AUTOMATION",
-        body: "From brief to published post, Blog Automation drafts, optimizes, and schedules content on brand — with a human review gate before anything goes live.",
+        body: "From keyword research to a published post, our automation tool handles it all. It studies trends, builds SEO-optimized content in your brand voice, links to credible sources, and connects back to your own site, all without you writing a single line.",
         features: [
-          "AI drafting",
-          "SEO optimization",
-          "Scheduling",
-          "Review gate",
-          "Multi-site",
-          "Performance tracking",
+          "Keyword research",
+          "SEO-optimized drafts",
+          "Your brand voice",
+          "Credible source links",
+          "Internal linking",
+          "Scheduled publishing",
         ],
-        cta: "Automate content",
+        cta: "Try Blog Automation",
       },
       {
         slug: "social",

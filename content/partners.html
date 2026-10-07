@@ -27,7 +27,7 @@
 .pt-hero .container{position:relative;z-index:1}
 .pt-hero-inner{max-width:44rem}
 .pt-hero .eyebrow{display:inline-block;margin-bottom:22px}
-.pt-hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(40px,5.6vw,76px);line-height:1.0;letter-spacing:-.02em;color:var(--ink);margin:0;text-wrap:balance}
+.pt-hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(34px,4.3vw,58px);line-height:1.0;letter-spacing:-.02em;color:var(--ink);margin:0;text-wrap:balance}
 .pt-hero h1 .ital{font-style:italic;color:var(--accent)}
 .pt-hero p.lede{margin:24px 0 0;max-width:54ch;font-size:clamp(16px,1.2vw,19px);line-height:1.62;color:var(--ink-2);text-wrap:pretty}
 .pt-hero .cta-row{margin-top:clamp(30px,3.6vw,42px)}
@@ -48,27 +48,6 @@
 .pt-val .ctx{display:block;margin-top:5px;font-size:14px;line-height:1.55;color:var(--muted)}
 
 /* Section 03 — three partnership tiers (horizontal bands, NOT cards) */
-.pt-tiers{padding:clamp(56px,7vw,104px) 0 0}
-.pt-tiers .head{max-width:760px;margin:0 auto clamp(36px,4vw,56px);text-align:center}
-.pt-tiers .head .eyebrow{display:inline-block;margin-bottom:14px}
-.pt-tiers .head h2{font-family:var(--serif);font-weight:400;font-size:clamp(30px,4.4vw,56px);line-height:1.05;letter-spacing:-.02em;margin:0;color:var(--ink);text-wrap:balance}
-.pt-tiers .head h2 .ital{font-style:italic;color:var(--accent)}
-.pt-band{position:relative;border-top:1px solid var(--line)}
-.pt-band:last-of-type{border-bottom:1px solid var(--line)}
-.pt-band:nth-of-type(even){background:var(--bg-alt)}
-.pt-band-inner{max-width:var(--maxw);margin:0 auto;padding:clamp(40px,5vw,72px) var(--pad-x,24px);display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,4vw,64px);align-items:center;border-left:3px solid var(--accent)}
-.pt-band-left{padding-left:clamp(20px,2.4vw,34px)}
-.pt-band .tier-ix{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
-.pt-band h3{font-family:var(--serif);font-weight:400;font-size:clamp(26px,3vw,40px);line-height:1.08;letter-spacing:-.02em;color:var(--ink);margin:0 0 16px;text-wrap:balance}
-.pt-band .desc{color:var(--muted);font-size:clamp(15px,1.1vw,16.5px);line-height:1.68;margin:0;max-width:46ch}
-.pt-band-right{display:flex;flex-direction:column}
-.pt-benefits{list-style:none;margin:0 0 28px;padding:0;display:flex;flex-direction:column;gap:14px}
-.pt-benefits li{display:flex;gap:13px;align-items:flex-start;color:var(--ink);font-size:15px;line-height:1.5}
-.pt-benefits li svg{width:20px;height:20px;flex-shrink:0;color:var(--accent);margin-top:1px}
-.pt-apply{align-self:flex-start;display:inline-flex;align-items:center;gap:10px;font-family:var(--sans);font-weight:600;font-size:15px;color:var(--accent);transition:gap .2s ease}
-.pt-apply svg{width:16px;height:16px;transition:transform .2s ease}
-.pt-apply:hover{gap:15px}
-.pt-band-right .pt-apply{align-self:flex-end}
 
 /* Section 04 — current partners logo strip */
 .pt-logos{padding:clamp(56px,7vw,104px) 0;background:#fff;border-top:1px solid var(--line)}
@@ -76,11 +55,13 @@
 .pt-logos .head .eyebrow{display:inline-block;margin-bottom:14px}
 .pt-logos .head h2{font-family:var(--serif);font-weight:400;font-size:clamp(28px,3.8vw,50px);line-height:1.06;letter-spacing:-.02em;margin:0;color:var(--ink);text-wrap:balance}
 .pt-logos .head h2 .ital{font-style:italic;color:var(--accent)}
-.pt-logo-strip{display:flex;gap:18px;overflow-x:auto;padding:6px 0 16px;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:var(--line-2) transparent}
-.pt-logo-strip::-webkit-scrollbar{height:6px}
-.pt-logo-strip::-webkit-scrollbar-thumb{background:var(--line-2);border-radius:999px}
-.pt-logo-box{flex:0 0 auto;width:186px;height:104px;scroll-snap-align:start;display:flex;align-items:center;justify-content:center;border:1px dashed var(--line-2);border-radius:16px;background:var(--bg-alt);font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-2);filter:grayscale(1);opacity:.7;transition:filter .3s ease,opacity .3s ease,border-color .3s ease,color .3s ease,transform .3s ease}
-.pt-logo-box:hover{filter:grayscale(0);opacity:1;border-color:rgba(54, 192, 237,.4);border-style:solid;color:var(--accent);transform:translateY(-2px)}
+.pt-logo-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.pt-logo-box{height:108px;display:flex;align-items:center;justify-content:center;border:1px solid var(--line-2);border-radius:16px;background:#fff;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-2);transition:border-color .3s ease,box-shadow .3s ease,transform .3s ease}
+.pt-logo-box img{max-width:78%;max-height:62%;width:auto;height:auto;object-fit:contain;display:block}
+a.pt-logo-box{text-decoration:none;color:inherit}
+.pt-logo-box:hover{border-color:rgba(54, 192, 237,.45);box-shadow:0 14px 30px -20px rgba(10,19,22,.3);transform:translateY(-2px)}
+@media (max-width:900px){.pt-logo-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:620px){.pt-logo-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
 .pt-logos .attribution{margin:clamp(24px,2.8vw,34px) 0 0;font-size:14.5px;color:var(--muted);line-height:1.6;max-width:60ch}
 
 /* Section 05 — what partners say (2 wide cards, homepage testimonial component) */
@@ -102,34 +83,6 @@
 .pt-trole{font-size:13px;color:var(--muted);line-height:1.4}
 .pt-torg{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-top:3px}
 
-/* Section 06 — application form */
-.pt-apply-sec{padding:clamp(56px,7vw,104px) 0;background:var(--bg-alt)}
-.pt-apply-sec .head{text-align:center;max-width:680px;margin:0 auto clamp(32px,3.6vw,48px)}
-.pt-apply-sec .head .eyebrow{display:inline-block;margin-bottom:14px}
-.pt-apply-sec .head h2{font-family:var(--serif);font-weight:400;font-size:clamp(28px,3.8vw,50px);line-height:1.06;letter-spacing:-.02em;margin:0 0 14px;color:var(--ink);text-wrap:balance}
-.pt-apply-sec .head h2 .ital{font-style:italic;color:var(--accent)}
-.pt-apply-sec .head .intro{color:var(--muted);font-size:clamp(15px,1.1vw,17px);line-height:1.62;margin:0 auto;max-width:56ch}
-.pt-form-wrap{max-width:760px;margin:0 auto}
-.pt-form{background:#fff;border:1px solid var(--line);border-radius:24px;padding:clamp(28px,3.6vw,48px)}
-.pt-form .form-row{margin-bottom:24px}
-.pt-form .form-field{margin-bottom:24px}
-.pt-form .form-field:last-of-type{margin-bottom:0}
-.pt-form-actions{margin-top:30px}
-.pt-form-actions .btn{border:0;cursor:pointer}
-.pt-form-foot{margin-top:24px;display:flex;flex-direction:column;gap:8px}
-.pt-form-foot .promise{display:inline-flex;align-items:center;gap:9px;font-size:13.5px;color:var(--ink);font-weight:600}
-.pt-form-foot .promise svg{width:16px;height:16px;color:var(--accent)}
-.pt-form-foot .privacy{font-size:12.5px;color:var(--muted-2)}
-.pt-honey{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
-.pt-success{display:none;text-align:center;padding:clamp(36px,5vw,64px) 20px;background:#fff;border:1px solid var(--line);border-radius:24px}
-.pt-success.show{display:block;animation:ptFade .5s ease}
-@keyframes ptFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
-.pt-success .tick{width:72px;height:72px;border-radius:50%;background:linear-gradient(160deg,var(--accent-3),var(--accent-2));color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 22px}
-.pt-success .tick svg{width:34px;height:34px}
-.pt-success h3{font-family:var(--serif);font-weight:400;font-size:clamp(26px,2.6vw,34px);color:var(--ink);margin:0 0 10px}
-.pt-success p{color:var(--muted);font-size:15.5px;line-height:1.6;max-width:46ch;margin:0 auto}
-.pt-err{display:block;font-size:12px;color:#c0563b;margin-top:6px;min-height:0}
-
 /* Section 07 — FAQ accordion */
 .pt-faq-sec{background:#fff;border-top:1px solid var(--line);padding:clamp(56px,7vw,96px) 0}
 .pt-faq-head{text-align:center;margin-bottom:clamp(36px,4vw,52px)}
@@ -146,13 +99,6 @@
 .pt-faq-item.open .pt-faq-a{max-height:360px}
 
 /* Bundle / combined-services CTA + final closing CTA */
-.pt-bundle{padding:clamp(48px,6vw,80px) 0;background:var(--bg)}
-.pt-bundle-band{display:grid;grid-template-columns:1.4fr 1fr;gap:clamp(28px,3.4vw,48px);align-items:center;max-width:var(--maxw);margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:28px;padding:clamp(34px,4vw,56px)}
-.pt-bundle-band .eyebrow{display:inline-block;margin-bottom:12px}
-.pt-bundle-band h3{font-family:var(--serif);font-weight:400;font-size:clamp(24px,2.8vw,38px);line-height:1.1;letter-spacing:-.02em;color:var(--ink);margin:0 0 14px;text-wrap:balance}
-.pt-bundle-band h3 .ital{font-style:italic;color:var(--accent)}
-.pt-bundle-band p{color:var(--muted);font-size:15.5px;line-height:1.65;margin:0;max-width:52ch}
-.pt-bundle-band .cta-col{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
 
 .pt-close{padding:clamp(56px,7vw,104px) 0}
 .pt-close-band{background:linear-gradient(135deg,rgba(54, 192, 237,.1),rgba(54,192,237,.08));border:1px solid rgba(54, 192, 237,.18);border-radius:28px;padding:clamp(44px,5.5vw,80px);text-align:center;max-width:var(--maxw);margin:0 auto}
@@ -163,13 +109,9 @@
 
 @media (max-width:980px){
   .pt-why-grid{grid-template-columns:1fr;gap:48px}
-  .pt-bundle-band{grid-template-columns:1fr;gap:24px}
 }
 @media (max-width:768px){
-  .pt-band-inner{grid-template-columns:1fr;gap:24px;border-left-width:3px}
-  .pt-band-right .pt-apply{align-self:flex-start}
   .pt-testi-grid{grid-template-columns:1fr}
-  .pt-form .form-row{display:grid;grid-template-columns:1fr;gap:0}
   .pt-close-band .cta-row{flex-direction:column;align-items:stretch}
 }
 </style>
@@ -254,7 +196,7 @@
 
         <!-- AGENTIC SOLUTIONS (reroutes to Comes360) -->
         <div class="nav-item" data-mega>
-          <a class="nav-link" href="ai-products.html">Agentic Solutions
+          <a class="nav-link" href="https://comes360.com/" target="_blank" rel="noopener noreferrer">Agentic Solutions
             <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
           </a>
           <div class="mega mega-lg mega-compact mega-agentic mega-grid mega-grid-3" role="menu">
@@ -262,17 +204,17 @@
             <div class="mega-col">
               <div class="mega-subtitle">Agency Companions</div>
               <ul class="mega-list">
-                <li><a class="mega-link" href="ai-products.html"><span class="mega-link-ico mega-link-ico--glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><span class="mega-link-text"><span class="mega-link-name">HR Companion</span><span class="mega-link-sub">Screens candidates and books interviews, escalating when judgement is needed.</span></span></a></li>
-                <li><a class="mega-link" href="ai-products.html"><span class="mega-link-ico mega-link-ico--glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Admin Companion</span><span class="mega-link-sub">Handles data entry, routine approvals and reporting for your team.</span></span></a></li>
-                <li><a class="mega-link" href="ai-products.html"><span class="mega-link-ico mega-link-ico--glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M12 14l2 2"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Scheduler Companion</span><span class="mega-link-sub">Builds conflict-free schedules and re-optimizes instantly when plans change.</span></span></a></li>
-                <li><a class="mega-link" href="ai-products.html"><span class="mega-link-ico mega-link-ico--glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="8" r="4"/><path d="M4 21v-1a6 6 0 0 1 6-6h1"/><circle cx="18" cy="17" r="3.5"/><line x1="20.5" y1="19.5" x2="23" y2="22"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Recruiter Companion</span><span class="mega-link-sub">Sources and screens candidates, keeping your hiring pipeline warm.</span></span></a></li>
+                <li><a class="mega-link" href="ai-products.html#hr"><span class="mega-link-ico mega-link-ico--glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><span class="mega-link-text"><span class="mega-link-name">HR Companion</span><span class="mega-link-sub">Screens candidates and books interviews, escalating when judgement is needed.</span></span></a></li>
+                <li><a class="mega-link" href="ai-products.html#admin"><span class="mega-link-ico mega-link-ico--glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Admin Companion</span><span class="mega-link-sub">Handles data entry, routine approvals and reporting for your team.</span></span></a></li>
+                <li><a class="mega-link" href="ai-products.html#scheduler"><span class="mega-link-ico mega-link-ico--glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M12 14l2 2"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Scheduler Companion</span><span class="mega-link-sub">Builds conflict-free schedules and re-optimizes instantly when plans change.</span></span></a></li>
+                <li><a class="mega-link" href="https://comes360.com/" target="_blank" rel="noopener noreferrer"><span class="mega-link-ico mega-link-ico--glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="8" r="4"/><path d="M4 21v-1a6 6 0 0 1 6-6h1"/><circle cx="18" cy="17" r="3.5"/><line x1="20.5" y1="19.5" x2="23" y2="22"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Recruiter Companion</span><span class="mega-link-sub">Sources and screens candidates, keeping your hiring pipeline warm.</span></span></a></li>
               </ul>
               </div>
             <div class="mega-col">
               <div class="mega-subtitle">Care Companions</div>
               <ul class="mega-list">
-                <li><a class="mega-link" href="ai-products.html"><span class="mega-link-ico mega-link-ico--glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 6.6a5 5 0 0 0-7.1 0L12 8.3l-1.7-1.7a5 5 0 0 0-7.1 7.1L12 22l8.8-8.3a5 5 0 0 0 0-7.1z"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Caregiver Companion</span><span class="mega-link-sub">On-call assistant for caregivers &mdash; care plans, answers and visit logs.</span></span></a></li>
-                <li><a class="mega-link" href="ai-products.html"><span class="mega-link-ico mega-link-ico--glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Client Companion</span><span class="mega-link-sub">Timely updates for clients and families; sensitive matters go to a person.</span></span></a></li>
+                <li><a class="mega-link" href="ai-products.html#caregiver"><span class="mega-link-ico mega-link-ico--glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 6.6a5 5 0 0 0-7.1 0L12 8.3l-1.7-1.7a5 5 0 0 0-7.1 7.1L12 22l8.8-8.3a5 5 0 0 0 0-7.1z"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Caregiver Companion</span><span class="mega-link-sub">On-call assistant for caregivers &mdash; care plans, answers and visit logs.</span></span></a></li>
+                <li><a class="mega-link" href="ai-products.html#client"><span class="mega-link-ico mega-link-ico--glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Client Companion</span><span class="mega-link-sub">Timely updates for clients and families; sensitive matters go to a person.</span></span></a></li>
               </ul>
             </div>
             <div class="mega-col">
@@ -280,7 +222,7 @@
                 <span class="feat-label">Powered by</span>
                 <h4>Comes360 &mdash; agentic companions for care teams.</h4>
                 <p>Workforce and care companions that coordinate the day-to-day.</p>
-                <a class="feat-cta" href="ai-products.html">Visit Comes360
+                <a class="feat-cta" href="https://comes360.com/" target="_blank" rel="noopener noreferrer">Visit Comes360
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
                 </a>
               </div>
@@ -386,7 +328,7 @@
       <span class="eyebrow">PARTNERSHIPS <span class="dot">&middot;</span> KLEZA</span>
       <h1>Let&rsquo;s grow <span class="ital">together.</span></h1>
       <p class="lede">Kleza works with technology vendors, referral partners, and resellers who share our commitment to intelligent, human-centred digital services &mdash; especially in healthcare.</p>
-      <div class="cta-row"><a class="btn btn-accent" href="#apply">Apply to Partner <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+      <div class="cta-row"><a class="btn btn-accent" href="contact.html">Apply to Partner <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
     </div>
   </div>
 </section>
@@ -423,73 +365,6 @@
   </div>
 </section>
 
-<!-- ===== SECTION 03 — THREE PARTNERSHIP TIERS ===== -->
-<section class="pt-tiers" data-screen-label="Three Partnership Tiers">
-  <div class="container">
-    <div class="head">
-      <span class="eyebrow">THE PROGRAMME</span>
-      <h2>Find the right kind of partnership <span class="ital">for your organisation</span></h2>
-    </div>
-  </div>
-
-  <!-- Tier 1 -->
-  <div class="pt-band" data-screen-label="Technology Partner">
-    <div class="pt-band-inner">
-      <div class="pt-band-left">
-        <div class="tier-ix">Tier 01 &middot; Technology Partner</div>
-        <h3>Technology Partner</h3>
-        <p class="desc">For software vendors, SaaS platforms, and technology providers whose products complement or integrate with Kleza&rsquo;s AI and digital services.</p>
-      </div>
-      <div class="pt-band-right">
-        <ul class="pt-benefits">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Joint integration development and co-marketing opportunities</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Listed in the Kleza IVNA Marketplace as a verified technology partner</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Access to Kleza&rsquo;s technical team for integration support</li>
-        </ul>
-        <a class="pt-apply" href="#apply" data-tier="Technology Partner">Apply as a Technology Partner <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Tier 2 -->
-  <div class="pt-band" data-screen-label="Referral Partner">
-    <div class="pt-band-inner">
-      <div class="pt-band-left">
-        <div class="tier-ix">Tier 02 &middot; Referral Partner</div>
-        <h3>Referral Partner</h3>
-        <p class="desc">For consultants, agencies, brokers, and professional service providers who regularly interact with healthcare or enterprise organisations that could benefit from Kleza&rsquo;s services.</p>
-      </div>
-      <div class="pt-band-right">
-        <ul class="pt-benefits">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Referral fee structure for qualified introductions that convert</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Co-branded proposal materials and case studies</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Dedicated Kleza partner contact for every referred opportunity</li>
-        </ul>
-        <a class="pt-apply" href="#apply" data-tier="Referral Partner">Apply as a Referral Partner <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Tier 3 -->
-  <div class="pt-band" data-screen-label="Reseller Partner">
-    <div class="pt-band-inner">
-      <div class="pt-band-left">
-        <div class="tier-ix">Tier 03 &middot; Reseller Partner</div>
-        <h3>Reseller Partner</h3>
-        <p class="desc">For managed service providers, staffing firms, and digital agencies that want to offer Kleza&rsquo;s services under their own brand or as part of their existing client packages.</p>
-      </div>
-      <div class="pt-band-right">
-        <ul class="pt-benefits">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>White-label service delivery options available</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Volume-based pricing for resold service packages</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Priority support and a dedicated account manager</li>
-        </ul>
-        <a class="pt-apply" href="#apply" data-tier="Reseller Partner">Apply as a Reseller Partner <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ===== SECTION 04 — CURRENT PARTNERS ===== -->
 <section class="pt-logos" data-screen-label="Current Partners">
   <div class="container">
@@ -497,15 +372,48 @@
       <span class="eyebrow">CURRENT PARTNERS</span>
       <h2>Organisations <span class="ital">we work with</span></h2>
     </div>
-    <div class="pt-logo-strip" role="list" aria-label="Current partners">
-      <div class="pt-logo-box" role="listitem">Partner logo</div>
-      <div class="pt-logo-box" role="listitem">Partner logo</div>
-      <div class="pt-logo-box" role="listitem">Partner logo</div>
-      <div class="pt-logo-box" role="listitem">Partner logo</div>
-      <div class="pt-logo-box" role="listitem">Partner logo</div>
-      <div class="pt-logo-box" role="listitem">Partner logo</div>
-      <div class="pt-logo-box" role="listitem">Partner logo</div>
-      <div class="pt-logo-box" role="listitem">Partner logo</div>
+    <div class="pt-logo-grid" role="list" aria-label="Clients we work with">
+      <a class="pt-logo-box" role="listitem" href="https://www.interimhealthcare.com/" target="_blank" rel="noopener noreferrer" aria-label="Interim Healthcare"><img src="/assets/logos/client/interim-healthcare.png" alt="Interim Healthcare" loading="lazy" decoding="async" width="200" height="100" /></a>
+      <a class="pt-logo-box" role="listitem" href="https://www.rightathome.net" target="_blank" rel="noopener noreferrer" aria-label="Right at Home"><img src="/assets/logos/client/rah.png" alt="Right at Home" loading="lazy" decoding="async" width="200" height="100" /></a>
+      <a class="pt-logo-box" role="listitem" href="https://www.homeinstead.com/" target="_blank" rel="noopener noreferrer" aria-label="Home Instead"><img src="/assets/logos/client/home-instead.png" alt="Home Instead" loading="lazy" decoding="async" width="200" height="100" /></a>
+      <a class="pt-logo-box" role="listitem" href="https://myassuredhomenursing.com/" target="_blank" rel="noopener noreferrer" aria-label="Assured Home Nursing"><img src="/assets/logos/client/assured.png" alt="Assured Home Nursing" loading="lazy" decoding="async" width="200" height="100" /></a>
+      <a class="pt-logo-box" role="listitem" href="https://www.dhitilogic.com/" target="_blank" rel="noopener noreferrer" aria-label="Dhiti Logic"><img src="/assets/logos/client/dhiti.png" alt="Dhiti Logic" loading="lazy" decoding="async" width="200" height="100" /></a>
+      <a class="pt-logo-box" role="listitem" href="https://liafi.org/" target="_blank" rel="noopener noreferrer" aria-label="LIAFI"><img src="/assets/logos/client/liafi.png" alt="LIAFI" loading="lazy" decoding="async" width="200" height="100" /></a>
+      <a class="pt-logo-box" role="listitem" href="https://stadiumrx.com/" target="_blank" rel="noopener noreferrer" aria-label="Stadium Pharmacy"><img src="/assets/logos/client/stadium-pharmacy.png" alt="Stadium Pharmacy" loading="lazy" decoding="async" width="200" height="100" /></a>
+      <a class="pt-logo-box" role="listitem" href="https://kidneyfy.com/" target="_blank" rel="noopener noreferrer" aria-label="Kidney For You"><img src="/assets/logos/client/kidneyfy.png" alt="Kidney For You" loading="lazy" decoding="async" width="200" height="100" /></a>
+      <a class="pt-logo-box" role="listitem" href="https://carehealth.ai/" target="_blank" rel="noopener noreferrer" aria-label="Care Health"><img src="/assets/logos/client/care-health.png" alt="Care Health" loading="lazy" decoding="async" width="200" height="100" /></a>
+      <a class="pt-logo-box" role="listitem" href="https://incredibletots.com/" target="_blank" rel="noopener noreferrer" aria-label="Incredible Tots"><img src="/assets/logos/client/incredibletots.png" alt="Incredible Tots" loading="lazy" decoding="async" width="200" height="100" /></a>
+      <a class="pt-logo-box" role="listitem" href="https://jiomedfamilycare.com/" target="_blank" rel="noopener noreferrer" aria-label="Jiomed Family Care"><img src="/assets/logos/client/jiomed.png" alt="Jiomed Family Care" loading="lazy" decoding="async" width="200" height="100" /></a>
+      <a class="pt-logo-box" role="listitem" href="https://eeshahospitals.com/" target="_blank" rel="noopener noreferrer" aria-label="Eesha Hospitals"><img src="/assets/logos/client/eesha-hospitals.png" alt="Eesha Hospitals" loading="lazy" decoding="async" width="200" height="100" /></a>
+      <a class="pt-logo-box" role="listitem" href="https://bmrlawoffices.com/" target="_blank" rel="noopener noreferrer" aria-label="BMR Law Offices"><img src="/assets/logos/client/bmr-lawoffices.png" alt="BMR Law Offices" loading="lazy" decoding="async" width="200" height="100" /></a>
+      <a class="pt-logo-box" role="listitem" href="https://www.tarishfinancial.com" target="_blank" rel="noopener noreferrer" aria-label="Tarish Financial"><img src="/assets/logos/client/tarish-financial.png" alt="Tarish Financial" loading="lazy" decoding="async" width="200" height="100" /></a>
+      <div class="pt-logo-box" role="listitem"><img src="/assets/logos/client/kastur-drones.png" alt="Kastur Drones" loading="lazy" decoding="async" width="200" height="100" /></div>
+      <a class="pt-logo-box" role="listitem" href="https://ojasinfinity.com/" target="_blank" rel="noopener noreferrer" aria-label="Ojasinfinity Pharma"><img src="/assets/logos/client/ojas.png" alt="Ojasinfinity Pharma" loading="lazy" decoding="async" width="200" height="100" /></a>
+      <a class="pt-logo-box" role="listitem" href="http://www.endlesstunes.com" target="_blank" rel="noopener noreferrer" aria-label="Endless Tunes"><img src="/assets/logos/client/endless-tunes.png" alt="Endless Tunes" loading="lazy" decoding="async" width="200" height="100" /></a>
+      <div class="pt-logo-box" role="listitem"><img src="/assets/logos/client/urvi.png" alt="Urvi" loading="lazy" decoding="async" width="200" height="100" /></div>
+      <a class="pt-logo-box" role="listitem" href="https://congruentremedies.com/" target="_blank" rel="noopener noreferrer" aria-label="Congruent Remedies"><img src="/assets/logos/client/congrent-remedies.png" alt="Congruent Remedies" loading="lazy" decoding="async" width="200" height="100" /></a>
+      <a class="pt-logo-box" role="listitem" href="https://finoplus.in/" target="_blank" rel="noopener noreferrer" aria-label="Finoplus"><img src="/assets/logos/client/finoplus.png" alt="Finoplus" loading="lazy" decoding="async" width="200" height="100" /></a>
+      <a class="pt-logo-box" role="listitem" href="https://cinfosysweb.com/" target="_blank" rel="noopener noreferrer" aria-label="Cinfosys"><img src="/assets/logos/client/cinfosys.png" alt="Cinfosys" loading="lazy" decoding="async" width="200" height="100" /></a>
+      <a class="pt-logo-box" role="listitem" href="https://ingeniousinno.com/" target="_blank" rel="noopener noreferrer" aria-label="Ingenious Innovations"><img src="/assets/logos/client/ingeniousinno.png" alt="Ingenious Innovations" loading="lazy" decoding="async" width="200" height="100" /></a>
+      <div class="pt-logo-box" role="listitem"><img src="/assets/logos/client/keen.png" alt="Keen on Pet Care" loading="lazy" decoding="async" width="200" height="100" /></div>
+      <a class="pt-logo-box" role="listitem" href="https://profundityjournals.com/" target="_blank" rel="noopener noreferrer" aria-label="Profundity Journals"><img src="/assets/logos/client/profundity.png" alt="Profundity Journals" loading="lazy" decoding="async" width="200" height="100" /></a>
+      <a class="pt-logo-box" role="listitem" href="https://alphatekitsolutions.com/" target="_blank" rel="noopener noreferrer" aria-label="Alphatek IT Solutions"><img src="/assets/logos/client/alphatek.png" alt="Alphatek IT Solutions" loading="lazy" decoding="async" width="200" height="100" /></a>
+      <a class="pt-logo-box" role="listitem" href="https://techtonglobal.com/" target="_blank" rel="noopener noreferrer" aria-label="Techton Global"><img src="/assets/logos/client/techton.png" alt="Techton Global" loading="lazy" decoding="async" width="200" height="100" /></a>
+      <div class="pt-logo-box" role="listitem"><img src="/assets/logos/client/jv-softech.png" alt="JV Softech" loading="lazy" decoding="async" width="200" height="100" /></div>
+      <a class="pt-logo-box" role="listitem" href="https://www.ankrotech.com/" target="_blank" rel="noopener noreferrer" aria-label="Ankrotech"><img src="/assets/logos/client/ankrotech.png" alt="Ankrotech" loading="lazy" decoding="async" width="200" height="100" /></a>
+      <a class="pt-logo-box" role="listitem" href="https://beforeyousolutions.com/" target="_blank" rel="noopener noreferrer" aria-label="Before You Solutions"><img src="/assets/logos/client/before-you-solutions.png" alt="Before You Solutions" loading="lazy" decoding="async" width="200" height="100" /></a>
+      <div class="pt-logo-box" role="listitem"><img src="/assets/logos/client/kchodus.png" alt="Kchodus" loading="lazy" decoding="async" width="200" height="100" /></div>
+      <a class="pt-logo-box" role="listitem" href="https://techtotal.in/" target="_blank" rel="noopener noreferrer" aria-label="TechTotal"><img src="/assets/logos/client/tech-total.png" alt="TechTotal" loading="lazy" decoding="async" width="200" height="100" /></a>
+      <a class="pt-logo-box" role="listitem" href="https://skillelevateit.com/" target="_blank" rel="noopener noreferrer" aria-label="Skill Elevate IT"><img src="/assets/logos/client/skill-elevate-it.png" alt="Skill Elevate IT" loading="lazy" decoding="async" width="200" height="100" /></a>
+      <div class="pt-logo-box" role="listitem"><img src="/assets/logos/client/rits-sports.png" alt="Rits Sports" loading="lazy" decoding="async" width="200" height="100" /></div>
+      <div class="pt-logo-box" role="listitem"><img src="/assets/logos/client/chanakya-education.png" alt="Chanakya Education" loading="lazy" decoding="async" width="200" height="100" /></div>
+      <a class="pt-logo-box" role="listitem" href="https://rahulhospital.in/" target="_blank" rel="noopener noreferrer" aria-label="Rahul Hospital"><img src="/assets/logos/client/rahul-hospital.png" alt="Rahul Hospital" loading="lazy" decoding="async" width="200" height="100" /></a>
+      <a class="pt-logo-box" role="listitem" href="https://mindfulparentinghub.in/" target="_blank" rel="noopener noreferrer" aria-label="Mindful Parenting Hub"><img src="/assets/logos/client/mindful-parenting-hub.png" alt="Mindful Parenting Hub" loading="lazy" decoding="async" width="200" height="100" /></a>
+      <a class="pt-logo-box" role="listitem" href="https://amruthasankalpwellness.com/" target="_blank" rel="noopener noreferrer" aria-label="Amrutha Sankalp Clinic"><img src="/assets/logos/client/amruth-sankalp-clinic.png" alt="Amrutha Sankalp Clinic" loading="lazy" decoding="async" width="200" height="100" /></a>
+      <a class="pt-logo-box" role="listitem" href="https://sanstark.ai/" target="_blank" rel="noopener noreferrer" aria-label="Sanstark"><img src="/assets/logos/client/sanstark.png" alt="Sanstark" loading="lazy" decoding="async" width="200" height="100" /></a>
+      <a class="pt-logo-box" role="listitem" href="https://svsagencies.com/" target="_blank" rel="noopener noreferrer" aria-label="SVS Agencies"><img src="/assets/logos/client/svs-agencies.png" alt="SVS Agencies" loading="lazy" decoding="async" width="200" height="100" /></a>
+      <a class="pt-logo-box" role="listitem" href="https://rivamh.com/" target="_blank" rel="noopener noreferrer" aria-label="Riva Mental Health"><img src="/assets/logos/client/riva-mental-health.png" alt="Riva Mental Health" loading="lazy" decoding="async" width="200" height="100" /></a>
+      <a class="pt-logo-box" role="listitem" href="https://accountsage.in/" target="_blank" rel="noopener noreferrer" aria-label="AccountSage"><img src="/assets/logos/client/accountsage.png" alt="AccountSage" loading="lazy" decoding="async" width="200" height="100" /></a>
     </div>
     <p class="attribution">Trusted by organisations across healthcare, technology, and professional services.</p>
   </div>
@@ -548,60 +456,6 @@
 </section>
 
 <!-- ===== SECTION 06 — APPLICATION FORM ===== -->
-<section class="pt-apply-sec" id="apply" data-screen-label="Application Form">
-  <div class="container">
-    <div class="head">
-      <span class="eyebrow">APPLY TO PARTNER</span>
-      <h2>Tell us about the partnership <span class="ital">you have in mind.</span></h2>
-      <p class="intro">We review every application personally. If there&rsquo;s a fit, you&rsquo;ll hear from us within 3 business days.</p>
-    </div>
-    <div class="pt-form-wrap">
-      <form class="pt-form" id="ptForm" novalidate>
-        <div class="form-row">
-          <div class="form-field"><label for="pf-name">Your full name</label><input id="pf-name" name="name" type="text" placeholder="Jordan Avery" autocomplete="name"><small class="pt-err" data-for="name"></small></div>
-          <div class="form-field"><label for="pf-org">Organisation name</label><input id="pf-org" name="organisation" type="text" placeholder="Where you work" autocomplete="organization"><small class="pt-err" data-for="organisation"></small></div>
-        </div>
-        <div class="form-row">
-          <div class="form-field"><label for="pf-email">Email address</label><input id="pf-email" name="email" type="email" placeholder="you@company.com" autocomplete="email"><small class="pt-err" data-for="email"></small></div>
-          <div class="form-field"><label for="pf-type">Which partnership fits you?</label>
-            <select id="pf-type" name="type">
-              <option value="" selected disabled>Choose a partnership type&hellip;</option>
-              <option>Technology Partner</option>
-              <option>Referral Partner</option>
-              <option>Reseller Partner</option>
-              <option>Not sure yet</option>
-            </select>
-            <small class="pt-err" data-for="type"></small>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-field"><label for="pf-url">Website URL</label><input id="pf-url" name="website" type="url" placeholder="https://yourcompany.com"></div>
-          <div class="form-field"><label for="pf-hear">How did you hear about Kleza? <span style="color:var(--muted-2);font-weight:500">(optional)</span></label><input id="pf-hear" name="referral_source" type="text" placeholder="A colleague, search, an event&hellip;"></div>
-        </div>
-        <div class="form-field">
-          <label for="pf-about">Tell us about the partnership you have in mind</label>
-          <textarea id="pf-about" name="about" placeholder="A few sentences on what you&rsquo;re hoping to build together (minimum 200 characters)." minlength="200"></textarea>
-          <small class="pt-err" data-for="about"></small>
-        </div>
-        <div class="pt-honey" aria-hidden="true"><label>Do not fill this in<input type="text" name="company_url" tabindex="-1" autocomplete="off"></label></div>
-        <div class="pt-form-actions">
-          <button type="submit" class="btn btn-accent">Submit Application <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
-        </div>
-        <div class="pt-form-foot">
-          <span class="promise"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/></svg> We review every application and respond within 3 business days.</span>
-          <span class="privacy">Your information is never shared with third parties.</span>
-        </div>
-      </form>
-      <div class="pt-success" id="ptSuccess">
-        <div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
-        <h3>Thank you &mdash; your application is with us.</h3>
-        <p>We review every application personally. If there&rsquo;s a fit, you&rsquo;ll hear from us within 3 business days.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== SECTION 07 — FAQ ===== -->
 <section class="pt-faq-sec" data-screen-label="FAQ">
   <div class="container">
     <div class="pt-faq-head"><span class="eyebrow">FAQ</span><h2>Partnership questions, <span class="ital">answered.</span></h2></div>
@@ -615,22 +469,6 @@
 </section>
 
 <!-- ===== BUNDLE / COMBINED SERVICES CTA ===== -->
-<section class="pt-bundle" data-screen-label="Combined Services">
-  <div class="container">
-    <div class="pt-bundle-band">
-      <div>
-        <span class="eyebrow">ONE ECOSYSTEM</span>
-        <h3>Bring your clients the <span class="ital">full Kleza stack.</span></h3>
-        <p>AI products, custom AI training, 24/7 assistants, and enterprise digital services &mdash; combined under one accountable team. Explore everything a Kleza partnership puts within reach.</p>
-      </div>
-      <div class="cta-col">
-        <a class="btn btn-dark" href="enterprise-services.html">Explore Enterprise Services <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-        <a class="btn btn-ghost" href="ai-products.html">See AI Products <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ===== CLOSING CTA ===== -->
 <section class="pt-close" data-screen-label="Closing CTA">
   <div class="container">
@@ -638,7 +476,7 @@
       <h2>Ready to grow <span class="ital">together?</span></h2>
       <p>Tell us about the partnership you have in mind. We review every application personally and respond within 3 business days.</p>
       <div class="cta-row">
-        <a class="btn btn-accent" href="#apply">Apply to Partner <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a class="btn btn-accent" href="contact.html">Apply to Partner <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
         <a class="btn btn-ghost" href="about.html">Back to About <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></a>
       </div>
     </div>
@@ -692,7 +530,7 @@
           <li><a href="/ai-products/hr">HR Companion</a></li>
           <li><a href="/ai-products/admin">Admin Companion</a></li>
           <li><a href="/ai-products/scheduler">Scheduler Companion</a></li>
-          <li><a href="/ai-products">Recruiter Companion</a></li>
+          <li><a href="https://comes360.com/" target="_blank" rel="noopener noreferrer">Recruiter Companion</a></li>
           <li><a href="/ai-products/caregiver">Caregiver Companion</a></li>
           <li><a href="/ai-products/client">Client Companion</a></li>
         </ul>
@@ -723,40 +561,6 @@
     btn.addEventListener('click',function(){ btn.parentElement.classList.toggle('open'); });
   });
 
-  /* Pre-select partnership type from a tier "Apply" link */
-  var typeSel=document.getElementById('pf-type');
-  document.querySelectorAll('.pt-apply[data-tier]').forEach(function(a){
-    a.addEventListener('click',function(){
-      var t=a.getAttribute('data-tier');
-      if(typeSel){ for(var i=0;i<typeSel.options.length;i++){ if(typeSel.options[i].value===t||typeSel.options[i].text===t){ typeSel.selectedIndex=i; break; } } }
-    });
-  });
-
-  /* Application form — inline validation + success state */
-  var form=document.getElementById('ptForm');
-  var success=document.getElementById('ptSuccess');
-  function setErr(name,msg){
-    var el=form.querySelector('.pt-err[data-for="'+name+'"]');
-    if(el) el.textContent=msg||'';
-  }
-  function isEmail(v){ return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
-  if(form){
-    form.addEventListener('submit',function(e){
-      e.preventDefault();
-      if(form.company_url && form.company_url.value){ return; } /* honeypot */
-      var ok=true;
-      ['name','organisation','email','type','about'].forEach(function(n){ setErr(n,''); });
-      if(!form.name.value.trim()){ setErr('name','Please tell us your name.'); ok=false; }
-      if(!form.organisation.value.trim()){ setErr('organisation','Please add your organisation name.'); ok=false; }
-      if(!isEmail(form.email.value.trim())){ setErr('email','Please enter a valid email address.'); ok=false; }
-      if(!form.type.value){ setErr('type','Please choose a partnership type.'); ok=false; }
-      if(form.about.value.trim().length<200){ setErr('about','Please share at least 200 characters about the partnership.'); ok=false; }
-      if(!ok) return;
-      form.style.display='none';
-      if(success) success.classList.add('show');
-      if(success) success.scrollIntoView({behavior:'smooth',block:'center'});
-    });
-  }
 })();
 </script>
 </body>

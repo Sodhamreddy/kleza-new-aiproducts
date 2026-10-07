@@ -26,7 +26,7 @@
 .es-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(900px 500px at 80% 20%,rgba(90, 204, 241,.18),transparent 60%),radial-gradient(700px 400px at 10% 90%,rgba(54,192,237,.12),transparent 60%);pointer-events:none}
 .es-hero-inner{position:relative;z-index:1}
 .es-hero .eyebrow{color:#9fb3b8}
-.es-hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(38px,5vw,68px);line-height:1.08;letter-spacing:-.01em;color:#fff;margin:18px 0 26px;text-wrap:balance}
+.es-hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(32px,4vw,54px);line-height:1.08;letter-spacing:-.01em;color:#fff;margin:18px 0 26px;text-wrap:balance}
 .es-hero h1 .ital{font-style:italic;color:var(--accent-3)}
 .es-hero p.lede{color:#aebcc0;max-width:560px;font-size:clamp(15px,1.1vw,18px);line-height:1.6;margin:0}
 .es-hero-ctas{margin-top:30px;display:flex;gap:12px;flex-wrap:wrap}
@@ -100,6 +100,10 @@
 .at-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px;position:relative;z-index:1}
 .at-tag{font-family:var(--mono);font-size:12px;letter-spacing:.02em;color:var(--ink-2);background:var(--bg-alt);border:1px solid var(--line);padding:8px 16px;border-radius:999px;transition:border-color .25s,color .25s}
 .at-card:hover .at-tag{border-color:rgba(54, 192, 237,.32)}
+.at-card-links{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:26px;position:relative;z-index:1}
+.at-card-link{display:inline-flex;align-items:center;gap:9px;font-family:var(--sans);font-weight:600;font-size:14.5px;color:var(--accent);transition:gap .2s ease}
+.at-card-link svg{width:16px;height:16px}
+.at-card-link:hover{gap:14px}
 
 /* ---------- HUMAN OVERSIGHT STATEMENT (tinted, typography-led) ---------- */
 .at-oversight{background:linear-gradient(165deg,rgba(54, 192, 237,.07),rgba(54,192,237,.045));border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center}
@@ -259,7 +263,7 @@
 
         <!-- AGENTIC SOLUTIONS (reroutes to Comes360) -->
         <div class="nav-item" data-mega>
-          <a class="nav-link" href="ai-products.html">Agentic Solutions
+          <a class="nav-link" href="https://comes360.com/" target="_blank" rel="noopener noreferrer">Agentic Solutions
             <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
           </a>
           <div class="mega mega-lg mega-compact mega-agentic mega-grid mega-grid-3" role="menu">
@@ -267,17 +271,17 @@
             <div class="mega-col">
               <div class="mega-subtitle">Agency Companions</div>
               <ul class="mega-list">
-                <li><a class="mega-link" href="ai-products.html"><span class="mega-link-ico mega-link-ico--glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><span class="mega-link-text"><span class="mega-link-name">HR Companion</span><span class="mega-link-sub">Screens candidates and books interviews, escalating when judgement is needed.</span></span></a></li>
-                <li><a class="mega-link" href="ai-products.html"><span class="mega-link-ico mega-link-ico--glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Admin Companion</span><span class="mega-link-sub">Handles data entry, routine approvals and reporting for your team.</span></span></a></li>
-                <li><a class="mega-link" href="ai-products.html"><span class="mega-link-ico mega-link-ico--glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M12 14l2 2"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Scheduler Companion</span><span class="mega-link-sub">Builds conflict-free schedules and re-optimizes instantly when plans change.</span></span></a></li>
-                <li><a class="mega-link" href="ai-products.html"><span class="mega-link-ico mega-link-ico--glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="8" r="4"/><path d="M4 21v-1a6 6 0 0 1 6-6h1"/><circle cx="18" cy="17" r="3.5"/><line x1="20.5" y1="19.5" x2="23" y2="22"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Recruiter Companion</span><span class="mega-link-sub">Sources and screens candidates, keeping your hiring pipeline warm.</span></span></a></li>
+                <li><a class="mega-link" href="ai-products.html#hr"><span class="mega-link-ico mega-link-ico--glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><span class="mega-link-text"><span class="mega-link-name">HR Companion</span><span class="mega-link-sub">Screens candidates and books interviews, escalating when judgement is needed.</span></span></a></li>
+                <li><a class="mega-link" href="ai-products.html#admin"><span class="mega-link-ico mega-link-ico--glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Admin Companion</span><span class="mega-link-sub">Handles data entry, routine approvals and reporting for your team.</span></span></a></li>
+                <li><a class="mega-link" href="ai-products.html#scheduler"><span class="mega-link-ico mega-link-ico--glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M12 14l2 2"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Scheduler Companion</span><span class="mega-link-sub">Builds conflict-free schedules and re-optimizes instantly when plans change.</span></span></a></li>
+                <li><a class="mega-link" href="https://comes360.com/" target="_blank" rel="noopener noreferrer"><span class="mega-link-ico mega-link-ico--glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="8" r="4"/><path d="M4 21v-1a6 6 0 0 1 6-6h1"/><circle cx="18" cy="17" r="3.5"/><line x1="20.5" y1="19.5" x2="23" y2="22"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Recruiter Companion</span><span class="mega-link-sub">Sources and screens candidates, keeping your hiring pipeline warm.</span></span></a></li>
               </ul>
               </div>
             <div class="mega-col">
               <div class="mega-subtitle">Care Companions</div>
               <ul class="mega-list">
-                <li><a class="mega-link" href="ai-products.html"><span class="mega-link-ico mega-link-ico--glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 6.6a5 5 0 0 0-7.1 0L12 8.3l-1.7-1.7a5 5 0 0 0-7.1 7.1L12 22l8.8-8.3a5 5 0 0 0 0-7.1z"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Caregiver Companion</span><span class="mega-link-sub">On-call assistant for caregivers &mdash; care plans, answers and visit logs.</span></span></a></li>
-                <li><a class="mega-link" href="ai-products.html"><span class="mega-link-ico mega-link-ico--glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Client Companion</span><span class="mega-link-sub">Timely updates for clients and families; sensitive matters go to a person.</span></span></a></li>
+                <li><a class="mega-link" href="ai-products.html#caregiver"><span class="mega-link-ico mega-link-ico--glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 6.6a5 5 0 0 0-7.1 0L12 8.3l-1.7-1.7a5 5 0 0 0-7.1 7.1L12 22l8.8-8.3a5 5 0 0 0 0-7.1z"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Caregiver Companion</span><span class="mega-link-sub">On-call assistant for caregivers &mdash; care plans, answers and visit logs.</span></span></a></li>
+                <li><a class="mega-link" href="ai-products.html#client"><span class="mega-link-ico mega-link-ico--glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Client Companion</span><span class="mega-link-sub">Timely updates for clients and families; sensitive matters go to a person.</span></span></a></li>
               </ul>
             </div>
             <div class="mega-col">
@@ -285,7 +289,7 @@
                 <span class="feat-label">Powered by</span>
                 <h4>Comes360 &mdash; agentic companions for care teams.</h4>
                 <p>Workforce and care companions that coordinate the day-to-day.</p>
-                <a class="feat-cta" href="ai-products.html">Visit Comes360
+                <a class="feat-cta" href="https://comes360.com/" target="_blank" rel="noopener noreferrer">Visit Comes360
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
                 </a>
               </div>
@@ -445,12 +449,16 @@
       <article class="at-card">
         <div class="at-card-top">
           <div class="es-icon-tile"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M11 13l1.5 1.5L16 11"/></svg></div>
-          <h4>Blog Automation &mdash; Publishing on Autopilot</h4>
+          <h4>Blog Automation Built to Rank, Publish, and Stay Consistent.</h4>
         </div>
         <div class="at-divider"></div>
-        <p>Kleza manages your entire blog pipeline &mdash; topic research, SEO brief creation, AI-assisted drafting, expert editorial review, formatting, image selection, metadata optimisation, scheduled publishing. Every post meets E-E-A-T standards.</p>
+        <p>From keyword research to a published post, our automation tool handles it all. It studies trends, builds SEO-optimized content in your brand voice, links to credible sources, and connects back to your own site, all without you writing a single line.</p>
         <div class="at-tags">
           <span class="at-tag">Keyword research</span><span class="at-tag">SEO brief</span><span class="at-tag">AI draft + human edit</span><span class="at-tag">On-brand voice</span><span class="at-tag">Schema markup</span><span class="at-tag">Internal linking</span>
+        </div>
+        <div class="at-card-links">
+          <a class="at-card-link" href="contact.html">Try Blog Automation <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          <a class="at-card-link" href="resources.html#articles">See a Sample Blog Post <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
         </div>
       </article>
       <article class="at-card">
@@ -575,7 +583,7 @@
           <li><a href="/ai-products/hr">HR Companion</a></li>
           <li><a href="/ai-products/admin">Admin Companion</a></li>
           <li><a href="/ai-products/scheduler">Scheduler Companion</a></li>
-          <li><a href="/ai-products">Recruiter Companion</a></li>
+          <li><a href="https://comes360.com/" target="_blank" rel="noopener noreferrer">Recruiter Companion</a></li>
           <li><a href="/ai-products/caregiver">Caregiver Companion</a></li>
           <li><a href="/ai-products/client">Client Companion</a></li>
         </ul>

@@ -7,12 +7,9 @@ export default function HomePage() {
       <style
         dangerouslySetInnerHTML={{
           __html: `
-            :is(h1, h2, h3, h4, h5, h6),
-            :is(h1, h2, h3, h4, h5, h6) * {
-              font-family: "Playfair Display", ui-serif, Georgia, serif !important;
-              font-weight: 600 !important;
-            }
-
+            /* The heading face now lives in globals.css, site-wide; this page
+               no longer forces its own heavier weight, so its headings match
+               every other page. What stays here is purely heading sizing. */
             .ecosystem-header h2,
             .section-head h2 {
               font-size: clamp(26px, 3.4vw, 44px) !important;

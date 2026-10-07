@@ -20,7 +20,7 @@
   --maxw: 1280px;
   --pad-x: clamp(20px, 4vw, 64px);
   --sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  --serif: "Instrument Serif", "Cormorant Garamond", Georgia, serif;
+  --serif: "Playfair Display", "Cormorant Garamond", Georgia, serif;
   --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
@@ -5694,4 +5694,20 @@ body[data-panel-tint="pastel"] .eco-panel.eco-enterprise {
   color: var(--ink) !important;
   font-weight: 800 !important;
   letter-spacing: 0.08em !important;
+}
+
+/* ==========================================================================
+   HEADINGS — one display face site-wide.
+   The `--serif` token covers every heading authored against it; this catches
+   the rest (page stylesheets that set their own sans stack on an h2, for
+   instance), so no page drifts to a different heading font.
+
+   Weight is pinned too: Playfair Display at 400 reads too light at display
+   sizes, and 600 sets wide enough to re-wrap headlines. 500 holds across
+   every page.
+   ========================================================================== */
+:is(h1, h2, h3, h4, h5, h6),
+:is(h1, h2, h3, h4, h5, h6) * {
+  font-family: "Playfair Display", ui-serif, Georgia, serif !important;
+  font-weight: 500 !important;
 }
