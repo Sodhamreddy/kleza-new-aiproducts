@@ -480,7 +480,7 @@ export const MENU: MenuParent[] = [
         cta: "Talk to IT",
       },
       {
-        slug: "blog",
+        slug: "blog-automation",
         name: "Blog Automation",
         eyebrow: "CONTENT AUTOMATION",
         // The hero reads "<name> <italTail>", so this completes the headline:
@@ -500,7 +500,7 @@ export const MENU: MenuParent[] = [
         cta: "Try Blog Automation",
       },
       {
-        slug: "social",
+        slug: "social-media-scheduling",
         name: "Social Media Scheduling",
         eyebrow: "CONTENT AUTOMATION",
         italTail: "right post, right time.",

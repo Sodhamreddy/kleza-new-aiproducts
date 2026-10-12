@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Chrome from "../_components/Chrome";
 import DesignPage from "../_components/DesignPage";
 
 export const metadata: Metadata = {
@@ -15,14 +14,10 @@ export const metadata: Metadata = {
  *
  * The page body, its scoped stylesheet, and its interaction script all live in
  * `content/marketplace.html` (everything is namespaced under `.mv2`, so the
- * shared chrome is untouched). `DesignPage` injects the CSS, renders the body,
- * and re-runs the script on the client; `Chrome` supplies the shared
- * mega-menu header and footer.
+ * shared chrome is untouched). `DesignPage` injects the CSS, renders the body, re-runs
+ * the script on the client, and wraps it in the shared header and footer from
+ * `content/_chrome.html`.
  */
 export default function MarketplacePage() {
-  return (
-    <Chrome>
-      <DesignPage file="marketplace.html" />
-    </Chrome>
-  );
+  return <DesignPage file="marketplace.html" />;
 }

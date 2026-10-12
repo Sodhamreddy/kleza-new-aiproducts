@@ -10,6 +10,13 @@ const nextConfig = {
   // fully static `out/` folder (no Node server needed); make-dist.mjs renames
   // it to `dist/`. trailingSlash keeps every route directory-based so Apache /
   // LiteSpeed serve `/about/` -> `/about/index.html` without extra rules.
+  // `next dev` and `next build` share a build directory by default, so a build
+  // run while the dev server is up deletes chunks that server still holds,
+  // breaking it with "Cannot find module './NNN.js'". Set NEXT_DIST_DIR to
+  // build into a separate folder and leave a running dev server alone.
+  // Unset (the normal case) this is exactly the default.
+  distDir: process.env.NEXT_DIST_DIR || ".next",
+
   output: "export",
   trailingSlash: true,
   images: { unoptimized: true },

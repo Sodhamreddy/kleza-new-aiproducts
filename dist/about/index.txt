@@ -1,10 +1,10 @@
 3:I[4707,[],""]
 4:I[6423,[],""]
-5:I[5753,["185","static/chunks/app/layout-1704edfb8ec21a88.js"],"default"]
-0:["rMFLPw-jFnJm_1AqLiUfw",[[["",{"children":["about",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",{"children":["about",{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","about","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/ac73cfbc8e915de4.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":""}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&family=Mukta:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"children":[["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}],["$","$L5",null,{}]]}]]}]],null],null],["$L6",null]]]]
+5:I[5753,["185","static/chunks/app/layout-c20a0b81d88c0cad.js"],"default"]
+0:["2Uy1GdArdFGq3YUFU0neK",[[["",{"children":["about",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",{"children":["about",{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","about","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/ac73cfbc8e915de4.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":""}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&family=Mukta:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"children":[["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}],["$","$L5",null,{}]]}]]}]],null],null],["$L6",null]]]]
 6:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"About — Kleza"}],["$","meta","3",{"name":"description","content":"Kleza is a fast-growing AI Transformation Company built on a singular vision: to humanize technology and make intelligence accessible, ethical, and meaningful for every business."}],["$","link","4",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","5",{"rel":"icon","href":"/favicon-32.png","sizes":"32x32","type":"image/png"}],["$","link","6",{"rel":"icon","href":"/favicon-192.png","sizes":"192x192","type":"image/png"}],["$","link","7",{"rel":"apple-touch-icon","href":"/apple-touch-icon.png","sizes":"180x180","type":"image/png"}]]
 1:null
-9:I[1797,["301","static/chunks/app/about/page-6c52423a019939cd.js"],"default"]
+b:I[1797,["301","static/chunks/app/about/page-1ee67651e92b76b0.js"],"default"]
 7:T3cd4,
 /* ===================== ABOUT PAGE ===================== */
 /* body sets line-height:1.55 and there is no global heading reset, so any
@@ -186,11 +186,10 @@
   .ab-facts{grid-template-columns:1fr}
   .ab-team-grid,.ab-team-grid.lead{grid-template-columns:1fr 1fr}
 }
-8:T9eda,
-<header class="site-header" id="header" data-screen-label="Header">
+8:T60d3,<header class="site-header" id="header" data-screen-label="Header">
   <div class="nav-shell">
     <nav class="nav" aria-label="Primary" style="border-color: rgb(13, 155, 139)">
-      <a href="#" class="logo" aria-label="Kleza"><img src="/assets/kleza-logo.png" alt="Kleza" /></a>
+      <a href="/" class="logo" aria-label="Kleza"><img src="/assets/kleza-logo.png" alt="Kleza" /></a>
 
                   <div class="nav-links">
 
@@ -322,8 +321,8 @@
             <div class="mega-col">
               <div class="mega-subtitle">Content Automation</div>
               <ul class="mega-list">
-                <li><a class="mega-link" href="/enterprise-services/automation-tools"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Blog Automation</span></span></a></li>
-                <li><a class="mega-link" href="/enterprise-services/automation-tools"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Social Media Scheduling</span></span></a></li>
+                <li><a class="mega-link" href="/enterprise-services/blog-automation"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Blog Automation</span></span></a></li>
+                <li><a class="mega-link" href="/enterprise-services/social-media-scheduling"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Social Media Scheduling</span></span></a></li>
               </ul>
               <div class="mega-subtitle">AI Services</div>
               <ul class="mega-list">
@@ -379,7 +378,7 @@
         </div>
       </div>
 
-      <a href="#contact" class="nav-cta">
+      <a href="/contact" class="nav-cta">
         Contact Us
         <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
       </a>
@@ -389,8 +388,9 @@
       </button>
     </nav>
   </div>
-</header>
-
+</header>9:T29e3,
+<!-- Header and footer come from content/_chrome.html — the single place the
+     menu is defined. Do not paste a copy back in here. -->
 <!-- ===== SECTION 01 — STORY HERO ===== -->
 <section class="ab-hero" data-screen-label="Story Hero">
   <div class="ab-crumb"><div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span class="sep">&raquo;</span><span class="current">About</span></nav></div></div>
@@ -523,7 +523,9 @@ We're Kleza Solutions. What you get from us is simple: solid engineering, smart 
 </section>
 
 <!-- ============ FOOTER ============ -->
-<footer class="footer band-light" data-screen-label="Footer" style="padding: 56px 0px 32px">
+
+
+a:T145a,<footer class="footer band-light" data-screen-label="Footer" style="padding: 56px 0px 32px">
   <div class="container">
                 <div class="footer-grid">
       <div class="footer-brand">
@@ -547,7 +549,6 @@ We're Kleza Solutions. What you get from us is simple: solid engineering, smart 
           <li><a href="/enterprise-services/digital-marketing">Digital Marketing</a></li>
           <li><a href="/enterprise-services/operational-outsourcing">Operational Outsourcing</a></li>
           <li><a href="/enterprise-services/remote-it-services">Remote IT Services</a></li>
-          <li><a href="/enterprise-services/automation-tools">Automation Tools</a></li>
           <li><a href="/enterprise-services/search-visibility">Search Visibility</a></li>
           <li><a href="/enterprise-services/monitoring-verification">Monitoring &amp; Verification</a></li>
         </ul>
@@ -590,10 +591,7 @@ We're Kleza Solutions. What you get from us is simple: solid engineering, smart 
       <div class="right">Healthcare-grade AI <span style="opacity:.5;margin:0 .5em">&middot;</span> ISO Aligned</div>
     </div>
   </div>
-</footer>
-
-
-a:Taff,
+</footer>c:Taff,
 (function(){
   var TEAM={"Management":[["Manoj Paritala","Founder & CEO"]],"Digital Marketing":[["Vasudha","Project Manager"],["Praveen","Digital Marketing Specialist"],["Divya","Digital Marketing Specialist"],["Swathi","Digital Marketing Executive"],["Sulakshana","Sr. Content Writer"],["Salwa","Content Writer"],["Lubna","Content Writer"],["Rajesh","Sr. UI/UX Designer"],["Sahitya","UI/UX Designer"],["Deeraj","Jr. Graphic Designer"],["Raghavendra","Jr. Graphic Designer"]],"Development":[["Pawan","Sr. Manager, Product Management"],["Dhanush","Sr. Software Engineer"],["Veerababu","Sr. Backend Engineer"],["Avinash","Sr. Frontend Engineer"],["Kranthi","Developer"],["Sodham","Sr. Developer, Web Technologies"],["Navadeep","WordPress Developer"],["Silpa","Sr. QA Engineer"],["Sarvani","QA Engineer"],["Vamsi","Jr. QA Engineer"],["Sumalatha","Jr. Developer"],["Geyasree","Software Engineer"],["Suresh","Full Stack Developer"]],"HR & Accounts":[["Nandini","HR & Accounts Executive"]],"Managed IT":[["Murali","IT Manager"],["Trinadh Peddi","Sr. System Administrator"],["Srikanth","Jr. System Administrator"]],"Operational Outsourcing":[["Manasa","Manager"],["Vani","US Accounting Specialist"],["Ramya","US Accounting Specialist"],["Rebeca","Talent Acquisition Specialist"],["Renuka","Sr. Hiring Assistant"],["Samreen","Schedule Coordinator"],["Maliha Khanam","Schedule Coordinator"],["Madhu","Schedule Coordinator"],["Reeshma","Administrative Assistant"],["Naga Laxmi","US Accountant"],["Saumya","HR Recruiter"],["Chenee","Hiring Assistant"],["Jeana","Schedule Coordinator"],["Honey","Schedule Coordinator"],["Nestea","Schedule Coordinator"],["Yuki","Schedule Coordinator"],["Raphaella","Schedule Coordinator"]]};
   var tabs=document.getElementById('abTeamTabs');
@@ -615,4 +613,4 @@ a:Taff,
   });
   render(depts[0]);
 })();
-2:[[["$","script","0",{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Kleza\",\"alternateName\":\"Kleza Solutions\",\"url\":\"https://kleza.io\",\"foundingDate\":\"2016\",\"description\":\"A healthcare-first AI and digital services company operating across the USA and India.\",\"numberOfEmployees\":\"40+\",\"areaServed\":[\"United States\",\"India\"],\"knowsAbout\":[\"Healthcare AI\",\"Agentic AI\",\"Digital Services\",\"HIPAA-compliant AI\"],\"location\":[{\"@type\":\"Place\",\"address\":{\"@type\":\"PostalAddress\",\"addressLocality\":\"Hyderabad\",\"addressCountry\":\"IN\"}},{\"@type\":\"Place\",\"address\":{\"@type\":\"PostalAddress\",\"addressLocality\":\"Overland Park\",\"addressRegion\":\"KS\",\"addressCountry\":\"US\"}}]}"}}]],["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$7"}}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$8"}}],["$","$L9",null,{"scripts":[{"src":"/assets/nav.js"},{"code":"$a"}],"bodyAttrs":{}}]]
+2:[[["$","script","0",{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Kleza\",\"alternateName\":\"Kleza Solutions\",\"url\":\"https://kleza.io\",\"foundingDate\":\"2016\",\"description\":\"A healthcare-first AI and digital services company operating across the USA and India.\",\"numberOfEmployees\":\"40+\",\"areaServed\":[\"United States\",\"India\"],\"knowsAbout\":[\"Healthcare AI\",\"Agentic AI\",\"Digital Services\",\"HIPAA-compliant AI\"],\"location\":[{\"@type\":\"Place\",\"address\":{\"@type\":\"PostalAddress\",\"addressLocality\":\"Hyderabad\",\"addressCountry\":\"IN\"}},{\"@type\":\"Place\",\"address\":{\"@type\":\"PostalAddress\",\"addressLocality\":\"Overland Park\",\"addressRegion\":\"KS\",\"addressCountry\":\"US\"}}]}"}}]],["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$7"}}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$8"}}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$9"}}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$a"}}],["$","$Lb",null,{"scripts":[{"src":"/assets/nav.js"},{"code":"$c"}],"bodyAttrs":{}}]]

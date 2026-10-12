@@ -1,10 +1,10 @@
 3:I[4707,[],""]
 4:I[6423,[],""]
-5:I[5753,["185","static/chunks/app/layout-1704edfb8ec21a88.js"],"default"]
-0:["rMFLPw-jFnJm_1AqLiUfw",[[["",{"children":["enterprise-services",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",{"children":["enterprise-services",{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","enterprise-services","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/ac73cfbc8e915de4.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":""}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&family=Mukta:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"children":[["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}],["$","$L5",null,{}]]}]]}]],null],null],["$L6",null]]]]
+5:I[5753,["185","static/chunks/app/layout-c20a0b81d88c0cad.js"],"default"]
+0:["2Uy1GdArdFGq3YUFU0neK",[[["",{"children":["enterprise-services",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",{"children":["enterprise-services",{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","enterprise-services","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/ac73cfbc8e915de4.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":""}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&family=Mukta:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"children":[["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}],["$","$L5",null,{}]]}]]}]],null],null],["$L6",null]]]]
 6:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Enterprise Services — Kleza"}],["$","meta","3",{"name":"description","content":"Kleza is a fast-growing AI Transformation Company built on a singular vision: to humanize technology and make intelligence accessible, ethical, and meaningful for every business."}],["$","link","4",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","5",{"rel":"icon","href":"/favicon-32.png","sizes":"32x32","type":"image/png"}],["$","link","6",{"rel":"icon","href":"/favicon-192.png","sizes":"192x192","type":"image/png"}],["$","link","7",{"rel":"apple-touch-icon","href":"/apple-touch-icon.png","sizes":"180x180","type":"image/png"}]]
 1:null
-a:I[1797,["244","static/chunks/app/enterprise-services/page-65091405f0a62112.js"],"default"]
+c:I[1797,["244","static/chunks/app/enterprise-services/page-0277eabe3aa0250f.js"],"default"]
 7:T623,{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
 {"@type":"Question","name":"What enterprise digital services does Kleza offer?","acceptedAnswer":{"@type":"Answer","text":"Five core services: website development, digital marketing, content automation, search visibility, and 24/7 website performance monitoring. Available individually or as a combined service package."}},
 {"@type":"Question","name":"Does Kleza work with businesses outside healthcare?","acceptedAnswer":{"@type":"Answer","text":"Yes. While 75% healthcare-focused, we serve retail, legal, finance, and professional services across USA and India."}},
@@ -134,9 +134,7 @@ a:I[1797,["244","static/chunks/app/enterprise-services/page-65091405f0a62112.js"
 .es-step::after{display:none}
 .es-head{flex-direction:column;align-items:flex-start}
 }
-9:Tb826,
-<!-- ============ HEADER ============ -->
-<header class="site-header" id="header" data-screen-label="Header">
+9:T60d3,<header class="site-header" id="header" data-screen-label="Header">
   <div class="nav-shell">
     <nav class="nav" aria-label="Primary" style="border-color: rgb(13, 155, 139)">
       <a href="/" class="logo" aria-label="Kleza"><img src="/assets/kleza-logo.png" alt="Kleza" /></a>
@@ -271,8 +269,8 @@ a:I[1797,["244","static/chunks/app/enterprise-services/page-65091405f0a62112.js"
             <div class="mega-col">
               <div class="mega-subtitle">Content Automation</div>
               <ul class="mega-list">
-                <li><a class="mega-link" href="/enterprise-services/automation-tools"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Blog Automation</span></span></a></li>
-                <li><a class="mega-link" href="/enterprise-services/automation-tools"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Social Media Scheduling</span></span></a></li>
+                <li><a class="mega-link" href="/enterprise-services/blog-automation"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Blog Automation</span></span></a></li>
+                <li><a class="mega-link" href="/enterprise-services/social-media-scheduling"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Social Media Scheduling</span></span></a></li>
               </ul>
               <div class="mega-subtitle">AI Services</div>
               <ul class="mega-list">
@@ -338,8 +336,10 @@ a:I[1797,["244","static/chunks/app/enterprise-services/page-65091405f0a62112.js"
       </button>
     </nav>
   </div>
-</header>
-
+</header>a:T466b,
+<!-- Header and footer come from content/_chrome.html — the single place the
+     menu is defined. Do not paste a copy back in here. -->
+<!-- ============ HEADER ============ -->
 <div class="breadcrumb-bar"><div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span class="sep">&raquo;</span><span class="current">Enterprise Services</span></nav></div></div>
 
 <!-- HERO -->
@@ -396,14 +396,14 @@ a:I[1797,["244","static/chunks/app/enterprise-services/page-65091405f0a62112.js"
     <div class="es-head">
       <div class="left">
         <span class="eyebrow">Service Lines</span>
-        <h2 class="es-h2">Six surfaces. One <span class="ital">integrated team.</span></h2>
+        <h2 class="es-h2">Seven surfaces. One <span class="ital">integrated team.</span></h2>
       </div>
       <p class="es-lede">Pick a single capability or combine the full stack &mdash; every engagement runs through one delivery group with shared accountability.</p>
     </div>
     <div class="es-serv-grid">
       <div class="es-serv-card"><div class="es-icon-tile"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M7 14h4"/></svg></div><a class="es-card-link" href="/enterprise-services/website-development" aria-label="Website Development"></a><h3>Website Development</h3><p>Brand-grade, performance-optimized web solutions.</p><div class="es-tags"><span class="es-tag">Custom Dev</span><span class="es-tag">CMS</span><span class="es-tag">E-Commerce</span></div><div class="es-outcome"><b>+86</b> Lighthouse &middot; avg client launch</div></div>
       <div class="es-serv-card"><div class="es-icon-tile"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 17l5-5 4 4 8-9"/><path d="M14 7h7v7"/></svg></div><a class="es-card-link" href="/enterprise-services/digital-marketing" aria-label="Digital Marketing"></a><h3>Digital Marketing</h3><p>AI-enhanced SEO, PPC, and content campaigns.</p><div class="es-tags"><span class="es-tag">SEO</span><span class="es-tag">PPC</span><span class="es-tag">Content</span></div><div class="es-outcome"><b>3.2&times;</b> avg organic growth</div></div>
-      <div class="es-serv-card"><div class="es-icon-tile"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/></svg></div><a class="es-card-link" href="/enterprise-services/automation-tools" aria-label="Automation Tools"></a><h3>Automation Tools</h3><p>Blog, social, and marketing automation.</p><div class="es-tags"><span class="es-tag">Blog AI</span><span class="es-tag">Social</span><span class="es-tag">Workflows</span></div><div class="es-outcome"><b>67%</b> admin time reclaimed</div></div>
+      <div class="es-serv-card"><div class="es-icon-tile"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M11 13l1.5 1.5L16 11"/></svg></div><a class="es-card-link" href="/enterprise-services/blog-automation" aria-label="Blog Automation"></a><h3>Blog Automation</h3><p>Research to published post, on autopilot.</p><div class="es-tags"><span class="es-tag">Keyword research</span><span class="es-tag">SEO drafts</span><span class="es-tag">Human review</span></div><div class="es-outcome"><b>67%</b> admin time reclaimed</div></div><div class="es-serv-card"><div class="es-icon-tile"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.6" y1="10.5" x2="15.4" y2="6.5"/><line x1="8.6" y1="13.5" x2="15.4" y2="17.5"/></svg></div><a class="es-card-link" href="/enterprise-services/social-media-scheduling" aria-label="Social Media Scheduling"></a><h3>Social Media Scheduling</h3><p>Planned, written and queued across every channel.</p><div class="es-tags"><span class="es-tag">Monthly calendar</span><span class="es-tag">Multi-channel</span><span class="es-tag">Best-time posting</span></div><div class="es-outcome"><b>12-20</b> posts per channel monthly</div></div>
       <div class="es-serv-card"><div class="es-icon-tile"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div><a class="es-card-link" href="/enterprise-services/search-visibility" aria-label="Search &amp; Visibility"></a><h3>Search &amp; Visibility</h3><p>SERP monitoring, auto-indexing, rank intelligence.</p><div class="es-tags"><span class="es-tag">SERP</span><span class="es-tag">Indexing</span><span class="es-tag">Rank</span></div><div class="es-outcome"><b>+412</b> indexed pages monthly</div></div>
       <div class="es-serv-card"><div class="es-icon-tile"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l9 4v6c0 5-4 9-9 10-5-1-9-5-9-10V6l9-4z"/><path d="M9 12l2 2 4-4"/></svg></div><a class="es-card-link" href="/enterprise-services/monitoring-verification" aria-label="Monitoring &amp; Verification"></a><h3>Monitoring &amp; Verification</h3><p>24/7 uptime checks, domain expiry alerts.</p><div class="es-tags"><span class="es-tag">Uptime</span><span class="es-tag">Domain</span><span class="es-tag">Speed</span></div><div class="es-outcome"><b>99.9%</b> SLA verified</div></div>
       <div class="es-serv-card accent"><div class="es-icon-tile"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><a class="es-card-link" href="/enterprise-services/operational-outsourcing" aria-label="Operational Outsourcing"></a><h3>Operational Outsourcing</h3><p>Scalable back-office and remote IT support.</p><div class="es-tags"><span class="es-tag">Outsourcing</span><span class="es-tag">Remote IT</span></div><div class="es-outcome"><b>4 hrs</b> avg response time</div></div>
@@ -511,7 +511,8 @@ a:I[1797,["244","static/chunks/app/enterprise-services/page-65091405f0a62112.js"
 
 
 <!-- ============ FOOTER ============ -->
-<footer class="footer band-light" data-screen-label="Footer" style="padding: 56px 0px 32px">
+
+b:T145a,<footer class="footer band-light" data-screen-label="Footer" style="padding: 56px 0px 32px">
   <div class="container">
                 <div class="footer-grid">
       <div class="footer-brand">
@@ -535,7 +536,6 @@ a:I[1797,["244","static/chunks/app/enterprise-services/page-65091405f0a62112.js"
           <li><a href="/enterprise-services/digital-marketing">Digital Marketing</a></li>
           <li><a href="/enterprise-services/operational-outsourcing">Operational Outsourcing</a></li>
           <li><a href="/enterprise-services/remote-it-services">Remote IT Services</a></li>
-          <li><a href="/enterprise-services/automation-tools">Automation Tools</a></li>
           <li><a href="/enterprise-services/search-visibility">Search Visibility</a></li>
           <li><a href="/enterprise-services/monitoring-verification">Monitoring &amp; Verification</a></li>
         </ul>
@@ -578,9 +578,7 @@ a:I[1797,["244","static/chunks/app/enterprise-services/page-65091405f0a62112.js"
       <div class="right">Healthcare-grade AI <span style="opacity:.5;margin:0 .5em">&middot;</span> ISO Aligned</div>
     </div>
   </div>
-</footer>
-
-b:Ta29,
+</footer>d:Ta29,
 (function(){
   var counters = document.querySelectorAll('.es-proof [data-count]');
   var obs = new IntersectionObserver(function(es){
@@ -620,4 +618,4 @@ b:Ta29,
   stage.addEventListener('mouseleave', start);
   start();
 })();
-2:[[["$","script","0",{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$7"}}]],["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$8"}}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$9"}}],["$","$La",null,{"scripts":[{"code":"$b"},{"src":"/assets/nav.js"}],"bodyAttrs":{}}]]
+2:[[["$","script","0",{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$7"}}]],["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$8"}}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$9"}}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$a"}}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$b"}}],["$","$Lc",null,{"scripts":[{"code":"$d"},{"src":"/assets/nav.js"}],"bodyAttrs":{}}]]

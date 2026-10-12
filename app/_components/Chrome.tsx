@@ -2,9 +2,10 @@ import { loadChrome } from "@/lib/loadPage";
 import PageScripts from "./PageScripts";
 
 /**
- * Shared page chrome (sticky mega-menu header + footer) reused by the
- * hand-built sub-pages. The header/footer markup is lifted verbatim from the
- * prototype so it matches the section pages exactly; nav.js drives the menu.
+ * Shared page chrome (sticky mega-menu header + footer) for the hand-built
+ * sub-pages. Both come from `content/_chrome.html` — the one file the menu is
+ * defined in — which `DesignPage` renders too, so every page stays in step.
+ * nav.js drives the menu.
  */
 export default async function Chrome({
   children,

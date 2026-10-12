@@ -1,10 +1,12 @@
 3:I[4707,[],""]
 5:I[6423,[],""]
-6:I[5753,["185","static/chunks/app/layout-1704edfb8ec21a88.js"],"default"]
-4:["slug","automation-tools","d"]
-0:["rMFLPw-jFnJm_1AqLiUfw",[[["",{"children":["enterprise-services",{"children":[["slug","automation-tools","d"],{"children":["__PAGE__?{\"slug\":\"automation-tools\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["enterprise-services",{"children":[["slug","automation-tools","d"],{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","enterprise-services","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","enterprise-services","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/ac73cfbc8e915de4.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":""}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&family=Mukta:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"children":[["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}],["$","$L6",null,{}]]}]]}]],null],null],["$L7",null]]]]
-a:I[1797,["972","static/chunks/972-8c737d6cac936def.js","983","static/chunks/app/enterprise-services/%5Bslug%5D/page-da117cad34ad955f.js"],"default"]
-8:T368c,
+6:I[5753,["185","static/chunks/app/layout-c20a0b81d88c0cad.js"],"default"]
+4:["slug","blog-automation","d"]
+0:["2Uy1GdArdFGq3YUFU0neK",[[["",{"children":["enterprise-services",{"children":[["slug","blog-automation","d"],{"children":["__PAGE__?{\"slug\":\"blog-automation\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["enterprise-services",{"children":[["slug","blog-automation","d"],{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","enterprise-services","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","enterprise-services","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/ac73cfbc8e915de4.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":""}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&family=Mukta:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"children":[["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}],["$","$L6",null,{}]]}]]}]],null],null],["$L7",null]]]]
+d:I[1797,["972","static/chunks/972-8c737d6cac936def.js","983","static/chunks/app/enterprise-services/%5Bslug%5D/page-da117cad34ad955f.js"],"default"]
+7:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Blog Automation — Enterprise Services — Kleza"}],["$","meta","3",{"name":"description","content":"Kleza is a fast-growing AI Transformation Company built on a singular vision: to humanize technology and make intelligence accessible, ethical, and meaningful for every business."}],["$","link","4",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","5",{"rel":"icon","href":"/favicon-32.png","sizes":"32x32","type":"image/png"}],["$","link","6",{"rel":"icon","href":"/favicon-192.png","sizes":"192x192","type":"image/png"}],["$","link","7",{"rel":"apple-touch-icon","href":"/apple-touch-icon.png","sizes":"180x180","type":"image/png"}]]
+1:null
+8:T6e3,{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does the content meet Google’s E-E-A-T standards and actually rank in search?","acceptedAnswer":{"@type":"Answer","text":"Yes. Every blog is built on real research, structured with proper SEO, keyword research, and internal linking, and reviewed by our expert team for experience, expertise, authority, and trust before it goes live."}},{"@type":"Question","name":"How much does this cost? What’s the pricing model?","acceptedAnswer":{"@type":"Answer","text":"Pricing depends on your publishing frequency and content needs. Reach out, and we’ll build a plan tailored to your goals."}},{"@type":"Question","name":"How often does my blog publish?","acceptedAnswer":{"@type":"Answer","text":"It’s entirely your choice — weekly, biweekly, or a custom frequency, with plans tailored to match whatever cadence you select."}},{"@type":"Question","name":"Is this content optimized for AI search tools like ChatGPT and Google AI Overviews?","acceptedAnswer":{"@type":"Answer","text":"Yes. We structure content to be easily cited by AI assistants and featured in AI-generated answers, not just ranked in traditional search."}},{"@type":"Question","name":"How do you avoid content that sounds AI-generated?","acceptedAnswer":{"@type":"Answer","text":"Every draft is reviewed by our editorial team for natural tone and brand voice before publishing, so it reads like your team wrote it."}},{"@type":"Question","name":"Does this content stay effective as search algorithms change?","acceptedAnswer":{"@type":"Answer","text":"Yes. Our team stays up-to-date with SEO and AI search updates, so your content is built to perform — not just today, but as standards evolve."}}]}9:T368e,
 /* ---------- HERO (reuses .es-hero dark hero pattern) ---------- */
 .es-hero{background:var(--dark);color:#e8f0f0;border-radius:28px;margin:24px auto 0;max-width:var(--maxw);padding:clamp(40px,5vw,64px) clamp(28px,4vw,56px);display:grid;grid-template-columns:1.15fr 1fr;gap:48px;align-items:center;position:relative;overflow:hidden}
 .es-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(900px 500px at 80% 20%,rgba(90, 204, 241,.18),transparent 60%),radial-gradient(700px 400px at 10% 90%,rgba(54,192,237,.12),transparent 60%);pointer-events:none}
@@ -55,7 +57,7 @@ a:I[1797,["972","static/chunks/972-8c737d6cac936def.js","983","static/chunks/app
 .es-lede{font-size:17px;color:var(--muted);line-height:1.6;max-width:560px}
 
 /* ---------- PROBLEM BRIDGE (reuses .intro-2col, stat inline in prose) ---------- */
-.wd-bridge h2{font-size:clamp(34px,4.6vw,58px)}
+.wd-bridge h2{font-size:clamp(28px,3.6vw,46px)}
 .wd-bridge .body p{font-size:clamp(16px,1.2vw,19px);line-height:1.7;color:var(--muted)}
 .wd-bridge .body p .stat{font-family:var(--serif);font-style:normal;color:var(--ink);font-weight:400;font-size:1.12em}
 .wd-bridge .body p .stat b{color:var(--accent);font-weight:400}
@@ -91,9 +93,9 @@ a:I[1797,["972","static/chunks/972-8c737d6cac936def.js","983","static/chunks/app
 
 /* ---------- HUMAN OVERSIGHT STATEMENT (tinted, typography-led) ---------- */
 .at-oversight{background:linear-gradient(165deg,rgba(54, 192, 237,.07),rgba(54,192,237,.045));border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center}
-.at-oversight .inner{max-width:920px;margin:0 auto;padding:0 var(--pad-x)}
+.at-oversight .inner{max-width:1040px;margin:0 auto;padding:0 var(--pad-x)}
 .at-oversight .eyebrow{display:inline-flex;margin-bottom:24px}
-.at-oversight h2{font-family:var(--serif);font-weight:400;font-size:clamp(40px,5.6vw,76px);line-height:1.04;letter-spacing:-.015em;color:var(--ink);margin:0 0 30px;text-wrap:balance}
+.at-oversight h2{font-family:var(--serif);font-weight:400;font-size:clamp(18px,5.2vw,52px);line-height:1.12;letter-spacing:-.015em;color:var(--ink);margin:0 0 30px;white-space:nowrap}
 .at-oversight h2 .ital{font-style:italic;color:var(--accent)}
 .at-oversight p{font-size:clamp(17px,1.4vw,21px);line-height:1.7;color:var(--muted);margin:0 auto;max-width:64ch;text-wrap:pretty}
 
@@ -164,9 +166,7 @@ a:I[1797,["972","static/chunks/972-8c737d6cac936def.js","983","static/chunks/app
 @media (max-width:520px){
 .es-trust-foot .grid{grid-template-columns:1fr}
 }
-9:Ta90b,
-<!-- ============ HEADER ============ -->
-<header class="site-header" id="header" data-screen-label="Header">
+a:T60d3,<header class="site-header" id="header" data-screen-label="Header">
   <div class="nav-shell">
     <nav class="nav" aria-label="Primary" style="border-color: rgb(13, 155, 139)">
       <a href="/" class="logo" aria-label="Kleza"><img src="/assets/kleza-logo.png" alt="Kleza" /></a>
@@ -301,8 +301,8 @@ a:I[1797,["972","static/chunks/972-8c737d6cac936def.js","983","static/chunks/app
             <div class="mega-col">
               <div class="mega-subtitle">Content Automation</div>
               <ul class="mega-list">
-                <li><a class="mega-link" href="/enterprise-services/automation-tools"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Blog Automation</span></span></a></li>
-                <li><a class="mega-link" href="/enterprise-services/automation-tools"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Social Media Scheduling</span></span></a></li>
+                <li><a class="mega-link" href="/enterprise-services/blog-automation"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Blog Automation</span></span></a></li>
+                <li><a class="mega-link" href="/enterprise-services/social-media-scheduling"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Social Media Scheduling</span></span></a></li>
               </ul>
               <div class="mega-subtitle">AI Services</div>
               <ul class="mega-list">
@@ -368,39 +368,41 @@ a:I[1797,["972","static/chunks/972-8c737d6cac936def.js","983","static/chunks/app
       </button>
     </nav>
   </div>
-</header>
-
-<div class="breadcrumb-bar"><div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span class="sep">&raquo;</span><a href="/enterprise-services">Enterprise Services</a><span class="sep">&raquo;</span><span class="current">Automation Tools</span></nav></div></div>
+</header>b:T332c,
+<!-- Header and footer come from content/_chrome.html — the single place the
+     menu is defined. Do not paste a copy back in here. -->
+<!-- ============ HEADER ============ -->
+<div class="breadcrumb-bar"><div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span class="sep">&raquo;</span><a href="/enterprise-services">Enterprise Services</a><span class="sep">&raquo;</span><span class="current">Blog Automation</span></nav></div></div>
 
 <!-- SECTION 01 — HERO -->
 <section data-screen-label="Hero" style="padding-top:8px">
   <div class="es-hero">
     <div class="es-hero-inner">
-      <span class="eyebrow">Enterprise Services <span class="dot">·</span> Automation Tools</span>
-      <h1>Content &amp; Marketing Automation &mdash; publish consistently, <span class="ital">without the manual work.</span></h1>
-      <p class="lede">Kleza&rsquo;s automation tools take the repetition out of content marketing. Blog publishing, social media scheduling, and editorial workflows run on intelligent systems.</p>
+      <span class="eyebrow">Enterprise Services <span class="dot">·</span> Blog Automation</span>
+      <h1>Blog Automation Built to Rank, Publish, and <span class="ital">Stay Consistent.</span></h1>
+      <p class="lede">From keyword research to a published post, our automation tool handles it all. It studies trends, builds SEO-optimized content in your brand voice, links to credible sources, and connects back to your own site, all without you writing a single line.</p>
       <div class="es-hero-ctas">
-        <a class="btn es-btn-sky" href="/contact">Start Your Content Engine <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-        <a class="btn es-btn-ghost-light" href="/resources">See sample content <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a class="btn es-btn-sky" href="/contact">Try Blog Automation <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a class="btn es-btn-ghost-light" href="/resources/articles">See a Sample Blog Post <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
       </div>
     </div>
     <div class="es-hero-visual">
       <div class="es-stat-card">
-        <div class="label">Content calendar &middot; This month</div>
+        <div class="label">Publishing calendar &middot; This month</div>
         <div class="at-cal">
           <span class="d head">M</span><span class="d head">T</span><span class="d head">W</span><span class="d head">T</span><span class="d head">F</span><span class="d head">S</span><span class="d head">S</span>
           <span class="d"></span><span class="d on blog"></span><span class="d"></span><span class="d on soc"></span><span class="d"></span><span class="d on soc"></span><span class="d"></span>
           <span class="d on blog"></span><span class="d"></span><span class="d on soc"></span><span class="d"></span><span class="d on blog"></span><span class="d"></span><span class="d on soc"></span>
           <span class="d"></span><span class="d on soc"></span><span class="d"></span><span class="d on blog"></span><span class="d"></span><span class="d on soc"></span><span class="d"></span>
         </div>
-        <div class="at-cal-key"><span><i class="k blog"></i>Blog</span><span><i class="k soc"></i>Social</span></div>
+        <div class="at-cal-key"><span><i class="k blog"></i>Published</span><span><i class="k soc"></i>Scheduled</span></div>
       </div>
       <div class="es-stat-card">
-        <div class="label">Publishing pipeline</div>
+        <div class="label">Post pipeline</div>
         <div class="feed">
+          <div><span class="dot"></span>Keyword research &middot; 6 topics<span class="tail">trending</span></div>
           <div><span class="dot"></span>Drafting &middot; 3 posts<span class="tail">AI + edit</span></div>
-          <div><span class="dot"></span>Editorial review &middot; 2<span class="tail">in review</span></div>
-          <div><span class="dot"></span>Scheduled &middot; LinkedIn<span class="tail">9:00 AM</span></div>
+          <div><span class="dot"></span>Scheduled &middot; Blog<span class="tail">9:00 AM</span></div>
         </div>
       </div>
     </div>
@@ -411,49 +413,38 @@ a:I[1797,["972","static/chunks/972-8c737d6cac936def.js","983","static/chunks/app
 <section class="es-sec band-white wd-bridge" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)" data-screen-label="Problem Bridge">
   <div class="container">
     <div class="intro-2col">
-      <h2>Content gaps kill SEO momentum. <span class="ital">Inconsistent posting kills audience trust.</span></h2>
+      <h2>Manual content work drains resources. <span class="ital">Automation gives that time back.</span></h2>
       <div class="body">
-        <p>Managing the editorial calendar, writing to SEO standards, formatting for each platform, and hitting publish on time is operationally expensive. Kleza&rsquo;s automation layer removes that burden. Your brand publishes consistently, your team focuses on strategy.</p>
+        <p>Research, writing, SEO formatting, and scheduling take hours away from strategy when done manually. Kleza&rsquo;s blog automation handles that repetitive work end-to-end, delivering consistent output without the operational overhead.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- SECTION 03 — TWO SERVICES (stacked full-width) -->
-<section class="es-sec" data-screen-label="Two Services">
+<section class="es-sec" data-screen-label="What's Included">
   <div class="container">
     <div class="es-head">
       <div class="left">
         <span class="eyebrow">What we automate</span>
-        <h2 class="es-h2">Two engines, <span class="ital">one accountable team.</span></h2>
+        <h2 class="es-h2">On-Brand, On-Point, <span class="ital">On-Time.</span></h2>
       </div>
-      <p class="es-lede">Sequential, hands-off content operations &mdash; each running on intelligent systems with human editorial sign-off at every step.</p>
+      <p class="es-lede">Set your standards and who you&rsquo;re targeting. It creates the content for you, reviewed by content experts for accuracy, tone, and current SEO trends &mdash; and nothing gets published until you&rsquo;ve approved it.</p>
     </div>
     <div class="at-serv">
       <article class="at-card">
         <div class="at-card-top">
           <div class="es-icon-tile"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M11 13l1.5 1.5L16 11"/></svg></div>
-          <h4>Blog Automation Built to Rank, Publish, and Stay Consistent.</h4>
+          <h4>Blog Automation That Publishes Only After Human Review</h4>
         </div>
         <div class="at-divider"></div>
-        <p>From keyword research to a published post, our automation tool handles it all. It studies trends, builds SEO-optimized content in your brand voice, links to credible sources, and connects back to your own site, all without you writing a single line.</p>
+        <p>The tool builds every post using real research, SEO structure, and E-E-A-T standards, then our expert team reviews it for credibility and accuracy before it publishes, so your content earns results, across any niche.</p>
         <div class="at-tags">
-          <span class="at-tag">Keyword research</span><span class="at-tag">SEO brief</span><span class="at-tag">AI draft + human edit</span><span class="at-tag">On-brand voice</span><span class="at-tag">Schema markup</span><span class="at-tag">Internal linking</span>
+          <span class="at-tag">Real research</span><span class="at-tag">SEO structure</span><span class="at-tag">E-E-A-T standards</span><span class="at-tag">Expert review</span><span class="at-tag">Any niche</span>
         </div>
         <div class="at-card-links">
-          <a class="at-card-link" href="/contact">Try Blog Automation <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-          <a class="at-card-link" href="/resources/articles">See a Sample Blog Post <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-        </div>
-      </article>
-      <article class="at-card">
-        <div class="at-card-top">
-          <div class="es-icon-tile"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.6" y1="10.5" x2="15.4" y2="6.5"/><line x1="8.6" y1="13.5" x2="15.4" y2="17.5"/></svg></div>
-          <h4>Social Media Scheduling &mdash; Multi-Channel, Always On</h4>
-        </div>
-        <div class="at-divider"></div>
-        <p>Kleza plans, creates, and schedules social content across LinkedIn, Instagram, Facebook, and X &mdash; optimised for each platform&rsquo;s algorithm and your audience&rsquo;s engagement patterns. Monthly calendar approval before anything goes live.</p>
-        <div class="at-tags">
-          <span class="at-tag">LinkedIn</span><span class="at-tag">Instagram</span><span class="at-tag">Facebook</span><span class="at-tag">X / Twitter</span><span class="at-tag">Monthly calendar</span><span class="at-tag">Brand voice guide</span>
+          <a class="at-card-link" href="/contact">Try Blog Automation <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          <a class="at-card-link" href="/resources/articles">See a Sample Blog Post <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
         </div>
       </article>
     </div>
@@ -465,19 +456,19 @@ a:I[1797,["972","static/chunks/972-8c737d6cac936def.js","983","static/chunks/app
   <div class="inner">
     <span class="eyebrow">Editorial Oversight</span>
     <h2>AI generates. Humans approve. <span class="ital">Always.</span></h2>
-    <p>Every piece of automated content passes through a Kleza editorial team before it goes live. We do not publish raw AI output. Our editors verify factual accuracy, brand voice consistency, HIPAA compliance for healthcare clients, and SEO quality before scheduling.</p>
+    <p>Every post passes through a Kleza editor before it goes live. We do not publish raw AI output. Our editors verify factual accuracy, source credibility, brand voice, HIPAA compliance for healthcare clients, and SEO quality before anything is scheduled.</p>
   </div>
 </section>
 
 <!-- SECTION 05 — HOW IT WORKS -->
 <section class="es-sec band-white" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)" data-screen-label="How It Works">
   <div class="container">
-    <div class="es-head"><div class="left"><span class="eyebrow">Process</span><h2 class="es-h2">How Kleza&rsquo;s content <span class="ital">automation works.</span></h2></div></div>
+    <div class="es-head"><div class="left"><span class="eyebrow">Process</span><h2 class="es-h2">How Kleza&rsquo;s Content <span class="ital">Automation Works.</span></h2></div></div>
     <div class="wd-steps">
-      <div class="wd-step"><div class="circle">01</div><h4>Brand audit</h4><p class="wd-step-d">We document your voice, audience, and content goals.</p></div>
-      <div class="wd-step"><div class="circle">02</div><h4>Calendar planning</h4><p class="wd-step-d">Monthly topics agreed and approved by your team.</p></div>
-      <div class="wd-step"><div class="circle">03</div><h4>Creation &amp; review</h4><p class="wd-step-d">AI-assisted drafting with human editorial sign-off.</p></div>
-      <div class="wd-step"><div class="circle">04</div><h4>Publish &amp; report</h4><p class="wd-step-d">Scheduled posting with monthly performance summary.</p></div>
+      <div class="wd-step"><div class="circle">01</div><h4>Brand Audit</h4><p class="wd-step-d">The tool learns your voice, audience, and content goals from the start.</p></div>
+      <div class="wd-step"><div class="circle">02</div><h4>Calendar Planning</h4><p class="wd-step-d">It builds a monthly blog automation calendar, ready for your team to approve.</p></div>
+      <div class="wd-step"><div class="circle">03</div><h4>Creation &amp; Review</h4><p class="wd-step-d">It drafts each blog using AI, then hands it off for human editorial sign-off.</p></div>
+      <div class="wd-step"><div class="circle">04</div><h4>Publish &amp; Report</h4><p class="wd-step-d">Once approved, it schedules and publishes each blog on its assigned date, then delivers a monthly performance summary.</p></div>
     </div>
   </div>
 </section>
@@ -485,12 +476,14 @@ a:I[1797,["972","static/chunks/972-8c737d6cac936def.js","983","static/chunks/app
 <!-- SECTION 06 — FAQ -->
 <section class="es-sec" data-screen-label="FAQ">
   <div class="container">
-    <div class="es-head" style="justify-content:center;text-align:center;flex-direction:column;align-items:center"><span class="eyebrow">FAQ</span><h2 class="es-h2" style="margin-top:14px">Frequently asked <span class="ital">questions.</span></h2></div>
+    <div class="es-head" style="justify-content:center;text-align:center;flex-direction:column;align-items:center"><h2 class="es-h2" style="margin-top:14px">Frequently asked <span class="ital">questions.</span></h2></div>
     <div class="es-faq">
-      <div class="es-faq-item"><button class="es-faq-q">Is the content AI or human?<span class="plus">+</span></button><div class="es-faq-a"><p>Both. AI accelerates research and first drafts &mdash; but every piece is reviewed and approved by a human editor before publishing. We never publish unreviewed AI output.</p></div></div>
-      <div class="es-faq-item"><button class="es-faq-q">Can Kleza match our brand voice?<span class="plus">+</span></button><div class="es-faq-a"><p>Yes. We create a documented Brand Voice Guide approved by you before any content is produced.</p></div></div>
-      <div class="es-faq-item"><button class="es-faq-q">How many posts per month?<span class="plus">+</span></button><div class="es-faq-a"><p>Typical: 4-8 blog posts and 12-20 social posts per platform. Volume adjustable with 30 days notice.</p></div></div>
-      <div class="es-faq-item"><button class="es-faq-q">What approval process do I have?<span class="plus">+</span></button><div class="es-faq-a"><p>Monthly content calendar sent for your review before scheduling. Nothing published without sign-off.</p></div></div>
+      <div class="es-faq-item"><button class="es-faq-q">Does the content meet Google&rsquo;s E-E-A-T standards and actually rank in search?<span class="plus">+</span></button><div class="es-faq-a"><p>Yes. Every blog is built on real research, structured with proper SEO, keyword research, and internal linking, and reviewed by our expert team for experience, expertise, authority, and trust before it goes live.</p></div></div>
+      <div class="es-faq-item"><button class="es-faq-q">How much does this cost? What&rsquo;s the pricing model?<span class="plus">+</span></button><div class="es-faq-a"><p>Pricing depends on your publishing frequency and content needs. Reach out, and we&rsquo;ll build a plan tailored to your goals.</p></div></div>
+      <div class="es-faq-item"><button class="es-faq-q">How often does my blog publish?<span class="plus">+</span></button><div class="es-faq-a"><p>It&rsquo;s entirely your choice &mdash; weekly, biweekly, or a custom frequency, with plans tailored to match whatever cadence you select.</p></div></div>
+      <div class="es-faq-item"><button class="es-faq-q">Is this content optimized for AI search tools like ChatGPT and Google AI Overviews?<span class="plus">+</span></button><div class="es-faq-a"><p>Yes. We structure content to be easily cited by AI assistants and featured in AI-generated answers, not just ranked in traditional search.</p></div></div>
+      <div class="es-faq-item"><button class="es-faq-q">How do you avoid content that sounds AI-generated?<span class="plus">+</span></button><div class="es-faq-a"><p>Every draft is reviewed by our editorial team for natural tone and brand voice before publishing, so it reads like your team wrote it.</p></div></div>
+      <div class="es-faq-item"><button class="es-faq-q">Does this content stay effective as search algorithms change?<span class="plus">+</span></button><div class="es-faq-a"><p>Yes. Our team stays up-to-date with SEO and AI search updates, so your content is built to perform &mdash; not just today, but as standards evolve.</p></div></div>
     </div>
   </div>
 </section>
@@ -500,11 +493,11 @@ a:I[1797,["972","static/chunks/972-8c737d6cac936def.js","983","static/chunks/app
   <div class="container">
     <div class="es-bundle">
       <span class="eyebrow">Combined Engagements</span>
-      <h2 class="es-h2">Build a content engine <span class="ital">that runs without you.</span></h2>
-      <p>Brands that dominate search and social publish smarter and more consistently. Best combined with Digital Marketing or SEO for a fully integrated content and visibility strategy.</p>
+      <h2 class="es-h2">Your content shouldn&rsquo;t need you every single day. <span class="ital">Let it run on its own.</span></h2>
+      <p>Consistency beats effort every time. Our tool keeps your content moving without daily input from your team, and works even better alongside Digital Marketing or SEO for complete visibility.</p>
       <div class="ctas">
-        <a class="btn btn-accent" href="/contact">Start Your Content Engine <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-        <a class="btn btn-ghost" href="/resources">See sample content <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a class="btn btn-accent" href="/contact">Try Blog Automation <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a class="btn btn-ghost" href="/contact">Get Started</a>
       </div>
     </div>
   </div>
@@ -521,7 +514,9 @@ a:I[1797,["972","static/chunks/972-8c737d6cac936def.js","983","static/chunks/app
 </section>
 
 <!-- ============ FOOTER ============ -->
-<footer class="footer band-light" data-screen-label="Footer" style="padding: 56px 0px 32px">
+
+
+c:T145a,<footer class="footer band-light" data-screen-label="Footer" style="padding: 56px 0px 32px">
   <div class="container">
                 <div class="footer-grid">
       <div class="footer-brand">
@@ -545,7 +540,6 @@ a:I[1797,["972","static/chunks/972-8c737d6cac936def.js","983","static/chunks/app
           <li><a href="/enterprise-services/digital-marketing">Digital Marketing</a></li>
           <li><a href="/enterprise-services/operational-outsourcing">Operational Outsourcing</a></li>
           <li><a href="/enterprise-services/remote-it-services">Remote IT Services</a></li>
-          <li><a href="/enterprise-services/automation-tools">Automation Tools</a></li>
           <li><a href="/enterprise-services/search-visibility">Search Visibility</a></li>
           <li><a href="/enterprise-services/monitoring-verification">Monitoring &amp; Verification</a></li>
         </ul>
@@ -588,10 +582,4 @@ a:I[1797,["972","static/chunks/972-8c737d6cac936def.js","983","static/chunks/app
       <div class="right">Healthcare-grade AI <span style="opacity:.5;margin:0 .5em">&middot;</span> ISO Aligned</div>
     </div>
   </div>
-</footer>
-
-
-
-2:[[["$","script","0",{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[\n{\"@type\":\"Question\",\"name\":\"Is the content AI or human?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Both. AI accelerates research and first drafts — but every piece is reviewed and approved by a human editor before publishing. We never publish unreviewed AI output.\"}},\n{\"@type\":\"Question\",\"name\":\"Can Kleza match our brand voice?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes. We create a documented Brand Voice Guide approved by you before any content is produced.\"}},\n{\"@type\":\"Question\",\"name\":\"How many posts per month?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Typical: 4-8 blog posts and 12-20 social posts per platform. Volume adjustable with 30 days notice.\"}},\n{\"@type\":\"Question\",\"name\":\"What approval process do I have?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Monthly content calendar sent for your review before scheduling. Nothing published without sign-off.\"}}\n]}"}}]],["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$8"}}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$9"}}],["$","$La",null,{"scripts":[{"src":"/assets/nav.js"},{"code":"\n(function(){\n  document.querySelectorAll('.es-faq-q').forEach(function(b){\n    b.addEventListener('click', function(){ b.parentElement.classList.toggle('open'); });\n  });\n})();\n"}],"bodyAttrs":{}}]]
-7:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Automation Tools — Enterprise Services — Kleza"}],["$","meta","3",{"name":"description","content":"Kleza is a fast-growing AI Transformation Company built on a singular vision: to humanize technology and make intelligence accessible, ethical, and meaningful for every business."}],["$","link","4",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","5",{"rel":"icon","href":"/favicon-32.png","sizes":"32x32","type":"image/png"}],["$","link","6",{"rel":"icon","href":"/favicon-192.png","sizes":"192x192","type":"image/png"}],["$","link","7",{"rel":"apple-touch-icon","href":"/apple-touch-icon.png","sizes":"180x180","type":"image/png"}]]
-1:null
+</footer>2:[[["$","script","0",{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$8"}}]],["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$9"}}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$a"}}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$b"}}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$c"}}],["$","$Ld",null,{"scripts":[{"src":"/assets/nav.js"},{"code":"\n(function(){\n  document.querySelectorAll('.es-faq-q').forEach(function(b){\n    b.addEventListener('click', function(){ b.parentElement.classList.toggle('open'); });\n  });\n})();\n"}],"bodyAttrs":{}}]]

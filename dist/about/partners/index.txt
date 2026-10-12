@@ -1,11 +1,9 @@
 3:I[4707,[],""]
 5:I[6423,[],""]
-6:I[5753,["185","static/chunks/app/layout-1704edfb8ec21a88.js"],"default"]
+6:I[5753,["185","static/chunks/app/layout-c20a0b81d88c0cad.js"],"default"]
 4:["slug","partners","d"]
-0:["rMFLPw-jFnJm_1AqLiUfw",[[["",{"children":["about",{"children":[["slug","partners","d"],{"children":["__PAGE__?{\"slug\":\"partners\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["about",{"children":[["slug","partners","d"],{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","about","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","about","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/ac73cfbc8e915de4.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":""}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&family=Mukta:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"children":[["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}],["$","$L6",null,{}]]}]]}]],null],null],["$L7",null]]]]
-7:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Partnerships — Kleza"}],["$","meta","3",{"name":"description","content":"Kleza is a fast-growing AI Transformation Company built on a singular vision: to humanize technology and make intelligence accessible, ethical, and meaningful for every business."}],["$","link","4",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","5",{"rel":"icon","href":"/favicon-32.png","sizes":"32x32","type":"image/png"}],["$","link","6",{"rel":"icon","href":"/favicon-192.png","sizes":"192x192","type":"image/png"}],["$","link","7",{"rel":"apple-touch-icon","href":"/apple-touch-icon.png","sizes":"180x180","type":"image/png"}]]
-1:null
-b:I[1797,["972","static/chunks/972-8c737d6cac936def.js","784","static/chunks/app/about/%5Bslug%5D/page-df852d272991fc7e.js"],"default"]
+0:["2Uy1GdArdFGq3YUFU0neK",[[["",{"children":["about",{"children":[["slug","partners","d"],{"children":["__PAGE__?{\"slug\":\"partners\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["about",{"children":[["slug","partners","d"],{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","about","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","about","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/ac73cfbc8e915de4.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":""}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&family=Mukta:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"children":[["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}],["$","$L6",null,{}]]}]]}]],null],null],["$L7",null]]]]
+d:I[1797,["972","static/chunks/972-8c737d6cac936def.js","784","static/chunks/app/about/%5Bslug%5D/page-df852d272991fc7e.js"],"default"]
 8:T5c9,{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
 {"@type":"Question","name":"What types of partnerships does Kleza offer?","acceptedAnswer":{"@type":"Answer","text":"Kleza offers three partnership types: Technology Partnerships for software and platform vendors, Referral Partnerships for consultants and agencies, and Reseller Partnerships for managed service providers and digital agencies who want to offer Kleza services to their own clients."}},
 {"@type":"Question","name":"Is there a cost to becoming a Kleza partner?","acceptedAnswer":{"@type":"Answer","text":"No. There is no fee to join the Kleza partner programme. Partnership arrangements are structured around mutual value — referral fees, co-marketing, or reseller pricing — depending on the partnership type."}},
@@ -107,8 +105,7 @@ a.pt-logo-box{text-decoration:none;color:inherit}
   .pt-testi-grid{grid-template-columns:1fr}
   .pt-close-band .cta-row{flex-direction:column;align-items:stretch}
 }
-a:Tc0de,
-<header class="site-header" id="header" data-screen-label="Header">
+a:T60d3,<header class="site-header" id="header" data-screen-label="Header">
   <div class="nav-shell">
     <nav class="nav" aria-label="Primary" style="border-color: rgb(13, 155, 139)">
       <a href="/" class="logo" aria-label="Kleza"><img src="/assets/kleza-logo.png" alt="Kleza" /></a>
@@ -243,8 +240,8 @@ a:Tc0de,
             <div class="mega-col">
               <div class="mega-subtitle">Content Automation</div>
               <ul class="mega-list">
-                <li><a class="mega-link" href="/enterprise-services/automation-tools"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Blog Automation</span></span></a></li>
-                <li><a class="mega-link" href="/enterprise-services/automation-tools"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Social Media Scheduling</span></span></a></li>
+                <li><a class="mega-link" href="/enterprise-services/blog-automation"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Blog Automation</span></span></a></li>
+                <li><a class="mega-link" href="/enterprise-services/social-media-scheduling"><span class="mega-link-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span><span class="mega-link-text"><span class="mega-link-name">Social Media Scheduling</span></span></a></li>
               </ul>
               <div class="mega-subtitle">AI Services</div>
               <ul class="mega-list">
@@ -310,8 +307,9 @@ a:Tc0de,
       </button>
     </nav>
   </div>
-</header>
-
+</header>b:T4be7,
+<!-- Header and footer come from content/_chrome.html — the single place the
+     menu is defined. Do not paste a copy back in here. -->
 <div class="breadcrumb-bar"><div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span class="sep">&raquo;</span><a href="/about">About</a><span class="sep">&raquo;</span><span class="current">Partnerships</span></nav></div></div>
 
 <!-- ===== SECTION 01 — HERO ===== -->
@@ -477,7 +475,10 @@ a:Tc0de,
 </section>
 
 <!-- ============ FOOTER ============ -->
-<footer class="footer band-light" data-screen-label="Footer" style="padding: 56px 0px 32px">
+
+
+
+c:T145a,<footer class="footer band-light" data-screen-label="Footer" style="padding: 56px 0px 32px">
   <div class="container">
                 <div class="footer-grid">
       <div class="footer-brand">
@@ -501,7 +502,6 @@ a:Tc0de,
           <li><a href="/enterprise-services/digital-marketing">Digital Marketing</a></li>
           <li><a href="/enterprise-services/operational-outsourcing">Operational Outsourcing</a></li>
           <li><a href="/enterprise-services/remote-it-services">Remote IT Services</a></li>
-          <li><a href="/enterprise-services/automation-tools">Automation Tools</a></li>
           <li><a href="/enterprise-services/search-visibility">Search Visibility</a></li>
           <li><a href="/enterprise-services/monitoring-verification">Monitoring &amp; Verification</a></li>
         </ul>
@@ -544,8 +544,6 @@ a:Tc0de,
       <div class="right">Healthcare-grade AI <span style="opacity:.5;margin:0 .5em">&middot;</span> ISO Aligned</div>
     </div>
   </div>
-</footer>
-
-
-
-2:[[["$","script","0",{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$8"}}]],["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$9"}}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$a"}}],["$","$Lb",null,{"scripts":[{"src":"/assets/image-slot.js"},{"src":"/assets/nav.js"},{"code":"\n(function(){\n  /* FAQ accordion */\n  document.querySelectorAll('.pt-faq-q').forEach(function(btn){\n    btn.addEventListener('click',function(){ btn.parentElement.classList.toggle('open'); });\n  });\n\n})();\n"}],"bodyAttrs":{}}]]
+</footer>2:[[["$","script","0",{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$8"}}]],["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$9"}}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$a"}}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$b"}}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$c"}}],["$","$Ld",null,{"scripts":[{"src":"/assets/image-slot.js"},{"src":"/assets/nav.js"},{"code":"\n(function(){\n  /* FAQ accordion */\n  document.querySelectorAll('.pt-faq-q').forEach(function(btn){\n    btn.addEventListener('click',function(){ btn.parentElement.classList.toggle('open'); });\n  });\n\n})();\n"}],"bodyAttrs":{}}]]
+7:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Partnerships — Kleza"}],["$","meta","3",{"name":"description","content":"Kleza is a fast-growing AI Transformation Company built on a singular vision: to humanize technology and make intelligence accessible, ethical, and meaningful for every business."}],["$","link","4",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","link","5",{"rel":"icon","href":"/favicon-32.png","sizes":"32x32","type":"image/png"}],["$","link","6",{"rel":"icon","href":"/favicon-192.png","sizes":"192x192","type":"image/png"}],["$","link","7",{"rel":"apple-touch-icon","href":"/apple-touch-icon.png","sizes":"180x180","type":"image/png"}]]
+1:null

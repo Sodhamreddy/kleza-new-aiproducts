@@ -185,9 +185,14 @@ const DETAIL: Intent[] = [
     route: "/enterprise-services/operational-outsourcing",
   },
   {
-    keys: ["blog automation", "social media", "content automation", "scheduling tool"],
-    say: "Our automation tools run content and marketing on autopilot — AI drafting with a human review gate, multi-channel social scheduling, and best-time posting.",
-    route: "/enterprise-services/automation-tools",
+    keys: ["blog automation", "blog", "content automation", "seo content"],
+    say: "Blog Automation takes a post from keyword research to published — SEO-structured drafts in your brand voice, with an expert review gate before anything goes live.",
+    route: "/enterprise-services/blog-automation",
+  },
+  {
+    keys: ["social media", "social scheduling", "scheduling tool", "linkedin", "instagram"],
+    say: "Social Media Scheduling plans, writes and queues your posts across LinkedIn, Instagram, Facebook and X — on a monthly calendar you approve before anything is scheduled.",
+    route: "/enterprise-services/social-media-scheduling",
   },
   {
     keys: ["uptime", "domain expiry", "performance monitoring", "website performance", "monitoring"],

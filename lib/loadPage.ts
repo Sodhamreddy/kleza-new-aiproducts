@@ -16,6 +16,12 @@ export interface PageData {
   jsonLd: string[];
 }
 
+/**
+ * The header + footer live here and nowhere else. Pages no longer carry their
+ * own copy; `loadPage` strips any that is still embedded.
+ */
+export const CHROME_FILE = "_chrome.html";
+
 /** Map the prototype's flat .html filenames onto Next.js routes. */
 const PAGE_MAP: Record<string, string> = {
   "Kleza.html": "/",
@@ -36,7 +42,8 @@ const PAGE_MAP: Record<string, string> = {
   "Digital Marketing.html": "/enterprise-services/digital-marketing",
   "Operational Outsourcing.html": "/enterprise-services/operational-outsourcing",
   "Remote IT Services.html": "/enterprise-services/remote-it-services",
-  "Automation Tools.html": "/enterprise-services/automation-tools",
+  "Blog Automation.html": "/enterprise-services/blog-automation",
+  "Social Media Scheduling.html": "/enterprise-services/social-media-scheduling",
   "Search Visibility.html": "/enterprise-services/search-visibility",
   "Monitoring Verification.html": "/enterprise-services/monitoring-verification",
 };
@@ -105,14 +112,16 @@ function rewriteLinks(html: string): string {
 }
 
 /**
- * Extracts the shared header + footer markup from a reference prototype so new
- * (hand-built) sub-pages can reuse the exact same chrome.
+ * The site header (mega menu) and footer, read from the one file that holds
+ * them: `content/_chrome.html`. Every page renders this — designed prototype
+ * pages through `DesignPage`, hand-built sub-pages through `Chrome` — so the
+ * menu is edited in a single place rather than in each page's own copy.
  */
 export async function loadChrome(): Promise<{
   headerHtml: string;
   footerHtml: string;
 }> {
-  const full = path.join(process.cwd(), "content", "about.html");
+  const full = path.join(process.cwd(), "content", CHROME_FILE);
   const raw = await readFile(full, "utf8");
   const header = raw.match(/<header[\s\S]*?<\/header>/i)?.[0] ?? "";
   const footer = raw.match(/<footer[\s\S]*?<\/footer>/i)?.[0] ?? "";
@@ -152,6 +161,13 @@ export async function loadPage(file: string): Promise<PageData> {
   const bodyAttrsRaw = bodyMatch ? bodyMatch[1] : "";
   let bodyInner = bodyMatch ? bodyMatch[2] : "";
   const bodyAttrs = parseAttrs(bodyAttrsRaw);
+
+  // Pages used to embed their own copy of the header and footer. The shared
+  // chrome in `_chrome.html` now supplies both, so drop any embedded copy
+  // rather than rendering two of each.
+  bodyInner = bodyInner
+    .replace(/<header[\s\S]*?<\/header>/i, "")
+    .replace(/<footer[\s\S]*?<\/footer>/i, "");
 
   bodyInner = rewriteLinks(bodyInner);
 

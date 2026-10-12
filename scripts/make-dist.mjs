@@ -4,7 +4,10 @@ import { rm, rename, cp, writeFile, access } from "fs/promises";
 import path from "path";
 
 const root = process.cwd();
-const out = path.join(root, "out");
+// `next build` exports to "out/" normally, but into the build directory
+// itself when NEXT_DIST_DIR is set (used to build without disturbing a
+// running dev server).
+const out = path.join(root, process.env.NEXT_DIST_DIR || "out");
 const dist = path.join(root, "dist");
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
